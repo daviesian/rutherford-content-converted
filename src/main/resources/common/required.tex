@@ -1,0 +1,27 @@
+% This is the template that sets out all of the Problems and produces the Exercise/Solution labels and numbering
+% There are two classes of Exercise: "problem" which has a Question and Solution, and "hint" which has a Question, Hint and Solution
+
+\input{usepackage.tex}
+
+
+%Then where to find the graphics:
+%WARNING -  relative to the TeX file being compiled - NOT this template!
+		\graphicspath{{../Diagrams/}{Diagrams/}{./}} %This allows diagrams: {{As a sister folder to Latex}{A subdirectory of LaTeX}{Or just in LaTeX itself}}
+
+% WARNING -  If you want the diagrams to be a sister folder to the LaTeX folder - pdflatex.exe sometimes needs an extra argument to cope with the "../" part; usually it can only cope with subdirectories as opposed to parent ones. If it refuses to compile and says it cannot find the diagrams, either add "--shell-escape" to the start of the arguments of pdflatex, OR move the diagrams to a subdirectory of the one containing the TeX files.
+%In TeXworks, to add the extra argument, go to Edit -> Preferences -> Typesetting -> Processing Tools. Click on "pdfLaTeX" -> Edit -> "+" button, then type "--shell-escape" (without quotes) and press the up arrow twice so that it becomes top of the list.
+
+
+%Then any custom commands written, along with shortcuts and variables:
+\input{Definitions.tex} % In a file called "Definitions.tex" in the same directory as this file.
+
+\input{solution_toggles.tex}
+
+
+
+
+
+
+
+
+

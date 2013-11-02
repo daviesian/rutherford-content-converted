@@ -1,0 +1,117 @@
+%Define some boolean switches:
+\newtoggle{solutions_only}	%Print only the solutions
+\newtoggle{no_solutions}		%Don't print any solutions  (overridden by solutions_only)
+\newtoggle{solutions_at_end}	%Print the solutions at end (overridden by solutions_only and no_solutions)
+\newtoggle{no_credits}		%Don't print the credit arguments
+
+%Use this to write a list of things needed to know for a section. It automatically won't print when "solutions_only" is on.
+%Its only argument should be a list of things needed to know in "\item [....]" form
+\newenvironment{knowledge}[1]{
+\iftoggle{solutions_only}{}{It is assumed that students will be familiar with the following concepts:
+\begin{itemize} #1 \end{itemize}
+\vspace{0.5cm}}
+}
+
+%Allows the headings to be managed when not printing problems ect.
+\newenvironment{Qsection}[1]{
+%\iftoggle{solutions_only}{}{\section{#1}} %Don't output headings in the solutions(?)
+\iftoggle{solutions_at_end}{\AtEndDocument{\section{#1}}}{}
+\section{#1}
+}
+
+\newenvironment{Qsubsection}[1]{
+%\iftoggle{solutions_only}{}{\subsection{#1}} %Don't output headings in the solutions(?)
+\iftoggle{solutions_at_end}{\AtEndDocument{\subsection{#1}}}{}
+\subsection{#1}
+}
+
+%Set the values of the boolean switches: Yes - "toggletrue", No - "togglefalse".
+\togglefalse{solutions_only}	%	ONLY		Output only solutions? 
+\togglefalse{no_solutions}		%	NONE		Don't output solutions at all? 
+\togglefalse{solutions_at_end}	%	END		Output solutions at the end?
+\togglefalse{no_credits}		%			Don't output the credit field
+%All 8 cases have been tested; ONLY takes precedence, then NONE and finally END is lowest.
+
+
+%##############################################################################################################
+%											Then the bulk of the layout options:
+%##############################################################################################################
+
+\setlength{\topmargin}{-2cm}
+%\setlength{\oddsidemargin}{0.5cm}
+%\setlength{\evensidemargin}{0.5cm}
+
+
+%##############################################################################################################
+
+
+\newcounter{exercisenumber}%[chapter] %counter is set to zero when "chapter" appears
+\def\theexercisenumber{\arabic{exercisenumber}}
+
+
+\iftoggle{no_solutions}{}{ %Put a header at the end before the solutions, and reset the counter. Only if solutions are being printed AND at the end.
+	\iftoggle{solutions_only}{}{
+		\iftoggle{solutions_at_end}
+			{\AtEndDocument{\newpage \part*{Solutions:} \setcounter{exercisenumber}{0} \setcounter{section}{0}}}{}
+	}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Creates \begin{problem}[label]{exercise_text}{source_text}{solution_text}\end{problem} command - the label argument is optional
+%If put in, remember to put in [] brackets.  A label called label.ex will be generated.
+\newenvironment{problem}[4][noref]{
+ \refstepcounter{exercisenumber} %\refstepcounter allows you to reference to the exercise number
+%
+\iftoggle{solutions_only}{\hfil\break \textit{Solution}~\theexercisenumber:  #4}{ %If only solutions, just output solution.
+	\noindent{\textit{Exercise}~\theexercisenumber:}
+	\ifthenelse{\equal{#1}{noref}}{}{\label{#1.ex}} #2 %\vspace{0.3cm}
+	\iftoggle{no_credits}{}{
+			%\hfil\break {\small #3} \vspace{0.3cm} %This is the old line, replaced with the one below, without the ifthenelse statement; in case something goes wrong.
+			\ifthenelse{\equal{#3}{}}{}{ {\tiny [#3]} \vspace{0.3cm}} %If the credit field is blank; don't bother printing it or the space for it.
+	} %reference argument
+%
+	\iftoggle{no_solutions}{}{ %If the solutions aren't to be printed, do nothing.
+		\iftoggle{solutions_at_end}
+			{\AtEndDocument{\stepcounter{exercisenumber}\hfil\break \textit{Solution}~\theexercisenumber:  #4 \vspace{0.5cm}}} %If at the end: do this.
+			{\hfil\break \textit{Solution}~\theexercisenumber:  #4} 	%Else leave in line as in TeX file.
+	}
+}
+
+\vspace{0.2cm}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Creates \begin{hint}[label]{exercise_text}{hint_text}{source_text}{solution_text}\end{hint} command - the label argument is optional
+%If put in, remember to put in [] brackets.  A label called label.ex will be generated.
+\newenvironment{hint}[5][noref]{
+ \refstepcounter{exercisenumber}
+%
+\iftoggle{solutions_only}{\hfil\break \textit{Solution}~\theexercisenumber:  #5}{  %If only solutions, just output solution.
+	\noindent{\textit{Exercise}~\theexercisenumber:}
+	\ifthenelse{\equal{#1}{noref}}{}{\label{#1.ex}} #2 \vspace{0.1cm}
+	 \hfil\break  \textit{Hint:}  #3{} %\vspace{0.3cm}
+	\iftoggle{no_credits}{}{
+			\ifthenelse{\equal{#4}{}}{}{\\ \hfil {\tiny #4} \vspace{0.3cm}} %This is the old line, replaced with the one below, without the ifthenelse statement; in case something goes wrong.
+			%\ifthenelse{\equal{#4}{}}{}{{\tiny [#4]} \vspace{0.3cm}} %If the credit field is blank; don't bother printing it or the space for it.
+	} %reference argument
+%
+	\iftoggle{no_solutions}{}{%If the solutions aren't to be printed, do nothing.
+		\iftoggle{solutions_at_end}
+			{\AtEndDocument{\stepcounter{exercisenumber}\hfil\break \textit{Solution}~\theexercisenumber:  #5 \vspace{0.5cm}}} %If at the end: do this.
+			{\hfil\break \textit{Solution}~\theexercisenumber:  #5}%Else leave in line as in teX file.
+	}
+}
+\vspace{0.2cm}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+ %%%%%%%
+\newenvironment{additional}[2][noref]{
+ \refstepcounter{exercisenumber}
+% \vspace{.2cm}
+\nl
+\noindent{\textit{Exercise}~\theexercisenumber:}
+\ifthenelse{\equal{#1}{noref}}{}{\label{#1.ex}} #2 }{%\vspace{5.1cm}
+ }
+%

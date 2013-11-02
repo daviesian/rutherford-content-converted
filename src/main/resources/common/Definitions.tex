@@ -1,0 +1,41 @@
+% This document contains any custom commands, shortcuts and variables needed for the files to compile. It is called by "Problem_Template.tex" and so needs to be in the same directory.
+
+%Defines vectors universally, for ease of editing and consistency.
+\newcommand{\vtr}[1] {\mathit{\underline{\boldsymbol{#1}}}}
+
+%Draws a big red box containing the text as in \ALERT{<TEXT HERE>}. For labelling draft copies with important notes.
+\def\ALERT#1{\begin{center}\colorbox{red}{\hbox{\textcolor{black}{\textbf{#1}}}}\end{center}}
+
+%Roman-style subscript; removes math-mode font.
+\def\s#1{_\textrm{#1} }
+
+%The operators in integrals and derivatives.
+\def\d{\operatorname{d}\!}
+
+%The Euler e should be in Roman font.
+\def\e{\textrm{e}}
+
+%The Rutherford title, to save typing and for consistency:
+\def\Rutherford{Rutherford School Physics} 
+\def\Concepttitle#1{\noindent\textsc{\Rutherford\vspace{0.4cm}\\ \LARGE Physical Concept: \textbf{#1}}}
+\def\Problemtitle#1{\noindent\textsc{\Rutherford\vspace{0.4cm}\\ \LARGE Website Problems: \textbf{#1}}}
+\def\AddProblemtitle#1{\noindent\textsc{\Rutherford\vspace{0.4cm}\\ \LARGE Additional Problems: \textbf{#1}}}
+
+%%%%%%%%%%%   some definitions used in latexing the CQMP:
+% fractions that are of right size in set equations
+\def\half{{\textstyle \frac{1}{2}}}
+\def\quarter{{\textstyle \frac{1}{4}}}
+\def\third{{\textstyle \frac{1}{3}}}
+\def\eighth{{\textstyle \frac{1}{8}}}
+
+% obtain a new line
+\def\nl{\hfil\break}
+\def\nll{\\ \\ \noindent}
+
+
+
+%creates numbered lists with a), then i.
+\renewcommand{\theenumi}{\alph{enumi}}% first level are latin characters
+\renewcommand{\labelenumi}{\theenumi)} %tells it to put a bracket after the character.
+\renewcommand{\theenumii}{\roman{enumii}}%second level are little roman characters
+\renewcommand{\labelenumii}{\theenumii.} %tells it to put a dot after the character 
