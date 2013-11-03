@@ -6,6 +6,7 @@ import re
 import subprocess
 import argparse
 import shutil
+import json
 
 import MakeSoy
 import MakePDF
@@ -32,16 +33,30 @@ def execute(inputDir,outputDir):
     figureDir = os.path.join(outputDir,"static","figures")
     pdfDir = os.path.join(outputDir,"static","pdf")
     soyDir = os.path.join(outputDir,"WEB-INF","templates","rutherford","content");
+    jsonFilename = os.path.join(outputDir,"WEB-INF","resources.json")
+
+    metaData = []
 
     for filename in os.listdir(inputDir):
         if re.match(r'.*\.tex$',filename):
             print filename
             inputFile = os.path.join(inputDir,filename)
-            pdfFile = os.path.join(pdfDir,changeExtension(filename,"pdf"))
+            meta = {}
+            for line in file(inputFile):
+                m = re.match("%% ([A-Z]+): (.*)",line.strip())
+                if m:
+                    meta[m.group(1)] = m.group(2)
+            metaData.append(meta)   
+
+            pdfFile = os.path.join(pdfDir,"%s.%s" % (meta["ID"],"pdf"))
             MakePDF.execute(inputFile,pdfFile)
-            soyFile = os.path.join(soyDir,changeExtension(filename,"soy"))
+            soyFile = os.path.join(soyDir,"%s.%s" % (meta["ID"],"soy"))
             MakeSoy.execute(inputFile,soyFile,figureDir)
 
+    ensureDirectory(jsonFilename)
+    jsonFile = file(jsonFilename,"w")
+    jsonFile.write(json.dumps(metaData)+"\n")
+    jsonFile.flush()
 
 def main(argv):
     import argparse
