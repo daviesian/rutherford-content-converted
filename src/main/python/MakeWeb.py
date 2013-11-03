@@ -34,7 +34,7 @@ def execute(inputDir,outputDir):
     soyDir = os.path.join(outputDir,"WEB-INF","templates","rutherford","content");
 
     for filename in os.listdir(inputDir):
-        if re.match(r'.*\.tex',filename):
+        if re.match(r'.*\.tex$',filename):
             print filename
             inputFile = os.path.join(inputDir,filename)
             pdfFile = os.path.join(pdfDir,changeExtension(filename,"pdf"))
