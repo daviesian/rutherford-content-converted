@@ -63,6 +63,18 @@ def execute(inputDir,outputDir):
     jsonFile.write(json.dumps(metaData)+"\n")
     jsonFile.flush()
 
+    # HACK TIME:
+
+    topicPDFDir = os.path.join(inputDir,"..","..","pdf")
+    print "topics.json"
+    shutil.copy(os.path.join(topicPDFDir,"topics.json"),os.path.join(outputDir,"WEB-INF","classes","topics.json"))
+    for filename in os.listdir(topicPDFDir):
+        if re.match(r'.*\.pdf$',filename):
+            print filename
+            shutil.copy(os.path.join(topicPDFDir,filename),pdfDir)
+    
+
+
 def main(argv):
     import argparse
     parser = argparse.ArgumentParser()
