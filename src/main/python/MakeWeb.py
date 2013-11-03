@@ -49,7 +49,7 @@ def execute(inputDir,outputDir):
                 if m:
                     (key,value) = (m.group(1),m.group(2))
                     if key[-1] == "S":
-                        value = re.split(r'.*,.*',value)
+                        value = re.split(r' *, *',value)
                     meta[key] = value
             metaData.append(meta)   
 
