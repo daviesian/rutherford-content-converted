@@ -43,7 +43,7 @@ def execute(inputDir,outputDir):
         if dirname[-6:] == "common":
             return
         for filename in fnames:
-            if re.match(r'.*\.tex$',filename):
+            if re.match(r'^[^\.].*\.tex$',filename):
                 inputFile = os.path.join(inputDir,dirname,filename)
                 meta = {}
                 for line in file(inputFile):
@@ -72,13 +72,14 @@ def execute(inputDir,outputDir):
 
     # HACK TIME:
 
-    topicPDFDir = os.path.join(inputDir,"..","..","pdf")
+    topicPDFDir = os.path.join(inputDir,"..","..","pdf/")
+    ensureDirectory(pdfDir+"/")
     print "topics.json"
     shutil.copy(os.path.join(topicPDFDir,"topics.json"),os.path.join(outputDir,"WEB-INF","classes","topics.json"))
     for filename in os.listdir(topicPDFDir):
         if re.match(r'.*\.pdf$',filename):
             print filename
-            shutil.copy(os.path.join(topicPDFDir,filename),pdfDir)
+            shutil.copy(os.path.join(topicPDFDir,filename),os.path.join(pdfDir,filename))
     
 
 
