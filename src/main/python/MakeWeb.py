@@ -39,24 +39,31 @@ def execute(inputDir,outputDir):
 
     metaData = {}
 
-    for filename in os.listdir(inputDir):
-        if re.match(r'.*\.tex$',filename):
-            print filename
-            inputFile = os.path.join(inputDir,filename)
-            meta = {}
-            for line in file(inputFile):
-                m = re.match("%% ([A-Z]+): (.*)",line.strip())
-                if m:
-                    (key,value) = (m.group(1),m.group(2))
-                    if key[-1] == "S":
-                        value = re.split(r' *, *',value)
-                    meta[key] = value
-            metaData[meta["ID"]] = meta
+    def convert(arg,dirname,fnames):
+        if dirname[-6:] == "common":
+            return
+        for filename in fnames:
+            if re.match(r'.*\.tex$',filename):
+                inputFile = os.path.join(inputDir,dirname,filename)
+                meta = {}
+                for line in file(inputFile):
+                    m = re.match("%% ([A-Z]+): (.*)",line.strip())
+                    if m:
+                        (key,value) = (m.group(1),m.group(2))
+                        if key[-1] == "S":
+                            value = re.split(r' *, *',value)
+                        meta[key] = value
+                if not meta.has_key("ID"):
+                    print "%s: skipped - no ID defined" % filename
+                else:
+                    print "%s: processing" % filename
+                    metaData[meta["ID"]] = meta
+                    pdfFile = os.path.join(pdfDir,"%s.%s" % (meta["ID"],"pdf"))
+                    MakePDF.execute(inputFile,pdfFile)
+                    soyFile = os.path.join(soyDir,"%s.%s" % (meta["ID"],"soy"))
+                    MakeSoy.execute(inputFile,soyFile,figureDir)
 
-            pdfFile = os.path.join(pdfDir,"%s.%s" % (meta["ID"],"pdf"))
-            MakePDF.execute(inputFile,pdfFile)
-            soyFile = os.path.join(soyDir,"%s.%s" % (meta["ID"],"soy"))
-            MakeSoy.execute(inputFile,soyFile,figureDir)
+    os.path.walk(inputDir,convert,None)
 
     ensureDirectory(jsonFilename)
     jsonFile = file(jsonFilename,"w")
