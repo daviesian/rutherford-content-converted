@@ -1,10 +1,10 @@
 {"physics/mechanics/dynamics": {"TOPIC":"physics/mechanics/dynamics",
-				"LINKTITLE":"Dynamics",
+				"TITLE":"Dynamics",
 				"PDF":{"2":"dynamics_level-2.pdf","3":"dynamics_level-3.pdf"},
 				"ORDER":10
 			       },
  "physics/mechanics/circular": {"TOPIC":"physics/mechanics/circular",
-				"LINKTITLE":"Circular Motion",
+				"TITLE":"Circular Motion",
 				"PDF":{"4":"circular-motion_level-4.pdf"},
 				"ORDER":20
 			       }
