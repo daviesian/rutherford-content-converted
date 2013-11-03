@@ -47,7 +47,10 @@ def execute(inputDir,outputDir):
             for line in file(inputFile):
                 m = re.match("%% ([A-Z]+): (.*)",line.strip())
                 if m:
-                    meta[m.group(1)] = m.group(2)
+                    (key,value) = (m.group(1),m.group(2))
+                    if key[-1] == "S":
+                        value = re.split(r'.*,.*',value)
+                    meta[key] = value
             metaData.append(meta)   
 
             pdfFile = os.path.join(pdfDir,"%s.%s" % (meta["ID"],"pdf"))
