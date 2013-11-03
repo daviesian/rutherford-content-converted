@@ -25,6 +25,8 @@ WEB-INF
 |- templates
    |- rutherford
       |- *.soy
+|- classes
+   |- resources.json
 
 by converting each of the tex source files found in inputDir
 """
@@ -33,7 +35,7 @@ def execute(inputDir,outputDir):
     figureDir = os.path.join(outputDir,"static","figures")
     pdfDir = os.path.join(outputDir,"static","pdf")
     soyDir = os.path.join(outputDir,"WEB-INF","templates","rutherford","content");
-    jsonFilename = os.path.join(outputDir,"WEB-INF","resources.json")
+    jsonFilename = os.path.join(outputDir,"WEB-INF","classes","resources.json")
 
     metaData = []
 
