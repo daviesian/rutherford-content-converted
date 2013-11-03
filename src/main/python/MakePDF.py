@@ -54,6 +54,12 @@ def compileLatex(texFile):
         subprocess.Popen(['ps2pdf',psFile],stdout=subprocess.PIPE,stderr=subprocess.STDOUT).communicate()
 
 def execute(inputFile,outputFile):
+
+    doc = "\n".join(file(inputFile))
+    if not re.search(r'\\begin{document}',doc):
+        print "%s: skipping - LaTeX fragment file" % os.path.split(inputFile)[1]
+    return
+
     (sourceDirectory,sourceFile) = os.path.split(inputFile)
     commonDirectory = os.path.join(sourceDirectory,"common")
     for fig in findFigures(inputFile):
