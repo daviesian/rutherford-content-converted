@@ -1,0 +1,43 @@
+%Physics: N2L, CoE, PE, Work done, KE, SUVAT
+%Maths:
+\begin{problem}[HE+_Lift]% Needs N2L, a little SUVAT and Work.
+{\begin{enumerate}
+\item A lift, of  mass $m$, is travelling downwards at a speed $u$. It is brought to rest by a constant acceleration over a distance $h$. 
+\begin{enumerate} 
+	\item What is the tension, $T$, in the lift cable when the lift is stopping?
+	\item What is the work done by the tension whilst stopping the lift?
+\end{enumerate}
+\item A lift, of mass $m$, is travelling upwards at a speed $u$. It is brought to rest by a constant acceleration over a distance h. 
+\begin{enumerate}
+	\item What is the tension, $T$, in the lift cable when the lift is stopping?
+	\item What is the work done by the tension whilst stopping the lift?
+\end{enumerate}
+\end{enumerate}
+NB: For the website, we are planning to have these two questions alternate at random. When a student clicks on the question he could receive either part a) or part b).
+}
+{\textit{Used with permission from HE+.}}
+{\begin{enumerate}
+\item
+\begin{enumerate}
+	\item This part has two steps; find the acceleration, then find the force. We can use the SUVAT equations to find the acceleration; the equation $v^{2} = u^{2} + 2as$ is the one required here. We have $v = 0$, $u = u$ and $s = h$:
+\begin{align*} a &= \frac{v^{2} - u^{2}}{2s} \\ &= -\frac{u^{2}}{2h} \end{align*}
+And then by considering the total downward force we can find $T$:
+\begin{align*} F &= (mg - T) \\ &= ma = -\frac{mu^{2}}{2h} \end{align*}
+or, rearranging \begin{align*} T &= mg - ma \\ &= mg + \frac{mu^{2}}{2h} \end{align*}
+	\item The work done by the tension is the force multiplied by the distance travelled in the direction the force acts: $W = \vtr{F}\cdot\vtr{d} = -Th$ (as the tension acts in the opposite direction to the distance).
+	\begin{align*} \textrm{Work} &= -Th \\&= -\left(mg + \frac{mu^{2}}{2h}\right)h \\ &= - mgh - \frac{1}{2}mu^{2} \end{align*}
+and it should be clear this equals the total change in energy of the lift.
+\end{enumerate}
+\item 
+\begin{enumerate} 
+\item This part has two steps; find the acceleration, then find the force. We can use the SUVAT equations to find the acceleration; the equation $v^{2} = u^{2} + 2as$ is the one required here. We have $v = 0$, $u = u$ and $s = h$:
+\begin{align*} a &= \frac{v^{2} - u^{2}}{2s} \\ &= -\frac{u^{2}}{2h} \end{align*}
+And then by considering the total upward force we can find $T$:
+\begin{align*} F &= (T - mg) \\ &= ma = -\frac{mu^{2}}{2h} \end{align*}
+or, rearranging \begin{align*} T &= mg + ma \\ &= mg - \frac{mu^{2}}{2h} \end{align*}
+	\item The work done by the tension is the force multiplied by the distance travelled in the direction the force acts: $W = \vtr{F}\cdot\vtr{d} = Th$.
+	\begin{align*} \textrm{Work} &= Th \\&= \left(mg - \frac{mu^{2}}{2h}\right)h \\ &= mgh - \frac{1}{2}mu^{2} \end{align*}
+and it should be clear this equals the total change in energy of the lift. 
+\end{enumerate}
+\end{enumerate}}
+\end{problem}
