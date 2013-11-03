@@ -37,7 +37,7 @@ def execute(inputDir,outputDir):
     soyDir = os.path.join(outputDir,"WEB-INF","templates","rutherford","content");
     jsonFilename = os.path.join(outputDir,"WEB-INF","classes","resources.json")
 
-    metaData = []
+    metaData = {}
 
     for filename in os.listdir(inputDir):
         if re.match(r'.*\.tex$',filename):
@@ -51,7 +51,7 @@ def execute(inputDir,outputDir):
                     if key[-1] == "S":
                         value = re.split(r' *, *',value)
                     meta[key] = value
-            metaData.append(meta)   
+            metaData[meta["ID"]] = meta
 
             pdfFile = os.path.join(pdfDir,"%s.%s" % (meta["ID"],"pdf"))
             MakePDF.execute(inputFile,pdfFile)
