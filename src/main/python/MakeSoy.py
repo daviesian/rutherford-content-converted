@@ -26,7 +26,7 @@ class color(Command):
 
 def findFigures(texFile):
     for line in file(texFile):
-        m = re.search(r'\\includegraphics.*?\{(.*?)\}',line)
+        m = re.search(r'^[^%]*\\includegraphics.*?\{(.*?)\}',line)
         if m:
             yield m.group(1)
 
