@@ -33,6 +33,9 @@ class label(Command):
 class ref(Command):
     args = '{ref}'      
 
+class qq(Command):
+    args = '{question}{answer}'
+
 def findFigures(texFile):
     for line in file(texFile):
         m = re.search(r'^[^%]*\\includegraphics.*?\{(.*?)\}',line)
@@ -119,6 +122,7 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
     tex.ownerDocument.context['problem'] = problem
     tex.ownerDocument.context['label'] = label
     tex.ownerDocument.context['ref'] = ref
+    tex.ownerDocument.context['qq'] = qq
 
     tex=tex.parse()
 
@@ -170,12 +174,20 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
             # questionText and options
             # This will need fixing as currently it will affect any enumerate whether it is an options list or not
             if node.nodeName == "enumerate": 
-                result.append('{call shared.questions.%s}\n{param type: \'checkbox\' /}\n{{param choices: [' % meta['QUESTIONTYPE'])  
+                paramType = "checkbox"
+                questionType = meta['QUESTIONTYPE']
+                if questionType == 'scq':
+                    paramType = 'radio'
+                    questionType = 'mcq'
+                elif questionType == 'mcq':
+                    paramType = 'checkbox'
+
+                result.append('{call shared.questions.%s}\n{param type: \'%s\' /}\n{{param choices: [' % (questionType,paramType))  
             elif node.nodeName == "item":
                 body = node.childNodes[0]
                 answer = ",'ans':true" if isNode(node,"answer") else ""
                 if node.nextSibling is not None:
-                    result.append('[\'desc\': \'%s\'%s],' % (render(body,False),answer))
+                    result.append('[\'desc\': \'%s\'%s],' % (render(body,False).replace('\\','\\\\').replace('{{','{ {').replace('}}','} }'),answer))
                 else:
                     result.append('[\'desc\': \'%s\'%s]]/}}\n{/call}' % (render(body,False),answer))
                 terminal = True
@@ -282,6 +294,8 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
                 result.append('<span class="color-%s">%s' % (color,body))
             else:
                 result.append('</span>')            
+        # elif eq("qq"):
+        #     result.append('<div class="quick-question"><div class="question">%s</div><div class="answer">%s</div></div>' % (text("question"),text("answer"))
         else:
             pass
 
