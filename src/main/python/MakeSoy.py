@@ -250,7 +250,9 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
             if text("ref") in figureMap:
                 result.append(str(figureMap[text("ref")]))
             else:
-                result.append("###ERROR - REFERENCE NOT FOUND###")
+                figureNumber = len(figureMap.keys())
+                figureMap[text("ref")] = figureNumber
+                #result.append("###ERROR - REFERENCE NOT FOUND###")
         elif eq("enumerate") and not isQuestion:
             result.append("<ol>")
         elif eq("itemize") and not isQuestion:
