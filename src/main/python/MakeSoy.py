@@ -115,7 +115,7 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
         def eq(string):
             return node.nodeName == string
 
-        #result.append(node.nodeName)
+#        result.append(node.nodeName)
         bgroupCount = 0
         # question stuff tested with sample file A1988PIQ7l.tex
         if isQuestion:
@@ -127,21 +127,23 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
                             for questionText in n.childNodes:
                                 result.append(render(questionText))
                         elif bgroupCount == 1:
-                            result.append('{call .questionFooter}{param footer}%s{/param}{/call}' % n.textContent)
+                            result.append('{call shared.questions.questionFooter}{param footer}%s{/param}{/call}' % n.textContent)
                             terminal = True      
                         elif bgroupCount == 2:
-                            result.append('{call .questionExplanation}{param explanation}%s{/param}{/call}' % n.textContent)
+                            result.append('{call shared.questions.questionExplanation}{param explanation}%s{/param}{/call}' % n.textContent)
                         bgroupCount+=1
 
             # questionText and options
             # This will need fixing as currently it will affect any enumerate whether it is an options list or not
             if node.nodeName == "enumerate": 
-                result.append('{call %s}\n{param type: \'checkbox\' /}\n{param choices: [' % meta['QUESTIONTYPE'])  
+                result.append('{call shared.questions.%s}\n{param type: \'checkbox\' /}\n{param choices: [' % meta['QUESTIONTYPE'])  
             elif node.nodeName == "item":
-                if node.nextSibling != None:
-                    result.append('[\'desc\': \'%s\'],' % node.textContent.strip(' '))
+                body = node.childNodes[0].childNodes[0]
+                answer = ",'ans':true" if body.nextSibling is not None and body.nextSibling.nodeName == "answer" else ""
+                if node.nextSibling is not None:
+                    result.append('[\'desc\': \'%s\'%s],' % (render(body),answer))
                 else:
-                    result.append('[\'desc\': \'%s\']]/}\n{/call}' % node.textContent.strip(' '))                      
+                    result.append('[\'desc\': \'%s\'%s]]/}\n{/call}' % (render(body),answer))
                 terminal = True
 
         if eq("#text"):
