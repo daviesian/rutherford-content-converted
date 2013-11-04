@@ -1,0 +1,95 @@
+%% ID: newtonii
+%% VIDEO: newtonii
+%% QUESTIONS: a_toboggan
+%% CONCEPTS: newtoni, newtoniii, vectors, calculus
+%% LEVEL: 2
+%% TOPIC: mechanics/dynamics
+%% TYPE: physics
+%% TITLE: Newton's Second Law
+%% ORDER: 20
+
+\input{required.tex}
+
+% to mark as a draft.  Comment both these lines out when complete.  The page number will return to the footer.
+%\pagestyle{myheadings}
+%\markright{\textcolor{red}{\textbf{DRAFT: \today}}}
+
+
+\begin{document}
+\addtolength{\topmargin}{-0.7 cm}
+\setlength{\columnsep}{22pt}
+\Concepttitle{Newton's Second Law of Motion}
+
+\section{As Newton stated it...}
+The change of momentum of a body is proportional to the impulse applied to that body, and happens along the straight line on which the impulse is applied.
+\begin{equation}
+Impulse=\vtr{I} = \Delta{\vtr p} = \Delta(m \vtr{v}) \label{eqn:NII}
+\end{equation}
+
+\section{At school we commonly use this as...}
+\begin{equation}
+{\vtr F}=m{\vtr a}
+\end{equation}
+but we should be careful as this assumes that the mass of the object remains constant.  How do we get to this statement from Newton's original description (expressed in equation \ref{eqn:NII})?  What does this law tell us if we do not make any assumptions about the mass? 
+\subsection*{Levels 1-4}
+The change in momentum depends on both the mass of the object and the velocity of the object and therefore it is possible in the real world that both of these could change due to the application of a resultant force. In the simplest cases however, we assume that the mass remains the same (does not change with time) and that it is only the velocity that is changing. 
+\\
+\\
+Let us begin with Newton's Second Law as he expressed it but convert it instead to a more familiar form, in terms of an applied force rather than an applied impulse, and {\it assuming that the mass of our object is constant}.     
+\begin{eqnarray}
+{\vtr I}&=&\Delta({m {\vtr v}}) =m(\Delta{\vtr v})\ \ \ (\mbox{assuming mass is constant})\nonumber\\
+{\vtr F}\Delta t&=&m(\Delta{\vtr v}) \nonumber \\
+{\vtr F}&=&\frac{m\Delta({\vtr v})}{\Delta t} \label{eqn:NIIF}
+\end{eqnarray}
+And with one further realisation that $\frac{\Delta {\vtr v}}{\Delta t}$  is an acceleration
+\begin{equation}
+{\vtr F}=m {\vtr a}
+\end{equation}
+
+\subsection*{Quick Questions}
+\begin{itemize}
+\item[1.] If a resultant force of $20$ N acts horizontally on a mass of $10$ kg, what will be the resulting acceleration, $a$?  \color{red}[${\vtr a}=2$ ms$^{-2}$]\color{black}
+\item[2.] A block of mass $M$ is being pulled along a frictional surface by a rope with tension, ${\vtr T}$ .  The opposing frictional force due to the surface is ${\vtr F_r}$.  What is the acceleration of the block?  \color{red}
+\begin{equation}
+[{\vtr a}=\frac{{\vtr T}-{\vtr F_r}}{M}]\nonumber
+\end{equation}\color{black}
+\item[3.] As a train enters a station the buffers bring the train gently to rest from a speed of $2$ ms$^{-1}$ over $5$ s.  What force, ${\vtr F}$, must these buffers apply to a train of mass $5000$ kg, and how does the direction of the force compare with the direction of the initial speed of the train? \color{red}[${\vtr F}=2000$ N, in the opposite direction to the initial speed of the train.]\color{black}
+\end{itemize}
+
+\subsection{Level 5+}
+When considering Newton's Second Law for a system in which a force is being applied to an object of changing mass, we need to consider not only the change in velocity over time but also the change in mass with time.  Let us consider, for example, a rocket in outer space that is burning fuel at a constant rate to produce a constant force of propulsion.  Here, mass is being continually lost and the velocity of the rocket is continuously changing due to the resulting constant force - so we have both changing mass and changing velocity.\\
+\\
+These changes are {\it continuous} and therefore we can no longer represent Newton's Second Law in terms of large changes in time, $\Delta t$, but instead have to consider how the mass and velocity change in infinitesimal amounts of time.  So
+\begin{equation}
+{\vtr F}= \frac{\delta{\vtr p}}{\delta t}= \frac{\delta(m {\vtr v})}{\delta t}.
+\end{equation}
+Now taking the limit as $\delta t \rightarrow 0$, Newton's Second Law can be expressed in its derivative form
+\begin{equation}
+{\vtr F}=\frac{\d{\vtr p}}{dt}=\frac{\d(m{\vtr v})}{\d t} \label{NII2}
+\end{equation}
+Equation \ref{NII2} states that the resultant applied force causes an instantaneous rate of change of momentum, given by the derivative of the momentum with respect to time.  Momentum is the product of mass and velocity and therefore we must differentiate each of the terms, with respect to time, using the product rule. 
+ \begin{equation}
+{\vtr F}=\frac{\d(m{\vtr v})}{\d t}={\vtr v}\frac{\d m}{\d t}+m\frac{\d{\vtr v}}{\d t}
+\end{equation}
+%\begin{wrapfigure}{r}{7cm}
+%\center
+%\includegraphics[width=0.35\textwidth]{NII-A.eps}
+%\caption{The free-body force diagram for a chain falling under gravity on to the top of a table. ${\vtr W_{hang}}$ is the weight of the hanging chain, ${\vtr W}$ is the weight of the chain that rests on the table, ${\vtr N}$ is the normal reaction force and ${\vtr F_{dm}}$ is the force exerted by the table to bring the small, falling element of chain,$dm$, to rest. }\label{fig:chain} \vspace{2cm}
+%\end{wrapfigure}
+%{\vtr For example:} Imagine a chain falling onto the surface of a table at some time, $t$, such that some chain already lies on the table.\\
+%\\
+%In figure \ref{fig:chain} we show the free-body force diagram for the chain and those forces on the table due to both the weight of the chain and the force due to a falling element of the chain of mass, $dm$.  The chain already on the table is at rest and therefore we know from Newton's First Law that, 
+%\begin{equation}
+%{\vtr  N}=W=m\frac{\d {\vtr v}}{\d t}=m{\vtr a}=m{\vtr g}
+%\end{equation}
+%In addition to this weight, the table must continually bring each small element of the chain to rest from a velocity $v$, immediately before it hits the table.  Thus the force on the table due to the rate of change of momentum of each small mass element is,
+%\begin{equation}
+%{\vtr F_{dm}}={\vtr v}\frac{\d m}{\d t}
+%\end{equation}
+%Here it is the mass that is changing with time as the velocity of each element is always, ${\vtr v}$, immediately before it hits the table.\\
+%\\ 
+%So, the total force on the table due to the chain is
+%\begin{equation}
+%{\vtr F_{total}}={\vtr F_w}+{\vtr F_{dm}}={\vtr v}\frac{\d m}{\d t}+m{\vtr g} 
+%\end{equation}
+\end{document}
