@@ -33,8 +33,8 @@ class label(Command):
 class ref(Command):
     args = '{ref}'      
 
-class qq(Command):
-    args = '{question}{answer}'
+# class qq(Command):
+#     args = '{question}{answer}'
 
 def findFigures(texFile):
     for line in file(texFile):
@@ -122,7 +122,7 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
     tex.ownerDocument.context['problem'] = problem
     tex.ownerDocument.context['label'] = label
     tex.ownerDocument.context['ref'] = ref
-    tex.ownerDocument.context['qq'] = qq
+    # tex.ownerDocument.context['qq'] = qq
 
     tex=tex.parse()
 
