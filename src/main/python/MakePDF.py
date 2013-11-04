@@ -38,7 +38,7 @@ def compileLatex(texFile):
     psFile = changeExtension(sourceFile,"ps")
     pdfFile = changeExtension(sourceFile,"pdf")
     if isNewer(texFile,dviFile):
-        commonDirectory = os.path.join(sourceDirectory,"common")
+        commonDirectory = os.path.join(sourceDirectory,"..","common")
         latexEnv = os.environ.copy()
         latexEnv['TEXINPUTS'] = "%s:%s:.:" % (sourceDirectory,commonDirectory)
         log = None
@@ -58,7 +58,7 @@ def execute(inputFile,outputFile):
     doc = "\n".join(file(inputFile))
     if not re.search(r'\\begin{document}',doc):
         print "%s: skipping - LaTeX fragment file" % os.path.split(inputFile)[1]
-    return
+        return
 
     (sourceDirectory,sourceFile) = os.path.split(inputFile)
     commonDirectory = os.path.join(sourceDirectory,"common")
