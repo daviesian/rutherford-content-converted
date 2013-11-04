@@ -38,7 +38,10 @@ def compileLatex(texFile):
     psFile = changeExtension(sourceFile,"ps")
     pdfFile = changeExtension(sourceFile,"pdf")
     if isNewer(texFile,dviFile):
-        commonDirectory = os.path.join(sourceDirectory,"..","common")
+        stem = sourceDirectory
+        while not os.path.exists(os.path.join(stem,"common")):
+            stem = os.path.split(stem)[0]
+        commonDirectory = os.path.join(stem,"common")
         latexEnv = os.environ.copy()
         latexEnv['TEXINPUTS'] = "%s:%s:.:" % (sourceDirectory,commonDirectory)
         log = None
