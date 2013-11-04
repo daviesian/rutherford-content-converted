@@ -25,7 +25,13 @@ class color(Command):
     args = '{color} [text]'
 
 class problem(Command):
-    args = '{problem} [id]'      
+    args = '{problem} [id]'
+
+class label(Command):
+    args = '{label}'      
+
+class ref(Command):
+    args = '{ref}'      
 
 def findFigures(texFile):
     for line in file(texFile):
@@ -51,13 +57,29 @@ def attemptFigureConversion(sourceDirectory, filename,extension,conversionFn):
     return False
 
 
-def searchNode(node,name):
+def isNode(node,name):
     if node.nodeName == name:
         return True
     for child in node.childNodes:
-        if searchNode(child,name):
+        if isNode(child,name):
             return True
     return False
+
+def findNode(node,name):
+    if node.nodeName == name:
+        return node
+
+    if node.nextSibling != None:
+        searchResult = findNode(node.nextSibling, name)
+        if searchResult != None:
+            return searchResult
+
+    for child in node.childNodes:
+        searchResult = findNode(child, name)
+        if searchResult != None:
+            return searchResult
+
+    return None
 
 def convertToSoy(inputFile,outputFile,outputFigDir):
     (sourceDirectory,sourceFile) = os.path.split(inputFile)
@@ -95,7 +117,9 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
     tex.ownerDocument.context['caption'] = caption
     tex.ownerDocument.context['color'] = color
     tex.ownerDocument.context['problem'] = problem
-    
+    tex.ownerDocument.context['label'] = label
+    tex.ownerDocument.context['ref'] = ref
+
     tex=tex.parse()
 
     isQuestion = False
@@ -103,7 +127,8 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
         # Use question logic if different
         isQuestion = True
         # expecting a problem with 4 bgroups
-        
+    
+    figureMap = dict()
 
     def render(node,escapeBraces):
         result = []
@@ -124,7 +149,7 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
         def eq(string):
             return node.nodeName == string
 
-#        result.append(node.nodeName)
+        #result.append(node.nodeName)
         bgroupCount = 0
         # question stuff tested with sample file A1988PIQ7l.tex
         if isQuestion:
@@ -148,7 +173,7 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
                 result.append('{call shared.questions.%s}\n{param type: \'checkbox\' /}\n{{param choices: [' % meta['QUESTIONTYPE'])  
             elif node.nodeName == "item":
                 body = node.childNodes[0]
-                answer = ",'ans':true" if searchNode(node,"answer") else ""
+                answer = ",'ans':true" if isNode(node,"answer") else ""
                 if node.nextSibling is not None:
                     result.append('[\'desc\': \'%s\'%s],' % (render(body,False),answer))
                 else:
@@ -167,20 +192,53 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
             result.append(escape(node.source))
             terminal = True
         elif eq("equation"):
-            result.append("$$")
-            result.append(escape(node.childrenSource))
-            result.append("$$")
+            figureNode = findNode(node, "label")
+            if figureNode is not None:
+                figureLabel = figureNode.getAttribute("label").textContent
+                figureNumber = ''
+                if figureLabel in figureMap.keys():
+                    figureNumber = figureMap[figureLabel]
+                else:
+                    figureNumber = len(figureMap.keys()) + 1
+                    figureMap[figureLabel] = figureNumber
+
+                equationOutput = '<div id="%s">$$ %s $$</div>' % (figureLabel,escape(node.childrenSource))
+            else:
+                equationOutput = '<div>$$ %s $$</div>' % escape(node.childrenSource)
+
+            result.append(equationOutput)
+
             terminal = True
         elif eq("par") and not isQuestion:
             result.append("<p>")
         elif eq("wrapfigure"):
-            result.append('<div class="figure">')
+            result.append('<figure>')
         elif eq("includegraphics"):
             filename = os.path.join("static","figures",os.path.split(changeExtension(node.getAttribute("file"),"png"))[1])        
             result.append('<img src="{$ij.proxyPath}/%s"/>' % filename)
         elif eq("caption"):
-            result.append('<div class="caption">%s</div>' % text("self"))
+            figureNode = findNode(node, "label")
+            if figureNode is not None:
+                figureLabel = figureNode.getAttribute("label").textContent
+                figureNumber = ''
+                if figureLabel in figureMap.keys():
+                    figureNumber = figureMap[figureLabel]
+                else:
+                    figureNumber = len(figureMap.keys()) + 1
+                    figureMap[figureLabel] = figureNumber
+                result.append('<figcaption id="#%s">Figure %s: %s</figcaption>' % (figureLabel,figureNumber,text("self")))
+            else:
+                result.append('<figcaption>%s</figcaption>' % text("self"))                
             terminal = True
+        elif eq("label"):
+            if text("label") not in figureMap.keys():
+                figureNumber = len(figureMap.keys())
+                figureMap[text("label")] = figureNumber
+        elif eq("ref"):
+            if text("ref") in figureMap:
+                result.append(str(figureMap[text("ref")]))
+            else:
+                result.append("###ERROR - REFERENCE NOT FOUND###")
         elif eq("enumerate") and not isQuestion:
             result.append("<ol>")
         elif eq("itemize") and not isQuestion:
@@ -234,7 +292,7 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
         if eq("par") and not isQuestion:
             result.append("</p>")
         elif eq("wrapfigure"):
-            result.append("</div>")
+            result.append("</figure>")
         elif eq("enumerate") and not isQuestion:
             result.append("</ol>")
         elif eq("eqnarray") or eq("equation*") and not isQuestion:
