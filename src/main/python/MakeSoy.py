@@ -33,8 +33,8 @@ class label(Command):
 class ref(Command):
     args = '{ref}'      
 
-class qq(Command):
-    args = '{question}{answer}'
+#class qq(Command):
+#    args = '{question}{answer}'
 
 def findFigures(texFile):
     for line in file(texFile):
@@ -122,7 +122,7 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
     tex.ownerDocument.context['problem'] = problem
     tex.ownerDocument.context['label'] = label
     tex.ownerDocument.context['ref'] = ref
-    tex.ownerDocument.context['qq'] = qq
+#    tex.ownerDocument.context['qq'] = qq
 
     tex=tex.parse()
 
@@ -296,8 +296,8 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
                 result.append('<span class="color-%s">%s' % (color,body))
             else:
                 result.append('</span>')            
-        elif eq("qq"):
-            result.append('<div class="quick-question"><div class="question">%s</div><div class="answer hidden">%s</div></div>' % (text("question"),findNode(node.parentNode,"bgroup").textContent))
+        #elif eq("qq"):
+            #result.append('<div class="quick-question"><div class="question">%s</div><div class="answer hidden">%s</div></div>' % (text("question"),findNode(node.parentNode,"bgroup").textContent))
             #print findNode(node.parentNode,"bgroup")
         else:
             pass
