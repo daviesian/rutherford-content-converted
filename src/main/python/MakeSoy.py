@@ -59,7 +59,6 @@ def attemptFigureConversion(sourceDirectory, filename,extension,conversionFn):
         return True
     return False
 
-
 def isNode(node,name):
     if node.nodeName == name:
         return True
@@ -189,7 +188,7 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
                 if node.nextSibling is not None:
                     result.append('[\'desc\': \'%s\'%s],' % (render(body,False).replace('\\','\\\\').replace('{{','{ {').replace('}}','} }'),answer))
                 else:
-                    result.append('[\'desc\': \'%s\'%s]]/}}\n{/call}' % (render(body,False),answer))
+                    result.append('[\'desc\': \'%s\'%s]]/}}\n{/call}' % (render(body,False).replace('\\','\\\\').replace('{{','{ {').replace('}}','} }'),answer))
                 terminal = True
             elif meta['QUESTIONTYPE'] == 'numeric':
                 pass
