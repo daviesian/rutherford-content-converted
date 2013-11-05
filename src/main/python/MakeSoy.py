@@ -173,7 +173,7 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
 
             # questionText and options
             # This will need fixing as currently it will affect any enumerate whether it is an options list or not
-            if node.nodeName == "enumerate": 
+            if node.nodeName == "enumerate" and (meta['QUESTIONTYPE'] == 'scq' or meta['QUESTIONTYPE'] == 'mcq'): 
                 paramType = "checkbox"
                 questionType = meta['QUESTIONTYPE']
                 if questionType == 'scq':
@@ -183,7 +183,7 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
                     paramType = 'checkbox'
 
                 result.append('{call shared.questions.%s}\n{param type: \'%s\' /}\n{{param choices: [' % (questionType,paramType))  
-            elif node.nodeName == "item":
+            elif node.nodeName == "item" and (meta['QUESTIONTYPE'] == 'scq' or meta['QUESTIONTYPE'] == 'mcq'):
                 body = node.childNodes[0]
                 answer = ",'ans':true" if isNode(node,"answer") else ""
                 if node.nextSibling is not None:
@@ -191,7 +191,8 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
                 else:
                     result.append('[\'desc\': \'%s\'%s]]/}}\n{/call}' % (render(body,False),answer))
                 terminal = True
-
+            elif meta['QUESTIONTYPE'] == 'numeric':
+                pass
         if eq("#text"):
             result.append(node.textContent)
         elif eq("section"):
