@@ -317,7 +317,7 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
             result.append("</figure>")
         elif eq("enumerate") and not isQuestion:
             result.append("</ol>")
-        elif eq("eqnarray") or eq("equation*") and not isQuestion:
+        elif eq("eqnarray") or eq("equation*"):
             result.append("</table>")
         elif eq("ArrayRow"):
             result.append("</tr>")
