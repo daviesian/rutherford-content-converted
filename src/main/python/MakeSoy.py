@@ -6,6 +6,7 @@ import re
 import subprocess
 import argparse
 import shutil
+import logging
 
 import string
 from plasTeX.Renderers import Renderer
@@ -36,6 +37,24 @@ class ref(Command):
 class qq(Command):
     args = '{question}{answer}'
 
+# def setupLogging():
+#     logger = logging.getLogger('MakeSoyLogger')
+#     logger.setLevel(logging.DEBUG)
+#     # create file handler which logs even debug messages
+#     fh = logging.FileHandler('MakeSoyLogger.log')
+#     fh.setLevel(logging.DEBUG)
+#     # create console handler with a higher log level
+#     ch = logging.StreamHandler()
+#     ch.setLevel(logging.DEBUG)
+#     # create formatter and add it to the handlers
+#     formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+#     ch.setFormatter(formatter)
+#     fh.setFormatter(formatter)
+#     # add the handlers to logger
+#     logger.addHandler(ch)
+#     logger.addHandler(fh)
+
+
 def findFigures(texFile):
     for line in file(texFile):
         m = re.search(r'^[^%]*\\includegraphics.*?\{(.*?)\}',line)
@@ -54,9 +73,13 @@ def attemptFigureConversion(sourceDirectory, filename,extension,conversionFn):
     sourceFile = os.path.join(sourceDirectory,changeExtension(filename,extension))
     if os.path.exists(sourceFile):
         if isNewer(sourceFile,filename):
+            logging.debug('New figure source file detected. Converting %s' % filename)
             ensureDirectory(filename)
             conversionFn(sourceFile,filename)
+        else:
+            logging.debug('Skipping image file (%s) as it has not changed since last time it was generated.' % filename)
         return True
+    logging.warning('Figure does not exist. Unable to locate %s' % sourceFile)
     return False
 
 def isNode(node,name):
@@ -80,7 +103,6 @@ def findNode(node,name):
         searchResult = findNode(child, name)
         if searchResult != None:
             return searchResult
-
     return None
 
 def convertToSoy(inputFile,outputFile,outputFigDir):
@@ -191,7 +213,8 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
                     result.append('[\'desc\': \'%s\'%s]]/}}\n{/call}' % (render(body,False).replace('\\','\\\\').replace('{{','{ {').replace('}}','} }'),answer))
                 terminal = True
             elif meta['QUESTIONTYPE'] == 'numeric':
-                pass
+                logging.debug('Found numeric question type which has not yet been implemented. Skipping processing of question: %s.' % meta['ID'])
+                
         if eq("#text"):
             result.append(node.textContent)
         elif eq("section"):
@@ -252,7 +275,6 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
             else:
                 figureNumber = len(figureMap.keys())
                 figureMap[text("ref")] = figureNumber
-                #result.append("###ERROR - REFERENCE NOT FOUND###")
         elif eq("enumerate") and not isQuestion:
             result.append("<ol>")
         elif eq("itemize") and not isQuestion:
@@ -303,7 +325,8 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
 
             if answerNode != None:
                result.append('<div class="quick-question"><div class="question">%s</div><div class="answer hidden">%s</div></div>' % (text("question"),answerNode.textContent))
-            #print findNode(node.parentNode,"bgroup")
+            else:
+                logging.warning('Unable to locate answer node for quick question with text: %s' % text("question"))
         else:
             pass
 
@@ -355,6 +378,8 @@ def execute(inputFile,outputFile,outputFigDir):
     convertToSoy(inputFile,outputFile,outputFigDir)
 
 def main(argv):
+    logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.DEBUG)
+
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument("inputFile")
