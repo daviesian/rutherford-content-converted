@@ -16,14 +16,16 @@
 \def\e{\textrm{e}}
 
 %The Rutherford title, to save typing and for consistency:
-\def\Rutherford{Rutherford School Physics} 
+\def\Rutherford{Rutherford School Physics}
 \def\Concepttitle#1{\noindent\textsc{\Rutherford\vspace{0.4cm}\\ \LARGE Physical Concept: \textbf{#1}}}
 \def\Problemtitle#1{\noindent\textsc{\Rutherford\vspace{0.4cm}\\ \LARGE Website Problems: \textbf{#1}}}
-\def\AddProblemtitle#1{\noindent\textsc{\Rutherford\vspace{0.4cm}\\ \LARGE Additional Problems: \textbf{#1}}}
+\def\AddProblemtitle#1{\noindent\textsc{\Large \Rutherford ~ --- ~ Additional Problems\vspace{0.4cm}\\ \LARGE \textbf{#1}}}
+%\def\AddProblemtitle#1{\noindent\textsc{\Rutherford\vspace{0.4cm}\\ \LARGE Additional Problems: \textbf{#1}}}
 
 %define quick question to be used in eg concept sheet.
 %\def\qq#2{#1}{\color{red}[#2]\color{black}}
-\newcommand{\qq}[2]{#1\color{red} \hspace{2 mm} Answer:  #2\color{black}}
+\newcommand{\qq}[2]{\nl Quick Question:\hspace{1 mm} #1\color{red}\hspace{2 mm} Answer:\color{black}\hspace{1 mm}  #2}
+\newcommand{\stress}[1]{\emph{#1}}
 
 %%%%%%%%%%%   some definitions used in latexing the CQMP:
 % fractions that are of right size in set equations
@@ -42,4 +44,4 @@
 \renewcommand{\theenumi}{\alph{enumi}}% first level are latin characters
 \renewcommand{\labelenumi}{\theenumi)} %tells it to put a bracket after the character.
 \renewcommand{\theenumii}{\roman{enumii}}%second level are little roman characters
-\renewcommand{\labelenumii}{\theenumii.} %tells it to put a dot after the character 
+\renewcommand{\labelenumii}{\theenumii.} %tells it to put a dot after the character
