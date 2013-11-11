@@ -7,6 +7,7 @@ import subprocess
 import argparse
 import shutil
 import json
+import logging
 
 import MakeSoy
 import MakePDF
@@ -54,9 +55,9 @@ def execute(inputDir,outputDir):
                             value = re.split(r' *, *',value)
                         meta[key] = value
                 if not meta.has_key("ID"):
-                    print "%s: skipped - no ID defined" % filename
+                    logging.warning("%s: skipped - no ID defined" % filename)
                 else:
-                    print "%s: processing" % filename
+                    logging.info("%s: processing" % filename)
                     metaData[meta["ID"]] = meta
                     pdfFile = os.path.join(pdfDir,"%s.%s" % (meta["ID"],"pdf"))
                     MakePDF.execute(inputFile,pdfFile)
@@ -74,16 +75,17 @@ def execute(inputDir,outputDir):
 
     topicPDFDir = os.path.join(inputDir,"..","..","pdf/")
     ensureDirectory(pdfDir+"/")
-    print "topics.json"
+    logging.info("topics.json")
     shutil.copy(os.path.join(topicPDFDir,"topics.json"),os.path.join(outputDir,"WEB-INF","classes","topics.json"))
     for filename in os.listdir(topicPDFDir):
         if re.match(r'.*\.pdf$',filename):
-            print filename
+            logging.info(filename)
             shutil.copy(os.path.join(topicPDFDir,filename),os.path.join(pdfDir,filename))
     
 
 
 def main(argv):
+    logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.INFO)
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument("inputDir")

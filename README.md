@@ -1,6 +1,18 @@
 rutherford-content
 ==================
 
+Required Dependencies
+---------------------
+For Ubuntu:
+* Inkscape - for figure conversion
+* texlive-full - for TeX parsing
+* Palatino - proprietary font used in the pdfs
+* Python 2.7
+
+
+Instructions for use
+--------------------
+
 Python programs for doing conversions are in src/main/python
 
 To convert tex to PDF use MakePDF.py
