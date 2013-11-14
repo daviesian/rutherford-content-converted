@@ -35,7 +35,7 @@ class ref(Command):
     args = '{ref}'      
 
 class qq(Command):
-    args = '{question}{answer}'
+    args = '{question}{answer}' 
 
 def findFigures(texFile):
     for line in file(texFile):
@@ -270,7 +270,7 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
             if attr:
                 attr = attr.textContent
                 if text[0:3] == "<p>":
-                    text = "<p>%s %s" % (attr,text[3:])
+                    text = "<p class=\"item-number\">%s %s" % (attr,text[3:])
                 else:
                     text = attr +" " + text
             result.append("<li>%s</li>" % text)
@@ -306,7 +306,7 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
                answerNode = node.getAttribute("answer")
 
             if answerNode != None:
-               result.append('<div class="quick-question"><div class="question">%s</div><div class="answer hidden">%s</div></div>' % (text("question"),render(answerNode,escapeBraces)))
+               result.append('<div class="quick-question"><div class="question"><p>%s</p></div><div class="answer hidden"><p>%s</p></div></div>' % (text("question"),render(answerNode,escapeBraces)))
             else:
                logging.warning('Unable to locate answer node for quick question with text: %s' % text("question"))
         else:
