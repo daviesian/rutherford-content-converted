@@ -41,7 +41,9 @@
 
 %define quick question to be used in eg concept sheet.
 %\def\qq#2{#1}{\color{red}[#2]\color{black}}
-\newcommand{\qq}[2]{#1 \nl \color{red}\hspace{2 mm} Answer:\color{black}\hspace{1 mm}  #2\nl}
+\newcounter{qqnum}
+\def\qqnumber{\arabic{qqnum}}
+\newcommand{\qq}[2]{\noindent \stepcounter{qqnum}\qqnumber.~#1 \nll \stress{Answer:}\hspace{1 mm}  #2\nl}
 \newcommand{\stress}[1]{\emph{#1}}
 
 %define example environment to be used in eg concept sheet where examples are given rather than quick questions for the student to answer
