@@ -37,24 +37,6 @@ class ref(Command):
 class qq(Command):
     args = '{question}{answer}'
 
-# def setupLogging():
-#     logger = logging.getLogger('MakeSoyLogger')
-#     logger.setLevel(logging.DEBUG)
-#     # create file handler which logs even debug messages
-#     fh = logging.FileHandler('MakeSoyLogger.log')
-#     fh.setLevel(logging.DEBUG)
-#     # create console handler with a higher log level
-#     ch = logging.StreamHandler()
-#     ch.setLevel(logging.DEBUG)
-#     # create formatter and add it to the handlers
-#     formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-#     ch.setFormatter(formatter)
-#     fh.setFormatter(formatter)
-#     # add the handlers to logger
-#     logger.addHandler(ch)
-#     logger.addHandler(fh)
-
-
 def findFigures(texFile):
     for line in file(texFile):
         m = re.search(r'^[^%]*\\includegraphics.*?\{(.*?)\}',line)
@@ -324,9 +306,9 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
                answerNode = node.getAttribute("answer")
 
             if answerNode != None:
-               result.append('<div class="quick-question"><div class="question">%s</div><div class="answer hidden">%s</div></div>' % (text("question"),answerNode.textContent))
+               result.append('<div class="quick-question"><div class="question">%s</div><div class="answer hidden">%s</div></div>' % (text("question"),render(answerNode,escapeBraces)))
             else:
-                logging.warning('Unable to locate answer node for quick question with text: %s' % text("question"))
+               logging.warning('Unable to locate answer node for quick question with text: %s' % text("question"))
         else:
             pass
 
