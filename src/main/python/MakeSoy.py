@@ -37,6 +37,10 @@ class ref(Command):
 class qq(Command):
     args = '{question}{answer}' 
 
+#used for numeric questions
+class answer(Command):
+    args = '{units}{value}'     
+
 def findFigures(texFile):
     for line in file(texFile):
         m = re.search(r'^[^%]*\\includegraphics.*?\{(.*?)\}',line)
@@ -126,6 +130,7 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
     tex.ownerDocument.context['label'] = label
     tex.ownerDocument.context['ref'] = ref
     tex.ownerDocument.context['qq'] = qq
+    tex.ownerDocument.context['answer'] = answer
 
     tex=tex.parse()
 
@@ -158,7 +163,7 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
 
         #result.append(node.nodeName)
         bgroupCount = 0
-        # question stuff tested with sample file A1988PIQ7l.tex
+        # question stuff 
         if isQuestion:
             if eq("#document"):                
                 for n in node.childNodes:
@@ -166,7 +171,7 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
                     if(n.nodeName == "bgroup"):
                         if bgroupCount == 0:
                             for questionText in n.childNodes:
-                                result.append(render(questionText,escapeBraces))
+                                result.append("<p>" + render(questionText,escapeBraces) + '</p>')
                         elif bgroupCount == 1:
                             result.append('{call shared.questions.questionFooter}{param footer}%s{/param}{/call}' % n.textContent)
                             terminal = True      
@@ -176,27 +181,41 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
 
             # questionText and options
             # This will need fixing as currently it will affect any enumerate whether it is an options list or not
-            if node.nodeName == "enumerate" and (meta['QUESTIONTYPE'] == 'scq' or meta['QUESTIONTYPE'] == 'mcq'): 
-                paramType = "checkbox"
-                questionType = meta['QUESTIONTYPE']
-                if questionType == 'scq':
-                    paramType = 'radio'
-                    questionType = 'mcq'
-                elif questionType == 'mcq':
-                    paramType = 'checkbox'
+            if meta['QUESTIONTYPE'] == 'scq' or meta['QUESTIONTYPE'] == 'mcq':
+                if node.nodeName == "enumerate":
+                    paramType = "checkbox"
+                    questionType = meta['QUESTIONTYPE']
+                    if questionType == 'scq':
+                        paramType = 'radio'
+                        questionType = 'mcq'
+                    elif questionType == 'mcq':
+                        paramType = 'checkbox'
 
-                result.append('{call shared.questions.%s}\n{param type: \'%s\' /}\n{{param choices: [' % (questionType,paramType))  
-            elif node.nodeName == "item" and (meta['QUESTIONTYPE'] == 'scq' or meta['QUESTIONTYPE'] == 'mcq'):
-                body = node.childNodes[0]
-                answer = ",'ans':true" if isNode(node,"answer") else ""
-                if node.nextSibling is not None:
-                    result.append('[\'desc\': \'%s\'%s],' % (render(body,False).replace('\\','\\\\').replace('{{','{ {').replace('}}','} }'),answer))
-                else:
-                    result.append('[\'desc\': \'%s\'%s]]/}}\n{/call}' % (render(body,False).replace('\\','\\\\').replace('{{','{ {').replace('}}','} }'),answer))
-                terminal = True
-            elif meta['QUESTIONTYPE'] == 'numeric':
-                logging.debug('Found numeric question type which has not yet been implemented. Skipping processing of question: %s.' % meta['ID'])
-                
+                    result.append('{call shared.questions.%s}\n{param type: \'%s\' /}\n{{param choices: [' % (questionType,paramType))  
+                elif node.nodeName == "item" and (meta['QUESTIONTYPE'] == 'scq' or meta['QUESTIONTYPE'] == 'mcq'):
+                    body = node.childNodes[0]
+                    answer = ",'ans':true" if isNode(node,"answer") else ""
+                    if node.nextSibling is not None:
+                        result.append('[\'desc\': \'%s\'%s],' % (render(body,False).replace('\\','\\\\').replace('{{','{ {').replace('}}','} }'),answer))
+                    else:
+                        result.append('[\'desc\': \'%s\'%s]]/}}\n{/call}' % (render(body,False).replace('\\','\\\\').replace('{{','{ {').replace('}}','} }'),answer))
+                    terminal = True
+            # Hack to get numeric and symbolic questions displaying properly and omitting the answer for now
+            # TODO allow numeric questions to accept answers
+            elif meta['QUESTIONTYPE'] == 'numeric' or meta['QUESTIONTYPE'] == 'symbolic': 
+                if node.nodeName == 'answer':
+                    logging.debug("Found %s Question %s - Omitting answer: %s %s" % (meta['QUESTIONTYPE'],meta['ID'],text('value'),text('units')))
+                    terminal = True
+                elif eq("enumerate"):
+                    result.append('<ol>')
+                    for enumerate_items in node.childNodes:
+                        result.append(render(enumerate_items, escapeBraces))
+                        terminal = True
+                    result.append('</ol>')
+                elif eq("item"):
+                    result.append('<li>%s</li>' % render(node.childNodes[0],escapeBraces))
+                    terminal = True
+
         if eq("#text"):
             result.append(node.textContent)
         elif eq("section"):
