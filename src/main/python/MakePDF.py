@@ -15,23 +15,6 @@ def findFigures(texFile):
         if m:
             yield m.group(1)
 
-def svgToEps(sourceFile,destinationFile):
-    p = subprocess.Popen(['inkscape','-D','-z','-P',destinationFile,sourceFile],stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
-    p.communicate()
-
-def jpgToEps(sourceFile,destinationFile):
-    p = subprocess.Popen(['convert',sourceFile,destinationFile],stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
-    p.communicate()
-
-def attemptFigureConversion(sourceDirectory, filename,extension,conversionFn):
-    sourceFile = os.path.join(sourceDirectory,changeExtension(filename,extension))
-    if os.path.exists(sourceFile):
-        if isNewer(sourceFile,filename):
-            ensureDirectory(filename)
-            conversionFn(sourceFile,filename)
-        return True
-    return False
-
 def compileLatex(texFile):
     (sourceDirectory,sourceFile) = os.path.split(texFile)
 
@@ -67,7 +50,7 @@ def execute(inputFile,outputFile):
     (sourceDirectory,sourceFile) = os.path.split(inputFile)
     commonDirectory = os.path.join(sourceDirectory,"common")
     for fig in findFigures(inputFile):
-        attemptFigureConversion(sourceDirectory,fig,"svg",svgToEps) or attemptFigureConversion(sourceDirectory,fig,"jpg",jpgToEps) 
+        attemptFigureConversion(sourceDirectory,fig,"svg",svgToEps) or attemptFigureConversion(sourceDirectory,fig,"jpg",jpgToEps)
     compileLatex(inputFile)
 
     pdfFile = changeExtension(sourceFile,"pdf")
