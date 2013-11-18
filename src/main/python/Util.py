@@ -13,21 +13,18 @@ def isNewer(f1,f2):
     return f1m >= f2m
 
 # This function assumes that the current os working directory has been set as all figures will be dumped here.
-def attemptFigureConversion(sourceDirectory,filename,extension,conversionFn):
+def attemptFigureConversion(sourceDirectory, filename,extension,conversionFn):
     sourceFile = os.path.join(sourceDirectory,changeExtension(filename,extension))
-    destinationFullPath = os.path.join(os.getcwd(),os.path.basename(filename))
-
     if os.path.exists(sourceFile):
         if isNewer(sourceFile,filename):
-            logging.debug('New figure source file detected. Converting %s to %s' % (filename, destinationFullPath) )
-            # Assumes that the working directory has been set to the current working directory os value.
-            ensureDirectory(destinationFullPath)
-            conversionFn(sourceFile,destinationFullPath)
+            logging.debug('New figure source file detected. Converting %s' % filename)
+            ensureDirectory(filename)
+            conversionFn(sourceFile,filename)
         else:
-            logging.info('Skipping image file (%s) as it has not changed since last time it was generated.' % filename)
+            logging.debug('Skipping image file (%s) as it has not changed since last time it was generated.' % filename)
         return True
-    logging.warning('Figure does not exist. Unable to locate %s. Skipping file.' % sourceFile)
-    return False
+    logging.warning('Figure does not exist. Unable to locate %s' % sourceFile)
+    return False     
 
 def svgToEps(sourceFile,destinationFile):
     p = subprocess.Popen(['inkscape','-D','-z','-P',destinationFile,sourceFile],stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
