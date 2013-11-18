@@ -12,6 +12,12 @@ def isNewer(f1,f2):
     f2m = os.path.getmtime(f2) if os.path.exists(f2) else 0
     return f1m >= f2m
 
+def findFigures(texFile):
+    for line in file(texFile):
+        m = re.search(r'^[^%]*\\includegraphics.*?\{(.*?)\}',line)
+        if m:
+            yield m.group(1)
+
 # This function assumes that the current os working directory has been set as all figures will be dumped here.
 def attemptFigureConversion(sourceDirectory, filename,extension,conversionFn):
     sourceFile = os.path.join(sourceDirectory,changeExtension(filename,extension))

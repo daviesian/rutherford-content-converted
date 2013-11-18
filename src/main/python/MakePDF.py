@@ -9,12 +9,6 @@ import logging
 
 from Util import *
 
-def findFigures(texFile):
-    for line in file(texFile):
-        m = re.search(r'^[^%]*\\includegraphics.*?\{(.*?)\}',line)
-        if m:
-            yield m.group(1)
-
 def compileLatex(texFile):
     (sourceDirectory,sourceFile) = os.path.split(texFile)
 
