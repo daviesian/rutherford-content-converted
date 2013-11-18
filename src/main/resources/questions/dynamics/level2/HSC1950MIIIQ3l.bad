@@ -9,14 +9,14 @@
 %% ORDER: 8
 
 
-\begin{hint}[HSC1950MIIIQ3l]
+\begin{problem}[HSC1950MIIIQ3l]
 {A bullet of mass $m$ moving horizontally with velocity $u$ meets a block of wood of mass $M$ approaching with velocity $U$ and remains embedded in it.  Show that the loss of kinetic energy is of the form 
 \begin{equation*}
  \frac{1}{2} k {M+m}.
 \end{equation*}
 and find $k$.
-} 
-{Momentum, $\vtr{p} = m\vtr{v}$, is always conserved in collisions; the total before a collision equals the total after, taking care of the directions.} \answer{$k = \frac{Mm(u + U)^{2}}$}
+
+\stress{Hint:} Momentum, $\vtr{p} = m\vtr{v}$, is always conserved in collisions; the total before a collision equals the total after, taking care of the directions.}
 {\textit{Used with permission from UCLES, Higher School Certificate Mathematics, June~1950, Paper~3, Question~3.}}
 {The masses combine after impact, so there is only one unknown after the collision; this means conservation of momentum alone will give the final speed of the block. Drawing a diagram showing the system before and after the collisions, as in Figure \ref{fig:Dynamics_bullet_block}, always helps when solving a problem.
 
@@ -46,4 +46,4 @@ All that remains is to find the loss of kinetic energy in the collision; it invo
 \end{align*} as required.
 Therefore, $k = \frac{Mm(u + U)^{2}}$
 }
-\end{hint}
+\end{problem}
