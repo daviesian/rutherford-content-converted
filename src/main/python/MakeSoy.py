@@ -47,27 +47,6 @@ def findFigures(texFile):
         if m:
             yield m.group(1)
 
-def svgToPng(sourceFile,destinationFile):
-    p = subprocess.Popen(['inkscape','-D','-z','-e',destinationFile,sourceFile],stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
-    p.communicate()
-
-def jpgToPng(sourceFile,destinationFile):
-    p = subprocess.Popen(['convert',sourceFile,destinationFile],stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
-    p.communicate()
-
-def attemptFigureConversion(sourceDirectory, filename,extension,conversionFn):
-    sourceFile = os.path.join(sourceDirectory,changeExtension(filename,extension))
-    if os.path.exists(sourceFile):
-        if isNewer(sourceFile,filename):
-            logging.debug('New figure source file detected. Converting %s' % filename)
-            ensureDirectory(filename)
-            conversionFn(sourceFile,filename)
-        else:
-            logging.debug('Skipping image file (%s) as it has not changed since last time it was generated.' % filename)
-        return True
-    logging.warning('Figure does not exist. Unable to locate %s' % sourceFile)
-    return False
-
 def isNode(node,name):
     if node.nodeName == name:
         return True
