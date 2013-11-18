@@ -12,20 +12,21 @@ def isNewer(f1,f2):
     f2m = os.path.getmtime(f2) if os.path.exists(f2) else 0
     return f1m >= f2m
 
-def attemptFigureConversion(sourceDirectory, filename,extension,conversionFn):
+# This function assumes that the current os working directory has been set as all figures will be dumped here.
+def attemptFigureConversion(sourceDirectory,filename,extension,conversionFn):
     sourceFile = os.path.join(sourceDirectory,changeExtension(filename,extension))
-    logging.info("SourceDir %s" % sourceDirectory)
-    logging.info("filename %s" % filename)
+    destinationFullPath = os.path.join(os.getcwd(),os.path.basename(filename))
 
     if os.path.exists(sourceFile):
         if isNewer(sourceFile,filename):
-            logging.debug('New figure source file detected. Converting %s' % filename)
-            ensureDirectory(filename)
-            conversionFn(sourceFile,filename)
+            logging.debug('New figure source file detected. Converting %s to %s' % (filename, destinationFullPath) )
+            # Assumes that the working directory has been set to the current working directory os value.
+            ensureDirectory(destinationFullPath)
+            conversionFn(sourceFile,destinationFullPath)
         else:
-            logging.debug('Skipping image file (%s) as it has not changed since last time it was generated.' % filename)
+            logging.info('Skipping image file (%s) as it has not changed since last time it was generated.' % filename)
         return True
-    logging.warning('Figure does not exist. Unable to locate %s' % sourceFile)
+    logging.warning('Figure does not exist. Unable to locate %s. Skipping file.' % sourceFile)
     return False
 
 def svgToEps(sourceFile,destinationFile):
@@ -50,9 +51,11 @@ Takes a filename and makes sure that the directory exists
 def ensureDirectory(f):
     dirName = os.path.split(f)[0]
     if not os.path.exists(dirName):
+        logging.info("Directory %s does not exist. Creating it...")
         os.makedirs(dirName)
 
 def copy(sourceFile,destinationFile):
     if os.path.abspath(sourceFile) != os.path.abspath(destinationFile) and isNewer(sourceFile,destinationFile):
         ensureDirectory(destinationFile)
+        logging.debug("Copying file %s to %s" % (sourceFile,destinationFile))
         shutil.copyfile(sourceFile,destinationFile)

@@ -50,7 +50,7 @@ def execute(inputFile,outputFile):
     (sourceDirectory,sourceFile) = os.path.split(inputFile)
     commonDirectory = os.path.join(sourceDirectory,"common")
     for fig in findFigures(inputFile):
-        attemptFigureConversion(sourceDirectory,fig,"svg",svgToEps) or attemptFigureConversion(sourceDirectory,fig,"jpg",jpgToEps) 
+        attemptFigureConversion(sourceDirectory,fig,"svg",svgToEps) or attemptFigureConversion(sourceDirectory,fig,"jpg",jpgToEps)
     compileLatex(inputFile)
 
     pdfFile = changeExtension(sourceFile,"pdf")
