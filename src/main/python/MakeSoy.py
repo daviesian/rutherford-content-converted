@@ -156,6 +156,7 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
             if escapeBraces:
                 text = re.sub(r'\{',"{lb}",text)
                 text = re.sub(r'(?<!\{lb)\}',"{rb}",text)
+                text = re.sub(r'\'','&apos;', text)
             return text
 
         def eq(string):
