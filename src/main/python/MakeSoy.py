@@ -130,6 +130,7 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
                 text = re.sub(r'\{',"{lb}",text)
                 text = re.sub(r'(?<!\{lb)\}',"{rb}",text)
                 text = re.sub(r'\'','&apos;', text)
+                text = re.sub(u'\u2019','&apos;', text)
             return text
 
         def eq(string):
