@@ -5,7 +5,7 @@
 %% LEVEL: 2
 %% TOPIC: mechanics/dynamics
 %% TYPE: physics
-%% TITLE: Potential Energy
+%% TITLE: Energy
 %% ORDER: 70
 
 \input{required.tex}
@@ -25,13 +25,16 @@ Energy, either potential or kinetic (due to motion), is possessed by a body.  It
 For instance:
 \begin{enumerate}
   \item \textit{Gravitational potential energy} is:
-    \begin{equation*} V = m g h \;\;\; \textrm{or} \;\;\; V = - m_1m_2 G/r.
+\begin{equation*} 
+    V = m g h \;\;\; \textrm{or} \;\;\; V = - m_1m_2 G/r.
 \end{equation*}
 The former is for a body of mass $m$ in a uniform gravitational field with acceleration $g$ when it is a height $h$ above a reference level.  For instance, this formulation is suitable for bodies close to the surface of the Earth where the gravitational field (pull from the Earth) does not vary much with height.\\
 The latter is for or two masses $m_1$ and $m_2$ separated by a distance $r$, with $G$ the universal gravitational constant.  The negative sign indicates attraction -- the energy is reduced further as the masses approach each other.  See below for the connection between force, work and potential energy change.
   \item \textit{Electric potential energy} is:
-   \begin{equation*} V = - q E h \;\;\; \textrm{or} \;\;\; V = q_1q_2/(4\pi \epsilon_0 r).
-\end{equation*} The former is for a body of charge $q$ in a uniform electric field $E$ with $h$ the distance moved by the charge along the electric field from a reference position.\\
+   \begin{equation*} 
+   V = - q E h \;\;\; \textrm{or} \;\;\; V = q_1q_2/(4\pi \epsilon_0 r).
+\end{equation*} 
+The former is for a body of charge $q$ in a uniform electric field $E$ with $h$ the distance moved by the charge along the electric field from a reference position.\\
 In general fields vary with position, and the latter is the potential energy associated with two charges $q_1$ and $q_2$ separated by $r$, where $\epsilon_0$ is a constant known as the permittivity of free space.  The potential energy is positive if $q_1$ and $q_2$ are both of the same sign -- like charges repel and lower their energy by moving apart.
 \end{enumerate}
 \subsection{Kinetic energy:}  Bodies possess energy known as kinetic energy, $T$, by virtue of their motion.  Translational motion with speed $v$, or rotational motion with angular speed $\omega$, lead to kinetic energies:
@@ -48,15 +51,14 @@ The energy can be converted between the forms $T$ and $V$ by the particle doing 
 \end{equation*}
 However, conversion of energy  back from heat $Q$ to kinetic $T$ or potential energy $V$ is never perfect and leads us to the study of Thermodynamics.
 \subsection*{Questions}
-\begin{itemize}
-\item[1.] \qq{What is the gravitational potential energy of a mass of 1kg resting 1m above the ground? [Take $g= 10\textrm{ms}^{-2}$.]  After being dropped, what speed does the mass attain before hitting the ground?  How much heat is produced when motion has ceased?}{$E=10$ J, $v=2\sqrt{5}$ ms$^{-1}$, $Q=10$ J.}
-\item[2.] \qq{By considering energy, show that the speed $v$ reached when a particle is dropped from rest through a height $h$ is $v^2 = 2 g h$.  Show that if it initially has a downward speed $u$ as it starts dropping through $h$, then its final speed is $v^2 = u^2 + 2 gh$.  [Notice how this energy method yields the result ``$v^2 - u^2 = 2 as$" familiar from kinematics.]}{}
-\item[3.] \qq{A particle of mass $m$ approaches a slope with initial speed $v_0$.  It moves up the slope conserving energy.\\
+\qq{What is the gravitational potential energy of a mass of 1kg resting 1m above the ground? [Take $g= 10\textrm{ms}^{-2}$.]  After being dropped, what speed does the mass attain before hitting the ground?  How much heat is produced when motion has ceased?}{$E=10$ J, $v=2\sqrt{5}$ ms$^{-1}$, $Q=10$ J.}
+\qq{By considering energy, show that the speed $v$ reached when a particle is dropped from rest through a height $h$ is $v^2 = 2 g h$.  Show that if it initially has a downward speed $u$ as it starts dropping through $h$, then its final speed is $v^2 = u^2 + 2 gh$.  [Notice how this energy method yields the result ``$v^2 - u^2 = 2 as$" familiar from kinematics.]}{There is no friction, therefore the initial energy will equal the final energy. Thus, $m g h = 1/2 m v^2$, which gives: $v^2 = 2 g h$. If the particle has an initial velocity, then $m g h + \frac{1}{2} m u^2 = \frac{1}{2} m v^2$, instead.}
+\qq{A particle of mass $m$ approaches a slope with initial speed $v_0$.  It moves up the slope conserving energy.\\
  (i)  What is its initial energy?\\
 (ii) To what vertical height $h_f$ does it rise when it finally stops?\\
-(iii) What speed is it travelling at when it attains heights $h_f/4$, $h_f/2$ and $3h_f/4$?  What is the speed at these heights on the way down when the particle reverses direction at the top of its trajectory?}{}
-\end{itemize}
-  \section{Work}
+(iii) What speed is it travelling at when it attains heights $h_f/4$, $h_f/2$ and $3h_f/4$?  What is the speed at these heights on the way down when the particle reverses direction at the top of its trajectory?}{(i)$E_i=\frac{1}{2} m v^2$; (ii) $h_f=\frac{1}{2} v^2/g$; (iii) $h_f/4$: $u =\frac{\sqrt{3}v}{2}$, $h_f/2$: $u = \frac{u}{\sqrt{2}}$, $3h_f/4$: $u = \frac{v}{4}$}
+
+  \subsection{Work}
   Work $W$ is given by
 \begin{equation*} 
 W = {F}.{x}
@@ -65,9 +67,8 @@ where ${x}$ is the distance moved by the point of application of the force ${F}$
 {\bf Examples are:}\\
     (a) picking up a mass with a vertical force and raising it through a height $h$.  In that case $f = mg$ and $x = h$ whereupon $W = mg h$.  Note that the work done is stored as gravitational potential energy of the form discussed above.  Clearly forces arise when potentials vary with position.  \\ If the mass is allowed to drop back, the gravitational force can be used to e.g. turn an electrical generator and electrical work can be recovered.  That in turn could be used to charge a battery and the energy would finally be chemical potential energy.\nll
     (b) circular motion of a mass at the end of a string with the tension in the string creating the centripetal acceleration.  The force and acceleration are perpendicular to the motion and no work is done.  The energy (and speed) of the particle do not increase as the motion elapses.
- \subsection*{Questions}
-\begin{itemize}
-\item[$1.$] \qq{A horizontal force $f$ pulls a mass on a rough surface of sliding friction $\mu_k$ through a distance $d$.  Show that the work done is $W = mg \mu_k d$.  Where does the work end up? [If necessary, consult the concept sheet on Friction.]}{}\\
-\item[$2.$] \qq{The same force is applied at an angle $\theta$ to the horizontal.  Show that now, $W =\mu_k\cos\theta(mg - f \sin\theta)d$.}{}
-\end{itemize}
+
+\subsection*{Questions}
+\qq{A horizontal force $f$ pulls a mass on a rough surface of sliding friction $\mu_k$ through a distance $d$.  Show that the work done is $W = mg \mu_k d$.  Where does the work end up? [If necessary, consult the concept sheet on Friction.]}{As heat}\\
+\qq{The same force is applied at an angle $\theta$ to the horizontal.  Show that now, $W =\mu_k\cos\theta(mg - f \sin\theta)d$.}{}
 \end{document}

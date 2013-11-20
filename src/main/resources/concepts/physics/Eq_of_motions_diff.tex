@@ -36,11 +36,11 @@ v = \frac{\d s}{\d t}
 \label{inst_v}
 \end{equation}\\
 If you have done some integration and differentiation, you will recognise that the velocity is simply the time derivative of the displacement. \nll
-\textbf{Example 1:} If the displacement is given by $s = 4t - 5 t^2$, what is v?\\
-\textbf{Answer 1:} The instantaneous velocity $v$ is $\frac{\d s}{\d t}$. Thus,
+\qq{Question: If the displacement is given by $s = 4t - 5 t^2$, what is v?}{
+The instantaneous velocity $v$ is $\frac{\d s}{\d t}$. Thus,
 \begin{equation}
 v = \frac{\d (4t - 5 t^2)}{\d t} = 4 - 2 \times 5 t = 4-10t
-\end{equation}
+\end{equation}}
 \\
 But how to find the displacement after a certain time if the velocity is known? Let's rearrange the equation for the velocity:
  \begin{equation}
@@ -51,7 +51,7 @@ Now integrating both sides, we obtain the displacement at a given point in time:
   \begin{equation}
 \int s = \int v \d t = vt + c
 \end{equation}
-c is just the constant of integration. If $t=0$, then $s=c$, and so c is initial position of the car.
+c is just the constant of integration. If $t=0$, then $s=c$, and so c is the initial position of the car.
 
 \subsection{Velocity and Acceleration:}
 The car may be continuously changing speed. And so how can we quantify the change in the velocity as function of time? Let's start by considering the average change of the velocity over time, known as the acceleration $a$:
@@ -65,11 +65,10 @@ a = \frac{\d \left(\d s/ \d t\right)}{\d t} = \frac{\d^2 s}{\d t^2}
 \end{equation}
  The acceleration is the second time derivative of the displacement. 
 \nll
-\textbf{Example 2:} What is the acceleration of the displacement in example 1, $s = 4t - 5 t^2$?\\
-\textbf{Answer 2:} 
+\qq{Question: What is the acceleration of the displacement in question 1, $s = 4t - 5 t^2$?}{
 \begin{equation}
 a = \frac{\d^2 (4t - 5 t^2)}{\d t^2} = \frac{\d \left(4-10t\right)}{\d t} = - 10
-\end{equation}
+\end{equation}}
 \nl
 As before, the velocity and the displacement can be obtained by integrating the acceleration with respect to time, once in the case of velocity and twice to obtain the displacement.
   \begin{equation}
