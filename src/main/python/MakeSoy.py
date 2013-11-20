@@ -130,7 +130,10 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
                 text = re.sub(r'\{',"{lb}",text)
                 text = re.sub(r'(?<!\{lb)\}',"{rb}",text)
                 text = re.sub(r'\'','&apos;', text)
-                text = re.sub(u'\u2019','&apos;', text)   
+                text = re.sub(u'\u2019','&apos;', text)
+                text = re.sub(u'\u2014','&mdash;', text)
+                text = re.sub(u'\u2013','&ndash;', text)
+                #text.decode('latin9').encode('utf8')     
             return text
 
         def eq(string):
@@ -192,7 +195,7 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
                     terminal = True
 
         if eq("#text"):
-            result.append(node.textContent)
+            result.append(escape(node.textContent))
         elif eq("section"):
             result.append("<h4>%s</h4>" % text("title"))
         elif eq("subsection"):
