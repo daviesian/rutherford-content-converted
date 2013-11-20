@@ -39,13 +39,7 @@ class qq(Command):
 
 #used for numeric questions
 class answer(Command):
-    args = '{units}{value}'     
-
-def findFigures(texFile):
-    for line in file(texFile):
-        m = re.search(r'^[^%]*\\includegraphics.*?\{(.*?)\}',line)
-        if m:
-            yield m.group(1)
+    args = '{units}{value}'      
 
 def isNode(node,name):
     if node.nodeName == name:
@@ -136,6 +130,7 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
                 text = re.sub(r'\{',"{lb}",text)
                 text = re.sub(r'(?<!\{lb)\}',"{rb}",text)
                 text = re.sub(r'\'','&apos;', text)
+                text = re.sub(u'\u2019','&apos;', text)   
             return text
 
         def eq(string):

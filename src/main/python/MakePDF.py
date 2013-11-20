@@ -9,12 +9,6 @@ import logging
 
 from Util import *
 
-def findFigures(texFile):
-    for line in file(texFile):
-        m = re.search(r'^[^%]*\\includegraphics.*?\{(.*?)\}',line)
-        if m:
-            yield m.group(1)
-
 def compileLatex(texFile):
     (sourceDirectory,sourceFile) = os.path.split(texFile)
 
@@ -50,7 +44,7 @@ def execute(inputFile,outputFile):
     (sourceDirectory,sourceFile) = os.path.split(inputFile)
     commonDirectory = os.path.join(sourceDirectory,"common")
     for fig in findFigures(inputFile):
-        attemptFigureConversion(sourceDirectory,fig,"svg",svgToEps) or attemptFigureConversion(sourceDirectory,fig,"jpg",jpgToEps) 
+        attemptFigureConversion(sourceDirectory,fig,"svg",svgToEps) or attemptFigureConversion(sourceDirectory,fig,"jpg",jpgToEps)
     compileLatex(inputFile)
 
     pdfFile = changeExtension(sourceFile,"pdf")
