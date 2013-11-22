@@ -139,7 +139,9 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
         def eq(string):
             return node.nodeName == string
 
+        #logging.warning(node.nodeName)
         #result.append(node.nodeName)
+        
         bgroupCount = 0
         # question stuff 
         if isQuestion:
@@ -299,14 +301,17 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
             else:
                 result.append('</span>')            
         elif eq("qq"):
-            answerNode = findNode(node.parentNode, "bgroup")
+            # first check if there is something in the attribute that we can use as the answer
+            answerNode = node.getAttribute("answer")
+            # if not then lets try and find something that could be the answer - horrible hack necessary when LaTeX is structured differently
             if answerNode == None:
-               answerNode = node.getAttribute("answer")
+                answerNode = findNode(node.parentNode, "bgroup")
+                logging.debug("Had to guess at which node is the answer node in quick question: %s" % text("question"))
 
             if answerNode != None:
-               result.append('<div class="quick-question"><div class="question"><p>%s</p></div><div class="answer hidden"><p>%s</p></div></div>' % (text("question"),render(answerNode,escapeBraces)))
+                result.append('<div class="quick-question"><div class="question"><p>%s</p></div><div class="answer hidden"><p>%s</p></div></div>' % (text("question"),render(answerNode,escapeBraces)))
             else:
-               logging.warning('Unable to locate answer node for quick question with text: %s' % text("question"))
+                logging.warning('Unable to locate answer node for quick question with text: %s' % text("question"))
         else:
             pass
 
