@@ -273,15 +273,11 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
                 attr = attr.textContent
                 if text[0:3] == "<p>":
                     text = "<p class=\"item-number\">%s %s" % (attr,text[3:])
-                else:
-                    text = attr +" " + text
-                itemContent+=text
+                    itemContent+=text
 
             if len(node.childNodes) > 0:
                 for enumerate_items in node.childNodes:
                     itemContent+='%s' % render(enumerate_items, escapeBraces)
-                    terminal = True
-
 
             result.append("<li>%s</li>" % itemContent)
             terminal = True
