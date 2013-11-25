@@ -272,7 +272,7 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
             if attr:
                 attr = attr.textContent
                 if text[0:3] == "<p>":
-                    text = "<p class=\"item-number\">%s %s" % (attr,text[3:])
+                    text = "<p class=\"item-number\">%s" % (attr)
                     itemContent+=text
 
             if len(node.childNodes) > 0:
