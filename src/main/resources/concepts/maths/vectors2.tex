@@ -1,0 +1,43 @@
+%% ID: resolving_vectors
+%% VIDEOS:
+%% QUESTIONS: flux
+%% CONCEPTS: vectors
+%% LEVEL: 2
+%% TOPIC: mechanics/dynamics
+%% TYPE: physics
+%% TITLE: Vectors -- 2
+%% ORDER:
+
+\input{required.tex}
+% to mark as a draft.  Comment both these lines out when complete.  The page number will return to the footer.
+%\pagestyle{myheadings}
+%\markright{\textcolor{red}{\textbf{DRAFT: \today}}}
+
+\begin{document}
+\addtolength{\topmargin}{-0.7 cm}
+\setlength{\columnsep}{22pt}
+\Concepttitle{Vectors ---  2}
+
+
+%\section{Resolving \& projecting vectors}
+\subsection*{Projection \& resolution of vectors}
+Resolving or projecting vectors onto each other is illustrated in
+figure~\ref{fig:project-vectors}(a).  The projection of $\vtr{u}$ onto the \emph{direction} of $\vtr{v}$ is $u \cos\theta$.
+\begin{figure}[h!]
+\centering
+\includegraphics[width=.95\linewidth]{project-vectors.eps}
+\caption{(a) Vector $\vtr{u}$ is projected on to the direction of $\vtr{v}$.  (b) The component form of the vector $\vtr{u} = (3,1)$ displaying its projection on the $x$ and $y$ axes. (c) Work done by the motion of the point of application of the force $\vtr{f}$ along the direction of $\vtr{d}$. (d) The coordinate axes are in effect (unit) vectors themselves, conventionally called $\vtr{i}$, $\vtr{j}$, . . . A vector $\vtr{u}$ can be thought of as being made up of these coordinate axis vectors with weight being the projections along each one. }\label{fig:project-vectors}
+\end{figure}
+The projection of $\vtr{u}$ onto the coordinate axes is shown in figure~\ref{fig:project-vectors}(b), these projections of magnitude $x$ and $y$ respectively, form an ordered pair $(x,y)$ that is called the coordinate representation or Cartesian form of the vector.  In the example $x=3$ and $y=1$.
+\qq{What is the angle $\theta$ in the figure?}{$\theta = \tan^{-1}(1/3)$.  Give other equivalent forms for $\theta$.}
+\subsection*{Modulus, magnitude, or length of vectors; unit vectors}
+Pythagoras in figure~\ref{fig:project-vectors}(b) tells us the length of the vector is  $|\vtr{u}| = u = \sqrt{x^2 + y^2}$.
+\qq{Draw a 3-D set of axes $x,y,z$ and a general vector with components $(x,y,z) = \vtr{v}$, say.  By employing Pythagoras with suitable right triangles, find $|\vtr{v}|$.}{$v = \sqrt{x^2+y^2+z^2}$.}
+Unit vectors have a length $=1$.  Any finite vector can be made a unit vector by dividing it by its own length, for instance $\vtr{v}/v$ is the unit vector in the direction of $\vtr{v}$.
+\qq{What unit vector corresponds to that connecting the origin with $(2,2,2)$?}{$\frac{1}{\sqrt{3}}(1,1,1)$.}
+\qq{Draw a unit cube with an origin of axes at 1 corner so that other corners are at $(1,0,0)$, $(0,1,1)$, etc.  Satisfy yourself that vectors along edges between directly connected corners are unit vectors.  Give the component form of the vectors along face diagonals  from the origin to the 3 corners they connect with it.  How long are they?  Give the vector going from the origin to the opposing corner along a body diagonal.  Now long is it?  Give the form of the unit vector along this diagonal.  These exercises will be useful in calculating the effect of radiation from the Sun on objects.}{$(1,1,0)$, $(1,0,1)$ and $(0,1,1)$, with lengths $\sqrt{2}$; to the opposing corner is $(1,1,1)$ with length $\sqrt{3}$ and unit vector $\frac{1}{\sqrt{3}}(1,1,1)$.}
+\subsection*{The vector dot product}  The work done by a force $\vtr{f}$ in moving along $\vtr{d}$ is $W = fd\cos\theta$, see figure~\ref{fig:project-vectors}(c), since the distance actually moved, \emph{along the direction of the force}, is $d\cos\theta$ (itself the projection of $\vtr{d}$ onto $\vtr{f}$).  To get the work done, we multiply by the magnitude of the force.  The work is written as a special (dot) product of the two vectors:  $W = \vtr{f} \cdot \vtr{d} = fd\cos\theta$.  The result of this product is a scalar.\\
+The dot product of perpendicular vectors is zero (one is taking $\cos(90) = 0$). Thus $\vtr{i} \cdot \vtr{j} = \vtr{j} \cdot \vtr{k} = \vtr{k} \cdot \vtr{i} = 0$.
+\qq{Show that if $\vtr{u}$ has projections $u_x$ along $x$, $u_y$ along $y$ etc., then $\vtr{u}$ can be written $\vtr{u} = u_x\vtr{i} + \dots$.  Show then that the dot product $\vtr{u} \cdot \vtr{v} = u_x v_x + u_y v_y + \dots$.}{This way of writing $\vtr{u}$ will have the right projections along all the axes (try it!).  Forming the dot product gives some products of $\vtr{i}$, $\vtr{j}$ etc. that are unity and others that are zero -- write it out and see.}
+\end{document}
+

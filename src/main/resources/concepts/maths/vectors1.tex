@@ -1,0 +1,55 @@
+%% ID: vectors
+%% VIDEOS:
+%% QUESTIONS: flux
+%% CONCEPTS: vectors
+%% LEVEL: 2
+%% TOPIC: mechanics/dynamics
+%% TYPE: maths
+%% TITLE: Vectors -- 1
+%% ORDER:
+
+\input{required.tex}
+% to mark as a draft.  Comment both these lines out when complete.  The page number will return to the footer.
+%\pagestyle{myheadings}
+%\markright{\textcolor{red}{\textbf{DRAFT: \today}}}
+
+\begin{document}
+\addtolength{\topmargin}{-0.7 cm}
+\setlength{\columnsep}{22pt}
+\Concepttitle{Vectors --- 1}
+
+\subsection*{Examples of vectors}
+Vectors have a magnitude (length when drawn) and direction.  Examples in physics, with the symbols often employed for them, include:\nl
+$\vtr{v}$ velocity \nl
+$\vtr{x}$ displacement \nl
+$\vtr{E}$ electric field \nl
+$\vtr{A}$ area \nl
+$\vtr{f}$ force \nl
+
+\noindent Quantities with a magnitude but not a direction are known as \emph{scalars}.  Examples in physics include: \nl
+$m$ mass \nl
+$U$ energy \nl
+$T$ temperature \nl
+$q$ charge \nl
+
+%\section{Properties of vectors}
+\subsection*{Direction of vectors}
+Vectors are not generally tied to an origin, see
+figure~\ref{fig:basic-vectors}(a) where there are several equivalent vectors $\vtr{v}$. A specific translation vector from the origin to $(x,y)$ is also shown ($\vtr{r}$).
+\begin{figure}[h!]
+\centering
+\includegraphics[width=.9\linewidth]{basic-vectors.eps}
+\caption{(a) Several vectors $\vtr{v}$ drawn are actually equivalent.  A specific vector $\vtr{r}$ connects the origin to a point $\vtr{r} = (x,y)$ in the plane.  (b) Tip to tail addition of two vectors (c) Subtraction of a vector -- tip to tail addition of $-\vtr{v}$ to $\vtr{u}$.  (d) Many different vectors $\vtr{v}$ but sharing the same length (modulus) $v$. }\label{fig:basic-vectors}
+\end{figure}
+\subsection*{Addition and subtraction}
+Traversing one vector and then from its tip traversing the next from tail to tip gives a resultant $\vtr{u} + \vtr{v} \equiv \vtr{v} + \vtr{u}$, figure~\ref{fig:basic-vectors}(b).  Likewise, one can think of subtraction as the addition of $-\vtr{v}$ to $\vtr{u}$ instead, giving $\vtr{u} - \vtr{v}$, figure~\ref{fig:basic-vectors}(c).  Thus $\vtr{u}$, $\vtr{v}$ and $\vtr{u} + \vtr{v}$ form a vector triangle.
+
+\subsection*{Modulus or length of a vector}
+The length, modulus, or magnitude of a vector $\vtr{v}$ is denoted by $v$ (that is, without the bold, underlining or whatever is used to denote a vector); see the radius of the circle in figure~\ref{fig:basic-vectors}(d) where all the vectors differ in direction but have the same magnitude $v$ (sometimes denoted $|\vtr{v}|$).
+
+\subsection*{Specifying vectors by their components}
+Draw in the $x,y$ plane the two vectors $\vtr{v}_1 = (1,4)$ and $\vtr{v}_2 = (4,1)$.
+\qq{Show that the vector connecting $(4,1)$ to $(1,4)$ is $\vtr{v}_1 - \vtr{v}_2$.  Draw an appropriate, simple right angled triangle that would allow you to evaluate the length of $\vtr{v}_1 - \vtr{v}_2$.  What is$|\vtr{v}_1 - \vtr{v}_2| $? }{$3\sqrt{2}$}
+
+\end{document}
+
