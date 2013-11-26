@@ -23,7 +23,7 @@ def attemptFigureConversion(sourceDirectory, filename,extension,conversionFn):
     sourceFile = os.path.join(sourceDirectory,changeExtension(filename,extension))
     if os.path.exists(sourceFile):
         if isNewer(sourceFile,filename):
-            logging.info('New figure source file detected. Converting %s' % filename)
+            logging.info('New figure source file detected. Converting %s using %s' % (filename,conversionFn.__name__))
             ensureDirectory(filename)
             conversionFn(sourceFile,filename)
         else:
@@ -60,5 +60,5 @@ def ensureDirectory(f):
 def copy(sourceFile,destinationFile):
     if os.path.abspath(sourceFile) != os.path.abspath(destinationFile) and isNewer(sourceFile,destinationFile):
         ensureDirectory(destinationFile)
-        logging.debug("Copying file %s to %s" % (sourceFile,destinationFile))
+        logging.info("Copying file %s to %s" % (sourceFile,destinationFile))
         shutil.copyfile(sourceFile,destinationFile)
