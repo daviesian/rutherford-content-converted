@@ -255,8 +255,10 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
             if text("ref") in figureMap:
                 result.append(str(figureMap[text("ref")]))
             else:
-                figureNumber = len(figureMap.keys())
+                figureNumber = len(figureMap.keys()) + 1
                 figureMap[text("ref")] = figureNumber
+                logging.debug("Forward referencing of a figure - generating a figure number and adding to the map")
+                result.append(str(figureMap[text("ref")]))
         elif eq("enumerate") and not isQuestion:
             result.append("<ol>")
         elif eq("itemize") and not isQuestion:
@@ -315,7 +317,7 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
                 logging.debug("Had to guess at which node is the answer node in quick question: %s" % text("question"))
 
             if answerNode != None:
-                result.append('<div class="quick-question"><div class="question"><p>%s</p></div><div class="answer hidden"><p>%s</p></div></div>' % (text("question"),render(answerNode,escapeBraces)))
+                result.append('<div class="quick-question"><div class="question"><p>%s</p></div><div class="answer hidden"><p>%s</p></div></div>' % (render(node.getAttribute("question"),escapeBraces),render(answerNode,escapeBraces)))
             else:
                 logging.warning('Unable to locate answer node for quick question with text: %s' % text("question"))
         else:
