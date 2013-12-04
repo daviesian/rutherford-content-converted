@@ -41,6 +41,10 @@ class qq(Command):
 class answer(Command):
     args = '{units}{value}'      
 
+def textDefault(self, node):
+    return node.replace('&','&amp;').replace('<','&lt;').replace('>','&gt;')
+
+
 def isNode(node,name):
     if node.nodeName == name:
         return True
@@ -80,6 +84,7 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
     # filter the source file because \nonumber commands break the parser
     source = '\n'.join(file(inputFile))
     source = re.sub(r'\\nonumber','',source)
+    source = re.sub(r'\\\&',r'#amp#',source) # horrible find replace hack #1 because ampersands seemed to get consumed by a random (and unknown) part of the parser
     output = file("filtered.tex","w")
     output.write(source)
     output.flush()
@@ -104,7 +109,7 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
     tex.ownerDocument.context['ref'] = ref
     tex.ownerDocument.context['qq'] = qq
     tex.ownerDocument.context['answer'] = answer
-
+    
     tex=tex.parse()
 
     isQuestion = False
@@ -126,13 +131,16 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
             return ""
 
         def escape(text):
+            # The following are required for html encoding as python 2.7 doesn't do it for me.
+            text = re.sub(r'#amp#','&amp;', text) # horrible find replace hack #2 puts the correct html encoded value in now as it doesn't get removed after this point.
+            text = re.sub(u'\u2019','&apos;', text)
+            text = re.sub(u'\u2014','&mdash;', text)
+            text = re.sub(u'\u2013','&ndash;', text)
+            text = re.sub(r'\'','&apos;', text)
+
             if escapeBraces:
                 text = re.sub(r'\{',"{lb}",text)
                 text = re.sub(r'(?<!\{lb)\}',"{rb}",text)
-                text = re.sub(r'\'','&apos;', text)
-                text = re.sub(u'\u2019','&apos;', text)
-                text = re.sub(u'\u2014','&mdash;', text)
-                text = re.sub(u'\u2013','&ndash;', text)
                 #text.decode('latin9').encode('utf8')     
             return text
 
@@ -202,7 +210,7 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
         elif eq("section"):
             result.append("<h4>%s</h4>" % text("title"))
         elif eq("subsection"):
-            result.append("<h5>%s</h5>" % text("title"))
+            result.append("<h5>%s</h5>" % text("title"))            
         elif eq("Concepttitle"):
             result.append("<h3>%s</h3>" % text("text"))
         elif eq("math"):
@@ -243,9 +251,9 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
                 else:
                     figureNumber = len(figureMap.keys()) + 1
                     figureMap[figureLabel] = figureNumber
-                result.append('<figcaption id="#%s">Figure %s: %s</figcaption>' % (figureLabel,figureNumber,text("self")))
+                result.append('<figcaption id="#%s">Figure %s: %s</figcaption>' % (figureLabel,figureNumber,render(node.getAttribute("self"),escapeBraces)))
             else:
-                result.append('<figcaption>%s</figcaption>' % text("self"))                
+                result.append('<figcaption>%s</figcaption>' % render(node.getAttribute("self"),escapeBraces))                
             terminal = True
         elif eq("label"):
             if text("label") not in figureMap.keys():
