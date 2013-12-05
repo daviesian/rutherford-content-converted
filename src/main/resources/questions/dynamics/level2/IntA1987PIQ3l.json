@@ -1,0 +1,15 @@
+{
+  "src": "questions/dynamics/level2/IntA1987PIQ3l.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": " Vector vs Scalar", 
+  "author": null, 
+  "type": "legacy_latex_question", 
+  "layout": "1-col", 
+  "related_content": [
+    "vectors", 
+    "resolving_vectors", 
+    "IntA1987PIQ3l_video"
+  ], 
+  "id": "vector_vs_scalar"
+}

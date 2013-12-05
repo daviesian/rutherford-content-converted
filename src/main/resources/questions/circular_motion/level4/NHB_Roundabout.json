@@ -1,0 +1,16 @@
+{
+  "src": "questions/circular_motion/level4/NHB_Roundabout.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Car on a Roundabout", 
+  "author": null, 
+  "type": "legacy_latex_question", 
+  "layout": "1-col", 
+  "related_content": [
+    "angular_circular", 
+    "friction", 
+    "vectors", 
+    "resolving_vectors"
+  ], 
+  "id": "roundabout"
+}

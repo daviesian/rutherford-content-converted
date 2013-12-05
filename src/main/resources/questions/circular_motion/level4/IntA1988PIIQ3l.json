@@ -1,0 +1,15 @@
+{
+  "src": "questions/circular_motion/level4/IntA1988PIIQ3l.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Orbiting the Moon", 
+  "author": null, 
+  "type": "legacy_latex_question", 
+  "layout": "1-col", 
+  "related_content": [
+    "angular_circular", 
+    "energy", 
+    "IntA1988PIIQ3l_video"
+  ], 
+  "id": "orbiting_moon"
+}

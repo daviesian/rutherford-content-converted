@@ -1,0 +1,17 @@
+{
+  "src": "concepts/physics/momentum.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Momentum", 
+  "author": null, 
+  "type": "concept", 
+  "layout": "1-col", 
+  "related_content": [
+    "momentum", 
+    "energy", 
+    "impulse", 
+    "vectors", 
+    "newtonii"
+  ], 
+  "id": "momentum"
+}

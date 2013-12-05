@@ -1,0 +1,14 @@
+{
+  "src": "questions/dynamics/level2/IntA1987PIQ1l.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": " A Toboggan", 
+  "author": null, 
+  "type": "legacy_latex_question", 
+  "layout": "1-col", 
+  "related_content": [
+    "newtonii", 
+    "IntA1987PIQ1l_video"
+  ], 
+  "id": "a_toboggan"
+}

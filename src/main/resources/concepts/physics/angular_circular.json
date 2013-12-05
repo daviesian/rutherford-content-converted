@@ -1,0 +1,17 @@
+{
+  "src": "concepts/physics/angular_circular.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Circular kinematics", 
+  "author": null, 
+  "type": "concept", 
+  "layout": "1-col", 
+  "related_content": [
+    "newtoni", 
+    "newtonii", 
+    "vectors", 
+    "calculus", 
+    "angular_circular"
+  ], 
+  "id": "angular_circular"
+}

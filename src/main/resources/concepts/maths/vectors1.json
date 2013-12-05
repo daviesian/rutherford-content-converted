@@ -1,0 +1,13 @@
+{
+  "src": "concepts/maths/vectors1.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Vectors -- 1", 
+  "author": null, 
+  "type": "concept", 
+  "layout": "1-col", 
+  "related_content": [
+    "resolving_vectors"
+  ], 
+  "id": "vectors"
+}

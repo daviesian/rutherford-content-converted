@@ -1,0 +1,17 @@
+{
+  "src": "concepts/physics/NewtonII.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Newton's Second Law", 
+  "author": null, 
+  "type": "concept", 
+  "layout": "1-col", 
+  "related_content": [
+    "newtoni", 
+    "newtoniii", 
+    "vectors", 
+    "calculus", 
+    "newtonii"
+  ], 
+  "id": "newtonii"
+}

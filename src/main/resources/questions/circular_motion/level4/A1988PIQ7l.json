@@ -1,0 +1,18 @@
+{
+  "src": "questions/circular_motion/level4/A1988PIQ7l.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Firing the Rockets", 
+  "author": null, 
+  "type": "legacy_latex_question", 
+  "layout": "1-col", 
+  "related_content": [
+    "newtoni", 
+    "newtonii", 
+    "angular_circular", 
+    "vectors", 
+    "resolving_vectors", 
+    "A1988PIQ7l_video"
+  ], 
+  "id": "firing_the_rockets"
+}

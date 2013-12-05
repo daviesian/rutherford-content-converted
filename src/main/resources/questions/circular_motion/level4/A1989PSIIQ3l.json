@@ -1,0 +1,15 @@
+{
+  "src": "questions/circular_motion/level4/A1989PSIIQ3l.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Geostationary Orbit", 
+  "author": null, 
+  "type": "legacy_latex_question", 
+  "layout": "1-col", 
+  "related_content": [
+    "angular_circular", 
+    "energy", 
+    "A1989PSIIQ3_video"
+  ], 
+  "id": "geostationary_orbit"
+}

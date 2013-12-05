@@ -1,0 +1,17 @@
+{
+  "src": "concepts/physics/NewtonI.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Newton's First Law", 
+  "author": null, 
+  "type": "concept", 
+  "layout": "1-col", 
+  "related_content": [
+    "newtonii", 
+    "newtoniii", 
+    "vectors", 
+    "calculus", 
+    "newtoni"
+  ], 
+  "id": "newtoni"
+}

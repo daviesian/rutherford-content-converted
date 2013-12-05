@@ -1,0 +1,17 @@
+{
+  "src": "concepts/physics/Impulse.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Impulse", 
+  "author": null, 
+  "type": "concept", 
+  "layout": "1-col", 
+  "related_content": [
+    "vectors", 
+    "momentum", 
+    "newtonii", 
+    "energy", 
+    "impulse"
+  ], 
+  "id": "impulse"
+}

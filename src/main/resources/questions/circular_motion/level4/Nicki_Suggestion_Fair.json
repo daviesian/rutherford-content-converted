@@ -1,0 +1,16 @@
+{
+  "src": "questions/circular_motion/level4/Nicki_Suggestion_Fair.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "A Fairground Ride", 
+  "author": null, 
+  "type": "legacy_latex_question", 
+  "layout": "1-col", 
+  "related_content": [
+    "angular_circular", 
+    "friction", 
+    "vectors", 
+    "resolving_vectors"
+  ], 
+  "id": "fairground_ride"
+}

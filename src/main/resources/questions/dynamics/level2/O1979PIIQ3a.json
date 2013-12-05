@@ -1,0 +1,18 @@
+{
+  "src": "questions/dynamics/level2/O1979PIIQ3a.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "On Ice", 
+  "author": null, 
+  "type": "legacy_latex_question", 
+  "layout": "1-col", 
+  "related_content": [
+    "newtonii", 
+    "eq_of_motion_diff", 
+    "vectors", 
+    "resolving_vectors", 
+    "O1979PIIQ3a_Part_a_video", 
+    "O1979PIIQ3a_part_b_video"
+  ], 
+  "id": "on_ice"
+}

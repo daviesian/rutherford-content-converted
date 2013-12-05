@@ -1,0 +1,13 @@
+{
+  "src": "questions/circular_motion/level4/A1984PIQ1l.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Speedometer on a Bike Wheel", 
+  "author": null, 
+  "type": "legacy_latex_question", 
+  "layout": "1-col", 
+  "related_content": [
+    "angular_circular"
+  ], 
+  "id": "bike_speedometer"
+}

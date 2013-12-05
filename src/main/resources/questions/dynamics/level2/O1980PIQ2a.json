@@ -1,0 +1,20 @@
+{
+  "src": "questions/dynamics/level2/O1980PIQ2a.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Walking up a Hill", 
+  "author": null, 
+  "type": "legacy_latex_question", 
+  "layout": "1-col", 
+  "related_content": [
+    "energy", 
+    "work", 
+    "trigonometry", 
+    "dot_product", 
+    "vectors", 
+    "resolving_vectors", 
+    "O1980PIQ2a_work_video", 
+    "O1980PIQ2a_1in5slope_video"
+  ], 
+  "id": "walking_up_hill"
+}

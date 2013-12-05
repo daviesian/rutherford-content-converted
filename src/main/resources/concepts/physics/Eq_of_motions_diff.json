@@ -1,0 +1,16 @@
+{
+  "src": "concepts/physics/Eq_of_motions_diff.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Equations of Motion", 
+  "author": null, 
+  "type": "concept", 
+  "layout": "1-col", 
+  "related_content": [
+    "vectors", 
+    "algebra", 
+    "calculus", 
+    "newtonii"
+  ], 
+  "id": "eq_of_motion_diff"
+}

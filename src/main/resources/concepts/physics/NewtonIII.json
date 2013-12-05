@@ -1,0 +1,17 @@
+{
+  "src": "concepts/physics/NewtonIII.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Newton's Third Law", 
+  "author": null, 
+  "type": "concept", 
+  "layout": "1-col", 
+  "related_content": [
+    "newtoni", 
+    "newtonii", 
+    "vectors", 
+    "calculus", 
+    "newtoniii_sup_video"
+  ], 
+  "id": "newtoniii"
+}

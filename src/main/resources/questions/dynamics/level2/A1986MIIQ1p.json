@@ -1,0 +1,17 @@
+{
+  "src": "questions/dynamics/level2/A1986MIIQ1p.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Two Particles on a String", 
+  "author": null, 
+  "type": "legacy_latex_question", 
+  "layout": "1-col", 
+  "related_content": [
+    "momentum", 
+    "energy", 
+    "impulse", 
+    "vectors", 
+    "resolving_vectors"
+  ], 
+  "id": "particles_on_string"
+}

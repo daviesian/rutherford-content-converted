@@ -1,0 +1,17 @@
+{
+  "src": "concepts/physics/friction.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Friction", 
+  "author": null, 
+  "type": "concept", 
+  "layout": "1-col", 
+  "related_content": [
+    "vectors", 
+    "newtonii", 
+    "newtoni", 
+    "newtoniii", 
+    "c_of_e"
+  ], 
+  "id": "friction"
+}
