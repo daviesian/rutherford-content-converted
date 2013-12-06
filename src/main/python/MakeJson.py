@@ -69,7 +69,7 @@ def findNode(node,name):
             return searchResult
     return None
 
-def convertToHtml(inputFile,outputFile,outputFigDir):
+def convertToHtml(inputFile,outputFile,inputDir,outputDir):
     (sourceDirectory,sourceFile) = os.path.split(inputFile)
     commonDirectory = os.path.join(sourceDirectory,"common")
 
@@ -240,8 +240,13 @@ def convertToHtml(inputFile,outputFile,outputFigDir):
         elif eq("wrapfigure"):
             result.append('<figure>')
         elif eq("includegraphics"):
-            filename = os.path.join("static","figures",os.path.split(changeExtension(node.getAttribute("file"),"png"))[1])        
-            result.append('<img src="{$ij.proxyPath}/%s"/>' % filename)
+            latexFigurePath = os.path.join(os.path.split(os.path.abspath(inputFile))[0],changeExtension(node.getAttribute("file"),"png"))
+            #remove absolute path information
+            htmlFigurePath = os.path.abspath(latexFigurePath.replace(os.path.abspath(inputDir),''))[1:]
+
+            #filename = os.path.join(outputDir,os.path.split(changeExtension(node.getAttribute("file"),"png"))[1])
+            #filename = os.path.join("static","figures",os.path.split(changeExtension(node.getAttribute("file"),"png"))[1])        
+            result.append('<img src="%s"/>' % htmlFigurePath)
         elif eq("caption"):
             figureNode = findNode(node, "label")
             if figureNode is not None:
@@ -366,19 +371,25 @@ def convertToHtml(inputFile,outputFile,outputFigDir):
     return jsonOutput
     
 
-def execute(inputFile,outputFile,outputFigDir):
+def execute(inputFile,outputFile,inputDir,outputDir):
     (sourceDirectory,sourceFile) = os.path.split(inputFile)
     commonDirectory = os.path.join(sourceDirectory,"common")
-    for fig in findFigures(inputFile):
-        fig = changeExtension(fig,"png")
-        attemptFigureConversion(sourceDirectory,fig,"svg",svgToPng) or \
-            attemptFigureConversion(sourceDirectory,fig,"jpg",jpgToPng) 
-        figFilename = os.path.join(outputFigDir,os.path.split(fig)[1])
-        copy(fig,figFilename)
 
     jsonMetaData = buildOutlineJson(inputFile)
 
-    convertedHtml = convertToHtml(os.path.splitext(inputFile)[0]+'.tex',outputFile,outputFigDir)
+    texFile = os.path.join(os.path.split(os.path.abspath(inputFile))[0],jsonMetaData['src'])
+
+    for fig in findFigures(texFile):
+        fig = changeExtension(fig,"png")
+        attemptFigureConversion(sourceDirectory,fig,"svg",svgToPng) or \
+            attemptFigureConversion(sourceDirectory,fig,"jpg",jpgToPng) 
+        
+        figureSourceLocation = os.path.abspath(os.path.join(os.path.split(os.path.abspath(texFile))[0],fig))
+        figureDestination = figureSourceLocation.replace(os.path.abspath(inputDir),os.path.abspath(outputDir))
+
+        copy(fig,figureDestination)
+
+    convertedHtml = convertToHtml(os.path.splitext(inputFile)[0]+'.tex',outputFile,inputDir, outputDir)
 
     del jsonMetaData['src']
 
@@ -389,7 +400,6 @@ def execute(inputFile,outputFile,outputFigDir):
 
     with open(outputFile, 'w') as outfile:
         json.dump(jsonMetaData, outfile, indent=1)
-
 
 
 def buildOutlineJson(inputFile):
@@ -405,13 +415,15 @@ def main(argv):
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument("inputFile")
+    parser.add_argument("inputDir")
     parser.add_argument("outputFile")
+    parser.add_argument("outputDir")
     parser.add_argument("--workingDir",default=".")
     parser.add_argument("--outputFigDir",default=".")
     args = parser.parse_args()
-    (inputFile,outputFile,outputFigDir) = map(os.path.abspath,(args.inputFile,args.outputFile,args.outputFigDir))
+    (inputFile,outputFile,l) = map(os.path.abspath,(args.inputFile,args.outputFile,args.inputDir,args.outputDir))
     os.chdir(args.workingDir)
-    execute(inputFile,outputFile,outputFigDir)
+    execute(inputFile,outputFile,inputDir,outputDir)
 
 
 if __name__ == "__main__":
