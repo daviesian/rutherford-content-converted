@@ -42,7 +42,7 @@ def update_metadata(metadata, path, tex_file):
 into our new JSON format."""
     path_parts = path.split("src/main/resources/")
     new_m = {"id": metadata["ID"],
-             "src": path_parts[1] + "/" + tex_file,
+             "src": tex_file,
              "layout": "1-col",
              "encoding": "latex"}
   
