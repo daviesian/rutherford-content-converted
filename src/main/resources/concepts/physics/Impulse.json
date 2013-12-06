@@ -10,8 +10,7 @@
     "vectors", 
     "momentum", 
     "newtonii", 
-    "energy", 
-    "impulse"
+    "energy"
   ], 
   "id": "impulse"
 }

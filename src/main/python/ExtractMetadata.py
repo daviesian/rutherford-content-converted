@@ -6,14 +6,19 @@ from pprint import pprint
 import re
 import json
 
+
 def find_files(dir, ext):
+    """Perform a recursive search of dir, and return 
+a list of (directory, filename) tuples for all files
+with the specified extension."""
     files = []
     for dirpath, dirnames, filenames in walk(dir):
         files.extend([(dirpath.replace(os.sep,"/"),f) for f in filenames if f.endswith(ext)])
     return files
 
 def parse_metadata(lines):
-
+    """Take a list of lines from the header of a tex file
+and parse the keys/values into a dictionary."""
     line_metadata = {}
     for line in lines:
         match = re.match("%% (?P<key>[A-Z]*): (?P<val>.*)", line)
@@ -33,7 +38,8 @@ def parse_metadata(lines):
     return line_metadata
 
 def update_metadata(metadata, path, tex_file):
-
+    """Transform the metadata from path/tex_file 
+into our new JSON format."""
     path_parts = path.split("src/main/resources/")
     new_m = {"id": metadata["ID"],
              "src": path_parts[1] + "/" + tex_file,
@@ -71,6 +77,9 @@ def update_metadata(metadata, path, tex_file):
     return new_m
 
 def extract_metadata(path, tex_file, remove_from_tex=False):
+    """Extract the metadata from tex_file, 
+creating a new .json sidecar file."""
+
     print "Extracting metadata from %s/%s" % (path,tex_file)
 
     infile = open(path + "/" + tex_file, "r")
@@ -118,7 +127,6 @@ def main(argv):
     args = parser.parse_args(argv)
 
     print "Searching for .tex files in %s" % args.input_dir
-
     tex_files = find_files(args.input_dir, ".tex")
 
     for (path, name) in tex_files:
