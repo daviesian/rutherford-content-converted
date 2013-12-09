@@ -59,7 +59,7 @@ a = \frac{\Delta v}{\Delta t}
 \end{equation}
 \nl
 Similarly to the velocity in the previous section, this change may not be constant at each point on the car's trajectory. Reducing the time intervals to almost zero, the average acceleration can be rewritten as the instantaneous acceleration, $a = \frac{\d v}{\d t}$. And so, the acceleration is the time derivative of the velocity. From the previous section, we know that $v = \frac{\d s}{\d t}$. Thus, the acceleration can be related to the displacement of the car by:
- \begin{equation}
+\begin{equation}
 a = \frac{\d \left(\d s/ \d t\right)}{\d t} = \frac{\d^2 s}{\d t^2} 
 \end{equation}
  The acceleration is the second time derivative of the displacement. 
@@ -70,12 +70,12 @@ a = \frac{\d^2 (4t - 5 t^2)}{\d t^2} = \frac{\d \left(4-10t\right)}{\d t} = - 10
 \end{equation}}
 \nl
 As before, the velocity and the displacement can be obtained by integrating the acceleration with respect to time, once in the case of velocity and twice to obtain the displacement.
-  \begin{equation}
+\begin{equation}
 v = \int a \d t = at + c
 \label{vel}
 \end{equation}
 where c is equal the $u$, the velocity at $t=0$. And the displacement is:
- \begin{eqnarray}
+\begin{eqnarray}
 v = \int a \d t =& at + u\\
 s = \int \left(at + u\right) =& \frac{1}{2} a t^2 + u t + s_0
 \label{s}
@@ -84,20 +84,20 @@ where $s_0$ is the position of the car at $t=0$.
 
 \subsection{Rearranging Equations}
 These equations can be rearranged such that the position can be found as a function of the velocity and the acceleration if the time is not known. Rewriting equation \ref{vel} as a function of $t$:
-  \begin{equation}
+\begin{equation}
 t = \frac{v-u}{a}
 \end{equation}
 Now inserting it into the equation for the position, we get:
-  \begin{eqnarray}
+\begin{eqnarray}
 s =& \frac{1}{2} a \left(\frac{v-u}{a}\right)^2 + u\left(\frac{v-u}{a}\right) + s_0\\
 s =& \frac{1}{2}\frac{(v-u)^2 + 2uv - 2u^2}{a} + s_0\\
 s =& \frac{1}{2}\frac{v^2 + u^2 - 2uv + 2uv - 2u^2}{a} + s_0\\
 s =& \frac{1}{2} \frac{v^2 - u^2}{a} + s_0
 \end{eqnarray}
 If the initial position is $s_0=0$, this equation can be rearranged to:
- \begin{equation}
+\begin{equation}
 v^2 = u^2 + 2as
 \end{equation}
- \end{document}
+\end{document}
  
  
