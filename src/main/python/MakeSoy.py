@@ -41,10 +41,6 @@ class qq(Command):
 class answer(Command):
     args = '{units}{value}'      
 
-def textDefault(self, node):
-    return node.replace('&','&amp;').replace('<','&lt;').replace('>','&gt;')
-
-
 def isNode(node,name):
     if node.nodeName == name:
         return True
@@ -84,7 +80,8 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
     # filter the source file because \nonumber commands break the parser
     source = '\n'.join(file(inputFile))
     source = re.sub(r'\\nonumber','',source)
-    source = re.sub(r'\\\&',r'#amp#',source) # horrible find replace hack #1 because ampersands seemed to get consumed by a random (and unknown) part of the parser
+    source = re.sub(r'\\%',r'#37;',source) # horrible find replace hack #1 because ampersands seemed to get consumed by a random (and unknown) part of the parser    
+    source = re.sub(r'\\\& ',r'#amp# ',source) # horrible find replace hack #1 because ampersands seemed to get consumed by a random (and unknown) part of the parser
     output = file("filtered.tex","w")
     output.write(source)
     output.flush()
@@ -137,6 +134,7 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
             text = re.sub(u'\u2014','&mdash;', text)
             text = re.sub(u'\u2013','&ndash;', text)
             text = re.sub(r'\'','&apos;', text)
+            text = re.sub(r'#37;','&#37;', text) # horrible find replace hack #3 puts the correct html encoded value in now as it doesn't get removed after this point this is for % signs
 
             if escapeBraces:
                 text = re.sub(r'\{',"{lb}",text)
