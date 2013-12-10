@@ -11,7 +11,7 @@
 \begin{problem}[A1969AMIIQ2a] %Slightly tricky impulse, energy and SUVAT question
 {\begin{figure}[h]
 \centering
-\includegraphics[width=0.5\textwidth]{Dynamics_table_pulley_masses}
+\includegraphics[width=0.5\textwidth]{../../../figures/Dynamics_table_pulley_masses}
 \caption{}\label{fig:Dynamics_table_pulley_masses}
 \end{figure}
 
@@ -37,23 +37,45 @@ is the initial acceleration.
 		\item This step can be simplified by a realisation based on energy principles. When $m_{2}$ hits the floor there is no longer any tension in the string, but the other two masses have momenta that will carry them onwards and make the string slack. But $m_{1}$ now has a net force of $-m_{1}g$ acting on it, which will slow both masses and reverse their motion. When they get back to the point they were at as $m_{2}$ hit the ground, the string will go taut again. Since the surface is smooth the kinetic energy of $m_{1}$ and $m_{3}$ must be the same as it was initially; there are no losses to friction and the gravitational potential energy is unchanged. Thus the speed of $m_{1}$ and $m_{3}$ the instant the string goes taut must be the speed the masses were moving at as $m_{2}$ hit the ground.
 
 This can be found by using the SUVAT equations, since the masses move together from rest at a constant acceleration. We want to use the equation $v^{2} = u^{2} + 2as$, where $s = h_{0}$, $u = 0$ and $a = a_{0}$:
-\begin{align*} v &= \sqrt{u^{2} + 2as} = \sqrt{(0)^{2} + 2(a_{0})(h_{0})} = \sqrt{2a_{0}h_{0}} \\ &= \sqrt{2\left(\frac{(3 - 1)(9.8)}{1 + 3 + 5}\right)(0.45)} \textrm{ ms}^{-1} = \frac{7}{5} \textrm{ ms}^{-1} = 1.4 \textrm{ ms}^{-1}  \end{align*}
+\begin{align*} 
+v &= \sqrt{u^{2} + 2as} = \sqrt{(0)^{2} + 2(a_{0})(h_{0})} = \sqrt{2a_{0}h_{0}} \\
+ &= \sqrt{2\left(\frac{(3 - 1)(9.8)}{1 + 3 + 5}\right)(0.45)} \text{ ms}^{-1} = \frac{7}{5} \text{ ms}^{-1} = 1.4 \text{ ms}^{-1}  
+ \end{align*}
 which is the speed they must be moving at as the string goes taut once more. 
 
 This can be shown another way; by using SUVAT again, if the energy reasoning is unclear or just as a check. The mass $m_{1}$ has a force $-m_{1}g$ acting on it and so the tension in the string must equal this too, giving $m_{1}$ and $m_{3}$ together an acceleration of $a_{c} = \frac{-m_{1}g}{m_{1} + m_{3}}$. Then we use the same SUVAT equation as before, but now $s = 0$ in order that the string go taut again; the displacement is zero since they return to the same position, and $a = a_{c}$:
-\begin{equation*} v = \sqrt{u^{2} + 2as} = \sqrt{u^{2} + 2a_{c}(0)} = \sqrt{u^{2}} = u \end{equation*}
+\begin{equation*} 
+v = \sqrt{u^{2} + 2as} = \sqrt{u^{2} + 2a_{c}(0)} = \sqrt{u^{2}} = u 
+\end{equation*}
 so the masses have the same speeds as initially; as expected from the energy reasoning.
 
 This is not the final answer, since just after the string goes taut $m_{2}$ will be moving as well. To find the final speed, $w$, all three masses have immediately after the string goes taut, conserve momentum:
-\begin{align*} (m_{1} + m_{3})(v) + (m_{2})(0) = (m_{1} + m_{2} + m_{3})(w) \end{align*}\begin{align*} w = \frac{m_{1} + m_{3}}{m_{1} + m_{2} + m_{3}} v \end{align*}
+\begin{align*} 
+(m_{1} + m_{3})(v) + (m_{2})(0) = (m_{1} + m_{2} + m_{3})(w) 
+\end{align*}
+\begin{align*}
+ w = \frac{m_{1} + m_{3}}{m_{1} + m_{2} + m_{3}} v 
+ \end{align*}
 
 		\item The impulse on $m_{2}$ is simply the change in its momentum as it is lifted from the floor. It starts stationary on the floor and is then moving upwards at a speed $w$:
-\begin{align*} I &= (m_{2})(w) - (m_{2})(0) = m_{2}w = \frac{m_{2} \left(m_{1} + m_{3} \right)}{m_{1} + m_{2} + m_{3}} v = \frac{m_{2} \sqrt{2a_{0}h_{0}} \left(m_{1} + m_{3} \right)}{m_{1} + m_{2} + m_{3}} \\ &= \frac{(3)(1.4)(6)}{9} \textrm{ kg ms}^{-1} = \frac{14}{5} \textrm{ kg ms}^{-1} = 2.8 \textrm{ kg ms}^{-1}\end{align*}
+\begin{align*} 
+I &= (m_{2})(w) - (m_{2})(0) = m_{2}w = \frac{m_{2} \left(m_{1} + m_{3} \right)}{m_{1} + m_{2} + m_{3}} v = \frac{m_{2} \sqrt{2a_{0}h_{0}} \left(m_{1} + m_{3} \right)}{m_{1} + m_{2} + m_{3}} \\ 
+&= \frac{(3)(1.4)(6)}{9} \text{ kg ms}^{-1} = \frac{14}{5} \text{ kg ms}^{-1} = 2.8 \text{ kg ms}^{-1}
+\end{align*}
 
 The loss in kinetic energy (KE) as $m_{2}$ starts moving is given by the total KE before, minus the KE after:
-\begin{align*} \textrm{KE Loss} &= \left( \frac{1}{2}m_{1}v^{2} + \frac{1}{2}m_{3}v^{2} \right) - \left( \frac{1}{2}m_{1}w^{2} + \frac{1}{2}m_{2}w^{2} + \frac{1}{2}m_{3}w^{2} \right) \\ &= \frac{1}{2} \left( (m_{1} + m_{3})v^{2} - (m_{1} + m_{2} + m_{3})w^{2} \right) \\ &= \frac{1}{2}v^{2} \left( (m_{1} + m_{3}) - \frac{(m_{1} + m_{3})^{2}}{m_{1} + m_{2} + m_{3}} \right) \\ &= \frac{1}{2}(1.4)^{2} \left( 6 - \frac{36}{9} \right) \textrm{ J} \\ &= \frac{49}{25} \textrm{ J} = 1.96 \textrm{ J}\end{align*}
+\begin{align*} 
+\text{KE Loss} &= \left( \frac{1}{2}m_{1}v^{2} + \frac{1}{2}m_{3}v^{2} \right) - \left( \frac{1}{2}m_{1}w^{2} + \frac{1}{2}m_{2}w^{2} + \frac{1}{2}m_{3}w^{2} \right) \\ 
+&= \frac{1}{2} \left( (m_{1} + m_{3})v^{2} - (m_{1} + m_{2} + m_{3})w^{2} \right) \\ &= \frac{1}{2}v^{2} \left( (m_{1} + m_{3}) - \frac{(m_{1} + m_{3})^{2}}{m_{1} + m_{2} + m_{3}} \right) \\ 
+&= \frac{1}{2}(1.4)^{2} \left( 6 - \frac{36}{9} \right) \text{ J} \\ 
+&= \frac{49}{25} \text{ J} = 1.96 \text{ J}
+\end{align*}
 	\end{enumerate}
 	\item The masses are now moving anticlockwise around the edge of the table but have the initial, clockwise, force acting on them. Thus they have a constant deceleration and will come to instantaneous rest. The SUVAT equation $v^{2} = u^{2} + 2as$ can be used to find $h$, the height $m_{2}$ reaches above the floor before it stops. Using $s = h$, $u = w$, $v = 0$ and $a = -a_{0}$:
-\begin{align*} h &= \frac{v^{2} - u^{2}}{2a} = \frac{-w^{2}}{-2a_{0}} = \left( \frac{m_{1} + m_{3}}{m_{1} + m_{2} + m_{3}} \right)^{2} \left( \frac{v^{2}}{2a_{0}} \right) =  \left( \frac{m_{1} + m_{3}}{m_{1} + m_{2} + m_{3}} \right)^{2} h_{0} \\ &= \left( \frac{6}{9} \right)^{2} h_{0} = \frac{4}{9} h_{0}\end{align*} as required.
+\begin{align*}
+ h &= \frac{v^{2} - u^{2}}{2a} = \frac{-w^{2}}{-2a_{0}} = \left( \frac{m_{1} + m_{3}}{m_{1} + m_{2} + m_{3}} \right)^{2} \left( \frac{v^{2}}{2a_{0}} \right) =  \left( \frac{m_{1} + m_{3}}{m_{1} + m_{2} + m_{3}} \right)^{2} h_{0} \\ 
+ &= \left( \frac{6}{9} \right)^{2} h_{0} = \frac{4}{9} h_{0}
+ \end{align*} 
+ as required.
 \end{enumerate}}
 \end{problem}
