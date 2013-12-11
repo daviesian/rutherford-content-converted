@@ -1,14 +1,13 @@
 {
-  "src": "A1987PIQ7l.tex", 
+  "src": "AO1989PIQ1l.tex", 
   "attribution": null, 
   "encoding": "latex", 
-  "title": "The Second Hand", 
+  "title": "Powerful Stuff", 
   "relatedContent": [
-    "angular_circular", 
-    "A1987PIQ7l_video"
+    "energy"
   ], 
   "author": null, 
   "layout": "1-col", 
   "type": "legacy_latex_question", 
-  "id": "the_second_hand"
+  "id": "powerful_stuff"
 }

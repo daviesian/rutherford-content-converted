@@ -3,15 +3,15 @@
   "attribution": null, 
   "encoding": "latex", 
   "title": "Conservation of Momentum", 
-  "author": null, 
-  "type": "concept", 
-  "layout": "1-col", 
-  "related_content": [
+  "relatedContent": [
     "vectors", 
     "momentum", 
     "energy", 
     "vectors", 
     "algebra"
   ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "concept", 
   "id": "momentumii"
 }

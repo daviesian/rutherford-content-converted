@@ -3,12 +3,12 @@
   "attribution": null, 
   "encoding": "latex", 
   "title": "Energy", 
-  "author": null, 
-  "type": "concept", 
-  "layout": "1-col", 
-  "related_content": [
+  "relatedContent": [
     "newtonii", 
     "eq_of_motion_diff"
   ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "concept", 
   "id": "energy"
 }

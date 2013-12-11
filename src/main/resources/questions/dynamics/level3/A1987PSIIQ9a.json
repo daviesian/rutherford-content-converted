@@ -1,14 +1,16 @@
 {
-  "src": "A1987PIQ7l.tex", 
+  "src": "A1987PSIIQ9a.tex", 
   "attribution": null, 
   "encoding": "latex", 
-  "title": "The Second Hand", 
+  "title": "A Metal Block", 
   "relatedContent": [
-    "angular_circular", 
-    "A1987PIQ7l_video"
+    "energy", 
+    "momentum", 
+    "eq_of_motion_diff", 
+    "friction"
   ], 
   "author": null, 
   "layout": "1-col", 
   "type": "legacy_latex_question", 
-  "id": "the_second_hand"
+  "id": "metal_block"
 }

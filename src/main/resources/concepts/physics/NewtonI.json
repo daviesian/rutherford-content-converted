@@ -3,14 +3,14 @@
   "attribution": null, 
   "encoding": "latex", 
   "title": "Newton's First Law", 
-  "author": null, 
-  "type": "concept", 
-  "layout": "1-col", 
-  "related_content": [
+  "relatedContent": [
     "newtonii", 
     "newtoniii", 
     "vectors", 
     "calculus"
   ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "concept", 
   "id": "newtoni"
 }

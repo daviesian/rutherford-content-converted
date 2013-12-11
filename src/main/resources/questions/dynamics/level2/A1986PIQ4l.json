@@ -3,14 +3,14 @@
   "attribution": null, 
   "encoding": "latex", 
   "title": "What goes up...", 
-  "author": null, 
-  "type": "legacy_latex_question", 
-  "layout": "1-col", 
-  "related_content": [
+  "relatedContent": [
     "momentum", 
     "energy", 
     "impulse", 
     "A1986PIQ4l_video"
   ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question", 
   "id": "what_goes_up"
 }

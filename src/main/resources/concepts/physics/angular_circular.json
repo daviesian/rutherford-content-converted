@@ -3,14 +3,14 @@
   "attribution": null, 
   "encoding": "latex", 
   "title": "Circular kinematics", 
-  "author": null, 
-  "type": "concept", 
-  "layout": "1-col", 
-  "related_content": [
+  "relatedContent": [
     "newtoni", 
     "newtonii", 
     "vectors", 
     "calculus"
   ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "concept", 
   "id": "angular_circular"
 }

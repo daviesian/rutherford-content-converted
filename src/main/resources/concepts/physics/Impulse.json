@@ -3,14 +3,14 @@
   "attribution": null, 
   "encoding": "latex", 
   "title": "Impulse", 
-  "author": null, 
-  "type": "concept", 
-  "layout": "1-col", 
-  "related_content": [
+  "relatedContent": [
     "vectors", 
     "momentum", 
     "newtonii", 
     "energy"
   ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "concept", 
   "id": "impulse"
 }

@@ -3,11 +3,16 @@
   "attribution": null, 
   "encoding": "latex", 
   "title": "Vectors -- 1", 
-  "author": null, 
-  "type": "concept", 
-  "layout": "1-col", 
-  "related_content": [
-    "resolving_vectors"
+  "relatedContent": [
+    "resolving_vectors", 
+    "momentum", 
+    "newtonii", 
+    "netwoniii", 
+    "momentumii", 
+    "angular_circular"
   ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "concept", 
   "id": "vectors"
 }

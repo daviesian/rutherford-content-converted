@@ -3,15 +3,15 @@
   "attribution": null, 
   "encoding": "latex", 
   "title": "Starting with the Basics", 
-  "author": null, 
-  "type": "legacy_latex_question", 
-  "layout": "1-col", 
-  "related_content": [
+  "relatedContent": [
     "angular_circular", 
     "newtonii", 
     "vectors", 
     "resolving_vectors", 
     "AO1989PIQ10l_video"
   ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question", 
   "id": "starting_w_basics"
 }

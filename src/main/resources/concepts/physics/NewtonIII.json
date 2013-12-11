@@ -3,15 +3,15 @@
   "attribution": null, 
   "encoding": "latex", 
   "title": "Newton's Third Law", 
-  "author": null, 
-  "type": "concept", 
-  "layout": "1-col", 
-  "related_content": [
+  "relatedContent": [
     "newtoni", 
     "newtonii", 
     "vectors", 
     "calculus", 
     "newtoniii_video"
   ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "concept", 
   "id": "newtoniii"
 }

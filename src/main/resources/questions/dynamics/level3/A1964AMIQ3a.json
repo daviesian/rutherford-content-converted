@@ -1,17 +1,18 @@
 {
-  "src": "A1986MIIQ1p.tex", 
+  "src": "A1964AMIQ3a.tex", 
   "attribution": null, 
   "encoding": "latex", 
-  "title": "Two Particles on a String", 
+  "title": "Hammer and Nail", 
   "relatedContent": [
-    "momentum", 
     "energy", 
+    "momentum", 
+    "eq_of_motion_diff", 
     "impulse", 
-    "vectors", 
+    "newtonii", 
     "resolving_vectors"
   ], 
   "author": null, 
   "layout": "1-col", 
   "type": "legacy_latex_question", 
-  "id": "particles_on_string"
+  "id": "hammer_nail"
 }

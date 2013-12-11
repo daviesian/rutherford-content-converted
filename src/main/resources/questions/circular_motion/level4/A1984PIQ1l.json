@@ -3,11 +3,11 @@
   "attribution": null, 
   "encoding": "latex", 
   "title": "Speedometer on a Bike Wheel", 
-  "author": null, 
-  "type": "legacy_latex_question", 
-  "layout": "1-col", 
-  "related_content": [
+  "relatedContent": [
     "angular_circular"
   ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question", 
   "id": "bike_speedometer"
 }

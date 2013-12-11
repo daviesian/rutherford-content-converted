@@ -47,22 +47,22 @@ into our new JSON format."""
              "encoding": "latex"}
   
     new_m["attribution"] = None
-    new_m["related_content"] = []
+    new_m["relatedContent"] = []
 
     new_m["author"] = metadata["AUTHOR"] if metadata.has_key("AUTHOR") else None
     new_m["title"] = metadata["TITLE"] if metadata.has_key("TITLE") else None
 
     if metadata.has_key("CONCEPTS"):
         if type(metadata["CONCEPTS"]) is list:
-            new_m["related_content"].extend(metadata["CONCEPTS"])
+            new_m["relatedContent"].extend(metadata["CONCEPTS"])
         else:
-            new_m["related_content"].append(metadata["CONCEPTS"])
+            new_m["relatedContent"].append(metadata["CONCEPTS"])
 
     if metadata.has_key("VIDEOS"):
         if type(metadata["VIDEOS"]) is list:
-            new_m["related_content"].extend([v.replace(".mp4","_video").replace(".mov","_video") for v in metadata["VIDEOS"]])
+            new_m["relatedContent"].extend([v.replace(".mp4","_video").replace(".mov","_video") for v in metadata["VIDEOS"]])
         else:
-            new_m["related_content"].append(metadata["VIDEOS"].replace(".mp4","_video").replace(".mov","_video"))
+            new_m["relatedContent"].append(metadata["VIDEOS"].replace(".mp4","_video").replace(".mov","_video"))
 
     if metadata["TYPE"] == "maths" or metadata["TYPE"] == "physics":
         new_m["type"] = "concept"

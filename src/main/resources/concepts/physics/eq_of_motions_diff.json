@@ -3,14 +3,14 @@
   "attribution": null, 
   "encoding": "latex", 
   "title": "Equations of Motion", 
-  "author": null, 
-  "type": "concept", 
-  "layout": "1-col", 
-  "related_content": [
+  "relatedContent": [
     "vectors", 
     "algebra", 
     "calculus", 
     "newtonii"
   ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "concept", 
   "id": "eq_of_motion_diff"
 }

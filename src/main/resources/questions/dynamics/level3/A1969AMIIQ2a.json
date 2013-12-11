@@ -1,14 +1,17 @@
 {
-  "src": "IntA1987PIQ1l.tex", 
+  "src": "A1969AMIIQ2a.tex", 
   "attribution": null, 
   "encoding": "latex", 
-  "title": " A Toboggan", 
+  "title": "Pulleys on a Table", 
   "relatedContent": [
+    "energy", 
+    "momentum", 
+    "eq_of_motion_diff", 
     "newtonii", 
-    "IntA1987PIQ1l_video"
+    "impulse"
   ], 
   "author": null, 
   "layout": "1-col", 
   "type": "legacy_latex_question", 
-  "id": "a_toboggan"
+  "id": "pulleys_on_table"
 }

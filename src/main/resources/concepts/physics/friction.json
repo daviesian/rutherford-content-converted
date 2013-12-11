@@ -3,14 +3,14 @@
   "attribution": null, 
   "encoding": "latex", 
   "title": "Friction", 
-  "author": null, 
-  "type": "concept", 
-  "layout": "1-col", 
-  "related_content": [
+  "relatedContent": [
     "vectors", 
     "newtonii", 
     "newtoni", 
     "newtoniii"
   ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "concept", 
   "id": "friction"
 }

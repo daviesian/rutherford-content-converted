@@ -3,15 +3,15 @@
   "attribution": null, 
   "encoding": "latex", 
   "title": "Newton's Second Law", 
-  "author": null, 
-  "type": "concept", 
-  "layout": "1-col", 
-  "related_content": [
+  "relatedContent": [
     "newtoni", 
     "newtoniii", 
     "vectors", 
     "calculus", 
     "NewtonII_video"
   ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "concept", 
   "id": "newtonii"
 }
