@@ -69,7 +69,7 @@ def findNode(node,name):
             return searchResult
     return None
 
-def convertToHtml(inputFile,outputFile,inputDir,outputDir):
+def convertToHtml(inputFile,outputFile,inputDir,outputDir,jsonMetaData):
     (sourceDirectory,sourceFile) = os.path.split(inputFile)
     commonDirectory = os.path.join(sourceDirectory,"common")
 
@@ -78,12 +78,8 @@ def convertToHtml(inputFile,outputFile,inputDir,outputDir):
 
     if isNewer(inputFile,outputFile):
         ensureDirectory(outputFile)
-    
-    meta = {}
-    for line in file(inputFile):
-        m = re.match("%% ([A-Z]+): (.*)",line.strip())
-        if m:
-            meta[m.group(1)] = m.group(2)
+
+    meta = jsonMetaData
 
     # filter the source file because \nonumber commands break the parser
     source = '\n'.join(file(inputFile))
@@ -117,7 +113,7 @@ def convertToHtml(inputFile,outputFile,inputDir,outputDir):
     tex=tex.parse()
 
     isQuestion = False
-    if(None != meta['TYPE'] and meta['TYPE'].lower() == "question"):
+    if(None != meta['type'] and (meta['type'].lower() == "question") or 'legacy_latex_question' in meta['type']):
         # Use question logic if different
         isQuestion = True
         # expecting a problem with 4 bgroups
@@ -220,7 +216,7 @@ def convertToHtml(inputFile,outputFile,inputDir,outputDir):
                 questionContentDataStructure['content'] = rawQuestionMap['questionText']
                 questionContentList.append(questionContentDataStructure)
 
-                if(meta['QUESTIONTYPE'] == 'scq'):
+                if(meta['type'] == 'legacy_latex_question_scq'):
                     questionContentList.append(extractMcqObjects(rawQuestionMap['rawQuestionNode'],rawQuestionMap['explanation']))
 
                 jsonOutput['attribution']=rawQuestionMap['attribution']
@@ -241,16 +237,16 @@ def convertToHtml(inputFile,outputFile,inputDir,outputDir):
 
             # questionText and options
             # This will need fixing as currently it will affect any enumerate whether it is an options list or not
-            if meta['QUESTIONTYPE'] == 'scq' or meta['QUESTIONTYPE'] == 'mcq':
+            if meta['type'] == 'legacy_latex_question_scq' or meta['type'] == 'legacy_latex_question_mcq':
                 # This is legacy and pending removal
                 if node.nodeName == "enumerate":
                     pass 
-                elif node.nodeName == "item" and (meta['QUESTIONTYPE'] == 'scq' or meta['QUESTIONTYPE'] == 'mcq'):                
+                elif node.nodeName == "item" and (meta['type'] == 'legacy_latex_question_scq' or meta['type'] == 'legacy_latex_question_mcq'):                
                     terminal = True
             # Hack to get numeric and symbolic questions displaying properly and omitting the answer for now
-            elif meta['QUESTIONTYPE'] == 'numeric' or meta['QUESTIONTYPE'] == 'symbolic': 
+            elif meta['type'] == 'legacy_latex_question_numeric' or meta['type'] == 'legacy_latex_question_symbolic': 
                 if node.nodeName == 'answer':
-                    logging.debug("Found %s Question %s - Omitting answer: %s %s" % (meta['QUESTIONTYPE'],meta['ID'],text('value'),text('units')))
+                    logging.debug("Found %s Question %s - Omitting answer: %s %s" % (meta['type'],meta['id'],text('value'),text('units')))
                     terminal = True
                 elif eq("enumerate"):
                     result.append('<ol>')
@@ -448,7 +444,7 @@ def execute(inputFile,outputFile,inputDir,outputDir):
 
         copy(os.path.split(fig)[1],figureDestination)
 
-    convertedHtml = convertToHtml(os.path.splitext(inputFile)[0]+'.tex',outputFile,inputDir, outputDir)
+    convertedHtml = convertToHtml(texFile,outputFile,inputDir,outputDir,jsonMetaData)
 
     del jsonMetaData['src']
 
