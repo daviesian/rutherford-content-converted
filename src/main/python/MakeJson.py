@@ -438,13 +438,15 @@ def execute(inputFile,outputFile,inputDir,outputDir):
 
     for fig in findFigures(texFile):
         fig = changeExtension(fig,"png")
-        attemptFigureConversion(sourceDirectory,fig,"svg",svgToPng) or \
-            attemptFigureConversion(sourceDirectory,fig,"jpg",jpgToPng) 
+        figureLocationDirectory = os.path.abspath(os.path.join(sourceDirectory,os.path.split(fig)[0]))
+
+        attemptFigureConversion(figureLocationDirectory,os.path.split(fig)[1],"svg",svgToPng) or \
+            attemptFigureConversion(figureLocationDirectory,os.path.split(fig)[1],"jpg",jpgToPng) 
         
         figureSourceLocation = os.path.abspath(os.path.join(os.path.split(os.path.abspath(texFile))[0],fig))
         figureDestination = figureSourceLocation.replace(os.path.abspath(inputDir),os.path.abspath(outputDir))
 
-        copy(fig,figureDestination)
+        copy(os.path.split(fig)[1],figureDestination)
 
     convertedHtml = convertToHtml(os.path.splitext(inputFile)[0]+'.tex',outputFile,inputDir, outputDir)
 
