@@ -199,9 +199,11 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
                         terminal = True
                     result.append('</ol>')
                 elif eq("item"):
+                    result.append("<li>")
                     for enumerate_items in node.childNodes:
-                        result.append('<li>%s</li>' % render(enumerate_items, escapeBraces))
+                        result.append('%s' % render(enumerate_items, escapeBraces))
                         terminal = True
+                    result.append("</li>")
                     terminal = True
         if eq("#text"):
             result.append(escape(node.textContent))
