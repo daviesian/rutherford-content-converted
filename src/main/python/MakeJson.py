@@ -73,6 +73,9 @@ def convertToHtml(inputFile,outputFile,inputDir,outputDir):
     (sourceDirectory,sourceFile) = os.path.split(inputFile)
     commonDirectory = os.path.join(sourceDirectory,"common")
 
+    # this is the returned data structure that gets merged with the metadata one
+    jsonOutput = dict()
+
     if isNewer(inputFile,outputFile):
         ensureDirectory(outputFile)
     
@@ -137,60 +140,114 @@ def convertToHtml(inputFile,outputFile,inputDir,outputDir):
             text = re.sub(u'\u2019','&apos;', text)
             text = re.sub(u'\u2014','&mdash;', text)
             text = re.sub(u'\u2013','&ndash;', text)
-            text = re.sub(r'\'','&apos;', text)
-
-            # if escapeBraces:
-            #     text = re.sub(r'\{',"{lb}",text)
-            #     text = re.sub(r'(?<!\{lb)\}',"{rb}",text)
-                #text.decode('latin9').encode('utf8')     
+            text = re.sub(r'\'','&apos;', text) 
             return text
 
         def eq(string):
             return node.nodeName == string
 
+        #checks to see if the current node is the document node. If it is, we shall try and build a simple map containing both the questionText, questionNode, explanation and attribution
+        def extractCommonQuestionMap():
+            rawQuestionMap = dict()
+            if eq("#document"):
+                bgroupCount = 0
+                for n in node.childNodes:
+                    if(n.nodeName == "bgroup"):
+                        if bgroupCount == 0:
+                            questionContent = ""
+                            for questionText in n.childNodes:
+                                questionContent+=("<p>" + render(questionText,escapeBraces) + '</p>')
+                            rawQuestionMap['questionText'] = questionContent
+                            rawQuestionMap['rawQuestionNode'] = n
+                            terminal = True
+                        elif bgroupCount == 1:
+                            rawQuestionMap['attribution'] = n.textContent
+                            terminal = True
+                        elif bgroupCount == 2:
+                            rawQuestionMap['explanation'] = render(n, False)
+                            terminal = True
+                        bgroupCount+=1
+                return rawQuestionMap
+
+
+        def extractMcqObjects(questionNode,correctAnswerExplanation):
+            mcqObject = None
+
+            # Build mcq object which will hold all possible choices
+            if questionNode.nodeName == "enumerate":
+                mcqObject = dict()
+                mcqChoicesList = list()
+                for item in questionNode.childNodes:
+                    mcqChoicesList.append(extractMcqObjects(item, correctAnswerExplanation))
+                mcqObject['content'] = mcqChoicesList
+                mcqObject['type']='mcq'
+                mcqObject['layout']="random_order"
+            # build choices objects
+            elif questionNode.nodeName == "item":
+                mcqChoice = dict()
+                body = questionNode.childNodes[0]
+                answer = True if isNode(questionNode,"answer") else False
+
+                mcqChoice['type']='choice'
+                mcqChoice['content']=render(body,False)
+                mcqChoice['correct']=answer
+                if answer:
+                    mcqChoice['explanation'] = correctAnswerExplanation
+                return mcqChoice
+            # if we have children then we should search through them to see if we can find the enumerate node
+            elif len(questionNode.childNodes) > 0:
+                for child in questionNode.childNodes:
+                    output = extractMcqObjects(child, correctAnswerExplanation)
+                    if output != None:
+                        mcqObject = output
+            # if we do not have children then stop.
+            elif questionNode.childNodes == None or len(questionNode.childNodes) <=0:
+                return None
+
+            return mcqObject
+
         #logging.warning(node.nodeName)
-        #result.append(node.nodeName)
         
         bgroupCount = 0
         # question stuff 
         if isQuestion:
-            if eq("#document"):                
-                for n in node.childNodes:
-                    
+            if eq("#document"):
+                rawQuestionMap = extractCommonQuestionMap()
+
+                questionContentList = list()
+                questionContentDataStructure = dict()
+                questionContentDataStructure['encoding'] = "html"
+                questionContentDataStructure['content'] = rawQuestionMap['questionText']
+                questionContentList.append(questionContentDataStructure)
+
+                if(meta['QUESTIONTYPE'] == 'scq'):
+                    questionContentList.append(extractMcqObjects(rawQuestionMap['rawQuestionNode'],rawQuestionMap['explanation']))
+
+                jsonOutput['attribution']=rawQuestionMap['attribution']
+
+                result.append(json.dumps(questionContentList))
+                # needed to stop double output
+                for n in node.childNodes:                    
                     if(n.nodeName == "bgroup"):
+
                         if bgroupCount == 0:
-                            for questionText in n.childNodes:
-                                result.append("<p>" + render(questionText,escapeBraces) + '</p>')
+                            pass
                         elif bgroupCount == 1:
-                            result.append('{call shared.questions.questionFooter}{param footer}%s{/param}{/call}' % n.textContent)
-                            terminal = True      
+                            pass
+                            terminal = True
                         elif bgroupCount == 2:
-                            result.append('{call shared.questions.questionExplanation}{param explanation}%s{/param}{/call}' % n.textContent)
+                            pass
                         bgroupCount+=1
 
             # questionText and options
             # This will need fixing as currently it will affect any enumerate whether it is an options list or not
             if meta['QUESTIONTYPE'] == 'scq' or meta['QUESTIONTYPE'] == 'mcq':
+                # This is legacy and pending removal
                 if node.nodeName == "enumerate":
-                    paramType = "checkbox"
-                    questionType = meta['QUESTIONTYPE']
-                    if questionType == 'scq':
-                        paramType = 'radio'
-                        questionType = 'mcq'
-                    elif questionType == 'mcq':
-                        paramType = 'checkbox'
-
-                    result.append('{call shared.questions.%s}\n{param type: \'%s\' /}\n{{param choices: [' % (questionType,paramType))  
-                elif node.nodeName == "item" and (meta['QUESTIONTYPE'] == 'scq' or meta['QUESTIONTYPE'] == 'mcq'):
-                    body = node.childNodes[0]
-                    answer = ",'ans':true" if isNode(node,"answer") else ""
-                    if node.nextSibling is not None:
-                        result.append('[\'desc\': \'%s\'%s],' % (render(body,False).replace('\\','\\\\').replace('{{','{ {').replace('}}','} }'),answer))
-                    else:
-                        result.append('[\'desc\': \'%s\'%s]]/}}\n{/call}' % (render(body,False).replace('\\','\\\\').replace('{{','{ {').replace('}}','} }'),answer))
+                    pass 
+                elif node.nodeName == "item" and (meta['QUESTIONTYPE'] == 'scq' or meta['QUESTIONTYPE'] == 'mcq'):                
                     terminal = True
             # Hack to get numeric and symbolic questions displaying properly and omitting the answer for now
-            # TODO allow numeric questions to accept answers
             elif meta['QUESTIONTYPE'] == 'numeric' or meta['QUESTIONTYPE'] == 'symbolic': 
                 if node.nodeName == 'answer':
                     logging.debug("Found %s Question %s - Omitting answer: %s %s" % (meta['QUESTIONTYPE'],meta['ID'],text('value'),text('units')))
@@ -242,10 +299,7 @@ def convertToHtml(inputFile,outputFile,inputDir,outputDir):
         elif eq("includegraphics"):
             latexFigurePath = os.path.join(os.path.split(os.path.abspath(inputFile))[0],changeExtension(node.getAttribute("file"),"png"))
             #remove absolute path information
-            htmlFigurePath = os.path.abspath(latexFigurePath.replace(os.path.abspath(inputDir),''))[1:]
-
-            #filename = os.path.join(outputDir,os.path.split(changeExtension(node.getAttribute("file"),"png"))[1])
-            #filename = os.path.join("static","figures",os.path.split(changeExtension(node.getAttribute("file"),"png"))[1])        
+            htmlFigurePath = os.path.abspath(latexFigurePath.replace(os.path.abspath(inputDir),''))[1:]    
             result.append('<img src="%s"/>' % htmlFigurePath)
         elif eq("caption"):
             figureNode = findNode(node, "label")
@@ -364,10 +418,13 @@ def convertToHtml(inputFile,outputFile,inputDir,outputDir):
         return u'\n'.join(result)
 
     doc = render(tex,True).encode('UTF-8','ignore')
-
-    jsonOutput = dict()
+    
     jsonOutput['content'] = doc
-
+    
+    # check to see if the content is actually a string and convert it - horrible hack due to the way I have to pass a string back after each recursive call.
+    if "\"content\":" in jsonOutput['content']:
+        #print jsonOutput['content']
+        jsonOutput['content'] = json.loads(jsonOutput['content'])
     return jsonOutput
     
 
@@ -400,7 +457,6 @@ def execute(inputFile,outputFile,inputDir,outputDir):
 
     with open(outputFile, 'w') as outfile:
         json.dump(jsonMetaData, outfile, indent=1)
-
 
 def buildOutlineJson(inputFile):
     # read json meta data to find tex file
