@@ -19,12 +19,13 @@ def findFigures(texFile):
             yield m.group(1)
 
 # This function assumes that the current os working directory has been set as all figures will be dumped here.
-def attemptFigureConversion(sourceDirectory, filename,extension,conversionFn):
+def attemptFigureConversion(sourceDirectory,filename,extension,conversionFn):
     sourceFile = os.path.join(sourceDirectory,changeExtension(filename,extension))
+
     if os.path.exists(sourceFile):
         if isNewer(sourceFile,filename):
             logging.info('New figure source file detected. Converting %s using %s' % (filename,conversionFn.__name__))
-            ensureDirectory(filename)
+            ensureDirectory(os.path.abspath(filename))
             conversionFn(sourceFile,filename)
         else:
             logging.info('Skipping image file (%s) as it has not changed since last time it was generated.' % filename)
@@ -54,7 +55,7 @@ Takes a filename and makes sure that the directory exists
 def ensureDirectory(f):
     dirName = os.path.split(f)[0]
     if not os.path.exists(dirName):
-        logging.info("Directory %s does not exist. Creating it...")
+        logging.info("Directory %s does not exist. Creating it..." % dirName)
         os.makedirs(dirName)
 
 def copy(sourceFile,destinationFile):
