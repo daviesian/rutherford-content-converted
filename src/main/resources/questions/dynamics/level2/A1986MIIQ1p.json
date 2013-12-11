@@ -12,6 +12,6 @@
   ], 
   "author": null, 
   "layout": "1-col", 
-  "type": "legacy_latex_question", 
+  "type": "legacy_latex_question_symbolic", 
   "id": "particles_on_string"
 }

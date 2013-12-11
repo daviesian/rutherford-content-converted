@@ -68,7 +68,7 @@ into our new JSON format."""
         new_m["type"] = "concept"
         
     elif metadata["TYPE"] == "question":
-        new_m["type"] = "legacy_latex_question"
+        new_m["type"] = "legacy_latex_question_%s" % metadata["QUESTIONTYPE"]
         
     else:
         raise "Unknown content type"

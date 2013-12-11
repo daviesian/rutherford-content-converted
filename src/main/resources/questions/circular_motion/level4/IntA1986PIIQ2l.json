@@ -9,6 +9,6 @@
   ], 
   "author": null, 
   "layout": "1-col", 
-  "type": "legacy_latex_question", 
+  "type": "legacy_latex_question_numeric", 
   "id": "record_player"
 }
