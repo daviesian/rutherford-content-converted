@@ -144,9 +144,6 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
 
         def eq(string):
             return node.nodeName == string
-
-        #logging.warning(node.nodeName)
-        #result.append(node.nodeName)
         
         bgroupCount = 0
         # question stuff 
