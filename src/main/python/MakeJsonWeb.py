@@ -44,6 +44,7 @@ def execute(inputDir,outputDir):
         if dirname[-6:] == "common":
             return
         for filename in fnames:
+            # look for json meta data files
             if re.match(r'^[^\.].*\.json$',filename):
                 jsonMetaFile = os.path.join(inputDir,dirname,filename)
 
@@ -57,7 +58,7 @@ def execute(inputDir,outputDir):
                 # pdfFile = os.path.join(pdfDir,"%s.%s" % (metaData["id"],"pdf"))
                 # MakePDF.execute(inputFile,pdfFile)
                 jsonFile = os.path.join(jsonDir,"%s" % filename)
-                MakeJson.execute(jsonMetaFile,jsonFile,inputDir,outputDir)
+                MakeJson.execute(jsonMetaFile,inputDir,outputDir)
 
     os.path.walk(inputDir,convert,None)
 
