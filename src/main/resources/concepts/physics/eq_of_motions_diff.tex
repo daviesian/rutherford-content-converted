@@ -23,78 +23,73 @@ The equations of motion relate the displacement of an object with its velocity, 
 
 \section{Equations of Motion using Differentiation and Integration}
 \subsection{Displacement and Velocity}
-The average velocity $v$ of car can be determined by taking its distance travelled $\Delta s$ and dividing it by the time taken to travel that distance, $\Delta t$:
-
+The average velocity \vari{v} of car can be determined by taking its distance travelled \vari{\Delta s} and dividing it by the time taken to travel that distance, \vari{\Delta t}:
 \begin{equation}
 v = \frac{\Delta s}{\Delta t}   
 \end{equation}
-This equation just gives us an indication of the average speed of the car. It does not indicate whether the car was speeding up or slowing down over that distance. In order to find the velocity of the car at a given location from the starting point, we need to break up the distance travelled in to many small chunks. The more the size of the chunks are reduced, the closer the time interval tends to zero, eventually giving the \textit{instantaneous velocity}. This is written as:
-
+This equation just gives us an indication of the average speed of the car. It does not indicate whether the car was speeding up or slowing down over that distance. In order to find the velocity of the car at a given location from the starting point, we need to break up the distance travelled in to many small chunks. The more the size of the chunks are reduced, the closer the time interval tends to zero, eventually giving the \stress{instantaneous velocity}. This is written as:
 \begin{equation}
 v = \frac{\d s}{\d t} 
 \label{inst_v}
-\end{equation}\\
-If you have done some integration and differentiation, you will recognise that the velocity is simply the time derivative of the displacement. \nll
-\qq{Question: If the displacement is given by $s = 4t - 5 t^2$, what is v?}{
-The instantaneous velocity $v$ is $\frac{\d s}{\d t}$. Thus,
+\end{equation}
+If you have done some integration and differentiation, you will recognise that the velocity is simply the time derivative of the displacement.
+\subsection*{Quick Question}
+\qq{If the displacement is given by \value{s}{4t - 5 t\sup2}, what is \vari{v}?}{
+The instantaneous velocity \vari{v} is \vari{\frac{\d s}{\d t}}. Thus,
 \begin{equation}
-v = \frac{\d (4t - 5 t^2)}{\d t} = 4 - 2 \times 5 t = 4-10t
+v = \frac{\d\,(4t - 5 t^2)}{\d t} = 4 - (2\times5 t) = 4-10t
 \end{equation}}
-\\
-But how to find the displacement after a certain time if the velocity is known? Let's rearrange the equation for the velocity:
+So we can find the velocity from the displacement using differentiation, how do we find the displacement after a certain time if the velocity is known? Let us rearrange the equation for the velocity:
  \begin{equation}
 \d s = v \d t 
 \label{inst_s}
 \end{equation}
-Now integrating both sides, we obtain the displacement at a given point in time:
+Now integrating both sides, gives the displacement at a given point in time:
   \begin{equation}
 \int s = \int v \d t = vt + c
 \end{equation}
-c is just the constant of integration. If $t=0$, then $s=c$, and so c is the initial position of the car.
+\vari{c} is just the constant of integration. If \value{t}{0}, then \value{s}{c}, and so \vari{c} is the initial position of the car.
 
 \subsection{Velocity and Acceleration}
-The car may be continuously changing speed. And so how can we quantify the change in the velocity as function of time? Let's start by considering the average change of the velocity over time, known as the acceleration $a$:
+The car may be continuously changing speed. And so how can we quantify the change in the velocity as function of time? Let's start by considering the average change of the velocity over time, known as the acceleration \vari{a}:
 \begin{equation}
 a = \frac{\Delta v}{\Delta t} 
 \end{equation}
-\nl
-Similarly to the velocity in the previous section, this change may not be constant at each point on the car's trajectory. Reducing the time intervals to almost zero, the average acceleration can be rewritten as the instantaneous acceleration, $a = \frac{\d v}{\d t}$. And so, the acceleration is the time derivative of the velocity. From the previous section, we know that $v = \frac{\d s}{\d t}$. Thus, the acceleration can be related to the displacement of the car by:
+Similarly to the velocity in the previous section, this change may not be constant at each point on the car's trajectory. Reducing the time intervals to almost zero, the average acceleration can be rewritten as the instantaneous acceleration, \value{a}{\frac{\d v}{\d t}}. And so, the acceleration is the time derivative of the velocity. From the previous section, we know that \value{v}{\frac{\d s}{\d t}}. Thus, the acceleration can be related to the displacement of the car by:
 \begin{equation}
 a = \frac{\d \left(\d s/ \d t\right)}{\d t} = \frac{\d^2 s}{\d t^2} 
 \end{equation}
  The acceleration is the second time derivative of the displacement. 
-\nll
-\qq{Question: What is the acceleration of the displacement in question 1, $s = 4t - 5 t^2$?}{
+\subsection*{Quick Question}
+\qq{What is the acceleration of an object if its displacement is the same as that given in question 1, \value{s}{4t - 5 t\sup2}?}{
 \begin{equation}
 a = \frac{\d^2 (4t - 5 t^2)}{\d t^2} = \frac{\d \left(4-10t\right)}{\d t} = - 10
 \end{equation}}
-\nl
-As before, the velocity and the displacement can be obtained by integrating the acceleration with respect to time, once in the case of velocity and twice to obtain the displacement.
+As before, the velocity and the displacement from the acceleration by integration with respect to time, once in the case of velocity and twice to obtain the displacement.
 \begin{equation}
 v = \int a \d t = at + c
-\label{vel}
 \end{equation}
 where c is equal the $u$, the velocity at $t=0$. And the displacement is:
 \begin{eqnarray}
-v = \int a \d t =& at + u\\
-s = \int \left(at + u\right) =& \frac{1}{2} a t^2 + u t + s_0
+v = \int a \d t &=& at + u \label{vel} \\ 
+s = \int \left(at + u\right) \d t &=& \frac{1}{2} a t^2 + u t + s_0
 \label{s}
 \end{eqnarray}
-where $s_0$ is the position of the car at $t=0$. 
+where \vari{s\s0} is the position of the car at \value{t}{0}. 
 
 \subsection{Rearranging Equations}
-These equations can be rearranged such that the position can be found as a function of the velocity and the acceleration if the time is not known. Rewriting equation \ref{vel} as a function of $t$:
+These equations can be rearranged such that the position can be found as a function of the velocity and the acceleration if the time is not known. Rewriting equation \ref{vel} as a function of \vari{t}:
 \begin{equation}
 t = \frac{v-u}{a}
 \end{equation}
 Now inserting it into the equation for the position, we get:
 \begin{eqnarray}
-s =& \frac{1}{2} a \left(\frac{v-u}{a}\right)^2 + u\left(\frac{v-u}{a}\right) + s_0\\
-s =& \frac{1}{2}\frac{(v-u)^2 + 2uv - 2u^2}{a} + s_0\\
-s =& \frac{1}{2}\frac{v^2 + u^2 - 2uv + 2uv - 2u^2}{a} + s_0\\
-s =& \frac{1}{2} \frac{v^2 - u^2}{a} + s_0
+s &=& \frac{1}{2} a \left(\frac{v-u}{a}\right)^2 + u\left(\frac{v-u}{a}\right) + s_0\nonumber \\
+s &=& \frac{1}{2}\frac{(v-u)^2 + 2uv - 2u^2}{a} + s_0 \nonumber\\
+s &=& \frac{1}{2}\frac{v^2 + u^2 - 2uv + 2uv - 2u^2}{a} + s_0 \nonumber\\
+s &=& \frac{1}{2} \frac{v^2 - u^2}{a} + s_0
 \end{eqnarray}
-If the initial position is $s_0=0$, this equation can be rearranged to:
+If the initial position is \value{s\s0}{0}, this equation can be rearranged to:
 \begin{equation}
 v^2 = u^2 + 2as
 \end{equation}
