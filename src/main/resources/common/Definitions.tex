@@ -19,13 +19,13 @@
 \def\sup#1{$^\text{#1}$}
  
 %Quantity is used for numbers with units: 1 kg, 1 m/s
-\def\quantity#1#2{{${#1}$}{\ #2}}
+\def\quantity#1#2{{${#1}$}{\,#2}}
 
 %Vari puts a defined variable in maths font
 \def\vari#1{${#1}$}
 
 %Value is to be used when defining a variable with a quantity. If write \value{m}{1}{kg}, it will display m = 1 kg.
-\def\value#1#2#3{\vari{#1} \quantity{=#2}{#3}}
+\def\value#1#2#3{\vari{#1} \quantity{=#2}{\,#3}}
 
 % obtain a new line
 \def\nl{\hfil\break}
