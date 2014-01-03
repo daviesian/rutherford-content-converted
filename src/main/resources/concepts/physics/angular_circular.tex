@@ -15,40 +15,39 @@
 \Concepttitle{Circular motion}
 
 \section{Circular kinematics}
-\begin{wrapfigure}{r}{7cm}\vspace{-0.7cm}
+\begin{wrapfigure}{r}{7cm}\vspace{-1.7cm}
 \center
-\includegraphics[width=0.35\textwidth]{../../figures/circular.eps}
-\caption{Anti-clockwise motion with speed $v$ around the perimeter of a circle of radius $a$.  The angle $\theta$ increases in the anticlockwise (positive) sense.  A small arc $\d l = v \d t$ subtends an angle $\d \theta$ in a time $\d t$.}\label{fig:circular}
+\includegraphics[width=0.3\textwidth]{../../figures/circular.eps}
+\caption{Anti-clockwise motion with speed \vari{v} around the perimeter of a circle of radius \vari{a}.  The angle \vari{\theta} increases in the anticlockwise (positive) sense.  A small arc \vari{\d l = v \d t} subtends an angle \vari{\d \theta} in a time \vari{\d t}.}\label{fig:circular}
 \end{wrapfigure}
-Figure \ref{fig:circular} shows a circle of radius $a$ with an arc of length $l$ subtending angle $\theta$ at the centre.  Thus $\theta$ is the angle between the radii going to the ends of the arc. Arc length, radius and angle are connected by $l = a \theta$.  The angle in radians is $\theta = l/a$.  A differential length is connected to a differential angle similarly: $\d l = a \d \theta$.\nll
-The angle increases at rate $\omega = \d \theta / \d t$, with $\omega$ the angular frequency or speed in radians per second.  The above gives us $v = \d l/\d t = a \d \theta/\d t = a \omega$.  Thus the speed around the circle and the angular frequency are related by:
+Figure \ref{fig:circular} shows a circle of radius \vari{a} with an arc of length $l$ subtending angle \vari{\theta} at the centre.  Thus \vari{\theta} is the angle between the radii going to the ends of the arc. Arc length, radius and angle are connected by \vari{l = a \theta}.  The angle in radians is \vari{\theta = l/a}.  A differential length is connected to a differential angle similarly: \vari{\d l = a \d \theta}.\nll
+The angle increases at rate \vari{\omega = \d \theta / \d t}, with \vari{\omega} the angular frequency or speed in radians per second.  The above gives us \vari{v = \d l/\d t = a \d \theta/\d t = a \omega}.  Thus the speed around the circle and the angular frequency are related by:
 \begin{equation*} 
  v = a \omega \;\;\; \textrm{or} \;\;\;  \omega = v/a.
 \end{equation*}  
-The direction of the velocity is tangential.  The units of $\omega$ are $\textrm{s}^{-1}$, radians being dimensionless.
+The direction of the velocity is tangential.  The units of \vari{\omega} are s\sup{-1}, radians being dimensionless.
 \nll
-For constant angular speed, the angle is $\theta = \omega t$ in time $t$.\\
-The period $T$ is the time taken to traverse one revolution or one cycle: $\theta = 0 \rightarrow \theta = 2\pi$.\\
-Thus $2\pi = \omega T$ and hence:
- \begin{equation*} \omega = 2\pi/T \;\;\; \textrm{or} \;\;\;  T = 2\pi/\omega .
-\end{equation*}
- \begin{wrapfigure}{r}{7cm}\vspace{-1.5cm}
+For constant angular speed, the angle is \vari{\theta = \omega t} in time \vari{t}.\\
+The period \vari{T} is the time taken to traverse one revolution or\\
+one cycle: \value{\theta}{0}{}$\rightarrow$ \value{\theta}{2\pi}{}.\\
+Thus \value{2\pi}{\omega T}{} and hence:  \value{\omega}{2\pi/T}{} or \value{T}{2\pi/\omega}{}.
+
+ \begin{wrapfigure}{r}{7cm}\vspace{-5.0cm}
 \center
-\includegraphics[width=0.25\textwidth]{../../figures/centripetal.eps}
+\includegraphics[width=0.3\textwidth]{../../figures/centripetal.eps}
 \caption{Velocity is tangential to the circle.  The acceleration and hence force is to the centre.}\label{fig:centripetal}
 \center
-\includegraphics[width=0.35\textwidth]{../../figures/centripetal_derive.eps}
-\caption{Velocities $\vtr{v}$ and $\vtr{v}'$ at successive times separated by $\d t$ and angles separated by $\d \theta$.  The vector triangle of $\vtr{v}' - \vtr{v} = \vtr{\d v}$ shows that the change in $\vtr{v}$ over the time $\d t$ is towards the centre.}\label{fig:centripetal-derive}
+\includegraphics[width=0.3\textwidth]{../../figures/centripetal_derive.eps}
+\caption{Velocities \vari{\vtr{v}} and \vari{\vtr{v}'} at successive times separated by \vari{\d t} and angles separated by \vari{\d \theta}.  The vector triangle of $\vtr{v}' - \vtr{v} = \vtr{\d v}$ shows that the change in \vari{\vtr{v}} over the time \vari{\d t} is towards the centre.}\label{fig:centripetal-derive}
 \end{wrapfigure}
 
-\vspace{-.75cm}
 \section{Circular dynamics}
-In circular motion the direction of motion is tangential and always changing; figure~\ref{fig:centripetal}.
-The speed is constant.  The force required to change the velocity, and hence the momentum is always to the centre of the circle and perpendicular to the motion.  This \textit{centripetal} force does no work.  The energy of the particle is unchanging.  Note that the velocity and thus momentum has reversed direction between the points 1 (at the top of the circle) and 3 (at thebototm of the circle) as a result of the continuing action of the centripetal force.\nll
+In circular motion the direction of motion is tangential and always changing; figure \ref{fig:centripetal}.
+The speed is constant.  The force required to change the velocity, and hence the momentum is always to the centre of the circle and perpendicular to the motion.  This \stress{centripetal} force does no work.  The energy of the particle is unchanging.  Note that the velocity and thus momentum has reversed direction between the points 1 (at the top of the circle) and 3 (at the bottom of the circle) as a result of the continuing action of the centripetal force.\nll
 Figure~\ref{fig:centripetal-derive} shows the velocity changing in a time $\d t$.
-The difference between the velocities, $\d \vtr{v}$, points inwards --- see the vector triangle.  Since $\vtr{v}$ and $\vtr{v}'$ are of the same length and $\d\vtr{v}$ is small, once can think of the latter as an arc of a circle of radius $v$ and thus $\d\vtr{v}$ has length $v \d\theta$.  The acceleration is inwards and of magnitude:  \begin{equation*} a = \d v/\d t = v \d\theta/\d t = v \omega .
+The difference between the velocities, \vari{\d \vtr{v}}, points inwards --- see the vector triangle.  Since \vari{\vtr{v}} and \vari{\vtr{v}'} are of the same length and \vari{\d\vtr{v}} is small, once can think of the latter as an arc of a circle of radius \vari{v} and thus \vari{\d\vtr{v}} has length \vari{v \d\theta}.  The acceleration is inwards and of magnitude:  \begin{equation*} a = \d v/\d t = v \d\theta/\d t = v \omega .
 \end{equation*}
-Since $v = \omega r$,  we have two equivalent expressions for the \textit{centripetal} (inward) acceleration $a$:
+Since \value{v}{\omega r}{},  we have two equivalent expressions for the \stress{centripetal} (inward) acceleration \vari{a}:
 \begin{equation*} a = v^2/r \equiv  \omega^2 r .
 \end{equation*}
 \end{document}
