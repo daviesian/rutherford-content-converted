@@ -11,7 +11,7 @@
 \begin{problem}[A1964AMIQ3a]%Straightforward impulse and conservation of momentum
 {Define impulse and state the law of conservation of linear momentum.
 \begin{enumerate}
-	\item A nail of mass \quantity{7}{g} is held horizontally and is hit by a hammer of mass \quantity{0.25}{kg} moving at \quantity{10}{m\,s$\sup{-1}$}. The hammer remains in contact with the nail during and after the blow. Find the velocity of the nail and hammer immediately after the blow.
+	\item A nail of mass \quantity{7}{g} is held horizontally and is hit by a hammer of mass \quantity{0.25}{kg} moving at \quantity{10}{m\,s\sup{-1}}. The hammer remains in contact with the nail during and after the blow. Find the velocity of the nail and hammer immediately after the blow.
 	\item Calculate the impulse between the hammer and nail, clearly stating the units in which it is measured.
 	\item The nail goes on to penetrate \quantity{1}{cm} into a stationary wooden block. Find the resistive force the block exerts as the nail is pushed into it, assuming the force to be constant.
 \end{enumerate}
@@ -21,22 +21,22 @@
 \begin{equation} 
 \label{eq:nail_hammer_CoM} p_{\text{initial}} = (m_{n} \times v_{n}) + (m_{h} \times v_{h}) = p_{\text{final}} = (m_{n} + m_{h}) \times v_{n + h}
 \end{equation}
-where the subscript $n$ and $h$ represent the nail and hammer respectively.
+where the subscript \vari{n} and \vari{h} represent the nail and hammer respectively.
 \begin{enumerate}
 	\item We have a 1D problem, the hammer and nail move only in one direction, so we only need to consider momentum in that direction. Using the conservation of momentum, the equation \ref{eq:nail_hammer_CoM}, the velocity of the nail and hammer together can be calculated:
 \begin{equation*} 
 v_{n + h} = \frac{(m_{n} \times v_{n}) + (m_{h} \times v_{h})}{(m_{n} + m_{h})} = \frac{(0.007)(0)+ (0.25)(10)}{(0.007) + (0.25)} \text{ ms}^{-1} = 9.73 \text{ ms}^{-1}
 \end{equation*}
-	\item The impact of the hammer changes the momentum of the nail. It is simplest to work out the impulse, $I$, by considering the change in momentum of the nail:
+	\item The impact of the hammer changes the momentum of the nail. It is simplest to work out the impulse, \vari{I}, by considering the change in momentum of the nail:
 \begin{equation*}
  I = p_{\text{final}} - p_{\text{initial}} = (m_{n} \times v_{n + h}) - (m_{n} \times v_{n}) = ((0.007)(9.73) - (0.007)(0)) \text{ kg ms}^{-1} = 0.0681  \text{ kg ms}^{-1} 
   \end{equation*}
-The units are kg ms$^{-1}$, though Ns (Newton seconds) are also acceptable since they are equivalent.
-	\item If we can assume the force to be constant, then there is a constant acceleration and so the SUVAT equations can be used. The equation we want is $v^{2} = u^{2} + 2as$ and we can either solve it for $a$ and then use Newtons Second Law, $\vtr{F} = m\vtr{a}$; or substitute for $a$ initially:
+The units are \quantity{}{kg\,m\,s\sup{-1}}, though \quantity{}{N\,s} (Newton seconds) are also acceptable since they are equivalent.
+	\item If we can assume the force to be constant, then there is a constant acceleration and so the SUVAT equations can be used. The equation we want is \value{v^{2}}{u^{2} + 2as}{} and we can either solve it for \vari{a} and then use Newtons Second Law, \value{\vtr{F}}{m\vtr{a}}{}; or substitute for \vari{a} initially:
 \begin{equation*} 
 F = m \left( \frac{v^{2} - u^{2}}{2s} \right) = (0.007) \left( \frac{ (0)^{2} - (9.73)^{2}}{2 \,(0.01)} \right) \text{ N} = -33.1 \text{ N}
 \end{equation*}
-Thus the block exerts a resistive force of magnitude 29.0 N against the nail.
+Thus the block exerts a resistive force of magnitude \value{29.0}{N} against the nail.
 \end{enumerate}
 }
 \end{problem}
