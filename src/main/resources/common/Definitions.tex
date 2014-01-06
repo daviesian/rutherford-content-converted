@@ -18,13 +18,14 @@
 %Writes the superscript in the text font
 \def\sup#1{$^\text{#1}$}
  
-%Quantity is used for numbers with units: 1 kg, 1 m/s
+%Quantity is used for numbers with units: 1 kg, 1 m/s. Can be used as well to just write units, e.g.: \quantity{}{kg} -> kg.
 \def\quantity#1#2{{${#1}$}{$\text{\,#2}$}}
 
 %Vari puts a defined variable in maths font
 \def\vari#1{${#1}$}
 
-%Value is to be used when defining a variable with a quantity. If write \value{m}{1}{kg}, it will display m = 1 kg.
+%Value is to be used when defining a variable with a quantity. If write \value{m}{1}{kg}, it will display m = 1 kg. Can also use to have equations without units: E = 1/2 mv^2 would be \value{E}{1/2mv^2}. 
+%When to use units: if there is a number, place units at the end, after the final equality sign. Do not place them within an equation. If you need to place units within an equation environment, use \mbox{}, then the definition you want. Do not forget to place units after a zero, e.g.: t = 0 s. Units must be separated by \, at all times. Otherwise ms^{-s} could be understood as 'per milliseconds'. 
 \def\value#1#2#3{\vari{#1} \quantity{=#2}{$\text{\,#3}$}}
 
 % obtain a new line
