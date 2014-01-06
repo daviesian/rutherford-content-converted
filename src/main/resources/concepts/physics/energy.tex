@@ -25,37 +25,37 @@ For instance:
 \begin{enumerate}
   \item \textit{Gravitational potential energy} is:
 \begin{equation*} 
-    V = m g h \;\;\; \textrm{or} \;\;\; V = - m_1m_2 G/r.
+    V = m g h \;\;\; \text{or} \;\;\; V = - m_1m_2 G/r.
 \end{equation*}
 The former is for a body of mass \vari{m} in a uniform gravitational field with acceleration \vari{g} when it is a height \vari{h} above a reference level.  For instance, this formulation is suitable for bodies close to the surface of the Earth where the gravitational field (pull from the Earth) does not vary much with height.\\
-The latter is for or two masses \vari{m\s1} and \vari{m\s2} separated by a distance \vari{r}, with \vari{G} the universal gravitational constant.  The negative sign indicates attraction -- the energy is reduced further as the masses approach each other.  See below for the connection between force, work and potential energy change.
+The latter is for or two masses \vari{m_1} and \vari{m_2} separated by a distance \vari{r}, with \vari{G} the universal gravitational constant.  The negative sign indicates attraction -- the energy is reduced further as the masses approach each other.  See below for the connection between force, work and potential energy change.
   \item \textit{Electric potential energy} is:
    \begin{equation*} 
-   V = - q E h \;\;\; \textrm{or} \;\;\; V = q_1q_2/(4\pi \epsilon_0 r).
+   V = - q E h \;\;\; \text{or} \;\;\; V = q_1q_2/(4\pi \epsilon_0 r).
 \end{equation*} 
 The former is for a body of charge \vari{q} in a uniform electric field \vari{E} with \vari{h} the distance moved by the charge along the electric field from a reference position.\\
-In general fields vary with position, and the latter is the potential energy associated with two charges \vari{q\s1} and \vari{q\s2} separated by \vari{r}, where \vari{\epsilon\s0} is a constant known as the permittivity of free space.  The potential energy is positive if \vari{q\s1} and \vari{q\s2} are both of the same sign -- like charges repel and lower their energy by moving apart.
+In general fields vary with position, and the latter is the potential energy associated with two charges \vari{q_1} and \vari{q_2} separated by \vari{r}, where \vari{\epsilon_0} is a constant known as the permittivity of free space.  The potential energy is positive if \vari{q_1} and \vari{q_2} are both of the same sign -- like charges repel and lower their energy by moving apart.
 \end{enumerate}
-\subsection{Kinetic energy:}  Bodies possess energy known as kinetic energy, \vari{T}, by virtue of their motion.  Translational motion with speed \vari{v}, or rotational motion with angular speed \vari{\omega}, lead to kinetic energies:
- \begin{equation*} T = \half m v^2 \;\;\; \textrm{or} \;\;\; T = \half I \omega^2.
+\subsection{Kinetic energy:}  Bodies possess energy known as kinetic energy, \vari{K}, by virtue of their motion.  Translational motion with speed \vari{v}, or rotational motion with angular speed \vari{\omega}, lead to kinetic energies:
+ \begin{equation*} K = \half m v^2 \;\;\; \text{or} \;\;\; K = \half I \omega^2.
 \end{equation*}
-Here \vari{m} is the particle mass, and \vari{\half m v\sup2} is the familiar kinetic energy.  The angular equivalent of mass is the moment of inertia \vari{I}  --- see notes on angular motion.  Kinetic energy takes many forms.  We focus on that due to simple translational motion.
+Here \vari{m} is the particle mass, and \vari{\half m v^2} is the familiar kinetic energy.  The angular equivalent of mass is the moment of inertia \vari{I}  --- see notes on angular motion.  Kinetic energy takes many forms.  We focus on that due to simple translational motion.
 
 \section{Conservation of energy}
 In the absence of friction (resisting motion and leading to heat), the sum \vari{E} of the kinetic and potential energy is conserved.
-\begin{equation*} E = T + V =  \textrm{constant}.
+\begin{equation*} E = K + V =  \text{constant}.
 \end{equation*}
-The energy can be converted between the forms \vari{T} and \vari{V} by the particle doing work, or work being done on the particle. So when \vari{V(x)} varies with position \vari{x}, then so will \value{T}{E - V(x)}{} also vary.  In turn, speed \vari{v(x)} must vary with position since \vari{T = \half m v\sup2}.  This approach to dynamics is explored in ``Conservation Methods in Dynamics".\\ When there is friction, then heat \vari{Q} can be produced from the motion.  A stricter statement of energy conservation is
-\begin{equation*} E = T + V + Q =  \textrm{constant}.
+The energy can be converted between the forms \vari{K} and \vari{V} by the particle doing work, or work being done on the particle. So when \vari{V(x)} varies with position \vari{x}, then so will \value{K}{E - V(x)}{} also vary.  In turn, speed \vari{v(x)} must vary with position since \vari{K = \half m v^2}.  This approach to dynamics is explored in ``Conservation Methods in Dynamics".\\ When there is friction, then heat \vari{Q} can be produced from the motion.  A stricter statement of energy conservation is
+\begin{equation*} E = K + V + Q =  \textrm{constant}.
 \end{equation*}
-However, conversion of energy  back from heat \vari{Q} to kinetic \vari{T} or potential energy \vari{V} is never perfect and leads us to the study of Thermodynamics.
+However, conversion of energy  back from heat \vari{Q} to kinetic \vari{K} or potential energy \vari{V} is never perfect and leads us to the study of Thermodynamics.
 \subsection*{Questions}
-\qq{What is the gravitational potential energy of a mass of \quantity{1}{kg} resting \quantity{1}{m} above the ground? [Take \value{g}{10}{m\,s$\sup{-2}$}.]  After being dropped, what speed does the mass attain before hitting the ground?  How much heat is produced when motion has ceased?}{\value{E}{10}{J}, \value{v}{2\sqrt{5}}{m\,s$\sup{-1}$}, \value{Q}{10}{J}.}\nl
-\qq{By considering energy, show that the speed \vari{v} reached when a particle is dropped from rest through a height \vari{h} is \vari{v^2 = 2gh}.  Show that if it initially has a downward speed \vari{u} as it starts dropping through \vari{h}, then its final speed is \vari{v^2 = u^2 + 2gh}.  [Notice how this energy method yields the result ``\vari{v^2 - u^2 = 2 as}" familiar from kinematics.]}{There is no friction, therefore the initial energy will equal the final energy. Thus, \vari{m g h = 1/2 m v\sup2}, which gives: \vari{v^2 = 2 g h}. If the particle has an initial velocity, then \vari{m g h + \frac{1}{2} m u^2 = \frac{1}{2} m v^2}, instead.}\nl
-\qq{A particle of mass \vari{m} approaches a slope with initial speed \vari{v\s0}.  It moves up the slope conserving energy.\\
+\qq{What is the gravitational potential energy of a mass of \quantity{1}{kg} resting \quantity{1}{m} above the ground? [Take \value{g}{10}{m\,s\sup{-2}}.]  After being dropped, what speed does the mass attain before hitting the ground?  How much heat is produced when motion has ceased?}{\value{E}{10}{J}, \value{v}{2\sqrt{5}}{m\,s\sup{-1}}, \value{Q}{10}{J}.}\nl
+\qq{By considering energy, show that the speed \vari{v} reached when a particle is dropped from rest through a height \vari{h} is \vari{v^2 = 2gh}.  Show that if it initially has a downward speed \vari{u} as it starts dropping through \vari{h}, then its final speed is \vari{v^2 = u^2 + 2gh}.  [Notice how this energy method yields the result ``\vari{v^2 - u^2 = 2 as}" familiar from kinematics.]}{There is no friction, therefore the initial energy will equal the final energy. Thus, \vari{m g h = 1/2 m v^2}, which gives: \vari{v^2 = 2 g h}. If the particle has an initial velocity, then \vari{m g h + \frac{1}{2} m u^2 = \frac{1}{2} m v^2}, instead.}\nl
+\qq{A particle of mass \vari{m} approaches a slope with initial speed \vari{v_0}.  It moves up the slope conserving energy.\\
 (i)  What is its initial energy?\\
-(ii) To what vertical height \vari{h\s f} does it rise when it finally stops?\\
-(iii) What speed is it travelling at when it attains heights \vari{h\s f /4}, \vari{h\s f /2} and \vari{3h\s f/4}?  What is the speed at these heights on the way down when the particle reverses direction at the top of its trajectory?}{(i)\value{E_i}{\frac{1}{2} m v\sup2}; (ii) \value{h_f}{\frac{1}{2} v\sup 2/g}; (iii) \vari{h\s f/4}: \value{u}{\frac{\sqrt{3}v}{2},}\ \ \vari{h_f/2}: \value{u}{\frac{u}{\sqrt{2}},}\ \ \vari{3h_f/4}: \value{u}{\frac{v}{4}}}
+(ii) To what vertical height \vari{h_f} does it rise when it finally stops?\\
+(iii) What speed is it travelling at when it attains heights \vari{h_f /4}, \vari{h_f /2} and \vari{3h_f/4}?  What is the speed at these heights on the way down when the particle reverses direction at the top of its trajectory?}{(i)\value{E_i}{\frac{1}{2} m v^2}; (ii) \value{h_f}{\frac{1}{2} v^2/g}{}; (iii) \vari{h_f/4}: \value{u}{\frac{\sqrt{3}v}{2},}{}\ \ \vari{h_f/2}: \value{u}{\frac{u}{\sqrt{2}},}{}\ \ \vari{3h_f/4}: \value{u}{\frac{v}{4}}{}}
 
 \subsection{Work}
 Work \vari{W} is given by
@@ -67,6 +67,6 @@ where \vari{x} is the distance moved by the point of application of the force \v
 \examp{(b) The circular motion of a mass at the end of a string with the tension in the string creating the centripetal acceleration.}{The force and acceleration are perpendicular to the motion and no work is done.  The energy (and speed) of the particle do not increase as the motion elapses.}
 
 \subsection*{Questions}
-\qq{A horizontal force \vari{F} pulls a mass on a rough surface of sliding friction \vari{\mu\s k} through a distance \vari{d}.  Show that the work done is \value{W}{mg \mu\s k d}.  Where does the work end up? [If necessary, consult the concept sheet on Friction.]}{As heat}\nl
-\qq{The same force, \vari{F}, is applied at an angle \vari{\theta} to the horizontal.  Show that now, \value{W}{\mu\s k\cos\theta(mg - F \sin\theta)d}.}{Is given as a ``\emph{show that}'' in the question}
+\qq{A horizontal force \vari{F} pulls a mass on a rough surface of sliding friction \vari{\mu_k} through a distance \vari{d}.  Show that the work done is \value{W}{mg \mu_k d}.  Where does the work end up? [If necessary, consult the concept sheet on Friction.]}{As heat}\nl
+\qq{The same force, \vari{F}, is applied at an angle \vari{\theta} to the horizontal.  Show that now, \value{W}{\mu_k\cos\theta(mg - F \sin\theta)d}.}{Is given as a ``\emph{show that}'' in the question}
 \end{document}
