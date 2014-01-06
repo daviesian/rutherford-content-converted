@@ -34,7 +34,7 @@ v = \frac{\d s}{\d t}
 \end{equation}
 If you have done some integration and differentiation, you will recognise that the velocity is simply the time derivative of the displacement.
 \subsection*{Quick Question}
-\qq{If the displacement is given by \value{s}{4t - 5 t\sup2}, what is \vari{v}?}{
+\qq{If the displacement is given by \value{s}{4t - 5 t\sup2}{}, what is \vari{v}?}{
 The instantaneous velocity \vari{v} is \vari{\frac{\d s}{\d t}}. Thus,
 \begin{equation}
 v = \frac{\d\,(4t - 5 t^2)}{\d t} = 4 - (2\times5 t) = 4-10t
@@ -61,7 +61,7 @@ a = \frac{\d \left(\d s/ \d t\right)}{\d t} = \frac{\d^2 s}{\d t^2}
 \end{equation}
  The acceleration is the second time derivative of the displacement. 
 \subsection*{Quick Question}
-\qq{What is the acceleration of an object if its displacement is the same as that given in question 1, \value{s}{4t - 5 t\sup2}?}{
+\qq{What is the acceleration of an object if its displacement is the same as that given in question 1, \value{s}{4t - 5 t\sup2}{}?}{
 \begin{equation}
 a = \frac{\d^2 (4t - 5 t^2)}{\d t^2} = \frac{\d \left(4-10t\right)}{\d t} = - 10
 \end{equation}}
@@ -75,7 +75,7 @@ v = \int a \d t &=& at + u \label{vel} \\
 s = \int \left(at + u\right) \d t &=& \frac{1}{2} a t^2 + u t + s_0
 \label{s}
 \end{eqnarray}
-where \vari{s\s0} is the position of the car at \value{t}{0}. 
+where \vari{s_0} is the position of the car at \value{t}{0}. 
 
 \subsection{Rearranging Equations}
 These equations can be rearranged such that the position can be found as a function of the velocity and the acceleration if the time is not known. Rewriting equation \ref{vel} as a function of \vari{t}:
@@ -89,7 +89,7 @@ s &=& \frac{1}{2}\frac{(v-u)^2 + 2uv - 2u^2}{a} + s_0 \nonumber\\
 s &=& \frac{1}{2}\frac{v^2 + u^2 - 2uv + 2uv - 2u^2}{a} + s_0 \nonumber\\
 s &=& \frac{1}{2} \frac{v^2 - u^2}{a} + s_0
 \end{eqnarray}
-If the initial position is \value{s\s0}{0}, this equation can be rearranged to:
+If the initial position is \value{s_0}{0}, this equation can be rearranged to:
 \begin{equation}
 v^2 = u^2 + 2as
 \end{equation}
