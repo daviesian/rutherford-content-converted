@@ -349,7 +349,7 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
             else:
                 logging.warning('Unable to locate answer node for quick question with text: %s' % text("question"))
         elif eq("quantity"):
-            outstring = r"${{%s}}{\,\text{%s}}$" % (text("amount"), text("units"))
+            outstring = r"${{%s\,}}$%s" % (render(node.getAttribute("amount"),True), render(node.getAttribute("units"),True))
             result.append(escape(outstring))
         elif eq("sup"):
             outstring = r"$^\text{%s}$" % text("superscriptContent")
@@ -368,7 +368,7 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
                     logging.info("DEBUG - Parent Node: %s" % node.parentNode.textContent)
                 logging.info("variable: %s quantity: %s" % (node.getAttribute("variable").textContent, node.getAttribute("quantity").textContent))
 
-            outstring = r"$%s{=%s}{\,\text{%s}}$" % (render(node.getAttribute("variable"),True),render(node.getAttribute("quantity"),True),render(node.getAttribute("units"),True))
+            outstring = r"$%s{\,=%s\,}$%s" % (render(node.getAttribute("variable"),True),render(node.getAttribute("quantity"),True),render(node.getAttribute("units"),True))
 
             result.append(escape(outstring))
         elif eq("stress"):
