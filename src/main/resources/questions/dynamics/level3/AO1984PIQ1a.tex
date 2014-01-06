@@ -31,10 +31,13 @@ Q then makes an elastic collision with a stationary body P and rebounds back alo
 E = \frac{1}{2}mv^{2} = \frac{1}{2}(2)(4)^{2} = \mbox{\quantity{16}{J}} 
 \end{align*}
 
-In order to work out the maximum tension; we need to relate the tension in the elastic to the extension: the force required to stretch the elastic is \value{\vtr{F}}{k\vtr{x}}{} where \vari{k} is commonly called the spring constant, and so the tension, which is equal in magnitude but opposite in sign, must be \vari{kx}. The constant $k$ can be found by considering the energy stored $E = \frac{1}{2}kx^{2}$ and we know both $E$ and $x$:
-\begin{equation*} k = \frac{E}{x^{2}} = \frac{16}{(0.5)^{2}} \textrm{ N m}^{-1} = 128 \textrm{ N m}^{-1} \end{equation*}
+In order to work out the maximum tension; we need to relate the tension in the elastic to the extension: the force required to stretch the elastic is \value{\vtr{F}}{k\vtr{x}}{} where \vari{k} is commonly called the spring constant, and so the tension, which is equal in magnitude but opposite in sign, must be \vari{kx}. The constant \vari{k} can be found by considering the energy stored \value{E}{\frac{1}{2}kx^{2}}{} and we know both \vari{E} and \vari{x}:
+\begin{equation*} 
+k = \frac{E}{x^{2}} = \frac{16}{(0.5)^{2}} = \mbox{\quatity{128}{N\,m\sup{-1}}} \end{equation*}
 and so the tension, which is maximum at the maximum extension, is:
-\begin{equation*} T\s{max} = kx = (128)(0.5) \textrm{ N} = 64 \textrm{ N} \end{equation*}
+\begin{equation*} 
+T_{max} = kx = (128)(0.5) = \mbox{\quantity{64}{N}} 
+\end{equation*}
 	\item To find the mass and velocity of P after the collision, it is first easiest to find the momentum and kinetic energy. The collision is elastic, and so both momentum and kinetic energy are conserved. A diagram, as in Figure \ref{fig:Dynamics_PQ_mass}, is useful.
 	
 \begin{figure}[h]
@@ -43,30 +46,30 @@ and so the tension, which is maximum at the maximum extension, is:
 	\caption{}\label{fig:Dynamics_PQ_mass}
 \end{figure}
 
-Conserving momentum, taking care of the directions of the velocities, and labelling the momentum of P as $p$gives:
+Conserving momentum, taking care of the directions of the velocities, and labelling the momentum of P as \vari{p} gives:
 \begin{align*} 
-(2)(4) &= (2)(-3) + p\s{P}  \\ 
-p &= 14 \text{ kg ms}^{\text{-1}}
+(2)(4) &= (2)(-3) + p  \\ 
+p &= \mbox{\quantity{14}{kg\,m\,s\sup{-1}}
 \end{align*}
 and conservation of energy implies that:
 \begin{align*} 
-\frac{1}{2}(2)(4)^{2} &= \frac{1}{2}(2)(3)^{2} + E\s{P}  \\
- E\s{P} &= 7 \text{ J} 
+\frac{1}{2}(2)(4)^{2} &= \frac{1}{2}(2)(3)^{2} + E_{P}  \\
+ E_{P} &= \mbox{\quantity{7}{J}} 
  \end{align*}
 
-Now we can use the fact that $p = mv$ and $E\s{P} = \frac{1}{2}mv^{2}$ as simultaneous equations to solve for $m$ and $v$.
+Now we can use the fact that \value{p}{mv}{} and \value{E_{P}}{\frac{1}{2}mv^{2}}{} as simultaneous equations to solve for \vari{m} and \vari{v}.
 
 \begin{align*} 
-p = mv = 14 &&  2E\s{P} = mv^{2} = 14 \\ 
-\intertext{so since $v^{2} = v$, it follows:} v = 1 \text{ ms}^{-1} && m = 14 \text{ kg} 
+p = mv = 14 &&  2E_{P} = mv^{2} = 14 \\ 
+\intertext{so since \value{v^{2}}{v}{}, it follows:} \mbox{\value{v}{1}{m\,s\sup{-1}}} && \mbox{\value{m}{14}{kg}} 
 \end{align*}
 
-	\item The energy input from the motor would have to equal the kinetic energy gained by Q (assuming perfect efficiency), so simply equate Energy = Power $\times$ Time with $\frac{1}{2}mv^{2}$:
+	\item The energy input from the motor would have to equal the kinetic energy gained by Q (assuming perfect efficiency), so simply equate Energy = Power $\times$ Time with \vari{\frac{1}{2}mv^{2}}:
 
 \begin{align*} 
 Pt &= \frac{1}{2}mv^{2} \\
  40t &= 16 \\ 
- t&=0.4\text{ s} 
+ t&= \mbox{\quantity{0.4}{s}} 
  \end{align*}
 
 \end{enumerate}
