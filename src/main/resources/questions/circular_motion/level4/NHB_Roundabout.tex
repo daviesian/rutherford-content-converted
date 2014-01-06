@@ -31,11 +31,11 @@ The condition for circular motion is
 \begin{equation*}
 F=mv^2/R
 \end{equation*}
-since the frictional force $\vtr{F}$ is the only force acting in the horizontal direction. Resolving vertically gives
+since the frictional force \vari{\vtr{F}} is the only force acting in the horizontal direction. Resolving vertically gives
 \begin{equation*}
 N=mg
 \end{equation*}
-and we know that $F=\mu N$ on the point of slipping, therefore
+and we know that \value{F}{\mu N}{} on the point of slipping, therefore
 \begin{equation*}
 \mu N=\mu mg=mv^2/R
 \end{equation*}
@@ -57,11 +57,11 @@ for the car not to slip.
 \label{fig:CircularMotion_d}
 \end{figure}
 \\
-Resolving forces vertically to find the net vertical force upwards, $F_y$:
+Resolving forces vertically to find the net vertical force upwards, \vari{F_y}:
 \begin{equation*} N\cos\theta-mg=F_y \end{equation*}
 and horizontally ($F_x$ acting inwards):
 \begin{equation*} N\sin\theta=F_x \end{equation*}
-In order for the car to travel in a circle we require $F_y=0$, since there is no vertical acceleration, and $F_x=mv^2/R$, the magnitude of the centripetal force. Therefore
+In order for the car to travel in a circle we require \value{F_y}{0}{N}, since there is no vertical acceleration, and \value{F_x}{mv^2/R}, the magnitude of the centripetal force. Therefore
 \begin{equation*} N=\frac{mg}{\cos\theta} \end{equation*}
 \begin{equation*} \Rightarrow N\sin\theta=mg\tan\theta=\frac{mv^2}{R} \end{equation*}
 \begin{equation*} \Rightarrow v^2=gR\tan\theta \end{equation*}
@@ -78,21 +78,21 @@ v=\sqrt{gR\tan\theta}
 \label{fig:CircularMotion_e}
 \end{figure}
 \\
-The frictional force $\vtr{F}=\mu \vtr{N}$ at the point of slipping and has both horizontal and vertical components. Notice how it acts down the slope, since at too high a speed the car will slip up the corner, and friction always opposes the motion. Now we require
+The frictional force \value{\vtr{F}}{\mu \vtr{N}}{} at the point of slipping and has both horizontal and vertical components. Notice how it acts down the slope, since at too high a speed the car will slip up the corner, and friction always opposes the motion. Now we require
 \begin{equation} \label{eq:slopeone} N\cos\theta-F\sin\theta-mg=0 \end{equation}
 and
 \begin{equation} \label{eq:slopetwo} N\sin\theta+F\cos\theta=\frac{mv^2}{R} \end{equation}
-Substituting $F=\mu N$ in equation \eqref{eq:slopeone} gives
+Substituting \value{F}{\mu N}{} in equation \eqref{eq:slopeone} gives
 \begin{align*}
 N\cos\theta-\mu N\sin\theta&=mg \\
 \Rightarrow \frac{N\cos\theta-\mu N\sin\theta}{g}&=m
 \end{align*}
-then substituting in $F=\mu N$ and for $m$ (using the expression above) in equation \eqref{eq:slopetwo} we find
+then substituting in \value{F}{\mu N} and for \vari{m} (using the expression above) in equation \eqref{eq:slopetwo} we find
 \begin{equation*} N\sin\theta+\mu N\cos\theta=\frac{\left(N\cos\theta-\mu N\sin\theta\right)v^2}{gR} \end{equation*} 
 \begin{equation*} \Rightarrow v^2=\frac{\sin\theta+\mu \cos\theta}{\cos\theta-\mu \sin\theta}\cdot gR \end{equation*}
 So now in order not to slip up the slope
 \begin{equation*} v\le\sqrt{\frac{\sin\theta+\mu \cos\theta}{\cos\theta-\mu \sin\theta}\cdot gR} \end{equation*}
-Notice how in the case $\theta=0$ this expression simplifies to the answer from part a), and similarly if $\mu=0$ the answer from part b) i).
+Notice how in the case \value{\theta}{0}{^\circ} this expression simplifies to the answer from part a), and similarly if \value{\mu}{0}{} the answer from part b) i).
 \\
 \item Yes there is. In this case the friction acts up the slope, as shown in Figure \ref{fig:CircularMotion_f}:
 \begin{figure}[ht]
@@ -115,7 +115,7 @@ and the requirement for the minimum velocity becomes
 \begin{equation*}
 v\ge\sqrt{\frac{\sin\theta-\mu \cos\theta}{\cos\theta+\mu \sin\theta}\cdot gR}
 \end{equation*}
-Notice how this result is exactly the same as the one for maximum speed except $\mu$ has been replaced with $-\mu$ due to the situation being identical except for the direction of the frictional force. 
+Notice how this result is exactly the same as the one for maximum speed except \vari{\mu} has been replaced with \vari{-\mu} due to the situation being identical except for the direction of the frictional force. 
 \end{enumerate}
 \end{enumerate}
 }
