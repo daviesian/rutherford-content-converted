@@ -9,16 +9,16 @@
 %% ORDER: 7
 
 \begin{problem}[A1987PSIIQ9a] %Acceleration and work done problem, with some SUVAT
-{A metal block of mass \vari{m} rests on a rough wooden surface. A thread is attached to the right side of the block and a tension is applied to cause it to move. The motion is opposed by a constant frictional force \vari{F\s{r}} between the block and the surface.
+{A metal block of mass \vari{m} rests on a rough wooden surface. A thread is attached to the right side of the block and a tension is applied to cause it to move. The motion is opposed by a constant frictional force \vari{F_r} between the block and the surface.
 \begin{enumerate}
 	\item Draw a diagram to show all the forces on the block immediately after motion commences.
-	\item When the tension in the thread is \vari{T}, the acceleration of the block is measured to be \vari{a}. Calculate the new acceleration, \vari{a\s{n}}, if the tension is increased to \vari{\frac{5}{4}T}.
+	\item When the tension in the thread is \vari{T}, the acceleration of the block is measured to be \vari{a}. Calculate the new acceleration, \vari{a_n}}, if the tension is increased to \vari{\frac{5}{4}T}.
 	\item With the tension of \vari{\frac{5}{4}T} applied, the block accelerates from rest but after a time \vari{t} the string breaks. Explain the subsequent motion of the block, and also show that it travels a total distance of 
 	\begin{equation*} 
 	s = \frac{1}{2} \left(a_{n} + \frac{a_{n}^{2}m}{F_{r}} \right)t^{2}
 	\end{equation*} 
 	from its initial position.
-	\item Given that \value{T}{400}{N,} \value{m}{100}{kg,} \value{t}{2}{s} and \value{a}{0.1}{m\,s$\sup{-1}$}, calculate the work done by the block after the string breaks.
+	\item Given that \value{T}{400}{N,} \value{m}{100}{kg}, \value{t}{2}{s} and \value{a}{0.1}{m\,s\sup{-1}}, calculate the work done by the block after the string breaks.
 \end{enumerate}
 }
 {\stress{Adapted with permission from UCLES, A Level Physical Science, June~1987, Paper~2, Question~9.}}
@@ -30,24 +30,24 @@
 \caption{}
 \label{fig:Dynamics_block_string}
 \end{figure}
-	\item This part requires only Newton's Second Law, $\vtr{F} = m\vtr{a}$. Initially we have 
+	\item This part requires only Newton's Second Law, \value{\vtr{F}}{m\vtr{a}}{}. Initially we have 
 	\begin{equation*} 
 	\text{Acceleration } = \frac{F}{m} = \frac{T - F_{\text{r}}}{m} = a \end{equation*}
 and then the tension is increased, and so the acceleration increases to
 	\begin{equation*}
-	 \text{New Acceleration } = \frac{F_{\text{new}}}{m} = \frac{\frac{5T}{4} - F_{\text{r}}}{m} = a + \frac{T}{4m} = a_{n} 
+	 \text{New Acceleration } = \frac{F_{\text{new}}}{m} = \frac{\frac{5T}{4} - F_r}{m} = a + \frac{T}{4m} = a_{n} 
 	 \end{equation*}
 	
-	\item The block will accelerate up to a maximum speed $u_{\text{max}} = a_{n}t$, which comes from $v= u + at$ but where $u = 0$, $a = a_{n}$, $t=t$ and $ v = u_{\text{max}}$ which will occur as the string breaks and the block stops accelerating. After this point the only force acting to affect the block's motion is the friction (the normal reaction and the weight are perpendicular to the motion, so do not affect it), and the block will decelerate to a halt.
+	\item The block will accelerate up to a maximum speed \value{u_{max}}{a_{n}t}{}, which comes from \value{v}{u + at}{} but where \value{u}{0}{m\,s\sup{-1}}, \value{a}{a_{n}}{}, \value{t}{t}{} and \value{v}{u_{max}}{} which will occur as the string breaks and the block stops accelerating. After this point the only force acting to affect the block's motion is the friction (the normal reaction and the weight are perpendicular to the motion, so do not affect it), and the block will decelerate to a halt.
 
-To calculate the distance, we recognise that we have two periods of constant acceleration and so can use the SUVAT equations: we need to use the equations $s = ut + \frac{1}{2}at^{2}$ and $v^{2} = u^{2} + 2as$ here. The motion can be split into two sections; that with the tension, and that without; call the distance moved whilst the tension acts $s_{1}$ and the distance without $s_{2}$, we want $s = s_{1} + s_{2}$.
+To calculate the distance, we recognise that we have two periods of constant acceleration and so can use the SUVAT equations: we need to use the equations \value{s}{ut + \frac{1}{2}at^{2}}{} and \value{v^{2}}{u^{2} + 2as}{} here. The motion can be split into two sections; that with the tension, and that without; call the distance moved whilst the tension acts $s_{1}$ and the distance without \vari{s_{2}}, we want \value{s}{s_{1} + s_{2}}{}.
 
-To find $s_{1}$ we use $s = ut + \frac{1}{2}at^{2}$, where $u = 0$, $a = a_{n}$ and $t = t$:
+To find \vari{s_{1}} we use \value{s}{ut + \frac{1}{2}at^{2}}{}, where \value{u}{0}{m\,s\sup{-1}}, \value{a}{a_{n}}{} and \value{t}{t}{}:
 \begin{equation*} 
 s_{1} = (0)t + \frac{1}{2} a_{n}t^{2} = \frac{1}{2} a_{n}t^{2} 
 \end{equation*}
 
-Finding $s_{2}$ is slightly more complicated, but since we worked out the speed it was moving at as the string breaks, we can use the second SUVAT equation; since we know the initial and final velocities. We have $u = u_{\text{max}} = a_{n}t$, $v = 0$ and also $a = \frac{-F_{r}}{m}$ from Newton's Second Law:
+Finding \vari{s_{2}} is slightly more complicated, but since we worked out the speed it was moving at as the string breaks, we can use the second SUVAT equation; since we know the initial and final velocities. We have \vari{u} = \value{u_{max}}{a_{n}t}{}, \value{v}{0}{m\,s\sup{-1}} and also \value{a}{\frac{-F_{r}}{m}}{} from Newton's Second Law:
 \begin{equation*}
  s_{2} = \frac{v^{2} - u^{2}}{2a} = \frac{- u_{\text{max}}^{2}}{2\left( \frac{-F_{r}}{m} \right)} = \frac{a_{n}^{2} t^{2} m}{2 F_{r}} 
  \end{equation*}
@@ -58,14 +58,14 @@ s = s_{1} + s_{2} = \left( \frac{1}{2}a_{n}t^2 \right) + \left( \frac{a_{n}^{2}t
 \end{equation*}
 as required.
 
-	\item The work done is the force in the direction of motion times the distance the force acts for, $W = \vtr{F}\cdot\vtr{x} = Fd$, which in this case is $W = F_{r}s_{2}$.
+	\item The work done is the force in the direction of motion times the distance the force acts for, \vari{W} = \value{\vtr{F}\cdot\vtr{x}}{Fd}{}, which in this case is \value{W}{F_{r}s_{2}}{}.
 \begin{align*} 
 W &= F_{r}s_{2} = \frac{1}{2} a_{n}^{2} t^{2} m \\ 
 	&= \frac{1}{2} \left( a +\frac{T}{4m} \right)^{2} t^{2} m \\
-	&= \frac{1}{2} \left( (0.1) + \frac{(400)}{4(100)} \right)^{2} (2)^{2} (100) \text{ J} \\
-	&= \frac{1}{2} \left( \frac{11}{10} \right)^{2} (400) \text{ J} \\
-	&= 242 \text{ J}
+	&= \frac{1}{2} \left( (0.1) + \frac{(400)}{4(100)} \right)^{2} (2)^{2} (100)\\
+	&= \frac{1}{2} \left( \frac{11}{10} \right)^{2} (400) \\
+	&= \mbox{\quantity{242}{J}}
 	\end{align*}
-A much simpler method would be to realise that since energy is conserved, and the only way to dissipate the kinetic energy is through friction; the kinetic energy lost must be the work done against friction, $W = \frac{1}{2}mu_{\text{max}}^{2} = \frac{1}{2}m \left( a_{n} t \right)^{2} = \frac{1}{2} a_{n}^{2} t^{2} m = 242 \text{ J}$ as before.
+A much simpler method would be to realise that since energy is conserved, and the only way to dissipate the kinetic energy is through friction; the kinetic energy lost must be the work done against friction, \value{W}{\frac{1}{2}mu_{max}^{2}}{} = \vari{\frac{1}{2}m \left( a_{n} t \right)^{2}} = \value{\frac{1}{2} a_{n}^{2} t^{2} m}{242}{J} as before.
 \end{enumerate}}
 \end{problem}
