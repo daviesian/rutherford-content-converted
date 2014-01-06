@@ -349,7 +349,7 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
             else:
                 logging.warning('Unable to locate answer node for quick question with text: %s' % text("question"))
         elif eq("quantity"):
-            outstring = r"${{%s}}{\text{\,%s}}$" % (text("amount"), text("units"))
+            outstring = r"${{%s}}{\,\text{%s}}$" % (text("amount"), text("units"))
             result.append(escape(outstring))
         elif eq("sup"):
             outstring = r"$^\text{%s}$" % text("superscriptContent")
@@ -360,7 +360,7 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
         elif eq("value"):
             
             if (node.getAttribute("variable") == None or node.getAttribute("quantity") == None or node.getAttribute("units") == None):
-                logging.error("%s - One of the variables for the value definition is missing in file name" % os.path.basename(inputFile))
+                logging.error("%s - One of the variables for the value definition is missing" % inputFile)
 
                 if node.parentNode != None and node.parentNode.nodeName == "qq":
                     logging.info("DEBUG - Quick Question: %s " % (node.parentNode.getAttribute("question").textContent))
@@ -368,12 +368,12 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
                     logging.info("DEBUG - Parent Node: %s" % node.parentNode.textContent)
                 logging.info("variable: %s quantity: %s" % (node.getAttribute("variable").textContent, node.getAttribute("quantity").textContent))
 
-            outstring = r"$%s{=%s}{\text{\,%s}}$" % (render(node.getAttribute("variable"),True),render(node.getAttribute("quantity"),True),render(node.getAttribute("units"),True))
+            outstring = r"$%s{=%s}{\,\text{%s}}$" % (render(node.getAttribute("variable"),True),render(node.getAttribute("quantity"),True),render(node.getAttribute("units"),True))
 
             result.append(escape(outstring))
         elif eq("stress"):
-            outstring = "<span class=\"emphasise-text\">%s</span>" % render(node.getAttribute("textToStress"),True)
-            result.append(escape(outstring))
+            outstring = "&#32;<span class=\"emphasise-text\">%s</span>&#32;" % render(node.getAttribute("textToStress"),escapeBraces)
+            result.append(outstring)
         else:
             pass
 
