@@ -12,7 +12,7 @@
 {A metal block of mass \vari{m} rests on a rough wooden surface. A thread is attached to the right side of the block and a tension is applied to cause it to move. The motion is opposed by a constant frictional force \vari{F_r} between the block and the surface.
 \begin{enumerate}
 	\item Draw a diagram to show all the forces on the block immediately after motion commences.
-	\item When the tension in the thread is \vari{T}, the acceleration of the block is measured to be \vari{a}. Calculate the new acceleration, \vari{a_n}}, if the tension is increased to \vari{\frac{5}{4}T}.
+	\item When the tension in the thread is \vari{T}, the acceleration of the block is measured to be \vari{a}. Calculate the new acceleration, \vari{a_n}, if the tension is increased to \vari{\frac{5}{4}T}.
 	\item With the tension of \vari{\frac{5}{4}T} applied, the block accelerates from rest but after a time \vari{t} the string breaks. Explain the subsequent motion of the block, and also show that it travels a total distance of 
 	\begin{equation*} 
 	s = \frac{1}{2} \left(a_{n} + \frac{a_{n}^{2}m}{F_{r}} \right)t^{2}
@@ -32,7 +32,8 @@
 \end{figure}
 	\item This part requires only Newton's Second Law, \value{\vtr{F}}{m\vtr{a}}{}. Initially we have 
 	\begin{equation*} 
-	\text{Acceleration } = \frac{F}{m} = \frac{T - F_{\text{r}}}{m} = a \end{equation*}
+	\text{Acceleration } = \frac{F}{m} = \frac{T - F_{\text{r}}}{m} = a 
+	\end{equation*}
 and then the tension is increased, and so the acceleration increases to
 	\begin{equation*}
 	 \text{New Acceleration } = \frac{F_{\text{new}}}{m} = \frac{\frac{5T}{4} - F_r}{m} = a + \frac{T}{4m} = a_{n} 
@@ -59,13 +60,14 @@ s = s_{1} + s_{2} = \left( \frac{1}{2}a_{n}t^2 \right) + \left( \frac{a_{n}^{2}t
 as required.
 
 	\item The work done is the force in the direction of motion times the distance the force acts for, \vari{W} = \value{\vtr{F}\cdot\vtr{x}}{Fd}{}, which in this case is \value{W}{F_{r}s_{2}}{}.
-\begin{align*} 
+\begin{eqnarray*} 
 W &= F_{r}s_{2} = \frac{1}{2} a_{n}^{2} t^{2} m \\ 
 	&= \frac{1}{2} \left( a +\frac{T}{4m} \right)^{2} t^{2} m \\
 	&= \frac{1}{2} \left( (0.1) + \frac{(400)}{4(100)} \right)^{2} (2)^{2} (100)\\
 	&= \frac{1}{2} \left( \frac{11}{10} \right)^{2} (400) \\
 	&= \mbox{\quantity{242}{J}}
-	\end{align*}
+	\end{eqnarray*}
 A much simpler method would be to realise that since energy is conserved, and the only way to dissipate the kinetic energy is through friction; the kinetic energy lost must be the work done against friction, \value{W}{\frac{1}{2}mu_{max}^{2}}{} $=$ \vari{\frac{1}{2}m \left( a_{n} t \right)^{2}} = \value{\frac{1}{2} a_{n}^{2} t^{2} m}{242}{J} as before.
 \end{enumerate}
+}
 \end{problem}
