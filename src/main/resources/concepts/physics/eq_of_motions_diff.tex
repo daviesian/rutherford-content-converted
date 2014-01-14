@@ -29,8 +29,7 @@ v = \frac{\Delta s}{\Delta t}
 \end{equation}
 This equation just gives us an indication of the average speed of the car. It does not indicate whether the car was speeding up or slowing down over that distance. In order to find the velocity of the car at a given location from the starting point, we need to break up the distance travelled in to many small chunks. The more the size of the chunks are reduced, the closer the time interval tends to zero, eventually giving the \stress{instantaneous velocity}. This is written as:
 \begin{equation}
-v = \frac{\d s}{\d t} 
-\label{inst_v}
+v = \frac{\d s}{\d t} \label{inst_v}
 \end{equation}
 If you have done some integration and differentiation, you will recognise that the velocity is simply the time derivative of the displacement.
 \subsection*{Quick Question}
@@ -62,7 +61,7 @@ a = \frac{\d \left(\d s/ \d t\right)}{\d t} = \frac{\d^2 s}{\d t^2}
 \subsection*{Quick Question}
 \qq{What is the acceleration of an object if its displacement is the same as that given in question 1, \value{s}{4t - 5 t^2}{}?}{
 \begin{equation}
-a = \frac{\d^2 (4t - 5 t^2)}{\d t^2} = \frac{\d \left(4-10t\right)}{\d t} = - 10
+a = \frac{\d^2 (4t - 5 t^2)}{\d t^2} = \frac{\d \left(4-10t\right)}{\d t} = \mbox{\quantity{- 10}{m\,s\sup{-2}}}
 \end{equation}}
 As before, the velocity and the displacement from the acceleration by integration with respect to time, once in the case of velocity and twice to obtain the displacement.
 \begin{equation}
@@ -71,8 +70,7 @@ v = \int a \d t = at + c
 where \vari{c} is equal the \vari{u}, the velocity at \value{t}{0}{s}. And the displacement is:
 \begin{eqnarray}
 v = \int a \d t &=& at + u \label{vel} \\ 
-s = \int \left(at + u\right) \d t &=& \frac{1}{2} a t^2 + u t + s_0
-\label{s}
+s = \int \left(at + u\right) \d t &=& \frac{1}{2} a t^2 + u t + s_0 \label{s}
 \end{eqnarray}
 where \vari{s_0} is the position of the car at \value{t}{0}{s}. 
 
