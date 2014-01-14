@@ -1,0 +1,19 @@
+%\input{../../../Templates/Problem_Template}
+%\begin{document}
+\begin{problem}[Space Justice] %A2-1
+ {A police spaceship, of mass $m = 10,000$~kg, travelling at a speed $u = 2$~km~s$^{-1}$ needs to arrest another ship travelling ahead of it at 2.5~km~s$^{-1}$.  The police spaceship is capable of splitting itself into two equal parts and supplying them with kinetic energy from a single reserve of 2~GJ.  Is the reserve sufficient? \\
+((If the reserve is sufficient; how long would it take for the police spaceship to catch the other craft, given that it was initially 3000 km behind?))
+}
+{\textit{Cambridge University Tripos 2011}}
+{To solve this problem we must apply conservation of momentum and energy. Changing to the zero momentum frame we may say that the speed of each half of the spaceship is $v$ after the disintegration, conserving the overall momentum to be zero. Now we can calculate $v$ using the fact that there was 2~GJ of energy converted to the kinetic energy of the two parts. Since each part is travelling at $v$ in the ZMF, we may write:
+
+\begin{equation*}2 \times \frac{1}{2}\frac{m}{2}v^2=2~GJ\end{equation*}
+
+This yields $v=632ms^{-1}$. Converting back to the original frame we find that the velocity of the faster part of the spaceship is $0.632kms^{-1}+2kms^{-1}=2.632kms^{-1}$ and since this is faster than the other ship, the police will eventually catch them. 
+
+To determine the time it would take for the police spaceship to catch the other craft, we may consider the relative velocity: $(2.632-2.5)kms^{-1}=0.132kms^{-1}$. The time taken is then simply $t=\frac{3000}{0.132}=22600 s$ or about 6.3 hours. 
+
+
+}
+\end{problem}
+%\end{document}
