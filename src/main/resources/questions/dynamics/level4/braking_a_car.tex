@@ -12,26 +12,26 @@
 {\begin{enumerate}
 	\item When a car of mass \quantity{1000}{kg} is travelling along a level road at a steady \quantity{20}{m\,s\sup{-1}}, its engine is working at \quantity{18}{kW}. Find the total resistance due to friction, which may be taken to be constant.
 	\item The engine is suddenly disconnected and the brakes applied, and the car comes to rest in \quantity{50}{m}. Find the force, assumed constant, exerted by the brakes.
-	\item Find also the distance in which the car would come to rest if the engine were disconnected and the brakes applied on an upward incline of angle \vari{\theta}, where \value{\sin(\theta)}{\frac{1}{20}}{}.
+	\item Find also the distance in which the car would come to rest if the engine were disconnected and the brakes applied on an upward incline of angle \vari{\theta}, where \valuedef{\sin(\theta)}{\frac{1}{20}}{}.
 	\item By how much does this change if the car is travelling down the same hill?
 \end{enumerate}
 }{
 \stress{Adapted with permission from UCLES, A Level Applied Mathematics, June~1961, Paper~1, Question~2.}
 }{
 \begin{enumerate}
-	\item Sketching a diagram of the forces on the car, as in Figure \ref{fig:Dynamics_car_forces}, is a key first step. The formula relating force, power and velocity at constant velocity is \vari{P} $=$ \value{\vtr{F}\cdot\vtr{v}}{Tv}{} where \vari{P} is the power, \vari{T} the magnitude of the thrust (the forward force \vari{\vtr{F}}) in the direction of the velocity and \vari{v} the speed. This formula is a vector formula, and so \vari{\vtr{F}} and \vari{\vtr{v}} must be in the same direction to simplify it. Since the car is moving at a constant \quantity{20}{m\,s\sup{-1}} (i.e. no acceleration), the forces on the car must balance and so the forward thrust, \vari{T}, must equal the resistive force, \vari{F_{r}}; \value{T}{F_{r}}{}.
+	\item Sketching a diagram of the forces on the car, as in Figure \ref{fig:Dynamics_car_forces}, is a key first step. The formula relating force, power and velocity at constant velocity is \vari{P} $=$ \valuedef{\vtr{F}\cdot\vtr{v}}{Tv}{} where \vari{P} is the power, \vari{T} the magnitude of the thrust (the forward force \vari{\vtr{F}}) in the direction of the velocity and \vari{v} the speed. This formula is a vector formula, and so \vari{\vtr{F}} and \vari{\vtr{v}} must be in the same direction to simplify it. Since the car is moving at a constant \quantity{20}{m\,s\sup{-1}} (i.e. no acceleration), the forces on the car must balance and so the forward thrust, \vari{T}, must equal the resistive force, \vari{F_{r}}; \valuedef{T}{F_{r}}{}.
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.2\textwidth]{../../../figures/Dynamics_car_forces.svg}
 \caption{} \label{fig:Dynamics_car_forces}
 \end{figure}
-Rearranging the formula for power and substituting in \vari{F_{r}} gives \vari{T} $=$ \value{\frac{P}{v}}{F_{r}}{} and thus that the total resistance due to friction \vari{F_{r}} $=$ \value{\frac{18000}{20}}{900}{N}.
-	\item To find the force from the brakes, \vari{F_{b}}, it is easiest to first find the deceleration of the car and then use Newton's Second Law to find the force. Since the force is constant, the acceleration is constant and so the SUVAT equations can be used. We need an equation that does not include \vari{t}, so \value{v^{2}}{u^{2} + 2as}{} is the SUVAT equation to rearrange. The magnitude of the acceleration is then
+Rearranging the formula for power and substituting in \vari{F_{r}} gives \vari{T} $=$ \valuedef{\frac{P}{v}}{F_{r}}{} and thus that the total resistance due to friction \vari{F_{r}} $=$ \valuedef{\frac{18000}{20}}{900}{N}.
+	\item To find the force from the brakes, \vari{F_{b}}, it is easiest to first find the deceleration of the car and then use Newton's Second Law to find the force. Since the force is constant, the acceleration is constant and so the SUVAT equations can be used. We need an equation that does not include \vari{t}, so \valuedef{v^{2}}{u^{2} + 2as}{} is the SUVAT equation to rearrange. The magnitude of the acceleration is then
 \begin{equation*}
   a = \frac{v^{2} - u^{2}}{2s} = \frac{(0)^{2} - (20)^{2}}{2 \: (50)} = \mbox{\quantity{-4}{m\,s\sup{-1}}} 
   \end{equation*}
-where the negative value reflects the fact that this is actually a deceleration: the car is slowing to a stop. Using \value{\vtr{F}}{m\vtr{a}}{} we find that the total decelerating force is \vari{F} $=$ \value{(1000) \times (4)}{4000}{N} where the minus sign has been dropped on the understanding this force acts against the forward motion. The total decelerating force \value{F}{F_{r} + F_{b}}{} and so \value{F_{b}}{3100}{N}.
+where the negative value reflects the fact that this is actually a deceleration: the car is slowing to a stop. Using \valuedef{\vtr{F}}{m\vtr{a}}{} we find that the total decelerating force is \vari{F} $=$ \valuedef{(1000) \times (4)}{4000}{N} where the minus sign has been dropped on the understanding this force acts against the forward motion. The total decelerating force \valuedef{F}{F_{r} + F_{b}}{} and so \valuedef{F_{b}}{3100}{N}.
 	\item Again we can assume that the decelerating force is constant, but this time we want to find the distance and we know the force. Consider the forces acting on the car; now the weight has a component in the direction of deceleration and so this must be taken into account. Drawing a diagram of the forces and exaggerating the angle, as in Figure \ref{fig:Dynamics_car_slope_forces}, makes seeing this much easier.
 \begin{figure}[h]
 \centering
@@ -40,7 +40,7 @@ where the negative value reflects the fact that this is actually a deceleration:
 \end{figure}
 
 
-The total decelerating force is thus the sum of all forces acting down the plane of the slope: \value{F}{F_{r} + F_{b} + mg \sin(\theta)}{}. To solve this problem we only ever need \vari{\sin(\theta)} and not \vari{\theta] itself, and so the information in the question can be used directly. An alternate way of stating that \value{\sin(\theta)}{\frac{1}{20}}{} is \value{\theta}{\arcsin(\frac{1}{20})}{} or \value{\theta}{\sin^{-1}(\frac{1}{20})}{} and this is used commonly to avoid the need for using a calculator.
+The total decelerating force is thus the sum of all forces acting down the plane of the slope: \valuedef{F}{F_{r} + F_{b} + mg \sin(\theta)}{}. To solve this problem we only ever need \vari{\sin(\theta)} and not \vari{\theta] itself, and so the information in the question can be used directly. An alternate way of stating that \valuedef{\sin(\theta)}{\frac{1}{20}}{} is \valuedef{\theta}{\arcsin(\frac{1}{20})}{} or \valuedef{\theta}{\sin^{-1}(\frac{1}{20})}{} and this is used commonly to avoid the need for using a calculator.
 \begin{equation*} 
 a = \frac{F}{m} = \frac{- (F_{b} + F_{r} + mg\sin(\theta) )}{m} = \frac{- ((3100) + (900) + (490))}{(1000)} = \mbox{\quantity{-4.49}{m\,s\sup{-2}}}
 \end{equation*}

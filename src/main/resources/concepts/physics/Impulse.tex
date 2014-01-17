@@ -21,7 +21,7 @@
 
 
 \section{What is impulse?}
-When Newton described his second law of motion he said that an impulse causes a change in momentum in the direction that the impulse is applied.  We often find it useful to discuss this law in terms of a \stress{resultant} force and the rate of change of momentum (or for constant mass \value{\vtr  F}{m{\vtr a}}{}) but thinking in terms of an impulse allows us to take into account the length of time for which the force is applied.\\
+When Newton described his second law of motion he said that an impulse causes a change in momentum in the direction that the impulse is applied.  We often find it useful to discuss this law in terms of a \stress{resultant} force and the rate of change of momentum (or for constant mass \valuedef{\vtr  F}{m{\vtr a}}{}) but thinking in terms of an impulse allows us to take into account the length of time for which the force is applied.\\
 
 \begin{wrapfigure}{r}{7cm}
 \center
@@ -43,7 +43,7 @@ This formula does not give us much of a sense of what impulse \emph {actually} i
 \begin{wrapfigure}{r}{7cm} \vspace{-3.0cm}
 \center
 \includegraphics[width=0.3\textwidth]{../../figures/Momentum1.eps}
-\caption{The graph of a constant force of \quantity{10}{N} applied to an object for \quantity{5}{s}.  The impulse that the object experiences is \value{{\vtr F}t}{50}{N\,s} which is also given by the area under the line of the graph, shown in pink.}\label{impulse1}
+\caption{The graph of a constant force of \quantity{10}{N} applied to an object for \quantity{5}{s}.  The impulse that the object experiences is \valuedef{{\vtr F}t}{50}{N\,s} which is also given by the area under the line of the graph, shown in pink.}\label{impulse1}
 \end{wrapfigure}
 
 \noindent When we apply an impulse to something our intuition tells us that it will change from being at rest to moving with some speed in the direction that we applied the impulse.  By applying an impulse we will change its momentum from zero to some value given by its mass times its velocity and we would guess that the larger the impulse the greater the change in momentum.
@@ -97,15 +97,15 @@ Area = {\vtr I} &=&  {\vtr F_f}t_f-\frac{({\vtr F_f}-{\vtr F_i})t_f}{2} \nonumbe
 \caption{The graph of a force that changes over time from an initial value of \vari{F_i} to \vari{F_f} over a time of \vari{t} seconds.  The impulse that the object experiences can be calculated using the area under the line of graph, shown in pink.}  \label{impulse2}
 \end{wrapfigure} 
 \noindent But we can also use this force-time graph to illustrate how we would calculate the impulse in a general case, when the area cannot be simply expressed because the force-time relationship is more complex.\\
-\noindent We can calculate the area under the force line by adding up the areas of a series of small rectangles of width \vari{\d t} from \value{t}{0}{} to \value{t}{t_f}{}. Using figure \ref{impulse2} we can see that the area of a small rectangle is given by the height of the rectangle \vari{\vtr F} multiplied by the width of the rectangle \vari{\d t}.  The instantaneous impulse, \vari{\d{\vtr I}} at time \vari{t} is therefore
+\noindent We can calculate the area under the force line by adding up the areas of a series of small rectangles of width \vari{\d t} from \valuedef{t}{0}{} to \valuedef{t}{t_f}{}. Using figure \ref{impulse2} we can see that the area of a small rectangle is given by the height of the rectangle \vari{\vtr F} multiplied by the width of the rectangle \vari{\d t}.  The instantaneous impulse, \vari{\d{\vtr I}} at time \vari{t} is therefore
 \begin{equation}
 \d{\vtr I} = {\vtr F}\d t
 \end{equation}
-The force-time graph in figure \ref{impulse2} shows that the force varies with time as a straight line, so \value{\vtr F}{kt+c}{}, where the gradient of the line 
+The force-time graph in figure \ref{impulse2} shows that the force varies with time as a straight line, so \valuedef{\vtr F}{kt+c}{}, where the gradient of the line 
 \begin{equation}
 k=\frac{({\vtr F_f}-{\vtr F_i})}{t_f}
 \end{equation}
-and the vertical intercept, \value{c}{\vtr F_i}{}, so therefore the force at any given time is.
+and the vertical intercept, \valuedef{c}{\vtr F_i}{}, so therefore the force at any given time is.
 \begin{equation}
 {\vtr F}=\frac{({\vtr F_f}-{\vtr F_i})t}{t_f}+{\vtr F_i}
 \end{equation}
@@ -121,12 +121,12 @@ and the vertical intercept, \value{c}{\vtr F_i}{}, so therefore the force at any
 We can see, therefore, that integrating the equation for the force over time produces the same result as calculating the area under the graph by triangles given by equation \ref{area_tri}.
 
 \subsection*{Quite Quick Questions}
-\qq{An impulse is applied to a ball of mass, \quantity{500}{g}, according to the force-time relation shown in figure \ref{impulse2}  in the same direction as its initial velocity.  What is the final velocity of the ball if it has an initial velocity of \quantity{10}{m\,s\sup{-1}} and the parameters of the force-time graph are, \value{t_f}{1}{s}, \value{F_i}{5}{N} and \value{F_f}{10}{N}.} {\value{v}{25}{m\,s\sup{-1}} in the direction of motion.}\nl
-\qq{A pram complete with baby (\quantity{20}{kg}) is left \quantity{1}{km} up along a straight path from the bottom of a hill which is inclined at \vari{30^\circ} to the horizontal. The pram's brakes fail and the pram begins to perfectly roll down the hill under gravity.   What impulse will be required to stop the pram at the bottom of the hill? [Let the acceleration due to gravity, \value{g}{10}{m\,s\sup{-2}}].} {\value{I}{2000}{N\,s} in the direction opposite to the motion of the pram.}\nl
+\qq{An impulse is applied to a ball of mass, \quantity{500}{g}, according to the force-time relation shown in figure \ref{impulse2}  in the same direction as its initial velocity.  What is the final velocity of the ball if it has an initial velocity of \quantity{10}{m\,s\sup{-1}} and the parameters of the force-time graph are, \valuedef{t_f}{1}{s}, \valuedef{F_i}{5}{N} and \valuedef{F_f}{10}{N}.} {\value{v}{25}{m\,s\sup{-1}} in the direction of motion.}\nl
+\qq{A pram complete with baby (\quantity{20}{kg}) is left \quantity{1}{km} up along a straight path from the bottom of a hill which is inclined at \vari{30^\circ} to the horizontal. The pram's brakes fail and the pram begins to perfectly roll down the hill under gravity.   What impulse will be required to stop the pram at the bottom of the hill? [Let the acceleration due to gravity, \valuedef{g}{10}{m\,s\sup{-2}}].} {\value{I}{2000}{N\,s} in the direction opposite to the motion of the pram.}\nl
 \qq{A pinball table uses a compressed spring, with spring constant \vari{k}, to accelerate a steel ball of mass \vari{m}, from rest to as high a speed as possible.   Hooke's Law tells us that the force exerted by the spring depends on the extension, \vari{x} of the spring;
 \begin{equation}
 {\vtr F}=-k{\vtr x} \nonumber
 \end{equation}
-and the extension of the spring in our example will change with time as \value{x}{A\cos(\omega t)}{}.  Write down the integral expression for the impulse over the interval \value{t}{0}{} to \vari{t'} that would allow us to calculate the velocity of the ball when it leaves the spring at time \vari{t'}. Using this expression what is the velocity of the steel ball after a time, \vari{t'}.}{[\value{v}{\frac{-kA}{m}\int_0^{t'} \cos(\omega t) \d t}{},\ \  \value{v}{\frac{kA\sin(\omega t')}{m\omega}}{}]}
+and the extension of the spring in our example will change with time as \valuedef{x}{A\cos(\omega t)}{}.  Write down the integral expression for the impulse over the interval \valuedef{t}{0}{} to \vari{t'} that would allow us to calculate the velocity of the ball when it leaves the spring at time \vari{t'}. Using this expression what is the velocity of the steel ball after a time, \vari{t'}.}{[\value{v}{\frac{-kA}{m}\int_0^{t'} \cos(\omega t) \d t}{},\ \  \valuedef{v}{\frac{kA\sin(\omega t')}{m\omega}}{}]}
 
 \end{document}

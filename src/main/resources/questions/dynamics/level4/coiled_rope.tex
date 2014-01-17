@@ -9,7 +9,7 @@
 %% ORDER: 7
 
 \begin{problem}[HSC1938PIIX3a] 
-{A coil of rope of length \value{l}{10}{m} and of mass {m}{1}{kg} is lying on a horizontal floor. A man takes hold of one end and walks off at a speed {v}{5}{m\,s\sup{-1}}, the rope uncoiling as he goes.
+{A coil of rope of length \valuedef{l}{10}{m} and of mass {m}{1}{kg} is lying on a horizontal floor. A man takes hold of one end and walks off at a speed {v}{5}{m\,s\sup{-1}}, the rope uncoiling as he goes.
 \begin{enumerate}
 	\item Neglecting friction, calculate the force he exerts on the rope.
 	\item When the whole rope has been started in motion, calculate:
@@ -23,11 +23,11 @@ Comment on your result.
 \stress{Adapted with permission from UCLES, Higher School Certificate Physics, June~1938, Paper~2.}
 }{ %Question number missing - X
 \begin{enumerate}
-	\item If there is no friction, the only force is that required to start a new section of the rope moving. Using Newton's Second Law, \value{\vtr{F}}{\frac{\d p}{\d t}}{} which simplifies to \value{\vtr{F}}{\vtr{v}\frac{\d m}{\d t}}{} since \vari{v} is constant, we can find the force needed to start the rope moving. To do this we need \vari{\frac{\d m}{\d t}}, which can be found by considering the extra mass of rope added in a time \vari{\d t}:
+	\item If there is no friction, the only force is that required to start a new section of the rope moving. Using Newton's Second Law, \valuedef{\vtr{F}}{\frac{\d p}{\d t}}{} which simplifies to \valuedef{\vtr{F}}{\vtr{v}\frac{\d m}{\d t}}{} since \vari{v} is constant, we can find the force needed to start the rope moving. To do this we need \vari{\frac{\d m}{\d t}}, which can be found by considering the extra mass of rope added in a time \vari{\d t}:
 \begin{equation*} 
 \d m = (\text{Mass per unit length, }\lambda)\times(\text{Length added in } \d t) = \lambda v \d t 
 \end{equation*}
-and so it follows that: \value{\frac{\d m}{\d t}}{\lambda v}{}.
+and so it follows that: \valuedef{\frac{\d m}{\d t}}{\lambda v}{}.
 Hence:
 \begin{eqnarray*} 
 F &= v\frac{\d m}{\d t} \\ 
@@ -44,7 +44,7 @@ F &= v\frac{\d m}{\d t} \\
 &= \frac{1}{2}(1)(5)^{2} \\ 
 &= \mbox{\quantity{12.5}{J}} 
             \end{eqnarray*}
-		\item The work done for a constant force is \value{W}{\vtr{F}\cdot\vtr{x}}{} and so the work done by the man is:
+		\item The work done for a constant force is \valuedef{W}{\vtr{F}\cdot\vtr{x}}{} and so the work done by the man is:
 				\begin{eqnarray*} 
 			        W &= Fl \\ 
 			        &= \left(\frac{mv^{2}}{l}\right)l \\ 
