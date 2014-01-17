@@ -21,7 +21,7 @@ def compileLatex(texFile):
             stem = os.path.split(stem)[0]
         commonDirectory = os.path.join(stem,"common")
         latexEnv = os.environ.copy()
-        latexEnv['TEXINPUTS'] = "%s:%s:.:" % (sourceDirectory,commonDirectory)
+        latexEnv['TEXINPUTS'] = os.pathsep.join((sourceDirectory,commonDirectory,".")) + os.pathsep
         log = None
         while not log or re.search("Label\\(s\\) may have changed. Rerun to get cross-references right.",log):
             p = subprocess.Popen(['latex','-interaction=nonstopmode','-halt-on-error',texFile],env=latexEnv,stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
