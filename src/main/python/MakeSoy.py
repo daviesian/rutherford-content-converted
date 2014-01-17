@@ -42,17 +42,8 @@ class answer(Command):
     args = '{units}{value}'      
 
 # defs
-class quantity(Command):
-    args = '{amount}{units}' 
-
 class sup(Command):
     args = '{superscriptContent}'
-
-class vari(Command):
-    args = '{mathContent}'
-
-class value(Command):
-    args = '{variable}{quantity}{units}'
 
 class stress(Command):
     args = '{textToStress}'        
@@ -99,6 +90,7 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
     source = re.sub(r'\\%',r'#37;',source) # horrible find replace hack #1 because ampersands seemed to get consumed by a random (and unknown) part of the parser    
     source = re.sub(r'\\\& ',r'#amp# ',source) # horrible find replace hack #1 because ampersands seemed to get consumed by a random (and unknown) part of the parser
     source = re.sub(r'\[resume\]','',source)
+
     output = file("filtered.tex","w")
     output.write(source)
     output.flush()
@@ -115,8 +107,9 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
     tex.ownerDocument.context.newdef("eigth",'',r'\frac{1}{8}')
     tex.ownerDocument.context.newdef("e",'',r'{\textrm{e}}')
     tex.ownerDocument.context.newdef("d",'',r'{\operatorname{d}\!}')
-    #tex.ownerDocument.context.newdef("testdef",'#1','\\bf{#1}')
-    #tex.ownerDocument.context.newdef("quantity",'',r'{{${#1}$}{\ #2}}')
+    tex.ownerDocument.context.newcommand("vari",1,r'$#1$')
+    tex.ownerDocument.context.newcommand("quantity",2,r'${{#1\,}}$#2')
+    tex.ownerDocument.context.newcommand("valuedef",3,r'$#1{\,=#2\,}$#3')
     tex.ownerDocument.context['Concepttitle'] = Concepttitle
     tex.ownerDocument.context['caption'] = caption
     tex.ownerDocument.context['color'] = color
@@ -125,10 +118,7 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
     tex.ownerDocument.context['ref'] = ref
     tex.ownerDocument.context['qq'] = qq
     tex.ownerDocument.context['answer'] = answer
-    tex.ownerDocument.context['quantity'] = quantity
     tex.ownerDocument.context['sup'] = sup
-    tex.ownerDocument.context['vari'] = vari
-    tex.ownerDocument.context['value'] = value
     tex.ownerDocument.context['stress'] = stress
     tex=tex.parse()
 
@@ -157,7 +147,7 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
             text = re.sub(u'\u2014','&mdash;', text)
             text = re.sub(u'\u2013','&ndash;', text)
             text = re.sub(r'\'','&apos;', text)
-            text = re.sub(r'#37;','&#37;', text) # horrible find replace hack #3 puts the correct html encoded value in now as it doesn't get removed after this point this is for % signs
+            text = re.sub(r'#37;',r'%', text) # horrible find replace hack #3 puts the correct html encoded value in now as it doesn't get removed after this point this is for % signs
 
             if escapeBraces:
                 text = re.sub(r'\{',"{lb}",text)
@@ -167,7 +157,7 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
 
         def eq(string):
             return node.nodeName == string
-        
+
         bgroupCount = 0
         # question stuff 
         if isQuestion:
@@ -348,28 +338,8 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
                 result.append('<div class="quick-question"><div class="question"><p>%s</p></div><div class="answer hidden"><p>%s</p></div></div>' % (render(node.getAttribute("question"),escapeBraces),render(answerNode,escapeBraces)))
             else:
                 logging.warning('Unable to locate answer node for quick question with text: %s' % text("question"))
-        elif eq("quantity"):
-            outstring = r"${{%s\,}}$%s" % (render(node.getAttribute("amount"),True), render(node.getAttribute("units"),True))
-            result.append(escape(outstring))
         elif eq("sup"):
             outstring = r"$^\text{%s}$" % text("superscriptContent")
-            result.append(outstring)
-        elif eq("vari"):
-            outstring = r"$%s$" % text("mathContent")
-            result.append(escape(outstring))
-        elif eq("value"):
-            
-            if (node.getAttribute("variable") == None or node.getAttribute("quantity") == None or node.getAttribute("units") == None):
-                logging.error("%s - One of the variables for the value definition is missing" % inputFile)
-
-                if node.parentNode != None and node.parentNode.nodeName == "qq":
-                    logging.info("DEBUG - Quick Question: %s " % (node.parentNode.getAttribute("question").textContent))
-                elif node.parentNode != None:
-                    logging.info("DEBUG - Parent Node: %s" % node.parentNode.textContent)
-                logging.info("variable: %s quantity: %s" % (node.getAttribute("variable").textContent, node.getAttribute("quantity").textContent))
-
-            outstring = r"$%s{\,=%s\,}$%s" % (render(node.getAttribute("variable"),True),render(node.getAttribute("quantity"),True),render(node.getAttribute("units"),True))
-
             result.append(escape(outstring))
         elif eq("stress"):
             outstring = "&#32;<span class=\"emphasise-text\">%s</span>&#32;" % render(node.getAttribute("textToStress"),escapeBraces)
