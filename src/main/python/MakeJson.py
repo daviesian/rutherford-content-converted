@@ -76,8 +76,6 @@ def convertToHtml(inputFile,inputDir,outputDir,jsonMetaData):
     # this is the returned data structure that gets merged with the metadata one
     jsonOutput = dict()
 
-
-
     meta = jsonMetaData
 
     # filter the source file because \nonumber commands break the parser
@@ -94,6 +92,9 @@ def convertToHtml(inputFile,inputDir,outputDir,jsonMetaData):
     tex.ownerDocument.context.loadPackage(tex,"wrapfig")
     tex.ownerDocument.context.loadPackage(tex,"amsmath")
     tex.ownerDocument.context.newcommand("vtr",1,r'\mathit{\underline{\boldsymbol{#1}}}')
+    tex.ownerDocument.context.newcommand("vari",1,r'$#1$')
+    tex.ownerDocument.context.newcommand("quantity",2,r'${{#1\,}}$#2')
+    tex.ownerDocument.context.newcommand("valuedef",3,r'$#1{\,=#2\,}$#3')
     tex.ownerDocument.context.newdef("half",'',r'\frac{1}{2}')
     tex.ownerDocument.context.newdef("quarter",'',r'\frac{1}{4}')
     tex.ownerDocument.context.newdef("third",'',r'\frac{1}{3}')
