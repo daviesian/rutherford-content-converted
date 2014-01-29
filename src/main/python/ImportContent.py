@@ -5,7 +5,6 @@ from argparse import ArgumentParser
 from pprint import pprint
 import json
 from pymongo import MongoClient
-from bson.objectid import ObjectId
 import requests
 
 # This is copied from ExtractMetadata.py. Should be in utils.
@@ -23,7 +22,6 @@ def warn(msg):
     print "Press return to continue..."
     raw_input()
 
-
 def save_doc(doc):
     r = requests.post("http://localhost:8080/rutherford-server/api/content/save", {"doc": json.dumps(doc)})
     if r.status_code == 200:
@@ -33,9 +31,32 @@ def save_doc(doc):
         warn("Error from SAVE: %s" % r.json()["error"])
         return None
 
-
 def import_content_document(mongo, doc):
     _id = None
+    
+    # Extract choices if they exist
+    if type(doc.get('choices')) is list:
+        print "\t(choices list)"
+        choiceList = doc.get('choices')
+        if doc.get('contentReferenced') == None:
+            doc['contentReferenced'] = []
+
+        for choice in choiceList:
+            doc['contentReferenced'].append(import_content_document(mongo,choice))
+
+        doc.pop('choices')
+
+    # Assumption that there is only ever one answer per question
+    if doc.get('answer') != None:
+        doc['answer']['type'] = 'content'
+        doc['answer']['contentLiteral'] = doc['answer'].pop('content')
+
+    # Assumption that hints are not reusuable. Currently embedded as full objects in questions
+    if doc.get('hints') != None:
+        for hint in doc.get('hints'):
+            hint['contentLiteral'] = hint.pop('content')
+            hint['type'] = "content"
+            print "\t(adding hint)"
 
     if type(doc['content']) is unicode:
         print "\t(literal content)"
@@ -47,7 +68,8 @@ def import_content_document(mongo, doc):
     elif type(doc['content']) is list:
         print "\t(content list)"
 
-        doc['contentReferenced'] = []
+        if doc.get('contentReferenced') == None:
+            doc['contentReferenced'] = []
         lst = doc.pop("content")
         for c in lst:
             if type(c) is unicode:
@@ -71,15 +93,13 @@ def import_content_document(mongo, doc):
             else:
                 warn("Unknown content type in list: %s" % type(c))
                 
-        
-        #doc['contentReferenced'] = 
         _id = save_doc(doc)
 
     else:
         warn("\t(Skipping content %s)" % type(doc['content']))
 
     return _id
-
+# usage e.g. --jsonDir .\test\json --mongo mongodb://localhost:27017/
 def main(argv):
 
     parser = ArgumentParser()
@@ -100,8 +120,6 @@ def main(argv):
 
     print "Import complete. Press return to continue..."
     raw_input()
-
-    
 
 if __name__ == "__main__":
     main(sys.argv[1:])
