@@ -64,7 +64,7 @@
  \refstepcounter{exercisenumber} %\refstepcounter allows you to reference to the exercise number
 %
 \iftoggle{solutions_only}{\hfil\break \textit{Solution}~\theexercisenumber:  #4}{ %If only solutions, just output solution.
-	\noindent{\textit{Exercise}~\theexercisenumber:}
+	\noindent{\textbf{Exercise}~\theexercisenumber:}
 	\ifthenelse{\equal{#1}{noref}}{}{\label{#1.ex}} #2 %\vspace{0.3cm}
 	\iftoggle{no_credits}{}{
 			%\hfil\break {\small #3} \vspace{0.3cm} %This is the old line, replaced with the one below, without the ifthenelse statement; in case something goes wrong.
