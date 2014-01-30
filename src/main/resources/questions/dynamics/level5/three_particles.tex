@@ -1,0 +1,115 @@
+%% ID: three_particles
+%% TITLE: Three Particles
+%% TYPE: question
+%% QUESTIONTYPE: numeric
+%% CONCEPTS: momentum, energy, newtonii, momentum, resolving_vectors, vectors, eq_of_motion_diff, relative_motion
+%% VIDEOS: 
+%% LEVEL: 5
+%% TOPIC: mechanics/dynamics
+%% ORDER: 10
+
+\begin{problem}[A1988FMIVQ1a] % Requires vectors, v = dx/dt, s= integral(v)dx  relative velocities, a little parametric equations
+{Three identical particles \vari{A}, \vari{B}, and \vari{C} are moving in a plane and, at time \vari{t}, their position vectors with respect to an origin \vari{O} are:
+\begin{align*} 
+(2t +1)\vtr{i} &+ (2t+ 3)\vtr{j}  \\ 
+(10 - t)\vtr{i} &+ (12 - t)\vtr{j} \\ 
+(t^{3} - 15t + 4)\vtr{i} &+ (-3t^{2} + 2t + 1)\vtr{j} 
+\end{align*} 
+respectively.
+\begin{enumerate}
+	\item Find the magnitude of the velocity of particle \vari{C} relative to particle \vari{A} when \valuedef{t}{2}{}, and find the angle which this relative velocity makes with \vari{\vtr{i}} at this time.
+	\item Verify that particles \vari{A} and \vari{B} are both moving along the straight line with equation \valuedef{y}{x + 2}{}, and that they collide when \valuedef{t}{3}{}.
+	\item Given that the collision between particles \vari{A} and \vari{B} is elastic, find the velocities of \vari{A} and \vari{B} immediately after the collision.
+	\item What are the position vectors of \vari{A} and \vari{B} a time \vari{\tau} after the collision?
+\end{enumerate}
+}
+{\stress{Adapted with permission from UCLES, A Level Further Mathematics, Syllabus C, June~1988, Paper~4, Question~1.}}
+{
+\begin{enumerate}
+	\item To find the relative velocity, we first need the velocities of \vari{A} and \vari{C}, which can be found by differentiating the position vectors (\vari{\vtr{s}_{A}} and \vari{\vtr{s}_{C}}) with respect to time:
+\begin{align*} 
+\vtr{v}_{A} &= \frac{\d \vtr{s}_{A}}{\d t} \\ 
+&= \frac{\d}{\d t}\left[(2t + 1)\vtr{i} + (2t + 3)\vtr{j}\right] \\ 
+&= 2\vtr{i} + 2\vtr{j} 
+\end{align*}
+where to differentiate the vector we have simply differentiated the two components separately. Repeating this for \vari{C}  gives:
+\begin{align*} 
+\vtr{v}_{C} & = \frac{\d \vtr{s}_{C}}{\d t} \\ 
+&= (3t^{2} - 15)\vtr{i} + (6t + 2)\vtr{j} 
+\end{align*}
+
+The velocity of \vari{C} with respect to \vari{A} is simply \vari{\vtr{v}_{C} - \vtr{v}_{A}}:
+\begin{align*} 
+\vtr{v}_{\text{rel}} &= \vtr{v}_{C} - \vtr{v}_{A}\\ 
+&= \left[(3t^{2} - 15)\vtr{i} + (-6t + 2)\vtr{j}\right] - \left[2\vtr{i} + 2\vtr{j}\right]\\ 
+&= (3t^{2} - 17)\vtr{i} - (6t)\vtr{j} 
+\end{align*}
+
+At \valuedef{t}{2}{}, the relative velocity is \valuedef{\vtr{v}_{rel}(2)}{-5\vtr{i} - 12\vtr{j}}{}, which has a magnitude of \vari{v_{rel}} $=$ \valuedef{\sqrt{(-5)^{2} + (-12)^{2}}}{}{} $=$ \quantity{13}{m\,s\sup{-1}}. The angle the velocity makes to \vari{\vtr{i}} can be measured clockwise or anticlockwise, depending on convention. The vector makes an angle of \vari{\arctan\left(\frac{5}{12}\right)} to the negative \vari{x}-axis, which is $157.4^{\circ}$ clockwise or equivalently $202.6^{\circ}$ anticlockwise.
+	\item The simplest way to show that \vari{A} and \vari{B} are travelling on the line \valuedef{y}{x + 2}{} is to show that the direction of motion is along the line \valuedef{y}{x}{} and that when \valuedef{x}{0}{} the \vari{y} coordinate is \vari{2}.
+
+The direction of motion is the direction the velocity vector points in, provided there is no acceleration involved. We find \valuedef{vtr{v}_{B}}{-\vtr{i} - \vtr{j}}{} using the same process as before and, remembering that the \vari{\vtr{i}}-component is the \vari{x} and \vari{\vtr{j}}-component the \vari{y}, find also that the direction of motion is along \valuedef{y}{x}{} in each case. It is clear, however, from the fact that \vari{B} has negative components it is travelling along the line in the opposite direction.
+
+To check the intercept, find the time that the \vari{x}-coordinate is zero for both particles; \valuedef{2t + 1}{0}{} and \valuedef{10 - t}{0}{} give \valuedef{t}{-\frac{1}{2}}{} for \vari{A} and \valuedef{t}{10}{} for \vari{B}. Substituting these times back in to the \vari{y}-coordinate for the particle concerned gives \valuedef{y}{2}{} at \valuedef{x}{0}{} for both: \valuedef{2\left(-\frac{1}{2}\right) + 3}{2}{} for \vari{A} and \valuedef{2 - (10)}{2}{} for \vari{B}. Hence both particles are moving along the line \valuedef{y}{x + 2}{}.
+
+A more rigorous method would be to consider the position vectors as two parametric equations for \vari{x} and \vari{y}, then to find \vari{\frac{\d x}{\d t}} and \vari{\frac{\d y}{\d t}} then to use the Chain Rule to find
+\begin{equation*} 
+\frac{\d y}{\d x} = \frac{\left(\frac{\d y}{\d t}\right)}{\left( \frac{\d x}{\d t} \right)} = m
+\end{equation*} 
+for each particle. In both cases it comes out as \valuedef{m}{1}{}, and then we find the intercept, \vari{c}, as above to show the particles move along a line of the form \valuedef{y}{mx + c}{} where \valuedef{m}{1}{} and \valuedef{c}{2}{}.
+	\item First we must find the time the collision occurs, and since we know they are moving on the same line in opposite directions; this must occur. Equating the \vari{x}-components of \vari{\vtr{v}_{A}} and \vari{\vtr{v}_{B}} and solving for \vari{t} gives the time at which the collision occurs:
+\begin{align*} 
+2t + 1 &= 10 -t \\ 
+3t &= 9 \\ 
+t &= 3 
+\end{align*} Of course, in general we would need to check the \vari{y}-components were equal to show a collision occurs (the lines may cross, but the particles don't have to have the same \vari{y}-coordinate at the same time the \vari{x}-coordinates are the same); but here we know that it does.
+
+Next we consider the conservation of momentum, which is a vector equation, and so we will leave it in vector form. Calling the components of the velocity of \vari{A} after the collision \vari{a} and \vari{\alpha}, and the components of \vari{B} after the collision \vari{b} and \vari{\beta}:
+\begin{align*} 
+(m)(2\vtr{i} + 2\vtr{j}) + (m)(-\vtr{i} - \vtr{j}) &= (m)(a\vtr{i} + \alpha\vtr{j}) + (m)(b\vtr{i} + \beta\vtr{j}) \\ 
+\vtr{i} + \vtr{j} &= (a + b)\vtr{i} + (\alpha + \beta)\vtr{j}
+\end{align*}
+which produces two simultaneous equations, by considering the \vari{\vtr{i}} and \vari{\vtr{j}} components separately (they are linearly independent):
+\begin{align} 
+a + b &= 1 \label{CoM_vtr_i} \\ 
+\alpha + \beta &= 1 \label{CoM_vtr_j} 
+\end{align}
+
+Then consider the conservation of energy, since the collision is elastic no energy is lost. Now we need the magnitude of the velocity squared: \vari{v^{2}} $=$ \valuedef{\vtr{v} \cdot \vtr{v}}{v_{x}^{2} + v_{y}^{2}}{}
+\begin{align} 
+\frac{1}{2}mv_{A}^{2} + \frac{1}{2}mv_{B}^{2} &= \frac{1}{2}mv_{A_{f}} + \frac{1}{2}mv_{B_{f}} \notag \\ 
+\left(2^{2} + 2^{2}\right) + \left((-1)^{2} + (-1)^{2}\right) &= \left(a^{2} + \alpha^{2}\right) + \left(b^{2} + \beta^{2}\right) \notag \\ 
+10 &= a^{2} + \alpha^{2} + b^{2} + \beta^{2} \label{CoE_vtr} 
+\end{align}
+where the subscript \vari{f} denotes after the collision.
+
+This gives us three simultaneous equations, \eqref{CoM_vtr_i}, \eqref{CoM_vtr_j} and \eqref{CoE_vtr}, for four unknowns; we need another equation in order to solve them. We know this is a 1D collision; the particles move along the line \valuedef{y}{x + 2}{}, and so we know the ratio of the \vari{x} and \vari{y} components of the velocities must be the gradient, equal to \vari{1}: 
+\begin{align} 
+\frac{a}{\alpha} &= 1 \label{1D_vtr_x} \\ 
+\frac{b}{\beta} &= 1 \label{1D_vtr_y} 
+\end{align}
+It now looks like we have 5 equations for 4 unknowns. If they are 5 independent equations, then the solution is overdetermined and we cannot solve for it; fortunately here they are not. Equating the left hand sides of Equations \eqref{CoM_vtr_i} and \eqref{CoM_vtr_j}, then using Equation \eqref{1D_vtr_x} to remove \vari{a} and \vari{b} and finally dividing by \vari{\beta} gives Equation \eqref{1D_vtr_y}. So Equation \eqref{1D_vtr_y} can be derived from the others; it is not independent and we can ignore it when solving the simultaneous equations (or in fact use it and neglect any of the others, except \eqref{CoE_vtr} which must be used).
+
+Solving  Equations \eqref{CoM_vtr_i}, \eqref{CoM_vtr_j}, \eqref{CoE_vtr} and \eqref{1D_vtr_x} for the 4 unknowns produces two solutions: the initial conditions, \vari{a} $=$ \valuedef{\alpha}{2}{} and \vari{b} $=$ \valuedef{\beta}{-1}{} which correspond to \vari{\vtr{v}_{A}} and \vari{\vtr{v}_{B}} but also the final velocities we are looking for. Writing them in vector form:
+\begin{align*} 
+\vtr{v}_{A_{f}} &= - \vtr{i}  - \vtr{j} \\ 
+\vtr{v}_{B_{f}} &= 2\vtr{i} + 2\vtr{j} 
+\end{align*}
+which is simply a swapping over of velocities, as expected in an elastic collision with identical particles.
+	\item The final part of the question is simply integrating up the two velocities, but with respect to \vari{\tau} instead of \vari{t} because \valuedef{t}{3}{} when the collision occurs and we want the variable equal to zero at that time. That trick aside, the question is a straightforward indefinite integration:
+\begin{align*}
+ \vtr{s}_{A_{f}} &= \int \vtr{v}_{A_{f}} \d \tau \\ 
+ &= \int (-1)\vtr{i} + (-1)\vtr{j} \d \tau \\
+  &= \left( \int [-1] \d \tau \right)\vtr{i} + \left( \int [-1] \d \tau \right) \\ 
+  &= (-\tau + c_{1})\vtr{i} + (-\tau + c_{2})\vtr{j} 
+  \end{align*} 
+ where \vari{c_{1}} and \vari{c_{2}} are arbitrary constants of integration, and the two parts of the vector are simply integrated separately. They can be found by equating the position vector \vari{\vtr{s}_{A_{f}}} at \valuedef{\tau}{0}{} with the position of the collision, \vari{\vtr{s}_{A}} at \valuedef{t}{3}{} which is \vari{7\vtr{i} + 9\vtr{j}}. This gives \valuedef{c_{1}}{7}{} and \valuedef{c_{2}}{9}{}.
+
+Repeating this for particle \vari{B}, we find the position vectors at a time \vari{\tau} after the collision:
+\begin{align*}
+ \vtr{s}_{A_{f}} &= (7 - \tau)\vtr{i} + (9 - \tau)\vtr{j} \\ 
+ \vtr{s}_{B_{f}} &= (2\tau + 7)\vtr{i} + (2\tau + 9)\vtr{j} 
+ \end{align*}
+\end{enumerate}
+}
+\end{problem}

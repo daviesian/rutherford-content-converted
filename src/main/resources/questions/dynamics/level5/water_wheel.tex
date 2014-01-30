@@ -1,0 +1,37 @@
+%% ID: water_wheel
+%% TITLE: The Water Wheel
+%% TYPE: question
+%% QUESTIONTYPE: numeric
+%% CONCEPTS: momentum, newtonii, relative_motion, resolving_vectors, vectors, impulse
+%% VIDEOS: 
+%% LEVEL: 5
+%% TOPIC: mechanics/dynamics
+%% ORDER: 5
+
+
+\begin{problem}[HSC1931PIIQ2a] % metric units added
+ {A horizontal jet of water with flow rate \valuedef{Q}{500}{kg\,s\sup{-1}} and moving at a speed \valuedef{v}{4}{m\,s\sup{-1}} strikes the tips of the blades of a water wheel.  The blades are moving with half the speed of the water, and the water drops off with no horizontal velocity relative to the blades. Find the force exerted on the wheel.  %Extend question to include consideration of linear and angular momentum?
+}
+{\stress{Adapted with permission from UCLES, Higher School Certificate Physics, June~1931, Paper~2, Question~2.}}
+{The key concept we need to answer this question is the fact that force is the rate of change of momentum:
+
+\begin{align*} 
+F = \frac{dp}{dt} 
+\end{align*}
+
+However, we need to notice a few things in order to use this equation with the information we're given. Firstly, that the velocity of the water relative to the wheel, \vari{V_{r}} (since we are interested in the force, \vari{F} that the water exerts on the wheel) is the speed of the water minus the speed of the wheel (since they are moving in the same direction):
+
+\begin{align*} 
+V_{r} &= V_{water} - V_{wheel} \\
+&= \left(4-\frac{4}{2}\right) = \mbox{\quantity{2}{m\,s\sup{-1}}}
+\end{align*}
+
+We also need to know that momentum, \vari{p} is equal to \vari{m \times v}. Hence:
+
+\begin{align*} 
+F &= \frac{dp}{dt} = \frac{dmv}{dt} = v \frac{dm}{dt} \\
+&= V_{r} \times Q \\
+&= (2 \times 500) = \mbox{\quantity{1000}{m\,s\sup{-1}}}
+\end{align*}
+}
+\end{problem}
