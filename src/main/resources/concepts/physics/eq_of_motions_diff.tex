@@ -40,11 +40,11 @@ v = \frac{\d\,(4t - 5 t^2)}{\d\ t} = 4 - (2\times5 t) = 4-10t
 \end{equation}}
 So we can find the velocity from the displacement using differentiation, how do we find the displacement after a certain time if the velocity is known? Let us rearrange the equation for the velocity:
  \begin{equation}
-\d\ s = v \d\ t \label{inst_s}
+\d s = v \d\ t \label{inst_s}
 \end{equation}
 Now integrating both sides, gives the displacement at a given point in time:
   \begin{equation}
-\int s = \int v \d\ t = vt + c
+\int \d s = \int v \d\ t = vt + c
 \end{equation}
 \vari{c} is just the constant of integration. If \valuedef{t}{0}{}, then \valuedef{s}{c}{}, and so \vari{c} is the initial position of the car.
 
@@ -55,7 +55,7 @@ a = \frac{\Delta v}{\Delta t}
 \end{equation}
 Similarly to the velocity in the previous section, this change may not be constant at each point on the car's trajectory. Reducing the time intervals to almost zero, the average acceleration can be rewritten as the instantaneous acceleration, \valuedef{a}{\frac{\d\ v}{\d\ t}}{}. And so, the acceleration is the time derivative of the velocity. From the previous section, we know that \valuedef{v}{\frac{\d\ s}{\d\ t}}{}. Thus, the acceleration can be related to the displacement of the car by:
 \begin{equation}
-a = \frac{\d \left(\d\ s/ \d\ t\right)}{\d\ t} = \frac{\d^{\ 2}\ s}{\d\ t^2} 
+a = \frac{\d \left(\d\ s/ \d\ t\right)}{\d\ t} = \frac{\d^{\ 2}s}{\d\ t^2} 
 \end{equation}
  The acceleration is the second time derivative of the displacement. 
 \subsection*{Quick Question}
@@ -67,7 +67,7 @@ v = \int a \d\ t = at + c
 where \vari{c} is equal the \vari{u}, the velocity at \valuedef{t}{0}{s}. And the displacement is:
 \begin{eqnarray}
 v = \int a \d t &=& at + u \label{vel} \\ 
-s = \int \left(at + u\right) \d\ t &=& \frac{1}{2} a t^2 + u t + s_0 \label{s}
+s = \int \left(at + u\right) \d t &=& \frac{1}{2} a t^2 + u t + s_0 \label{s}
 \end{eqnarray}
 where \vari{s_0} is the position of the car at \valuedef{t}{0}{s}. 
 
