@@ -305,7 +305,7 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
 
             result.append("<li>%s</li>" % itemContent)
             terminal = True
-        elif eq("eqnarray") or eq("equation*"):
+        elif eq("eqnarray") or eq("equation*") or eq("eqnarray*"):
             result.append("<table>")
         elif eq("ArrayRow"):
             result.append("<tr>")
@@ -361,7 +361,7 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
             result.append("</figure>")
         elif eq("enumerate") and not isQuestion:
             result.append("</ol>")
-        elif eq("eqnarray") or eq("equation*"):
+        elif eq("eqnarray") or eq("equation*") or eq("eqnarray*"):
             result.append("</table>")
         elif eq("ArrayRow"):
             result.append("</tr>")
