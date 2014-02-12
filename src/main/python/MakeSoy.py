@@ -166,8 +166,11 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
                     
                     if(n.nodeName == "bgroup"):
                         if bgroupCount == 0:
+                            result.append("<p>")
                             for questionText in n.childNodes:
-                                result.append("<p>" + render(questionText,escapeBraces) + '</p>')
+                                result.append(render(questionText,escapeBraces))
+                            result.append("</p>")
+
                         elif bgroupCount == 1:
                             result.append('{call shared.questions.questionFooter}{param footer}%s{/param}{/call}' % n.textContent)
                             terminal = True      
@@ -215,6 +218,7 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
                         terminal = True
                     result.append("</li>")
                     terminal = True
+
         if eq("#text"):
             result.append(escape(node.textContent))
         elif eq("section"):
