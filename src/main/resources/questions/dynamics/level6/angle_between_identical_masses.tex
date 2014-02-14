@@ -2,7 +2,7 @@
 %% TITLE: Angle Between Two Identical Masses
 %% TYPE: question
 %% QUESTIONTYPE: scq
-%% CONCEPTS:  energy, momentum, zero_momentum_frame, vectors
+%% CONCEPTS:  energy, momentum, momentumii, vectors
 %% VIDEOS: 
 %% LEVEL: 6
 %% TOPIC: mechanics/dynamics
@@ -11,23 +11,20 @@
 \begin{problem}[angle_between_identical_masses] 
 {A particle with mass \vari{m} travelling at speed  \vari{u} collides with a stationary particle of the same mass. What is the angle between the velocities of the two masses after this collision?
 \begin{enumerate}
-	\item $26.6^{\circ}$
-	\item $45^{\circ}$
-	\item $53.2^{\circ}$
-	\item $90^{\circ}$ \answer
-	\item $180^{\circ}$
+	\item \vari{26.6^{\circ}}
+	\item \vari{45^{\circ}}
+	\item \vari{53.2^{\circ}}
+	\item \vari{90^{\circ}} \answer
+	\item \vari{180^{\circ}}
 \end{enumerate}
 }
-{\textit{Another old question from multiple places}}
-{The correct answer is (d). By conservation of energy, $\half mu^2 = \half mv_1^2 + \half mv_2^2$, where \vari{v_1} and \vari{v_2} are the speeds of the particles after the collision. In the zero momentum frame, both particles have a speed of \vari{\frac{u}{2}} in opposite directions, so on converting back into the lab frame, a triangle is created with sides of length  \vari{u},  \vari{v_1} and  \vari{v_2}, with an angle \vari{\theta} between the final velocities of the two particles. Using the cosine rule, $u^2 = v_1^2 +v_2^2 - 2 v_1 v_2 \cos \theta$. Combining this equation with that for conservation of energy gives $2 v_1 v_2 \cos \theta = 0$, which is only possible if $\cos \theta = 0$, so $\theta = 90^{\circ}$
+{\stress{Another old question from multiple places}}
+{The correct answer is (d). By conservation of energy, \valuedef{\half mu^2}{\half mv_1^2 + \half mv_2^2}{}, where \vari{v_1} and \vari{v_2} are the speeds of the particles after the collision. In the zero momentum frame, both particles have a speed of \vari{\frac{u}{2}} in opposite directions, so on converting back into the lab frame, a triangle is created with sides of length  \vari{u},  \vari{v_1} and  \vari{v_2}, with an angle \vari{\theta} between the final velocities of the two particles. Using the cosine rule, \valuedef{u^2}{v_1^2 +v_2^2 - 2 v_1 v_2 \cos \theta}{}. Combining this equation with that for conservation of energy gives \valuedef{2 v_1 v_2 \cos \theta}{0}, which is only possible if \valuedef{\cos \theta}{0}{}, so \valuedef{\theta}{90^{\circ}}{}
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.5\textwidth]{../../../figures/dynamics_angle_between_identical_masses.svg}
-	\caption{}
-	\label{fig:Dynamics_angle_between_identical_masses}
+	\caption{}\label{fig:Dynamics_angle_between_identical_masses}
 \end{figure}
-
-
 }
 \end{problem}
