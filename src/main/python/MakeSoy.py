@@ -101,15 +101,15 @@ def convertToSoy(inputFile,outputFile,outputFigDir):
     tex.ownerDocument.context.loadPackage(tex,"wrapfig")
     tex.ownerDocument.context.loadPackage(tex,"amsmath")
     tex.ownerDocument.context.newcommand("vtr",1,r'\mathit{\underline{\boldsymbol{#1}}}')
+    tex.ownerDocument.context.newcommand("vari",1,r'$ { #1 } $')
+    tex.ownerDocument.context.newcommand("quantity",2,r'${ { #1\, } }$#2')
+    tex.ownerDocument.context.newcommand("valuedef",3,r'$#1{\,=#2\,}$#3')    
     tex.ownerDocument.context.newdef("half",'',r'\frac{1}{2}')
     tex.ownerDocument.context.newdef("quarter",'',r'\frac{1}{4}')
     tex.ownerDocument.context.newdef("third",'',r'\frac{1}{3}')
     tex.ownerDocument.context.newdef("eigth",'',r'\frac{1}{8}')
     tex.ownerDocument.context.newdef("e",'',r'{\textrm{e}}')
     tex.ownerDocument.context.newdef("d",'',r'{\operatorname{d}\!}')
-    tex.ownerDocument.context.newcommand("vari",1,r'$#1$')
-    tex.ownerDocument.context.newcommand("quantity",2,r'${{#1\,}}$#2')
-    tex.ownerDocument.context.newcommand("valuedef",3,r'$#1{\,=#2\,}$#3')
     tex.ownerDocument.context['Concepttitle'] = Concepttitle
     tex.ownerDocument.context['caption'] = caption
     tex.ownerDocument.context['color'] = color
