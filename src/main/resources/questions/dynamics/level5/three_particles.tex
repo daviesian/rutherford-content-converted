@@ -9,18 +9,18 @@
 %% ORDER: 10
 
 \begin{problem}[A1988FMIVQ1a] % Requires vectors, v = dx/dt, s= integral(v)dx  relative velocities, a little parametric equations
-{Three identical particles \vari{A}, \vari{B}, and \vari{C} are moving in a plane and, at time \vari{t}, their position vectors, \vari{\vtr{a}}, \vari{\vtr{b}}, \vari{\vtr{c}}, with respect to an origin \vari{O} are:
+{\exposition{Three identical particles \vari{A}, \vari{B}, and \vari{C} are moving in a plane and, at time \vari{t}, their position vectors, \vari{\vtr{a}}, \vari{\vtr{b}}, \vari{\vtr{c}}, with respect to an origin \vari{O} are:
 \begin{eqnarray*}
 \vtr{a} &=& (2t +1)\vtr{i} + (2t+ 3)\vtr{j} \\
 \vtr{b} &=& (10 - t)\vtr{i} + (12 - t)\vtr{j} \\ 
 \vtr{c} &=& (t^{3} - 15t + 4)\vtr{i} + (-3t^{2} + 2t + 1)\vtr{j} 
-\end{eqnarray*} 
+\end{eqnarray*} }
 
 \begin{enumerate}
-	\item Find the magnitude of the velocity of particle \vari{C} relative to particle \vari{A} when \valuedef{t}{2}{}, and find the angle which this relative velocity makes with \vari{\vtr{i}} at this time.
-	\item Verify that particles \vari{A} and \vari{B} are both moving along the straight line with equation \valuedef{y}{x + 2}{}, and that they collide when \valuedef{t}{3}{}.
-	\item Given that the collision between particles \vari{A} and \vari{B} is elastic, find the velocities of \vari{A} and \vari{B} immediately after the collision.
-	\item What are the position vectors of \vari{A} and \vari{B} a time \vari{\tau} after the collision?
+	\item \question[a]{Find the magnitude of the velocity of particle \vari{C} relative to particle \vari{A} when \valuedef{t}{2}{}.} \question[b]{Find the angle which this relative velocity makes with \vari{\vtr{i}} at this time.}
+	\item \question[c]{Verify that particles \vari{A} and \vari{B} are both moving along the straight line with equation \valuedef{y}{x + 2}{}.} If they collide, at what time will they do so?}
+	\item \question[d]{Given that the collision between particles \vari{A} and \vari{B} is elastic, find the velocities of \vari{A} and \vari{B} immediately after the collision.}
+	\item \question[e]{What are the position vectors of \vari{A} and \vari{B} a time \vari{\tau} after the collision?}
 \end{enumerate}
 }
 {\stress{Adapted with permission from UCLES, A Level Further Mathematics, Syllabus C, June~1988, Paper~4, Question~1.}}
@@ -45,7 +45,7 @@ The velocity of \vari{C} with respect to \vari{A} is simply \vari{\vtr{v}_{C} - 
 &= (3t^{2} - 17)\vtr{i} - (6t)\vtr{j} 
 \end{eqnarray*}
 
-At \valuedef{t}{2}{}, the relative velocity is \valuedef{\vtr{v}_{rel}(2)}{-5\vtr{i} - 12\vtr{j}}{}, which has a magnitude of \vari{v_{rel}} $=$ \valuedef{\sqrt{(-5)^{2} + (-12)^{2}}}{}{} $=$ \quantity{13}{m\,s\sup{-1}}. The angle the velocity makes to \vari{\vtr{i}} can be measured clockwise or anticlockwise, depending on convention. The vector makes an angle of \vari{\arctan\left(\frac{5}{12}\right)} to the negative \vari{x}-axis, which is $157.4^{\circ}$ clockwise or equivalently $202.6^{\circ}$ anticlockwise.
+At \valuedef{t}{2}{}, the relative velocity is \valuedef{\vtr{v}_{rel}(2)}{-5\vtr{i} - 12\vtr{j}}{}, which has a magnitude of \answer[a]{\vari{v_{rel}} $=$ \valuedef{\sqrt{(-5)^{2} + (-12)^{2}}}{}{} $=$ \quantity{13}{}}. The angle the velocity makes to \vari{\vtr{i}} can be measured clockwise or anticlockwise, depending on convention. \answer[b]{The vector makes an angle of \vari{\arctan\left(\frac{5}{12}\right)} to the negative \vari{x}-axis, which is $157.4^{\circ}$ clockwise or equivalently $202.6^{\circ}$ anticlockwise.}
 	\item The simplest way to show that \vari{A} and \vari{B} are travelling on the line \valuedef{y}{x + 2}{} is to show that the direction of motion is along the line \valuedef{y}{x}{} and that when \valuedef{x}{0}{} the \vari{y} coordinate is \vari{2}.
 
 The direction of motion is the direction the velocity vector points in, provided there is no acceleration involved. We find \valuedef{vtr{v}_{B}}{-\vtr{i} - \vtr{j}}{} using the same process as before and, remembering that the \vari{\vtr{i}}-component is the \vari{x} and \vari{\vtr{j}}-component the \vari{y}, find also that the direction of motion is along \valuedef{y}{x}{} in each case. It is clear, however, from the fact that \vari{B} has negative components it is travelling along the line in the opposite direction.
@@ -61,8 +61,10 @@ for each particle. In both cases it comes out as \valuedef{m}{1}{}, and then we 
 \begin{eqnarray*} 
 2t + 1 &= 10 -t \\ 
 3t &= 9 \\ 
-t &= 3 
-\end{eqnarray*} Of course, in general we would need to check the \vari{y}-components were equal to show a collision occurs (the lines may cross, but the particles don't have to have the same \vari{y}-coordinate at the same time the \vari{x}-coordinates are the same); but here we know that it does.
+\answer[c]{t &= 3} 
+\end{eqnarray*}
+
+Of course, in general we would need to check the \vari{y}-components were equal to show a collision occurs (the lines may cross, but the particles don't have to have the same \vari{y}-coordinate at the same time the \vari{x}-coordinates are the same); but here we know that it does.
 
 Next we consider the conservation of momentum, which is a vector equation, and so we will leave it in vector form. Calling the components of the velocity of \vari{A} after the collision \vari{a} and \vari{\alpha}, and the components of \vari{B} after the collision \vari{b} and \vari{\beta}:
 \begin{eqnarray*} 
@@ -91,11 +93,11 @@ This gives us three simultaneous equations, \eqref{CoM_vtr_i}, \eqref{CoM_vtr_j}
 It now looks like we have 5 equations for 4 unknowns. If they are 5 independent equations, then the solution is overdetermined and we cannot solve for it; fortunately here they are not. Equating the left hand sides of Equations \eqref{CoM_vtr_i} and \eqref{CoM_vtr_j}, then using Equation \eqref{1D_vtr_x} to remove \vari{a} and \vari{b} and finally dividing by \vari{\beta} gives Equation \eqref{1D_vtr_y}. So Equation \eqref{1D_vtr_y} can be derived from the others; it is not independent and we can ignore it when solving the simultaneous equations (or in fact use it and neglect any of the others, except \eqref{CoE_vtr} which must be used).
 
 Solving  Equations \eqref{CoM_vtr_i}, \eqref{CoM_vtr_j}, \eqref{CoE_vtr} and \eqref{1D_vtr_x} for the 4 unknowns produces two solutions: the initial conditions, \vari{a} $=$ \valuedef{\alpha}{2}{} and \vari{b} $=$ \valuedef{\beta}{-1}{} which correspond to \vari{\vtr{v}_{A}} and \vari{\vtr{v}_{B}} but also the final velocities we are looking for. Writing them in vector form:
-\begin{eqnarray*} 
+\answer[d]{\begin{eqnarray*} 
 \vtr{v}_{A_{f}} &= - \vtr{i}  - \vtr{j} \\ 
 \vtr{v}_{B_{f}} &= 2\vtr{i} + 2\vtr{j} 
 \end{eqnarray*}
-which is simply a swapping over of velocities, as expected in an elastic collision with identical particles.
+which is simply a swapping over of velocities, as expected in an elastic collision with identical particles.}
 	\item The final part of the question is simply integrating up the two velocities, but with respect to \vari{\tau} instead of \vari{t} because \valuedef{t}{3}{} when the collision occurs and we want the variable equal to zero at that time. That trick aside, the question is a straightforward indefinite integration:
 \begin{eqnarray*}
  \vtr{s}_{A_{f}} &= \int \vtr{v}_{A_{f}} \d \tau \\ 
@@ -106,10 +108,10 @@ which is simply a swapping over of velocities, as expected in an elastic collisi
  where \vari{c_{1}} and \vari{c_{2}} are arbitrary constants of integration, and the two parts of the vector are simply integrated separately. They can be found by equating the position vector \vari{\vtr{s}_{A_{f}}} at \valuedef{\tau}{0}{} with the position of the collision, \vari{\vtr{s}_{A}} at \valuedef{t}{3}{} which is \vari{7\vtr{i} + 9\vtr{j}}. This gives \valuedef{c_{1}}{7}{} and \valuedef{c_{2}}{9}{}.
 
 Repeating this for particle \vari{B}, we find the position vectors at a time \vari{\tau} after the collision:
-\begin{eqnarray*}
+\answer[e]{\begin{eqnarray*}
  \vtr{s}_{A_{f}} &= (7 - \tau)\vtr{i} + (9 - \tau)\vtr{j} \\ 
  \vtr{s}_{B_{f}} &= (2\tau + 7)\vtr{i} + (2\tau + 9)\vtr{j} 
  \end{eqnarray*}
-\end{enumerate}
+\end{enumerate}}
 }
 \end{problem}
