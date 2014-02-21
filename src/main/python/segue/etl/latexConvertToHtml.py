@@ -274,22 +274,11 @@ def convertToHtml(jsonMetaData, latexSourceToConvert):
             else:
                 result.append('</span>')            
         elif eq("vari"):
-            result.append("$\\vari{%s}$" % node.getAttribute("variable").textContent)
-            pass
+            result.append("$%s$" % node.source)
         elif eq("valuedef"):
-            variable = ("" if node.getAttribute("variable") == None else node.getAttribute("variable").textContent)
-            amount = ("" if node.getAttribute("amount") == None else node.getAttribute("amount").textContent)
-            units = ("" if node.getAttribute("units") == None else node.getAttribute("units").textContent)
-
-            result.append("$\\valuedef{%s}{%s}{%s}$" % (variable,amount, units))
-            pass
+            result.append("$%s$" % node.source)
         elif eq("quantity"):
-            variable = ("" if node.getAttribute("variable") == None else node.getAttribute("variable").textContent)
-            amount = ("" if node.getAttribute("amount") == None else node.getAttribute("amount").textContent)
-            units = ("" if node.getAttribute("units") == None else node.getAttribute("units").textContent)
-
-            result.append("$\\quantity{%s}{%s}$" % (amount, units))
-            pass
+            result.append("$%s$" % node.source)
 
         # TODO: This logic should only be in the extract structure part of the process
         elif eq("qq"):
