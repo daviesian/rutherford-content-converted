@@ -10,15 +10,15 @@
 
 \begin{problem}[IntA1987APIQ1l] %Requires moments, work, power, simple pendulum, SHM
 {\begin{enumerate}
-	\item A non-uniform rod of mass \valuedef{m}{200}{kg} and length \valuedef{l}{10.0}{m} has its centre of mass \valuedef{d}{4.0}{m} from one end. It is supported horizontally by two vertical ropes which are attached to points \valuedef{s}{1.0}{m} from each end. Calculate the tension in each rope.
-	\item The rod is raised by accelerating it at \valuedef{a}{0.20}{m\,s\sup{-2}} to a speed \valuedef{v}{0.60}{m\,s\sup{-1}}, which remains constant until the total height gained is \valuedef{h}{12.0}{m}. Calculate:
+	\item \exposition{A non-uniform rod of mass \valuedef{m}{200}{kg} and length \valuedef{l}{10.0}{m} has its centre of mass \valuedef{d}{4.0}{m} from one end. It is supported horizontally by two vertical ropes which are attached to points \valuedef{s}{1.0}{m} from each end.} \question[a]{Calculate the tension in each rope.}
+	\item \exposition{The rod is raised by accelerating it at \valuedef{a}{0.20}{m\,s\sup{-2}} to a speed \valuedef{v}{0.60}{m\,s\sup{-1}}, which remains constant until the total height gained is \valuedef{h}{12.0}{m}.} 
 	\begin{enumerate}
-		\item the sum of the tensions in the ropes when the rod is accelerating,
-		\item the sum of the tensions in the ropes when the rod is moving up at a steady speed,
-		\item the power required when lifting the rod at \vari{v},
-		\item the distance for which the rod was accelerating and the distance for which it moved at \vari{v},
+		\item \question[b]{Calculate the sum of the tensions in the ropes when the rod is accelerating}
+		\item \question[c]{Calculate the sum of the tensions in the ropes when the rod is moving up at a steady speed}
+		\item \question[d]{Calculate the power required when lifting the rod at \vari{v}}
+		\item \question[e]{Calculate the distance for which the rod was accelerating and the distance for which it moved at \vari{v}}
 	\end{enumerate}
-	\item Using the above, or otherwise, find the work done raising the rod in terms of \vari{m}, \vari{v} and \vari{h}. Comment on the value.
+	\item \question[f]{Using the above, or otherwise, find the work done raising the rod in terms of \vari{m}, \vari{v} and \vari{h}. Comment on the value.}
 \end{enumerate}
 }
 {\stress{Adapted with permission from UCLES, A Level Additional Physics, November~1987, Paper~1, Question~1.}}
@@ -50,6 +50,10 @@ Repeating the process to find \vari{T_{2}} gives:
 &= \mbox{\quantity{1225}{N}}
 \end{align*}
 and a quick check that the net force on the rod is zero: \valuedef{T_{1} + T_{2} - mg}{0}{} so check for our calculated values \vari{735 + 1225 - (200 \times 9.8)} $=$ \valuedef{1960 - 1960}{0}{N} as required.
+
+\answer[a]{The tensions in the ropes are \valuedef{T_{1}}{735}{N} and  \valuedef{T_{2}}{1225}{N}}
+
+
 	\item There are multiple ways to attempt each of the questions here, but all produce the same answers:
 	\begin{enumerate}
 		\item The sum of the tensions when the rope is accelerating can be found using \valuedef{\vtr{F}}{m\vtr{a}}{} and considering the net force:
@@ -61,7 +65,12 @@ and a quick check that the net force on the rod is zero: \valuedef{T_{1} + T_{2}
 	 &= m(a + g) \\ &= (200)(0.2 + 9.8) \\ 
 	 &= \mbox{\quantity{2000}{N}{} }
 	 \end{align*}
+	 \answer[b]{The total of the tensions in the ropes when the rod is accelerating is \valuedef{T_{tot}}{2000}{N}.}
+	 
+	 
 		\item When the rod is moving at a constant speed, the net force must be zero and so we have the same situation as in the first part of the question. Another way of looking at it is that the acceleration is zero (\vari{a}{0}{m\,s\sup{-2}}) and so using the formula above we find that, as in the first part, the total of the tensions is \vari{mg}, as expected. This is because all inertial frames of reference (frames which are not accelerating) are equivalent and we could move into the frame of the moving rod, where the rod appears stationary but with the same forces acting on it. In order to give a consistent answer in both cases, a constant velocity cannot make a difference.
+		\answer[c]{The total of the tensions in the ropes when the rod is moving at a constant speed is \valuedef{T_{tot}}{1960}{N}.}
+		
 		\item The power required when lifting the rod is given by the equation \vari{P} $=$ \valuedef{\vtr{F} \cdot \vtr{v}}{Fv}{} where \vari{F} is as before, and \vari{v} is the speed in the direction the force is acting. Using this, we find:
 	\begin{equation*} 
 	P = Fv = (mg)(v) = (200 \times 9.8)(0.6) = \mbox{\quantity{1176}{W}} 
@@ -71,6 +80,8 @@ This could also have been found another way; since the speed is constant, the po
 	P = \frac{E_{\text{used}}}{\Delta t} = \frac{mgs_{2}}{\Delta t} = mg\left(\frac{s_{2}}{\Delta t}\right) = mgv 
 	\end{equation*} 
 	as before.
+	\answer[d]{The power required when lifting the rod at \vari{v} is \valuedef{P}{1176}{W}.}
+	
 		\item To find the two distances involved, we can simply use SUVAT. Call the distance moved whilst accelerating \vari{s_{1}}, and that moved whilst at a constant speed \vari{s_{2}}. The equation we need is \valuedef{v^{2}}{u^{2}+2as}{} where \valuedef{u}{0}{m\,s\sup{-1}}:
 	\begin{align*} 
 	s_{1} &= \frac{v^{2} - u^{2}}{2a} = \frac{v^{2}}{2a} \\ 
@@ -78,6 +89,8 @@ This could also have been found another way; since the speed is constant, the po
 	\end{align*}
 and then \vari{s_{2}} is simply \vari{h - s_{1}} $=$ \valuedef{h - \frac{v^{2}}{2a}}{11.1}{m}.
 	\end{enumerate}
+	
+	\answer[e]{The distance moved whilst accelerating is \valuedef{s_{1}}{0.9}{m}, and that moved whilst at a constant speed is \valuedef{s_{2}}{11.1}{m}.}
 
 \item We need to use the formula \vari{W} $=$ \valuedef{\vtr{F} \cdot \vtr{x}}{Fd}{} where \vari{F} is the magnitude of the force \vari{\vtr{F}} and d is the distance moved in the direction of the force. There are two sections to the motion; those when the rod is accelerating and the tension is \vari{T_{\text{tot}}} and that when it is moving at a constant speed, with tension $T = T_{1} + T_{2}$, and the total work is the sum of these two.
 	\begin{align*} 
@@ -86,6 +99,7 @@ and then \vari{s_{2}} is simply \vari{h - s_{1}} $=$ \valuedef{h - \frac{v^{2}}{
 	&= \frac{mav^{2}}{2a} + \frac{mgv^{2}}{2a} + mgh - \frac{mgv^{2}}{2a} \\ 
 	&= \frac{1}{2}mv^{2} + mgh 
 	\end{align*}
-It should be clear that this is simply the sum of the kinetic and gravitational potential energy the rod gained as it was lifted; the work done by the ropes was the only way the rod could have gained energy, so an energy argument could have been used here instead.
+	
+	\answer[f]{The work done while raising the rod is \valuedef{W}{\frac{1}{2}mv^{2} + mgh}{}. This is the sum of the kinetic and gravitational potential energy the rod gained as it was lifted.} The work done by the ropes was the only way the rod could have gained energy, so an energy argument could have been used here instead.
 \end{enumerate}}
 \end{problem}
