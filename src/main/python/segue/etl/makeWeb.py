@@ -43,6 +43,7 @@ def execute(inputDir,outputDir):
                         logging.debug("writing to file %s " % outfile)
 
     os.path.walk(inputDir,convert,None)
+    logging.info("Extraction complete! Woo hoo!")
     
 def main(argv):
     logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.INFO)
