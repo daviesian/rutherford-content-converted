@@ -17,6 +17,21 @@ from plasTeX.Packages import wrapfig
 
 from Util import *
 
+#Vari value etc
+class vari(Command):
+    args = '{variable}'
+
+class quantity(Command):
+    args = '{amount}{units}' 
+
+class valuedef(Command):
+    args = '{variable}{amount}{units}'     
+
+    # tex.ownerDocument.context.newcommand("vari",1,r'$#1$')
+    # tex.ownerDocument.context.newcommand("quantity",2,r'${{#1\,}}$#2')
+    # tex.ownerDocument.context.newcommand("valuedef",3,r'$#1{\,=#2\,}$#3')
+
+# macros
 class Concepttitle(Command):
     args = 'text'
 
@@ -77,16 +92,16 @@ def configureParser(latexSourceToConvert):
     tex.ownerDocument.context.loadPackage(tex,"graphicx")
     tex.ownerDocument.context.loadPackage(tex,"wrapfig")
     tex.ownerDocument.context.loadPackage(tex,"amsmath")
-    tex.ownerDocument.context.newcommand("vtr",1,r'\mathit{\underline{\boldsymbol{#1}}}')
-    tex.ownerDocument.context.newcommand("vari",1,r'$#1$')
-    tex.ownerDocument.context.newcommand("quantity",2,r'${{#1\,}}$#2')
-    tex.ownerDocument.context.newcommand("valuedef",3,r'$#1{\,=#2\,}$#3')    
-    tex.ownerDocument.context.newdef("half",'',r'\frac{1}{2}')
-    tex.ownerDocument.context.newdef("quarter",'',r'\frac{1}{4}')
-    tex.ownerDocument.context.newdef("third",'',r'\frac{1}{3}')
-    tex.ownerDocument.context.newdef("eigth",'',r'\frac{1}{8}')
-    tex.ownerDocument.context.newdef("e",'',r'{\textrm{e}}')
-    tex.ownerDocument.context.newdef("d",'',r'{\operatorname{d}\!}')
+    # tex.ownerDocument.context.newcommand("vtr",1,r'\mathit{\underline{\boldsymbol{#1}}}')
+    # tex.ownerDocument.context.newcommand("vari",1,r'$#1$')
+    # tex.ownerDocument.context.newcommand("quantity",2,r'${{#1\,}}$#2')
+    # tex.ownerDocument.context.newcommand("valuedef",3,r'$#1{\,=#2\,}$#3')
+    # tex.ownerDocument.context.newdef("half",'',r'\frac{1}{2}')
+    # tex.ownerDocument.context.newdef("quarter",'',r'\frac{1}{4}')
+    # tex.ownerDocument.context.newdef("third",'',r'\frac{1}{3}')
+    # tex.ownerDocument.context.newdef("eigth",'',r'\frac{1}{8}')
+    # tex.ownerDocument.context.newdef("e",'',r'{\textrm{e}}')
+    # tex.ownerDocument.context.newdef("d",'',r'{\operatorname{d}\!}')
     tex.ownerDocument.context['Concepttitle'] = Concepttitle
     tex.ownerDocument.context['caption'] = caption
     tex.ownerDocument.context['color'] = color
@@ -95,6 +110,10 @@ def configureParser(latexSourceToConvert):
     tex.ownerDocument.context['ref'] = ref
     tex.ownerDocument.context['qq'] = qq
     tex.ownerDocument.context['answer'] = answer
+
+    tex.ownerDocument.context['vari'] = vari
+    tex.ownerDocument.context['valuedef'] = valuedef
+    tex.ownerDocument.context['quantity'] = quantity
     return tex
 
 # This function will accept jsonMetaData array and some latex source and will attempt to convert the latex source (whether it is a fragment or not) and produce some html
@@ -254,6 +273,24 @@ def convertToHtml(jsonMetaData, latexSourceToConvert):
                 result.append('<span class="color-%s">%s' % (color,body))
             else:
                 result.append('</span>')            
+        elif eq("vari"):
+            result.append("$\\vari{%s}$" % node.getAttribute("variable").textContent)
+            pass
+        elif eq("valuedef"):
+            variable = ("" if node.getAttribute("variable") == None else node.getAttribute("variable").textContent)
+            amount = ("" if node.getAttribute("amount") == None else node.getAttribute("amount").textContent)
+            units = ("" if node.getAttribute("units") == None else node.getAttribute("units").textContent)
+
+            result.append("$\\valuedef{%s}{%s}{%s}$" % (variable,amount, units))
+            pass
+        elif eq("quantity"):
+            variable = ("" if node.getAttribute("variable") == None else node.getAttribute("variable").textContent)
+            amount = ("" if node.getAttribute("amount") == None else node.getAttribute("amount").textContent)
+            units = ("" if node.getAttribute("units") == None else node.getAttribute("units").textContent)
+
+            result.append("$\\quantity{%s}{%s}$" % (amount, units))
+            pass
+
         # TODO: This logic should only be in the extract structure part of the process
         elif eq("qq"):
             # first check if there is something in the attribute that we can use as the answer
