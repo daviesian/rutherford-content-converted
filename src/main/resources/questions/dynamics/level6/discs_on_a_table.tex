@@ -9,26 +9,27 @@
 %% ORDER: 4
 
 \begin{problem}[Discs on a Table]%[A1989FMsQ8a] %Very heavily adapted, pretty much unrecognisable; the Coefficient of Restitution has been completely purged.
-{A table top is in the form of a smooth horizontal rectangle ABCD with AB $=$ \vari{a}, BC $=$ \vari{b} where \vari{a} $>$ \vari{b}. A small circular disc \vari{P} of mass \vari{m} is at rest at the centre of the table. An identical disk \vari{Q} is projected with speed \vari{u} along the table top in a direction parallel to AB and collides with \vari{P}. After the collision \vari{P} and \vari{Q} move directly towards B and C respectively.
+{\exposition{A table top is in the form of a smooth horizontal rectangle ABCD with AB $=$ \vari{a}, BC $=$ \vari{b} where \vari{a} $>$ \vari{b}. A small circular disc \vari{P} of mass \vari{m} is at rest at the centre of the table. An identical disk \vari{Q} is projected with speed \vari{u} along the table top in a direction parallel to AB and collides with \vari{P}, slightly off-centre. After the collision \vari{P} and \vari{Q} move directly towards B and C respectively.}
 \begin{enumerate}
-	\item Draw diagrams illustrating the situation before and after the collision both the frame of the table and in the zero momentum frame (ZMF).
-	\item The loss of kinetic energy in the collision is:
+	\item \question[a]{Draw diagrams illustrating the situation before and after the collision both the frame of the table and in the zero momentum frame (ZMF).}
+	\item \exposition{The loss of kinetic energy in the collision is:
 \begin{equation*}
 \frac{(a^{2} - b^{2}) mu^{2}}{4a^{2}} 
-\end{equation*}
-Show that the discs reach B and C simultaneously, and find the time from the collision until \vari{Q} reaches C.
+\end{equation*}}
+\question[b]{Show that the discs reach B and C simultaneously, and find the time from the collision until \vari{Q} reaches C.}
 \end{enumerate}
 
-\stress{Hint: }The zero momentum frame (ZMF) is a set of axes moving such that the total momentum of the objects being considered is zero. To transform into it, subtract the speed of the centre of mass of the bodies. It is defined in terms of vectors, but here we only need the 1D form:  \valuedef{v_{\text{ZMF}}}{\frac{m_{1}v_{1} + m_{2}v_{2}}{m_{1} + m_{2}}}{} in the direction of \vari{v_{1}} and \vari{v_{2}}. The ZMF is sometimes called the Centre of Mass frame, since in it the Centre of Mass is fixed.
+\stress{Hint: }\hinta{The zero momentum frame (ZMF) is a set of axes moving such that the total momentum of the objects being considered is zero. To transform into it, subtract the speed of the centre of mass of the bodies. It is defined in terms of vectors, but here we only need the 1D form:  \valuedef{v_{\text{ZMF}}}{\frac{m_{1}v_{1} + m_{2}v_{2}}{m_{1} + m_{2}}}{} in the direction of \vari{v_{1}} and \vari{v_{2}}. The ZMF is sometimes called the Centre of Mass frame, since in it the Centre of Mass is fixed.}
 }
 {\stress{Adapted with permission from UCLES, A Level Further Mathematics, June~1989, Syllabus~C, Special~Paper, Question~8.}}
 {\begin{enumerate}
 	\item It is easiest to draw the diagrams as one big table, showing the system in the ZMF below the system in the table frame as rows and the before/after state as the columns, as in Figure \ref{fig:Dynamics_ZMF_table_collision}. When drawing a diagram like this one, it is standard to draw the initial table frame, then the initial ZMF, then final ZMF and then back into the table frame to get the final answer; but here we know the final and initial state in the table frame and it is the ZMF frame we are interested in.
-\begin{figure}[h]
+	
+\answer[a]{\begin{figure}[h]
 \centering
 \includegraphics[width=0.9\textwidth]{../../../figures/Dynamics_ZMF_table_collision.svg}
 \caption{}\label{fig:Dynamics_ZMF_table_collision}
-\end{figure}
+\end{figure}}
 
 Before the collision in the table frame, cell \vari{(1)} in Figure \ref{fig:Dynamics_ZMF_table_collision}, disc \vari{Q} is moving towards \vari{} with speed \vari{u} and \vari{P} is stationary at the centre of the table. The collision must be oblique (not head on) in order for the discs to go off at angles to one another and make this a 2D collision. After the collision in the table frame, cell \vari{(4)}, both discs are both moving at an angle \valuedef{\theta}{\arctan(\frac{b}{a})}{} to the horizontal.
 
@@ -88,6 +89,8 @@ and so we can find \vari{t}, the time taken for \vari{Q} to reach C:
 t = \frac{d}{v_{f}} &=& \frac{\frac{1}{2}\sqrt{a^{2} + b^{2}}}{\left(\frac{\sqrt{a^{2} + b^{2}}}{2a} u\right)}\\
  &=& \frac{a}{u} 
 \end{eqnarray*}
+
+\answer[b]{The time taken for P and Q to reach B and C respectively is $t = \frac{a}{u}$}.
 
 \end{enumerate}
 }

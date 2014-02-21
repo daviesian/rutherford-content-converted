@@ -9,7 +9,7 @@
 %% ORDER: 10
 
 \begin{problem}[A Chain Sliding through a Tube]
-{A uniform heavy inextensible chain AD of length \vari{\left( 4 + \frac{\pi}{2} \right)l} and mass \vari{\rho} per unit length is at rest in the position shown in Figure \ref{fig:Dynamics_chain_sliding} , in which the points A, B, C and D lie in a vertical plane. The section AB of length \vari{2l} rests on a smooth horizontal table. The next section of the chain is within a fixed smooth tube BC in the form of a quadrant of a circle, radius \vari{l}, whose centre \vari{O} is vertically below B. The section CD of the chain hangs vertically.
+{\exposition{A uniform heavy inextensible chain AD of length \vari{\left( 4 + \frac{\pi}{2} \right)l} and mass \vari{\rho} per unit length is at rest in the position shown in Figure \ref{fig:Dynamics_chain_sliding} , in which the points A, B, C and D lie in a vertical plane. The section AB of length \vari{2l} rests on a smooth horizontal table. The next section of the chain is within a fixed smooth tube BC in the form of a quadrant of a circle, radius \vari{l}, whose centre \vari{O} is vertically below B. The section CD of the chain hangs vertically.
 
 \begin{figure}[h!]
 \centering
@@ -17,22 +17,22 @@
 \caption{}\label{fig:Dynamics_chain_sliding}
 \end{figure}
 
-The chain is released from rest at \valuedef{t}{0}{s}. At time \vari{t} the length of the vertical section CD is \vari{2l + x}, where \vari{x \le 2l}, and the speed of the chain is \vari{v}.
+The chain is released from rest at \valuedef{t}{0}{s}. At time \vari{t} the length of the vertical section CD is \vari{2l + x}, where \vari{x \le 2l}, and the speed of the chain is \vari{v}.}
 \begin{enumerate}
-	\item Find \vari{v^{2}} in terms of \vari{l}, \vari{x} and \vari{g}.
-	\item Show that the momentum of the section of chain within the tube has horizontal component \vari{\rho lv}.
-	\item Show further that the horizontal component of the force on the chain is:
+	\item \question[a]{Find \vari{v^{2}} in terms of \vari{l}, \vari{x} and \vari{g}.}
+	\item \question[b]{Show that the momentum of the section of chain within the tube has horizontal component \vari{\rho lv}.}
+	\item  \question[c]{Show further that the horizontal component of the force on the chain is:
 	\begin{equation*} 
 	\frac{2g \rho}{l(8 + \pi)} \left( 9l^{2} - 6lx - 2x^{2} \right) 
-	\end{equation*}
+	\end{equation*}}
 \end{enumerate}
-\stress{Hint:}
-\begin{enumerate}
-	\item It is easiest to consider equating the kinetic energy gained after moving a distance \vari{x} to the gravitational potential energy (GPE) lost in the same distance.
-	\item Consider a small element, and integrate %over the whole curved section 
-to find the total horizontal momentum of the chain.% in the tube.
-	\item The rate of change of horizontal momentum in the tube is equal to the sum of the two horizontal forces acting on the chain plus the momentum flux into the tube. 
-\end{enumerate}
+
+\stree{Hint:}{\begin{enumerate}
+	\item \hinta[a]{It is easiest to consider equating the kinetic energy gained after moving a distance \vari{x} to the gravitational potential energy (GPE) lost in the same distance.}
+	\item \hinta[c]{Consider a small element, and integrate %over the whole curved section 
+to find the total horizontal momentum of the chain.}% in the tube.
+	\item \hinta[c]{The rate of change of horizontal momentum in the tube is equal to the sum of the two horizontal forces acting on the chain plus the momentum flux into the tube.}
+\end{enumerate}}
 }
 {\stress{Used with permission from UCLES, A Level Further Mathematics, Syllabus A, June 1987, Special Paper, Question 10.}}
 {\begin{enumerate}
@@ -82,8 +82,10 @@ Equating the KE and \quantity{\Delta}{GPE} we find:
 	\begin{eqnarray*} 
 	\frac{1}{2}\left[\rho\left(4 + \frac{\pi}{2}\right)l\right]v^{2} &= \frac{1}{2}\rho g x \left[6l + x\right] \\
 	% v^{2} &= \frac{\frac{1}{2}\rho g x \left[6l + x\right]}{\frac{1}{2}\rho l \left(4 + \frac{\pi}{2}\right)} \\ 
-	 &= \frac{2gx}{(8 + \pi)l}(6l + x) 
+	 \answer[a]{v^{2} &= \frac{2gx}{(8 + \pi)l}(6l + x)}
 	 \end{eqnarray*}
+	 
+	 
 
 	\item To find the total horizontal momentum of the tube in the curved section again consider a small element of the chain, this time in the circular arc of the tube. We need to get an expression for \valuedef{\d p_{horiz}}{\d mv_{horiz}}{}, where  \vari{\d p_{horiz}} is the horizontal momentum of a small part of the chain, and \vari{v_{horiz}} is the horizontal velocity of that element. The horizontal velocity will be different at every point around the arc, but look at some small element at an angle \vari{\theta} from the the horizontal to the position of the chain element, as in Figure \ref{fig:Dynamics_chain_velocity}.
 
