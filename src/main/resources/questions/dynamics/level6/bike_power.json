@@ -1,0 +1,15 @@
+{
+  "src": "bike_power.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Cycling through wind", 
+  "relatedContent": [
+    "vectors", 
+    "resolving_vectors", 
+    "energy"
+  ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question_numeric", 
+  "id": "bike_power"
+}

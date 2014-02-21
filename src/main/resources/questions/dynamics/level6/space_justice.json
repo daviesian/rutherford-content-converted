@@ -1,0 +1,15 @@
+{
+  "src": "space_justice.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Space Justice", 
+  "relatedContent": [
+    "energy", 
+    "momentum", 
+    "momentumii"
+  ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question_numeric", 
+  "id": "space_justice"
+}

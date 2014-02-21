@@ -1,0 +1,14 @@
+{
+  "src": "sprinter_100m.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Sprinter running 100m", 
+  "relatedContent": [
+    "newtonii", 
+    "energy"
+  ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question_numeric", 
+  "id": "sprinter_100m"
+}

@@ -1,16 +1,15 @@
 {
-  "src": "zero_momentum_frame.tex", 
+  "src": "braking_a_car.tex", 
   "attribution": null, 
   "encoding": "latex", 
-  "title": "Conservation of Momentum", 
+  "title": "Braking a Car", 
   "relatedContent": [
-    "vectors", 
-    "momentum", 
     "energy", 
+    "eq_of_motion_diff", 
     "resolving_vectors"
   ], 
   "author": null, 
   "layout": "1-col", 
-  "type": "concept", 
-  "id": "momentumii"
+  "type": "legacy_latex_question_numeric", 
+  "id": "braking_a_car"
 }

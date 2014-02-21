@@ -1,0 +1,17 @@
+{
+  "src": "inelastic_collision_ZMF.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Inelastic Collision in the ZMF", 
+  "relatedContent": [
+    "energy", 
+    "momentum", 
+    "momentumii", 
+    "vectors", 
+    "resolving_vectors"
+  ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question_numeric", 
+  "id": "inelastic_collision_ZMF"
+}

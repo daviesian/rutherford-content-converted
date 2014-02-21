@@ -1,0 +1,17 @@
+{
+  "src": "airzooka.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "airzooka", 
+  "relatedContent": [
+    "momentum", 
+    "energy", 
+    "newtoni", 
+    "newtonii", 
+    "eq_of_motion_diff"
+  ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question_numeric", 
+  "id": "airzooka"
+}

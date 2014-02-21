@@ -1,0 +1,16 @@
+{
+  "src": "angle_between_identical_masses.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Angle Between Two Identical Masses", 
+  "relatedContent": [
+    "energy", 
+    "momentum", 
+    "momentumii", 
+    "vectors"
+  ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question_scq", 
+  "id": "angle_between_identical_masses"
+}

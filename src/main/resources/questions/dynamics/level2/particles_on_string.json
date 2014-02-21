@@ -1,0 +1,17 @@
+{
+  "src": "particles_on_string.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Two Particles on a String", 
+  "relatedContent": [
+    "momentum", 
+    "energy", 
+    "impulse", 
+    "vectors", 
+    "resolving_vectors"
+  ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question_symbolic", 
+  "id": "particles_on_string"
+}

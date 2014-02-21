@@ -1,0 +1,16 @@
+{
+  "src": "what_goes_up.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "What goes up...", 
+  "relatedContent": [
+    "momentum", 
+    "energy", 
+    "impulse", 
+    "A1986PIQ4l_video"
+  ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question_scq", 
+  "id": "what_goes_up"
+}

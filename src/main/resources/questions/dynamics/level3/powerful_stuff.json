@@ -1,0 +1,13 @@
+{
+  "src": "powerful_stuff.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Powerful Stuff", 
+  "relatedContent": [
+    "energy"
+  ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question_scq", 
+  "id": "powerful_stuff"
+}

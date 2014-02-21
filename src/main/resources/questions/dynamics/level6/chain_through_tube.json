@@ -1,0 +1,17 @@
+{
+  "src": "chain_through_tube.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "A Chain Sliding through a Tube", 
+  "relatedContent": [
+    "energy", 
+    "momentum", 
+    "newtonii", 
+    "vectors", 
+    "resolving_vectors"
+  ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question_numeric", 
+  "id": "chain_through_tube"
+}

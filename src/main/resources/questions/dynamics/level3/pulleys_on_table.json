@@ -1,0 +1,17 @@
+{
+  "src": "pulleys_on_table.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Pulleys on a Table", 
+  "relatedContent": [
+    "energy", 
+    "momentum", 
+    "eq_of_motion_diff", 
+    "newtonii", 
+    "impulse"
+  ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question_symbolic", 
+  "id": "pulleys_on_table"
+}

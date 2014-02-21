@@ -1,0 +1,16 @@
+{
+  "src": "geostationary_orbit.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Geostationary Orbit", 
+  "relatedContent": [
+    "angular_circular", 
+    "energy", 
+    "vectors", 
+    "A1989PSIIQ3_video"
+  ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question_numeric", 
+  "id": "geostationary_orbit"
+}

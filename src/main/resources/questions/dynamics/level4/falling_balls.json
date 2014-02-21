@@ -1,0 +1,16 @@
+{
+  "src": "falling_balls.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Falling Balls", 
+  "relatedContent": [
+    "energy", 
+    "momentum", 
+    "momentumii", 
+    "eq_of_motion_diff"
+  ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question_symbolic", 
+  "id": "falling_balls"
+}

@@ -1,0 +1,15 @@
+{
+  "src": "a_well.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "A Well", 
+  "relatedContent": [
+    "newtonii", 
+    "eq_of_motion_diff", 
+    "O1978PIIQ1a_video"
+  ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question_numeric", 
+  "id": "a_well"
+}

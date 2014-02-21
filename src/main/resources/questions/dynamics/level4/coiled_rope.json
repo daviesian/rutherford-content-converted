@@ -1,0 +1,15 @@
+{
+  "src": "coiled_rope.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "A Coiled Rope", 
+  "relatedContent": [
+    "energy", 
+    "momentum", 
+    "newtonii"
+  ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question_numeric", 
+  "id": "coiled_rope"
+}

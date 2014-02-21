@@ -1,0 +1,14 @@
+{
+  "src": "two_skaters.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Two skaters", 
+  "relatedContent": [
+    "energy", 
+    "momentum"
+  ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question_scq", 
+  "id": "two_skaters"
+}

@@ -1,0 +1,14 @@
+{
+  "src": "energy_in_a_wire.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Energy in a Wire", 
+  "relatedContent": [
+    "energy", 
+    "vectors"
+  ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question_scq", 
+  "id": "energy_in_a_wire"
+}

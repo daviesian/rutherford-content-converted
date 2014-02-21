@@ -1,18 +1,16 @@
 {
-  "src": "vectors1.tex", 
+  "src": "launching_a_rocket.tex", 
   "attribution": null, 
   "encoding": "latex", 
-  "title": "Vectors -- 1", 
+  "title": "Launching a Rocket", 
   "relatedContent": [
-    "resolving_vectors", 
     "momentum", 
     "newtonii", 
     "newtoniii", 
-    "momentumii", 
-    "angular_circular"
+    "vectors"
   ], 
   "author": null, 
   "layout": "1-col", 
-  "type": "concept", 
-  "id": "vectors"
+  "type": "legacy_latex_question_symbolic", 
+  "id": "launching_a_rocket"
 }

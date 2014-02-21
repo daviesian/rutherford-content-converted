@@ -1,0 +1,14 @@
+{
+  "src": "falling_masses.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Falling masses", 
+  "relatedContent": [
+    "newtoni", 
+    "newtonii"
+  ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question_scq", 
+  "id": "falling_masses"
+}

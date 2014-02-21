@@ -1,0 +1,20 @@
+{
+  "src": "road_collision.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Road Collision", 
+  "relatedContent": [
+    "energy", 
+    "friction", 
+    "momentum", 
+    "newtonii", 
+    "momentumii", 
+    "vectors", 
+    "resolving_vectors", 
+    "newtoni"
+  ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question_numeric", 
+  "id": "road_collision"
+}

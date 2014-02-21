@@ -1,0 +1,14 @@
+{
+  "src": "rapid_acceleration.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Rapid Acceleration", 
+  "relatedContent": [
+    "newtonii", 
+    "hooke"
+  ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question_scq", 
+  "id": "rapid_acceleration"
+}

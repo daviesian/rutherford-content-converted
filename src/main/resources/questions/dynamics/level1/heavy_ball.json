@@ -1,0 +1,14 @@
+{
+  "src": "heavy_ball.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Falling heavy ball", 
+  "relatedContent": [
+    "eq_of_motion_diff", 
+    "newtonii"
+  ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question_scq", 
+  "id": "heavy_ball"
+}

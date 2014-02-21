@@ -1,0 +1,20 @@
+{
+  "src": "three_particles.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Three Particles", 
+  "relatedContent": [
+    "momentum", 
+    "energy", 
+    "newtonii", 
+    "momentumii", 
+    "resolving_vectors", 
+    "vectors", 
+    "eq_of_motion_diff", 
+    "relative_motion"
+  ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question_numeric", 
+  "id": "three_particles"
+}

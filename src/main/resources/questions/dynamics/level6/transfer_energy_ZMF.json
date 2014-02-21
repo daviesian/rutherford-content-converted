@@ -1,0 +1,16 @@
+{
+  "src": "transfer_energy_ZMF.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Transfer of Energy in Collisions", 
+  "relatedContent": [
+    "energy", 
+    "momentum", 
+    "momentumii", 
+    "vectors"
+  ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question_numeric", 
+  "id": "transfer_energy_ZMF"
+}

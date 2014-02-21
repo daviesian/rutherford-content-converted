@@ -1,0 +1,18 @@
+{
+  "src": "hammer_nail.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Hammer and Nail", 
+  "relatedContent": [
+    "energy", 
+    "momentum", 
+    "eq_of_motion_diff", 
+    "impulse", 
+    "newtonii", 
+    "resolving_vectors"
+  ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question_numeric", 
+  "id": "hammer_nail"
+}

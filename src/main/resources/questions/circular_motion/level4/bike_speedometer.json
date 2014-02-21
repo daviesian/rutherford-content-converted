@@ -1,0 +1,13 @@
+{
+  "src": "bike_speedometer.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Speedometer on a Bike Wheel", 
+  "relatedContent": [
+    "angular_circular"
+  ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question_numeric", 
+  "id": "bike_speedometer"
+}

@@ -1,0 +1,14 @@
+{
+  "src": "three_collisions.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Three Collisions", 
+  "relatedContent": [
+    "energy", 
+    "momentum"
+  ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question_symbolic", 
+  "id": "three_collisions"
+}

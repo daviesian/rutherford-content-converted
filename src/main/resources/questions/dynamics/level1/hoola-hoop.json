@@ -1,0 +1,13 @@
+{
+  "src": "hoola-hoop.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "A hoola-hoop", 
+  "relatedContent": [
+    "energy"
+  ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question_numeric", 
+  "id": "hoola_hoop"
+}

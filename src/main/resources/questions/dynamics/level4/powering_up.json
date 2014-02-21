@@ -1,16 +1,16 @@
 {
-  "src": "zero_momentum_frame.tex", 
+  "src": "powering_up.tex", 
   "attribution": null, 
   "encoding": "latex", 
-  "title": "Conservation of Momentum", 
+  "title": "Powering Up", 
   "relatedContent": [
-    "vectors", 
-    "momentum", 
     "energy", 
+    "newtonii", 
+    "vectors", 
     "resolving_vectors"
   ], 
   "author": null, 
   "layout": "1-col", 
-  "type": "concept", 
-  "id": "momentumii"
+  "type": "legacy_latex_question_scq", 
+  "id": "powering_up"
 }

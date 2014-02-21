@@ -1,0 +1,13 @@
+{
+  "src": "rocket_orbit.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Rocket in orbit", 
+  "relatedContent": [
+    "newtonii"
+  ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question_numeric", 
+  "id": "rocket_orbit"
+}

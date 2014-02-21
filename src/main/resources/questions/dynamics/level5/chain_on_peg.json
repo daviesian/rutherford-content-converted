@@ -1,0 +1,13 @@
+{
+  "src": "chain_on_peg.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "A Chain on a Peg", 
+  "relatedContent": [
+    "energy"
+  ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question_symbolic", 
+  "id": "chain_on_peg"
+}

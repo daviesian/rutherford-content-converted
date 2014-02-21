@@ -1,0 +1,15 @@
+{
+  "src": "discs_on_a_table.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Discs on a Table", 
+  "relatedContent": [
+    "energy", 
+    "momentum", 
+    "vectors"
+  ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question_numeric", 
+  "id": "discs_on_a_table"
+}

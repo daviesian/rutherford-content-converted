@@ -1,0 +1,18 @@
+{
+  "src": "an_accident.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "An Accident", 
+  "relatedContent": [
+    "momentum", 
+    "energy", 
+    "newtoni", 
+    "newtonii", 
+    "impulse", 
+    "resolving_forces"
+  ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question_scq", 
+  "id": "an_accident"
+}
