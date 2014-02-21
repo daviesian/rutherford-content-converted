@@ -9,7 +9,7 @@
 %% ORDER: 10
 
 \begin{problem}[A1969AMIIQ2a] %Slightly tricky impulse, energy and SUVAT question
-\exposition{\begin{figure}[h]
+{\exposition{\begin{figure}[h]
 \centering
 \includegraphics[width=0.5\textwidth]{../../../figures/Dynamics_table_pulley_masses.eps}
 \caption{}\label{fig:Dynamics_table_pulley_masses}
@@ -18,37 +18,43 @@
 Figure \ref{fig:Dynamics_table_pulley_masses} shows the cross section of a smooth table ABCD, standing on the floor AD, with smooth pulleys attached at B and C. Particles of masses \vari{m_1} $<$ \vari{m_2} $<$ \vari{m_3} are attached to a light, inelastic, inextensible string which passes over the pulleys as shown. The system is released from rest with the string taut when \vari{m_2} is a height \vari{h_{0}} from the floor.}
 \begin{enumerate}
 	\item \question[a]{Find the initial acceleration of the system.}
-	\item \question[b]{The mass \vari{m_{2}} hits the floor. Describe the subsequent motion of the system until the string again becomes taut. Find the following quantities, given that \valuedef{m_{1}}{1}{kg,} \valuedef{m_{2}}{3}{kg,} \valuedef{m_{3}}{5}{kg} and \valuedef{h_{0}}{0.45}{m}:
+	\item \question[b]{The mass \vari{m_{2}} hits the floor. Describe the subsequent motion of the system until the string again becomes taut. 
+	\item \exposition{Find the following quantities, given that \valuedef{m_{1}}{1}{kg,} \valuedef{m_{2}}{3}{kg,} \valuedef{m_{3}}{5}{kg} and \valuedef{h_{0}}{0.45}{m}:}
 	\begin{enumerate}
-		\item the velocity with which the system will move just after the string again becomes taut,
-		\item the impulse on \vari{m_{2}} at this instant, and the resulting loss of kinetic energy.
-	\end{enumerate}}
-	\item \question[c]{Show that, when the system next comes instantaneously to rest, \vari{m_{2}} will be \vari{\frac{4}{9}h_{0}} above the floor.}
+		\item \question[c]{the velocity with which the system will move just after the string again becomes taut,}
+		\item \question[d]{the impulse on \vari{m_{2}} at this instant, 
+		\item \question[e]{the resulting loss of kinetic energy.}
+	\end{enumerate}
+	\item \exposition{Show that, when the system next comes instantaneously to rest, \vari{m_{2}} will be \vari{\frac{4}{9}h_{0}} above the floor.}
 \end{enumerate}
 \hint{[You may assume that, during the motion, none of the masses come into contact with a pulley.]}
 }
 {\stress{Adapted with permission from UCLES, A Level Applied Mathematics, June~1969, Paper~2, Question~2.}}
 
-\answer[a]{Since \vari{m_{2}} $>$ \vari{m_{1}}, the masses will start to move clockwise with an acceleration given by Newton's Second Law. The total force on the string is \vari{(m_{2} - m_{1})g} and so we obtain:
+{Since \vari{m_{2}} $>$ \vari{m_{1}}, the masses will start to move clockwise with an acceleration given by Newton's Second Law. The total force on the string is \vari{(m_{2} - m_{1})g} and so we obtain:
 	\begin{eqnarray*} 	
 		F &= (m_{2} - m_{1})g\\ 
 		&= (m_{1} + m_{2} + m_{3})a
 	\end{eqnarray*}  
 	so 
-	\begin{equation*} 
+	\answer[a]{\begin{equation*} 
 		a = \frac{(m_{2} - m_{1})g}{m_{1} + m_{2} + m_{3}} = a_{0} 
 	\end{equation*}
 	is the initial acceleration.}
 
-\answer[b]{It is best to leave everything in symbols until the very end of the solution:
+It is best to leave everything in symbols until the very end of the solution:
 	\begin{enumerate}
-		\item This step can be simplified by a realisation based on energy principles. When \vari{m_{2}} hits the floor there is no longer any tension in the string, but the other two masses have momenta that will carry them onwards and make the string slack. But \vari{m_{1}} now has a net force of \vari{-m_{1}g} acting on it, which will slow both masses and reverse their motion. When they get back to the point they were at as \vari{m_{2}} hit the ground, the string will go taut again. Since the surface is smooth the kinetic energy of \vari{m_{1}} and \vari{m_{3}} must be the same as it was initially; there are no losses to friction and the gravitational potential energy is unchanged. Thus the speed of \vari{m_{1}} and \vari{m_{3}} the instant the string goes taut must be the speed the masses were moving at as \vari{m_{2}} hit the ground.
+		\item \answer[b]{This step can be simplified by a realisation based on energy principles. When \vari{m_{2}} hits the floor there is no longer any tension in the string, but the other two masses have momenta that will carry them onwards and make the string slack. But \vari{m_{1}} now has a net force of \vari{-m_{1}g} acting on it, which will slow both masses and reverse their motion. When they get back to the point they were at as \vari{m_{2}} hit the ground, the string will go taut again. Since the surface is smooth the kinetic energy of \vari{m_{1}} and \vari{m_{3}} must be the same as it was initially; there are no losses to friction and the gravitational potential energy is unchanged. Thus the speed of \vari{m_{1}} and \vari{m_{3}} the instant the string goes taut must be the speed the masses were moving at as \vari{m_{2}} hit the ground.}
 
 		This can be found by using the SUVAT equations, since the masses move together from rest at a constant acceleration. We want to use the equation \valuedef{v^{2}}{u^{2} + 2as}{}, where \valuedef{s}{h_{0}}{,} \valuedef{u}{0}{m\,s\sup{-1}} and \valuedef{a}{a_{0}}{}:
 		\begin{eqnarray*} 
 			v &= \sqrt{u^{2} + 2as} = \sqrt{(0)^{2} + 2(a_{0})(h_{0})} = \sqrt{2a_{0}h_{0}} \\
- 			&= \sqrt{2\left(\frac{(3 - 1)(9.8)}{1 + 3 + 5}\right)(0.45)} = \frac{7}{5} =  \mbox{\quantity{1.4}{m\,s\sup{-1}}}  
+ 			&= \sqrt{2\left(\frac{(3 - 1)(9.8)}{1 + 3 + 5}\right)(0.45)} = \frac{7}{5}  
  		\end{eqnarray*}
+		\answer[c]{
+		\begin{equation*}
+		v = \mbox{\quantity{1.4}{m\,s\sup{-1}}}
+		\end{equation*}}
 		which is the speed they must be moving at as the string goes taut once more. 
 
 		This can be shown another way; by using SUVAT again, if the energy reasoning is unclear or just as a check. The mass \vari{m_{1}} has a force \vari{-m_{1}g} acting on it and so the tension in the string must equal this too, giving \vari{m_{1}} and \vari{m_{3}} together an acceleration of \valuedef{a_{c}}{\frac{-m_{1}g}{m_{1} + m_{3}}}{}. Then we use the same SUVAT equation as before, but now \valuedef{s}{0}{m} in order that the string go taut again; the displacement is zero since they return to the same position, and \valuedef{a}{a_{c}}{}:
@@ -68,8 +74,11 @@ Figure \ref{fig:Dynamics_table_pulley_masses} shows the cross section of a smoot
 		\item The impulse on \vari{m_{2}} is simply the change in its momentum as it is lifted from the floor. It starts stationary on the floor and is then moving upwards at a speed \vari{w}:
 		\begin{eqnarray*} 
 			I &= (m_{2})(w) - (m_{2})(0) = m_{2}w = \frac{m_{2} \left(m_{1} + m_{3} \right)}{m_{1} + m_{2} + m_{3}} v = \frac{m_{2} \sqrt{2a_{0}h_{0}} \left(m_{1} + m_{3} \right)}{m_{1} + m_{2} + m_{3}} \\ 
-			&= \frac{(3)(1.4)(6)}{9} = \frac{14}{5} = \mbox{\quantity{2.8}{kg\,m\,s\sup{-1}}}
+			&= \frac{(3)(1.4)(6)}{9} = \frac{14}{5}
 		\end{eqnarray*}
+		\answer[d]{\begin{equation*}
+		I = \mbox{\quantity{2.8}{kg\,m\,s\sup{-1}}}
+		\end{equation*}}
 
 		The loss in kinetic energy (KE) as \vari{m_{2}} starts moving is given by the total KE before, minus the KE after:
 		\begin{eqnarray*} 
@@ -77,11 +86,14 @@ Figure \ref{fig:Dynamics_table_pulley_masses} shows the cross section of a smoot
 			&= \frac{1}{2} \left( (m_{1} + m_{3})v^{2} - (m_{1} + m_{2} + m_{3})w^{2} \right) \\ 
 			&= \frac{1}{2}v^{2} \left( (m_{1} + m_{3}) - \frac{(m_{1} + m_{3})^{2}}{m_{1} + m_{2} + m_{3}} \right) \\ 
 			&= \frac{1}{2}(1.4)^{2} \left( 6 - \frac{36}{9} \right) \\ 
-			&= \frac{49}{25} = \mbox{\quantity{1.96}{J}}
+			&= \frac{49}{25}
 		\end{eqnarray*}
-		\end{enumerate}}
+		\answer[e]{\begin{equation*}
+		\text{KE Loss} = \mbox{\quantity{1.96}{J}}
+		\end{equation*}}
+		\end{enumerate}
 	
-\answer[c]{The masses are now moving anticlockwise around the edge of the table but have the initial, clockwise, force acting on them. Thus they have a constant deceleration and will come to instantaneous rest. The SUVAT equation \valuedef{v^{2}}{u^{2} + 2as}{} can be used to find \vari{h}, the height \vari{m_{2}} reaches above the floor before it stops. Using \valuedef{s}{h}{}, \valuedef{u}{w}, \valuedef{v}{0}{m\,s\sup{-1}} and \valuedef{a}{-a_{0}}{}:
+The masses are now moving anticlockwise around the edge of the table but have the initial, clockwise, force acting on them. Thus they have a constant deceleration and will come to instantaneous rest. The SUVAT equation \valuedef{v^{2}}{u^{2} + 2as}{} can be used to find \vari{h}, the height \vari{m_{2}} reaches above the floor before it stops. Using \valuedef{s}{h}{}, \valuedef{u}{w}, \valuedef{v}{0}{m\,s\sup{-1}} and \valuedef{a}{-a_{0}}{}:
 		\begin{eqnarray*}
  			h &= \frac{v^{2} - u^{2}}{2a} = \frac{-w^{2}}{-2a_{0}} = \left( \frac{m_{1} + m_{3}}{m_{1} + m_{2} + m_{3}} \right)^{2} \left( \frac{v^{2}}{2a_{0}} \right) =  \left( \frac{m_{1} + m_{3}}{m_{1} + m_{2} + m_{3}} \right)^{2} h_{0} \\ 
  			&= \left( \frac{6}{9} \right)^{2} h_{0} = \frac{4}{9} h_{0}

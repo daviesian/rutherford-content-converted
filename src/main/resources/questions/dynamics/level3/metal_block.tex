@@ -9,7 +9,7 @@
 %% ORDER: 7
 
 \begin{problem}[A1987PSIIQ9a] %Acceleration and work done problem, with some SUVAT
-\exposition{A metal block of mass \vari{m} rests on a rough wooden surface. A thread is attached to the right side of the block and a tension is applied to cause it to move. The motion is opposed by a constant frictional force \vari{F_r} between the block and the surface.}
+{\exposition{A metal block of mass \vari{m} rests on a rough wooden surface. A thread is attached to the right side of the block and a tension is applied to cause it to move. The motion is opposed by a constant frictional force \vari{F_r} between the block and the surface.}
 \begin{enumerate}
 	\item \question[a]{Draw a diagram to show all the forces on the block immediately after motion commences.}
 	\item \question[b]{When the tension in the thread is \vari{T}, the acceleration of the block is measured to be \vari{a}. Calculate the new acceleration, \vari{a_n}, if the tension is increased to \vari{\frac{5}{4}T}.}
@@ -30,16 +30,21 @@
 \label{fig:Dynamics_block_string}
 \end{figure}}
 
-\answer[b]{This part requires only Newton's Second Law, \valuedef{\vtr{F}}{m\vtr{a}}{}. Initially we have 
+This part requires only Newton's Second Law, \valuedef{\vtr{F}}{m\vtr{a}}{}. Initially we have 
 	\begin{equation*} 
 	\text{Acceleration } = \frac{F}{m} = \frac{T - F_{\text{r}}}{m} = a 
 	\end{equation*}
 and then the tension is increased, and so the acceleration increases to
-	\begin{equation*}
-	 \text{New Acceleration } = \frac{F_{\text{new}}}{m} = \frac{\frac{5T}{4} - F_r}{m} = a + \frac{T}{4m} = a_{n} 
-	 \end{equation*}}
+	\begin{eqnarray*}
+	 \text{New Acceleration } &=& \frac{F_{\text{new}}}{m} \\
+	 &=& \frac{\frac{5T}{4} - F_r}{m} \\
+	 &=& a + \frac{T}{4m}
+	 \end{eqnarray*}
+\answer[b]{\begin{equation*}
+a_n = a + \frac{T}{4m}
+\end{equation*}}
 	
-\answer[c]{The block will accelerate up to a maximum speed \valuedef{u_{max}}{a_{n}t}{}, which comes from \valuedef{v}{u + at}{} but where \valuedef{u}{0}{m\,s\sup{-1}}, \valuedef{a}{a_{n}}{}, \valuedef{t}{t}{} and \valuedef{v}{u_{max}}{} which will occur as the string breaks and the block stops accelerating. After this point the only force acting to affect the block's motion is the friction (the normal reaction and the weight are perpendicular to the motion, so do not affect it), and the block will decelerate to a halt.
+\answer[c]{The block will accelerate up to a maximum speed \valuedef{u_{max}}{a_{n}t}{}, which comes from \valuedef{v}{u + at}{} but where \valuedef{u}{0}{m\,s\sup{-1}}, \valuedef{a}{a_{n}}{}, \valuedef{t}{t}{} and \valuedef{v}{u_{max}}{} which will occur as the string breaks and the block stops accelerating. After this point the only force acting to affect the block's motion is the friction (the normal reaction and the weight are perpendicular to the motion, so do not affect it), and the block will decelerate to a halt.}
 
 To calculate the distance, we recognise that we have two periods of constant acceleration and so can use the SUVAT equations: we need to use the equations \valuedef{s}{ut + \frac{1}{2}at^{2}}{} and \valuedef{v^{2}}{u^{2} + 2as}{} here. The motion can be split into two sections; that with the tension, and that without; call the distance moved whilst the tension acts \vari{s_{1}} and the distance without \vari{s_{2}}, we want \valuedef{s}{s_{1} + s_{2}}{}.
 
@@ -55,18 +60,24 @@ Finding \vari{s_{2}} is slightly more complicated, but since we worked out the s
 
 Thus the total distance travelled by the block is:
 \begin{equation*} 
-s = s_{1} + s_{2} = \left( \frac{1}{2}a_{n}t^2 \right) + \left( \frac{a_{n}^{2}t^{2}m}{2F_{r}} \right) = \frac{1}{2} \left(a_{n} + \frac{a_{n}^{2}m}{F_{r}} \right)t^{2}
+s = s_{1} + s_{2} = \left( \frac{1}{2}a_{n}t^2 \right) + \left( \frac{a_{n}^{2}t^{2}m}{2F_{r}} \right) 
 \end{equation*}
-as required.}
+\begin{equation*}
+s = \frac{1}{2} \left(a_{n} + \frac{a_{n}^{2}m}{F_{r}} \right)t^{2}
+\end{equation*}
+as required.
 
-\answer[d]{The work done is the force in the direction of motion times the distance the force acts for, \vari{W} = \valuedef{\vtr{F}\cdot\vtr{x}}{Fd}{}, which in this case is \valuedef{W}{F_{r}s_{2}}{}.
+The work done is the force in the direction of motion times the distance the force acts for, \vari{W} = \valuedef{\vtr{F}\cdot\vtr{x}}{Fd}{}, which in this case is \valuedef{W}{F_{r}s_{2}}{}.
 \begin{eqnarray*} 
 W &= F_{r}s_{2} = \frac{1}{2} a_{n}^{2} t^{2} m \\ 
 	&= \frac{1}{2} \left( a +\frac{T}{4m} \right)^{2} t^{2} m \\
 	&= \frac{1}{2} \left( (0.1) + \frac{(400)}{4(100)} \right)^{2} (2)^{2} (100)\\
-	&= \frac{1}{2} \left( \frac{11}{10} \right)^{2} (400) \\
-	&= \mbox{\quantity{242}{J}}
+	&= \frac{1}{2} \left( \frac{11}{10} \right)^{2} (400)
 	\end{eqnarray*}
+	\answer[d]{
+	\begin{equation}
+	W = \mbox{\quantity{242}{J}}
+	\end{equation}}
 A much simpler method would be to realise that since energy is conserved, and the only way to dissipate the kinetic energy is through friction; the kinetic energy lost must be the work done against friction, \valuedef{W}{\frac{1}{2}mu_{max}^{2}}{} $=$ \vari{\frac{1}{2}m \left( a_{n} t \right)^{2}} = \valuedef{\frac{1}{2} a_{n}^{2} t^{2} m}{242}{J} as before.
 }
 \end{problem}
