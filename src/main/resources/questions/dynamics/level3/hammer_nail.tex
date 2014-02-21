@@ -9,34 +9,35 @@
 %% ORDER: 6
 
 \begin{problem}[A1964AMIQ3a]%Straightforward impulse and conservation of momentum
-{Define impulse and state the law of conservation of linear momentum.
+\exposition{Define impulse and state the law of conservation of linear momentum.}
 \begin{enumerate}
-	\item A nail of mass \quantity{7}{g} is held horizontally and is hit by a hammer of mass \quantity{0.25}{kg} moving at \quantity{10}{m\,s\sup{-1}}. The hammer remains in contact with the nail during and after the blow. Find the velocity of the nail and hammer immediately after the blow.
-	\item Calculate the impulse between the hammer and nail, clearly stating the units in which it is measured.
-	\item The nail goes on to penetrate \quantity{1}{cm} into a stationary wooden block. Find the resistive force the block exerts as the nail is pushed into it, assuming the force to be constant.
+	\item \question[a]{A nail of mass \quantity{7}{g} is held horizontally and is hit by a hammer of mass \quantity{0.25}{kg} moving at \quantity{10}{m\,s\sup{-1}}. The hammer remains in contact with the nail during and after the blow. Find the velocity of the nail and hammer immediately after the blow.}
+	\item \question[b]{Calculate the impulse between the hammer and nail, clearly stating the units in which it is measured.}
+	\item \question[c]{The nail goes on to penetrate \quantity{1}{cm} into a stationary wooden block. Find the resistive force the block exerts as the nail is pushed into it, assuming the force to be constant.}
 \end{enumerate}
 }
 {\stress{Adapted with permission from UCLES, A Level Applied Mathematics, June~1964, Paper~1, Question~3.}}
-{The impulse from a constant force is the product of the magnitude of the force with the time for which the force acts. Here it is important to realise that this is the change in momentum of a body due to an applied force. The law of conservation of linear momentum states that through a collision, the total momentum of all bodies is conserved. For this question it can best be stated as 
+\answer[a]{The impulse from a constant force is the product of the magnitude of the force with the time for which the force acts. Here it is important to realise that this is the change in momentum of a body due to an applied force. The law of conservation of linear momentum states that through a collision, the total momentum of all bodies is conserved. For this question it can best be stated as 
 \begin{equation} 
 \label{eq:nail_hammer_CoM} p_{\text{initial}} = (m_{n} \times v_{n}) + (m_{h} \times v_{h}) = p_{\text{final}} = (m_{n} + m_{h}) \times v_{n + h}
 \end{equation}
 where the subscript \vari{n} and \vari{h} represent the nail and hammer respectively.
-\begin{enumerate}
-	\item We have a 1D problem, the hammer and nail move only in one direction, so we only need to consider momentum in that direction. Using the conservation of momentum, the equation \ref{eq:nail_hammer_CoM}, the velocity of the nail and hammer together can be calculated:
+
+We have a 1D problem, the hammer and nail move only in one direction, so we only need to consider momentum in that direction. Using the conservation of momentum, the equation \ref{eq:nail_hammer_CoM}, the velocity of the nail and hammer together can be calculated:
 \begin{equation*} 
 v_{n + h} = \frac{(m_{n} \times v_{n}) + (m_{h} \times v_{h})}{(m_{n} + m_{h})} = \frac{(0.007)(0)+ (0.25)(10)}{(0.007) + (0.25)} = \mbox{\quantity{9.73}{m\,s\sup{-1}}}
 \end{equation*}
-	\item The impact of the hammer changes the momentum of the nail. It is simplest to work out the impulse, \vari{I}, by considering the change in momentum of the nail:
+	
+\answer[b]{The impact of the hammer changes the momentum of the nail. It is simplest to work out the impulse, \vari{I}, by considering the change in momentum of the nail:
 \begin{equation*}
  I = p_{\text{final}} - p_{\text{initial}} = (m_{n} \times v_{n + h}) - (m_{n} \times v_{n}) = ((0.007)(9.73) - (0.007)(0)) = \mbox{\quantity{0.0681}{kg\,m\,s\sup{-1}}} 
   \end{equation*}
-The units are \quantity{}{kg\,m\,s\sup{-1}}, though \quantity{}{N\,s} (Newton seconds) are also acceptable since they are equivalent.
-	\item If we can assume the force to be constant, then there is a constant acceleration and so the SUVAT equations can be used. The equation we want is \valuedef{v^{2}}{u^{2} + 2as}{} and we can either solve it for \vari{a} and then use Newtons Second Law, \valuedef{\vtr{F}}{m\vtr{a}}{}; or substitute for \vari{a} initially:
+The units are \quantity{}{kg\,m\,s\sup{-1}}, though \quantity{}{N\,s} (Newton seconds) are also acceptable since they are equivalent.}
+
+\answer[c]{If we can assume the force to be constant, then there is a constant acceleration and so the SUVAT equations can be used. The equation we want is \valuedef{v^{2}}{u^{2} + 2as}{} and we can either solve it for \vari{a} and then use Newtons Second Law, \valuedef{\vtr{F}}{m\vtr{a}}{}; or substitute for \vari{a} initially:
 \begin{equation*} 
 F = m \left( \frac{v^{2} - u^{2}}{2s} \right) = (0.007) \left( \frac{ (0)^{2} - (9.73)^{2}}{2 \,(0.01)} \right) = \mbox{\quantity{-33.1}{N}}
 \end{equation*}
 Thus the block exerts a resistive force of magnitude \quantity{29.0}{N} against the nail.
-\end{enumerate}
 }
 \end{problem}
