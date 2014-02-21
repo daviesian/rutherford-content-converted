@@ -20,14 +20,14 @@
 The chain is released from rest at \valuedef{t}{0}{s}. At time \vari{t} the length of the vertical section CD is \vari{2l + x}, where \vari{x \le 2l}, and the speed of the chain is \vari{v}.}
 \begin{enumerate}
 	\item \question[a]{Find \vari{v^{2}} in terms of \vari{l}, \vari{x} and \vari{g}.}
-	\item \question[b]{Show that the momentum of the section of chain within the tube has horizontal component \vari{\rho lv}.}
-	\item  \question[c]{Show further that the horizontal component of the force on the chain is:
+	\item \question[b]{Derive an expression for the horizontal component of the momentum of the section of chain within the tube as a function of \vari{\rho}, \vari{l} and \vari{v}.}
+	\item  \exposition{Show further that the horizontal component of the force on the chain is:
 	\begin{equation*} 
 	\frac{2g \rho}{l(8 + \pi)} \left( 9l^{2} - 6lx - 2x^{2} \right) 
 	\end{equation*}}
 \end{enumerate}
 
-\stree{Hint:}{\begin{enumerate}
+\stress{Hint:}{\begin{enumerate}
 	\item \hinta[a]{It is easiest to consider equating the kinetic energy gained after moving a distance \vari{x} to the gravitational potential energy (GPE) lost in the same distance.}
 	\item \hinta[c]{Consider a small element, and integrate %over the whole curved section 
 to find the total horizontal momentum of the chain.}% in the tube.
@@ -80,13 +80,15 @@ as before.
 
 Equating the KE and \quantity{\Delta}{GPE} we find:
 	\begin{eqnarray*} 
-	\frac{1}{2}\left[\rho\left(4 + \frac{\pi}{2}\right)l\right]v^{2} &= \frac{1}{2}\rho g x \left[6l + x\right] \\
+	\frac{1}{2}\left[\rho\left(4 + \frac{\pi}{2}\right)l\right]v^{2} = \frac{1}{2}\rho g x \left[6l + x\right]
+	\end{eqnarray*}
 	% v^{2} &= \frac{\frac{1}{2}\rho g x \left[6l + x\right]}{\frac{1}{2}\rho l \left(4 + \frac{\pi}{2}\right)} \\ 
-	 \answer[a]{v^{2} &= \frac{2gx}{(8 + \pi)l}(6l + x)}
-	 \end{eqnarray*}
+	 \answer[a]{
+	\begin{eqnarray}
+	 v^{2} = \frac{2gx}{(8 + \pi)l}(6l + x)
+	 \end{eqnarray*}}
 	 
-	 
-
+	
 	\item To find the total horizontal momentum of the tube in the curved section again consider a small element of the chain, this time in the circular arc of the tube. We need to get an expression for \valuedef{\d p_{horiz}}{\d mv_{horiz}}{}, where  \vari{\d p_{horiz}} is the horizontal momentum of a small part of the chain, and \vari{v_{horiz}} is the horizontal velocity of that element. The horizontal velocity will be different at every point around the arc, but look at some small element at an angle \vari{\theta} from the the horizontal to the position of the chain element, as in Figure \ref{fig:Dynamics_chain_velocity}.
 
 \begin{figure}[h]
@@ -95,15 +97,18 @@ Equating the KE and \quantity{\Delta}{GPE} we find:
 \caption{}\label{fig:Dynamics_chain_velocity}
 \end{figure}
 
-When the chain is at this angle \vari{\theta}, the velocity makes an angle \valuedef{\phi}{\frac{pi}{2} - \theta}{} to the horizontal. Thus the component of velocity we need to take into account is \vari{v_{horiz}} $=$ \valuedef{v \cos(\phi)}{v \cos\left(\frac{\pi}{2} - \theta\right)}{} $=$ \vari{v \sin(\theta)}. The mass of the small element \vari{\d m} also needs to be found in terms of \vari{\theta}, since it is now clear this is the variable we need to integrate over. The length of some small section of arc is \vari{l \d \theta}, and so the mass of the element \valuedef{\d m}{\rho l \d\theta}{}. The circular arc goes from \valuedef{\theta}{0}{rad} to \valuedef{\theta}{\frac{\pi}{2}}{} and so these are the limits of the integration. Thus the total horizontal momentum of the chain inside the tube is:
+When the chain is at this angle \vari{\theta}, the velocity makes an angle \valuedef{\phi}{\frac{pi}{2} - \theta}{} to the horizontal. Thus the component of velocity we need to take into account is \vari{v_{horiz}} $=$ \valuedef{v \cos(\phi)}{v \cos\left(\frac{\pi}{2} - \theta\right)}{} $=$ \vari{v \sin(\theta)}. The mass of the small element \vari{\d m} also needs to be found in terms of \vari{\theta}, since it is now clear this is the variable we need to integrate over. The length of some small section of arc is \vari{l \d \theta}, and so the mass of the element \valuedef{\d m}{\rho l \d\theta}{}. The circular arc goes from \valuedef{\theta}{0}{rad} to \valuedef{\theta}{\frac{\pi}{2}}{} and so these are the limits of the integration. Thus, the total horizontal momentum of the chain inside the tube is:
 \begin{eqnarray*} 
 p &=& \int \d p_{horiz} = \int \d m v_{horiz} \\ 
 &=& \int_{0}^{\pi/2} (\rho l \d\theta)(v \sin(\theta)) \\ 
 %&= \rho l v \int_{0}^{\pi/2} \sin(\theta) \d\theta \\ 
 &=& \rho l v \left[ \cos(\theta)\right]_{0}^{\pi/2} 
 %&= \rho l v \left[ (1) - (0) \right] \\ 
-= \rho l v 
 \end{eqnarray*}
+\answer[b]{
+\begin{equation*}
+p = \rho l v 
+\end{equation*}
 
 	\item The only horizontal forces that can be acting must be in the tube, so focus on that section of the chain. As suggested in the hint, look at the rate of change of momentum of the chain in the tube:
 \begin{eqnarray*} 

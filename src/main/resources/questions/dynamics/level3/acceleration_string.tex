@@ -9,35 +9,36 @@
 %% ORDER: 5
 
 \begin{problem}[AO1984PIQ1a]
-\exposition{A particle Q of mass \quantity{2}{kg} is resting on a frictionless surface. It is attached to one end of a piece of elastic string, with the other end of the elastic being attached to a fixed point. Q is then pulled back and released from rest with the elastic extended \quantity{0.5}{m} beyond its natural length. 
+{\exposition{A particle Q of mass \quantity{2}{kg} is resting on a frictionless surface. It is attached to one end of a piece of elastic string, with the other end of the elastic being attached to a fixed point. Q is then pulled back and released from rest with the elastic extended \quantity{0.5}{m} beyond its natural length. 
 
 After the particle has been accelerated, the string becomes slack. Rather than being let to continue in some kind of oscillatory motion, the string is cut when it first becomes slack. It is travelling at a speed of \quantity{4.0}{m\,s\sup{-1}} when this occurs.
 
 Assuming no losses to friction or other dissipative forces:}
 \begin{enumerate}
-	\item \question[a]{Calculate the energy stored in the elastic, and the maximum tension in the elastic during the process.}
+	\item \question[a]{Calculate the energy stored in the elastic.} \question[b]{What is the maximum tension in the elastic during the process?}
 \end{enumerate}
 \exposition{Q then makes an elastic collision with a stationary body P and rebounds back along the same track at \quantity{3.0}{m\,s\sup{-1}}.}
 \begin{enumerate}[resume]
-	\item \question[b]{Calculate the mass of P, and its velocity after the collision.}
-	\item \question[c]{If Q had instead been accelerated from rest by a small motor giving a power of \quantity{40}{W}, how long would it have taken to reach a speed of \quantity{4.0}{m\,s\sup{-1}}?}
+	\item \question[c]{Calculate the mass of P, and its velocity after the collision.}
+	\item \question[d]{If Q had instead been accelerated from rest by a small motor giving a power of \quantity{40}{W}, how long would it have taken to reach a speed of \quantity{4.0}{m\,s\sup{-1}}?}
 \end{enumerate}
 \vspace{-0.4cm}
 }
 {\stress{Adapted with permission from UCLES, AO Level Physics, November 1984, Paper 1, Question 1.}}
-\answer[a]{ If there are no losses to friction or other forces, then the energy stored in the elastic must go completely into the kinetic energy of P. Thus the energy stored in the elastic, \vari{E}, is given by:
-\begin{align*} 
+{If there are no losses to friction or other forces, then the energy stored in the elastic must go completely into the kinetic energy of P. Thus the energy stored in the elastic, \vari{E}, is given by:
+\answer[a]{\begin{eqnarray*} 
 E = \frac{1}{2}mv^{2} = \frac{1}{2}(2)(4)^{2} = \mbox{\quantity{16}{J}} 
-\end{align*}
+\end{eqnarray*}}
 
 In order to work out the maximum tension; we need to relate the tension in the elastic to the extension: the force required to stretch the elastic is \valuedef{\vtr{F}}{k\vtr{x}}{} where \vari{k} is commonly called the spring constant, and so the tension, which is equal in magnitude but opposite in sign, must be \vari{kx}. The constant \vari{k} can be found by considering the energy stored \valuedef{E}{\frac{1}{2}kx^{2}}{} and we know both \vari{E} and \vari{x}:
 \begin{equation*} 
 k = \frac{E}{x^{2}} = \frac{16}{(0.5)^{2}} = \mbox{\quatity{128}{N\,m\sup{-1}}} \end{equation*}
 and so the tension, which is maximum at the maximum extension, is:
-\begin{equation*} 
+\answer[b]{\begin{equation*} 
 T_{max} = kx = (128)(0.5) = \mbox{\quantity{64}{N}} 
 \end{equation*}}
-\answer[b]{To find the mass and velocity of P after the collision, it is first easiest to find the momentum and kinetic energy. The collision is elastic, and so both momentum and kinetic energy are conserved. A diagram, as in Figure \ref{fig:Dynamics_PQ_mass}, is useful.
+
+To find the mass and velocity of P after the collision, it is first easiest to find the momentum and kinetic energy. The collision is elastic, and so both momentum and kinetic energy are conserved. A diagram, as in Figure \ref{fig:Dynamics_PQ_mass}, is useful.
 	
 \begin{figure}[h]
 	\centering
@@ -46,28 +47,32 @@ T_{max} = kx = (128)(0.5) = \mbox{\quantity{64}{N}}
 \end{figure}
 
 Conserving momentum, taking care of the directions of the velocities, and labelling the momentum of P as \vari{p} gives:
-\begin{align*} 
+\begin{eqnarray*} 
 (2)(4) &= (2)(-3) + p  \\ 
 p &= \mbox{\quantity{14}{kg\,m\,s\sup{-1}}}
-\end{align*}
+\end{eqnarray*}
 and conservation of energy implies that:
-\begin{align*} 
+\begin{eqnarray*} 
 \frac{1}{2}(2)(4)^{2} &= \frac{1}{2}(2)(3)^{2} + E_{P}  \\
  E_{P} &= \mbox{\quantity{7}{J}} 
- \end{align*}
+ \end{eqnarray*}
 
 Now we can use the fact that \valuedef{p}{mv}{} and \valuedef{E_{P}}{\frac{1}{2}mv^{2}}{} as simultaneous equations to solve for \vari{m} and \vari{v}.
 
-\begin{align*} 
-p = mv = 14 &&  2E_{P} = mv^{2} = 14 \\ 
-\intertext{so since \valuedef{v^{2}}{v}{}, it follows:} \mbox{\value{v}{1}{m\,s\sup{-1}}} && \mbox{\value{m}{14}{kg}} 
-\end{align*}}
+\begin{equation*} 
+p = mv = 14 &&  2E_{P} = mv^{2} = 14
+\end{equation*}
+so since \valuedef{v^{2}}{v}{}, it follows \answer[c]{\value{v}{1}{m\,s\sup{-1}} and \value{m}{14}{kg}}
 
-\answer[c]{The energy input from the motor would have to equal the kinetic energy gained by Q (assuming perfect efficiency), so simply equate Energy $=$ Power $\times$ Time with \vari{\frac{1}{2}mv^{2}}:
+The energy input from the motor would have to equal the kinetic energy gained by Q (assuming perfect efficiency), so simply equate Energy $=$ Power $\times$ Time with \vari{\frac{1}{2}mv^{2}}:
 
-\begin{align*} 
+\begin{eqnarray*} 
 Pt &= \frac{1}{2}mv^{2} \\
- 40t &= 16 \\ 
- t&= \mbox{\quantity{0.4}{s}} 
- \end{align*}}
+ 40t &= 16
+ \end{eqnarray*}
+ \answer[d]{
+ \begin{equation}
+  t&= \mbox{\quantity{0.4}{s}} 
+ \end{equation}}
+ }
 \end{problem}
