@@ -1,0 +1,34 @@
+%% ID: Tripos_anchor_buoy
+%% TITLE: An Anchored Buoy
+%% TYPE: question
+%% QUESTIONTYPE:  numerical
+%% CONCEPTS: forces, vectors1, newtoni
+%% VIDEOS: 
+%% LEVEL: 2
+%% TOPIC: mechanics/statics
+%% ORDER: 9
+
+\begin{problem}[Tripos_anchor_buoy] %AS-1
+{\exposition{An iron anchor (of mass $m=500$ kg and density $\rho = 8000$~kg~m$^{-3}$) is attached by a light, thin cable to a light spherical buoy of radius $r$ intended to mark its position.} \question{How large must the buoy be to prevent the anchor dragging it under the surface when the water is too deep for the cable to reach the bottom?}
+\\
+\\
+\exposition{Assume water has density $\rho'=1000$ kg m$^{-3}$}
+ \hinta{Archimedes' principle tells us that any object, wholly or partially submerged in a fluid is buoyed up by a force equal to the weight of the volume of fluid it displaces.}}
+{\textit{Used with permission from Cambridge University Tripos.}}
+{Applying Archimedes' principle to the anchor, it experiences an upthrust given by
+	\begin{equation*}V_\textrm{anchor}\rho'g	\end{equation*}
+	Using the definition of density ($\rho V=m$) and subtracting the upthrust from the weight of the anchor, we find that it pulls on the buoy with an effective weight $W$ of
+	\begin{equation*}W=mg-m\frac{\rho'}{\rho}g	=mg\left(1-\frac{\rho'}{\rho}\right)\end{equation*}
+	Balancing this effective weight with the buoyancy $B$ of the light spherical buoy we have that
+	\begin{equation*}mg\left(1-\frac{\rho'}{\rho}\right)-B=0\end{equation*}
+	Using Archimedes principle, we know that $B=\frac{4}{3}\pi r^3g\rho'$ and so,
+	\begin{equation*}mg\left(1-\frac{\rho'}{\rho}\right)-\frac{4}{3}\pi r^3g\rho'=0\end{equation*}
+	\begin{equation*}mg\left(1-\frac{\rho'}{\rho}\right)=\frac{4}{3}\pi r^3g\rho'\end{equation*}
+	\begin{equation*}r^3=\frac{3}{4\pi\rho'}m\left(1-\frac{\rho'}{\rho}\right)\end{equation*}
+	\begin{equation*}r=\sqrt[3]{\frac{3}{4\pi\rho'}m\left(1-\frac{\rho'}{\rho}\right)}\end{equation*}
+	And using the values given in the question, we find that
+	\begin{equation*}r=\sqrt[3]{\frac{3}{4\pi\rho'}\times 500\times \left(1-\frac{1000}{8000}\right)}=\sqrt[3]{\frac{3}{4\pi1000}\times 500\times \frac{7}{8}}=\sqrt[3]{\frac{2625}{8000\pi}}\approx0.47\textrm{ m}\end{equation*}
+	\answer{The radius of the buoy must be greater than \valuedef{r}{0.47}{m}}
+	This seems to be a reasonable radius for a buoy. 
+}
+\end{hint}
