@@ -11,12 +11,12 @@
 \begin{problem}[NHB_Roundabout]
 {
 \begin{enumerate}
-\item A car approaches a roundabout of radius \vari{R}. What is the maximum speed at which it can travel in order to go around without slipping, if the coefficient of friction between the road and car is \vari{\mu}?
-\item This time a racing car approaches a corner of radius \vari{R}, banked at an angle \vari{\theta} to the horizontal. 
+\item \exposition{A car approaches a roundabout of radius \vari{R}.} \question[a]{What is the maximum speed at which it can travel in order to go around without slipping, if the coefficient of friction between the road and car is \vari{\mu}?}
+\item \exposition{This time a racing car approaches a corner of radius \vari{R}, banked at an angle \vari{\theta} to the horizontal.} 
 \begin{enumerate}
-\item What is the maximum speed at which the car can travel if it is icy so there is no friction between the wheels and the road?
-\item What is the maximum speed at which the car can travel and not slip if the road is rough, with coefficient of friction is \vari{\mu}?
-\item Is there a minimum speed at which the car needs to travel when the road is rough, with coefficient of friction \vari{\mu}?\end{enumerate} \end{enumerate}}
+\item \question[b]{What is the maximum speed at which the car can travel if it is icy so there is no friction between the wheels and the road?}
+\item \question[c]{What is the maximum speed at which the car can travel and not slip if the road is rough, with coefficient of friction is \vari{\mu}?}
+\item \question[d]Is there a minimum speed at which the car needs to travel when the road is rough, with coefficient of friction \vari{\mu}?}\end{enumerate} \end{enumerate}}
 {\stress{Created for the Rutherford School Physics Project by NHB and ES}}
 {\begin{enumerate}
 \item The forces acting on the car are shown in Figure \ref{fig:CircularMotion_c}.
@@ -45,7 +45,9 @@ and we know that \valuedef{F}{\mu N}{} on the point of slipping, therefore
 \begin{equation*}
 v\le\sqrt{\mu gR}
 \end{equation*}
-for the car not to slip. 
+for the car not to slip.
+
+\answer[a]{The maximum speed at which the car can go round the roundabout without slipping is \valuedef{v}{\sqrt{\mu gR}}{}.}
 \\
 \item
 \begin{enumerate}
@@ -65,10 +67,10 @@ In order for the car to travel in a circle we require \valuedef{F_y}{0}{N}, sinc
 \begin{equation*} N=\frac{mg}{\cos\theta} \end{equation*}
 \begin{equation*} \Rightarrow N\sin\theta=mg\tan\theta=\frac{mv^2}{R} \end{equation*}
 \begin{equation*} \Rightarrow v^2=gR\tan\theta \end{equation*}
-So the requirement for the car to successfully go around the corner without slipping is 
+\answer[b]{The maximum speed for the car to successfully go around the banked corner without slipping is 
 \begin{equation*}
 v=\sqrt{gR\tan\theta}
-\end{equation*}
+\end{equation*}}
 \\
 \item With the addition of friction the diagram should look like Figure \ref{fig:CircularMotion_e}:
 \begin{figure}[h]
@@ -90,8 +92,9 @@ N\cos\theta-\mu N\sin\theta&=mg \\
 then substituting in \valuedef{F}{\mu N} and for \vari{m} (using the expression above) in equation \eqref{eq:slopetwo} we find
 \begin{equation*} N\sin\theta+\mu N\cos\theta=\frac{\left(N\cos\theta-\mu N\sin\theta\right)v^2}{gR} \end{equation*} 
 \begin{equation*} \Rightarrow v^2=\frac{\sin\theta+\mu \cos\theta}{\cos\theta-\mu \sin\theta}\cdot gR \end{equation*}
-So now in order not to slip up the slope
-\begin{equation*} v\le\sqrt{\frac{\sin\theta+\mu \cos\theta}{\cos\theta-\mu \sin\theta}\cdot gR} \end{equation*}
+
+\answer[c]{The maximum speed for the car to not slip up the slope is given by
+\begin{equation*} v = \sqrt{\frac{\sin\theta+\mu \cos\theta}{\cos\theta-\mu \sin\theta}\cdot gR} \end{equation*}}
 Notice how in the case \valuedef{\theta}{0}{^\circ} this expression simplifies to the answer from part a), and similarly if \valuedef{\mu}{0}{} the answer from part b) i).
 \\
 \item Yes there is. In this case the friction acts up the slope, as shown in Figure \ref{fig:CircularMotion_f}:
@@ -111,10 +114,11 @@ The analysis is very similar to that in part ii), but the frictional force chang
 N\sin\theta-F\cos\theta=\frac{mv^2}{R}
 \label{eq:slopefour}
 \end{equation}
-and the requirement for the minimum velocity becomes
+
+\answer[d]{The minimum speed required to prevent the car from slipping is given by
 \begin{equation*}
-v\ge\sqrt{\frac{\sin\theta-\mu \cos\theta}{\cos\theta+\mu \sin\theta}\cdot gR}
-\end{equation*}
+v =\sqrt{\frac{\sin\theta-\mu \cos\theta}{\cos\theta+\mu \sin\theta}\cdot gR}
+\end{equation*}}
 Notice how this result is exactly the same as the one for maximum speed except \vari{\mu} has been replaced with \vari{-\mu} due to the situation being identical except for the direction of the frictional force. 
 \end{enumerate}
 \end{enumerate}
