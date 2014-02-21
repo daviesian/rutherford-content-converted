@@ -8,6 +8,7 @@ import shutil
 import logging
 import simplejson, json
 import string
+import traceback
 
 from latexConvert import *
 
@@ -27,7 +28,6 @@ def initiateFileBuilder(jsonInputFile):
         jsonResult = jsonMetaData
 
         # TODO: if content property is a list then we might need to route this to various places
-
         # figure out what content builder to send it to - might need to loop if we have a list
         if jsonMetaData['encoding'] == 'latex':
             # send it to the LaTex Content Builder and return the object
@@ -38,6 +38,12 @@ def initiateFileBuilder(jsonInputFile):
         # TODO: aggregate the content objects into one nice structure
     except IOError:
         logging.error("%s - Unable to find referenced file. Skipping file." % jsonMetaData['src'])
+        return None
+    except Exception, e:
+        traceback.print_exc(limit=sys.getrecursionlimit())
+        print "\n"
+        raw_input('Press ENTER to skip file (%s) and continue processing.' % (jsonInputFile))
+
         return None
 
 
