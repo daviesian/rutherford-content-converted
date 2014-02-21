@@ -9,68 +9,68 @@
 
 
 \begin{problem}[HE+_Lift]% Needs N2L, a little SUVAT and Work.
-{A lift, of  mass \vari{m}, is travelling downwards at a speed \vari{u}. It is brought to rest by a constant acceleration over a distance \vari{h}. 
+{\exposition{A lift, of  mass \vari{m}, is travelling downwards at a speed \vari{u}. It is brought to rest by a constant acceleration over a distance \vari{h}.} 
 \begin{enumerate} 
-	\item What is the tension, \vari{T}, in the lift cable when the lift is stopping?
-	\item What is the work done by the tension whilst stopping the lift?
+	\item \answer[a]{What is the tension, \vari{T}, in the lift cable when the lift is stopping?}
+	\item \answer[b]{What is the work done by the tension whilst stopping the lift?}
+\item \exposition{A lift, of mass \vari{m}, is travelling upwards at a speed \vari{u}. It is brought to rest by a constant acceleration over a distance \vari{h}.} 
+\begin{enumerate}
+	\item \answer[c]{What is the tension, \vari{T}, in the lift cable when the lift is stopping?}
+	\item \answer[d]{What is the work done by the tension whilst stopping the lift?}
 \end{enumerate}
-%\item A lift, of mass $m$, is travelling upwards at a speed $u$. It is brought to rest by a constant acceleration over a distance h. 
-%\begin{enumerate}
-	%\item What is the tension, $T$, in the lift cable when the lift is stopping?
-	%\item What is the work done by the tension whilst stopping the lift?
-%\end{enumerate}
-%NB: For the website, we are planning to have these two questions alternate at random. When a student clicks on the question he could receive either part a) or part b).
+NB: For the website, we are planning to have these two questions alternate at random. When a student clicks on the question he could receive either part a) or part b).
+\end{enumerate}
 }
 {\stress{Used with permission from HE+.}}
 {\begin{enumerate}
 \item
 \begin{enumerate}
 	\item This part has two steps; find the acceleration, then find the force. We can use the SUVAT equations to find the acceleration; the equation \valuedef{v^{2}}{u^{2} + 2as}{} is the one required here. We have \valuedef{v}{0}{m\,s\sup{-1}}, \valuedef{u}{u}{} and \valuedef{s}{h}{}:
-\begin{align*} 
+\begin{eqnarray*} 
 a &= \frac{v^{2} - u^{2}}{2s} \\ 
 &= -\frac{u^{2}}{2h} 
-\end{align*}
+\end{eqnarray*}
 And then by considering the total downward force we can find \vari{T}:
-\begin{align*} 
+\begin{eqnarray*} 
 F &= (mg - T) \\ 
 &= ma = -\frac{mu^{2}}{2h} 
-\end{align*}
+\end{eqnarray*}
 or, rearranging 
-\begin{align*} 
-T &= mg - ma \\ 
-&= mg + \frac{mu^{2}}{2h} 
-\end{align*}
+\begin{eqnarray*} 
+\answer[a]{T &= mg - ma \\ 
+&= mg + \frac{mu^{2}}{2h}}
+\end{eqnarray*}
 	\item The work done by the tension is the force multiplied by the distance travelled in the direction the force acts: \vari{W} = \valuedef{\vtr{F}\cdot\vtr{d}}{-Th}{} (as the tension acts in the opposite direction to the distance).
-	\begin{align*} 
-	\textrm{Work} &= -Th \\
+	\begin{eqnarray*} 
+	\text{Work} &= -Th \\
 	&= -\left(mg + \frac{mu^{2}}{2h}\right)h \\ 
-	&= - mgh - \frac{1}{2}mu^{2} 
-	\end{align*}
+	\answer[b]{\text{Work}&= - mgh - \frac{1}{2}mu^{2}}
+	\end{eqnarray*}
 and it should be clear this equals the total change in energy of the lift.
 \end{enumerate}
 \item 
 \begin{enumerate} 
 \item This part has two steps; find the acceleration, then find the force. We can use the SUVAT equations to find the acceleration; the equation \valuedef{v^{2}}{u^{2} + 2as}{} is the one required here. We have \valuedef{v}{0}{m\,s\sup{-1}}, \valuedef{u}{u}{} and \valuedef{s}{h}{}:
-\begin{align*} 
+\begin{eqnarray*} 
 a &= \frac{v^{2} - u^{2}}{2s} \\ 
 &= -\frac{u^{2}}{2h} 
-\end{align*}
+\end{eqnarray*}
 And then by considering the total upward force we can find \vari{T}:
-\begin{align*} 
+\begin{eqnarray*} 
 F &= (T - mg) \\ 
 &= ma = -\frac{mu^{2}}{2h} 
-\end{align*}
+\end{eqnarray*}
 or, rearranging:
-\begin{align*} 
-T &= mg + ma \\ 
-&= mg - \frac{mu^{2}}{2h} 
-\end{align*}
+\begin{eqnarray*} 
+\answer[c]{T &= mg + ma \\ 
+&= mg - \frac{mu^{2}}{2h}} 
+\end{eqnarray*}
 	\item The work done by the tension is the force multiplied by the distance travelled in the direction the force acts: \vari{W} = \valuedef{\vtr{F}\cdot\vtr{d}}{Th}{}.
-	\begin{align*} 
+	\begin{eqnarray*} 
 	\text{Work} &= Th \\
 	&= \left(mg - \frac{mu^{2}}{2h}\right)h \\ 
-	&= mgh - \frac{1}{2}mu^{2} 
-	\end{align*}
+	\answer[d]{\text{Work} &= mgh - \frac{1}{2}mu^{2}} 
+	\end{eqnarray*}
 and it should be clear this equals the total change in energy of the lift. 
 \end{enumerate}
 \end{enumerate}}
