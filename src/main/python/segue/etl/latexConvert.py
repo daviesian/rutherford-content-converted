@@ -68,8 +68,6 @@ class LaTeXContentBuilder(ContentBuilderBase):
 
             self.convertToMarkupRecursively(contentObject.__dict__)
 
-            contentObject.content = convertToHtml(self.jsonMetaData, self.latexSourceContents)
-            #contentObject.encoding = "html"
         elif 'legacy_latex_question' in self.jsonMetaData['type']: #or any type of question really
             # we want to extract the parts of the question that we are interested in e.g exposition, question, answers etc
             contentObject.children = extractStructure(self.jsonMetaData, self.latexSourceContents)
