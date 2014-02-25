@@ -1,0 +1,61 @@
+\begin{problem}[A1989FMIIQ1a]%balancing forces
+%diagram removed, then re added
+{\exposition{A smooth uniform rod of mass \vari{m} and length \vari{2a} is freely hinged to the ground at the point $A$ between two smooth parallel vertical walls. The rod's other end B rests against one of the walls and a uniform circular lamina of mass \vari{\frac{m}{2}} is in contact with the other wall at a point P and with the rod at a point Q, as shown in Figure \ref{fig:Statics_rodandcircleq} below. The rod and the lamina rest in equilibrium in the same vertical plane which is perpendicular to both walls.
+\begin{figure}[h]
+\centering
+\includegraphics[width=5cm]{Statics_rodandcircleq}
+\caption{}
+\label{fig:Statics_rodandcircleq}
+\end{figure}}
+\question{Given that the rod is inclined at an angle \valuedef{\theta}{60^\circ}{} to the horizontal and that the distance \valuedef{AQ}{\frac{2}{3}a}{}, find the magnitude of the reaction force at B.}
+\begin{enumerate}
+\item \choice[a]{\vari{mg}}
+\item \choice[b]{\vari{\frac{7\sqrt 3}{18}mg}}
+\item \choice[c]{\vari{\frac{\sqrt 3}{2}mg}}
+\item \choice[d]{\vari{\frac{\sqrt 3}{9}mg}}
+\item \choice[e]{\vari{\frac{1}{2}mg}}
+\end{enumerate}
+}
+{\textit{Used with permission from UCLES, A Level Further Maths, Syllabus C, June 1989, Paper II, Question 1}}
+{\answer{The correct answer is (b).}
+
+The forces acting on the system are shown in Figure \ref{fig:Statics_rodandcirclea}:
+\begin{figure}[h]
+\centering
+\includegraphics[width=5cm]{Statics_rodandcirclea}
+\caption{}
+\label{fig:Statics_rodandcirclea}
+\end{figure}
+\\
+
+It is important to remember that a fixed hinge can provide a force with components normal to and parallel with a surface. In comparison, a reaction force can only have one component, normal to the surface it rests upon.
+
+Some combination of resolving forces and taking moments will, as usual, be necessary to solve this problem.
+
+ First, resolve vertically on the whole system:
+\begin{align*}
+\frac{3}{2}mg=H\sin\varphi
+\end{align*}
+and then horizontally
+\begin{align*}
+N_P=N_B+H\cos\varphi
+\end{align*}
+We can also resolve forces on just the circle, since that too is in equilibrium.Horizontally we have
+\begin{align*}
+R\cos\theta&=\frac{1}{2}mg \\
+\Rightarrow R&=mg
+\end{align*}
+using $\cos\theta=1/2$ since $\theta=60^\circ$. Vertically
+\begin{align*}
+R\sin\theta&=N_P \\
+\Rightarrow N_P&=\frac{\sqrt 3}{2}mg
+\end{align*}
+Next take moments on the rod about the hinge:
+\begin{align*}
+(2a/3)R+(a)mg\cos\theta&=(2a)N_B\sin\theta \\
+\Rightarrow \frac{2}{3}R+\frac{1}{2}mg&=\sqrt 3N_B \\
+\Rightarrow 4mg+3mg&=6\sqrt 3N_B \\
+\Rightarrow N_B&=\frac{7\sqrt 3}{18}mg
+\end{align*}
+}
+\end{problem}

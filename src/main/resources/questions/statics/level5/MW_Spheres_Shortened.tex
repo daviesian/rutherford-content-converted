@@ -1,0 +1,50 @@
+%Solution by Jan Zamirski
+\begin{problem}[MW_Spheres_Shortened]
+{\question{Three spheres are in a triangular arrangement on a plane, spot welded together where they touch. Another sphere is placed on top of the first three. Take the spheres to be identical, of mass \vari{m} and radius \vari{a}. Assume where necessary that the contacts are smooth.  What is the tension in the weld necessary to keep the pyramid stable when the mass is 0.8 kg?}
+}
+{\textit{Created for the Rutherford School Physics Project by MW and JZ.}}
+{\answer{\valuedef{T}{\frac{mg}{3\sqrt{6}}}{.}  Substituting in \valuedef{m}{0.8}{kg}, we find \valuedef{T}{1.1}{N}}
+The first thing to do is to draw a (side-on) diagram, shown on the left in Figure \ref{fig:Statics_Spheres_1}, which considers the tension in the weld, $T$, (remember there are two welds on each sphere) as well as the reaction force, $R$, between the top sphere and each contact (there is one contact between each welded ball and the top sphere, for a total of three). The only weight we need to consider is that of the top sphere, which exerts a downwards force $mg$.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{Statics_Spheres_1}
+	\caption{}	
+	\label{fig:Statics_Spheres_1}
+\end{figure}
+
+We can immediately see that resolving vertically for the top sphere will give us $R$, in turn allowing us to resolve horizontally for the bottom spheres for $T$. The angle we need for this is $\theta$, whose position is displayed on the right of Figure \ref{fig:Statics_Spheres_1}. We can find $\theta$ in terms of $a$ by using the known angles from the equilateral triangle (all are $60 ^{\circ}$, and in this case we want half that angle) and applying trigonometry. See Figure \ref{fig:Statics_Spheres_2}. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.55\textwidth]{Statics_Spheres_2}
+	\caption{}	
+	\label{fig:Statics_Spheres_2}
+\end{figure}
+
+\begin{align*} &2a\cos{(\theta)} = b \\
+\intertext{Where:}& b = \frac{a}{\cos{(30)}} \\
+\intertext{So:} &\cos{(\theta)}= \frac{1}{2\cos{(30)}} = \frac{\sqrt{3}}{3}\\ \end{align*}
+
+Now resolve vertically for the top sphere (see Figure \ref{fig:Statics_Spheres_1}):
+
+\begin{align*} &3R\sin{(\theta)} = mg \\
+&R = \frac{mg}{3\sin{(\theta)}} \end{align*}
+
+Finally, resolve horizontally for the bottom sphere (Figure \ref{fig:Statics_Spheres_4}):
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.2\textwidth]{Statics_Spheres_4}
+	\caption{}	
+	\label{fig:Statics_Spheres_4}
+\end{figure}
+
+\begin{align*} &2T\cos{(30)} = R\cos{(\theta)} \\
+\intertext{substituting for $R$, and using a triangle to work out $\sin{(\arccos{x})}$ gives us the necessary tension in the weld, $T$:} &T = \frac{mg\cos{(\theta)}}{(2\cos{(30)})(3\sin{(\theta)})} \\
+\\ &T = \frac{mg\left(\frac{\sqrt{3}}{3}\right)}{6\cos{(30)}\sin{\left(\arccos{\left(\frac{\sqrt{3}}{3}\right)}\right)}} \\
+\\ &T = \frac{mg}{3\sqrt{6}}\end{align*}
+
+Substituting in $m$ = 0.8 kg, find $T$ = 1.1 N
+}
+\end{problem}

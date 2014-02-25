@@ -1,0 +1,101 @@
+\begin{problem}[Zephyr_Festival_Banner]
+{\exposition{For a festival a banner is to be hung between two equal height buildings, a distance \vari{l} apart, by a light, inextensible wire of length \vari{\lambda l}. So that it is not stretched the banner must be placed such that there is equal tension on each length of wire supporting it.
+
+The wire is attached on one side to the buliding's roof, and on the other side to a crane, of height \vari{h}. The banner needs to be hung at a distance \vari{y} vertically below the level of the buildings roof, and horizontal distance \vari{x} from the building without the crane.}
+\begin{enumerate}
+	\item \question[a]{By considering the banner as a point mass, show that: 
+	\begin{equation*}
+	\sqrt{x^2 + y^2} + \sqrt{(y+h)^2 + (l-x)^2} = \lambda l
+	\end{equation*}}
+	\item \question[b]{Find \vari{y} in terms of \vari{x} and \vari{\lambda}.}
+	\item \question[c]{Rearrange to find $x$ and $y$ in terms of $h$ and $\lambda$. Explain the behaviour of these equations as $\lambda$ goes to $\sqrt{1 + \frac{h^2}{l^2}}$ and to infinity (assume $h$ remains finite)}
+	\item \question[d]{Assuming $\lambda > \sqrt{1 + \frac{h^2}{l^2}}$ find the tension $T$ in terms of the weight of the banner $W$, why are there no solutions for $\lambda < \sqrt{1 + \frac{h^2}{l^2}}$?}
+	\item \question[e]{One year the mayor demands that the banner should hang over the middle of the street, and be at least as high as the building it's connected to. Why is this impossible?}
+	\item \question[f]{To sate the mayors demands, the banner in now hung from a single ring that can move feely along the rope. Explain, qualitatively, where the banner will hang if this ring is frictionless. If the ring is not smooth, explain how now the mayors demands can be met.}
+\end{enumerate}
+}
+{Written by Zephyr Penoyre for the RSPP}
+{\answer[a]{}
+\answer[b]{}
+\answer[c]{}
+\answer[d]{}
+\answer[e]{}
+\answer[f]{}
+\begin{enumerate}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{Statics_banner}S
+	\caption{}
+	\label{fig:Statics_banner}
+\end{figure}
+
+	\item The whole system can be drawn as shown in Figure \ref{fig:Statics_banner}.
+	
+	Resolving forces horizontally $T \cos\alpha = T \cos\beta$ and therefore $\alpha = \beta$
+	
+	Thus we have two similar triangles, one with sides $x$ and $y$ and one with sides $l - x$  and  $h + y$., obeying:
+	
+	\begin{equation}	\frac{x}{y} = \frac{l - x}{h + y}	
+	\label{eqn:similar}
+	\end{equation}
+	
+	and we know total length of wire is $\lambda l$ therefore:
+	
+	\begin{equation}	\lambda l = \sqrt{x^{2} + y^{2}} + \sqrt{{(l - x)}^{2} + {(h + y)}^{2}}  \end{equation}
+	
+	 \item Substituting in $h + y$:
+	 
+	 \begin{equation*}	\lambda l = \sqrt{x^{2} + y^{2}} + \sqrt{{(l - x)}^{2} + \left({\frac{y(l-x)}{x}}\right)^{2}} 
+	 = \sqrt{x^{2} + y^{2}} \left( 1 + \frac{l-x}{x} \right)
+	 = \sqrt{x^{2} + y^{2}} \left(\frac{l}{x} \right)\end{equation*}
+	 
+	 and thus:
+	 
+	 \begin{equation}	y = x \sqrt{\lambda^2 - 1} 
+	 \label{eqn:yx} \end{equation}
+	 
+	 \item Rearranging equation (\ref{eqn:similar}) we get:
+	 
+	  \begin{equation*}	h = \frac{y(l - 2x)}{x} =  (l - 2x)\sqrt{\lambda^2 - 1}   \end{equation*}
+	  
+	  and therefore:
+	  
+	   \begin{equation}	x = \frac{1}{2} \left(  l - \frac{h}{\sqrt{\lambda^2 -1}} \right)  \end{equation}
+	   
+	   and
+	  
+	   \begin{equation}	y = \frac{1}{2}( l\sqrt{\lambda^2 - 1} - h)  \end{equation}
+	   
+	   As $\lambda$ goes to $\sqrt{1 + \frac{h^2}{l^2}}$, $\sqrt{\lambda^2 -1}$ goes to $\frac{h}{l}$ and therefore $x$ and $y$ both go to zero. This equates to the banner sitting at the bottom end of the wire.
+	   
+	   As $\lambda$ goes to infinity,  $\sqrt{\lambda^2 -1}$ goes to $\lambda$ which is much greater than $h$, thus x goes to $\frac{l}{2}$, i.e. the banner sits half way between the buildings. At the same time $y$ goes to $\frac{\lambda l}{2}$, which means the banner hangs at half the height of the total length of wire. Both of these results correspond to the banner sitting directly in the middle of the wire.
+	   
+	   \item Resolving forces vertically, $2T\sin\alpha - W = 0$ which rearranges to give $T = \frac{W}{2\sin\alpha}$.
+	   
+	   We can find $\sin\alpha$ using trigonometry:
+	   
+	    \begin{equation*}	\sin\alpha = \frac{y}{\sqrt{x^2 + y^2}} \end{equation*}
+	    
+	    Using equation (\ref{eqn:yx}) we can get:
+	    
+	  \begin{equation*} x^2 + y^2 = x^2 + (x\sqrt{\lambda^2  -1})^2 = \lambda x \end{equation*}
+	  
+	  Thus $\sin\alpha = \frac{x\sqrt{\lambda^2  -1}}{\lambda x}$ and therefore:
+	  
+	  \begin{equation*} T = \frac{\lambda W}{2\sqrt{\lambda^2  -1}} \end{equation*}
+	  
+	  For $\lambda < \sqrt{1 + \frac{h^2}{l^2}}$, the distance between the two ends of the wire ($\sqrt{l^2 + h^2}$), i.e. from one rooftop to the top of the crane, is greater than the length of the wire $\lambda l$. This is at odds with the earlier assumption that the wire is inextensible and thus is a physical impossibility.
+	  
+	  \item Imagine a situation where the banner is at a higher point than the rooftop the wire is attached to. If we still have equal tension then $\cos\alpha$ must still equal $\cos\beta$ to maintain equilibrium horizontally. Thus the angles between the wires and the horizontals must still be the same (i.e. $\alpha = \beta$).
+	  
+	  Resolving forces vertically $W + T\sin\alpha - T\sin\alpha = 0$, as now one of the tension forces must act with a downwards component. This simply leaves $W = 0$ which is clearly not true and highlights a physical impossibility. The banner can never be at a higher elevation than the lowest point the wire is fixed at. Previously this problem wasn't encountered as the position of the banner assymptoted to $x = 0$ as $h$ was increased (or $\lambda$ decreased).
+	  
+	 Thus the banner cannot hang above the level of the building, but what about at the same height. In this case the angle $\alpha$ would have to be 0, hence the wire horizontal. This would mean there was no vertical component of force on the banner from the wires and therefore nothing to support it's weight.
+	  
+	    \item If the ring is frictionless the banner can move completely freely along the string. Thus the banner will move to whichever position will minimise it's energy. As the string is inextensible and assuming the banner will eventually come to rest, the lowest energy position is that which minimises it's gravitational potential energy. Therefore the banner will hang at the lowest point that the length of wire allows.
+	    
+	    If the ring is not smooth, and assuming the coefficient of friction is sufficient that it will not slip, the tension in the two strings are no longer equal and there is now a family of solutions in which the mass is at least as high as the wires lowest fixed point.
+
+\end{enumerate}
+}
+\end{problem}
