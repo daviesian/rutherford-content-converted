@@ -1,0 +1,75 @@
+%% ID: weighing_lorry
+%% TITLE: Weight of a lorry
+%% TYPE: question
+%% QUESTIONTYPE:  numerical
+%% CONCEPTS: forces, moments, newtoni
+%% VIDEOS: 
+%% LEVEL: 4
+%% TOPIC: mechanics/statics
+%% ORDER: 5
+
+\begin{problem}[HSC1930MIIIQ5a] % metric units added - numbers need to be made ``nice''; good problem as needs a few diagrams and a bit of thought - only two wheels on a platform makes it more interesting. 
+{\exposition{A haulage company wants to determine the loaded weight of a lorry with four equal wheels, which is too large to stand with all four wheels on a single weighing platform.  
+The lorry is placed so that the two front wheels are on one weighing platform and the two back wheels on another; the masses recorded are \quantity{1350}{kg} and \quantity{1450}{kg} respectively.  The axles are \quantity{3}{m} apart.  Find:}
+\begin{enumerate}
+ \item \question[a]{the mass of the loaded lorry.}
+ \item \question[b]{the distance of the centre of gravity from the front axle.}
+ \item \question[c]{what additional mass would have to be placed \quantity{50}{cm} in front of the front axle to make the weights borne by the axles equal.}
+\end{enumerate}
+}
+{\textit{Adapted with permission from UCLES, Higher School Certificate Mathematics, June 1930, Paper 3, Question 5.}}
+{\answer[a]{\valuedef{m}{2800}{kg}}
+\answer[b]{\valuedef{d}{1.55}{m}}
+\answer[c]{\valuedef{M}{75}{kg}}
+Figure \ref{fig:Statics_lorry} shows the forces acting on the lorry whilst it is at rest on horizontal ground.
+\begin{figure}[h]
+\centering
+\includegraphics[width=10cm]{Statics_lorry}
+\caption{}
+\label{fig:Statics_lorry}
+\end{figure}
+\\
+\begin{enumerate}
+\item The weighing platform tells us that $R_F=1350g$ and $R_B=1450g$ and we can resolve vertically to find
+\begin{align*}
+R_F+R_B&=mg \\
+\Rightarrow1350g+1450g&=mg \\
+\Rightarrow m&=2800\textrm{ kg}
+\end{align*}
+\item Taking moments about the rear wheel we have
+\begin{align*}
+(l)R_F&=(\alpha l)mg \\
+\Rightarrow \alpha&=\frac{R_F}{mg}=\frac{27}{56}
+\end{align*}
+So the distance from the front axle is
+\begin{align*}
+(1-\alpha)l&=(1-\frac{27}{56})3=1.55\textrm{ m}
+\end{align*}
+\item There is now a new force and the forces on the wheels will have changed. This is shown in Figure \ref{fig:Statics_lorrytwo}:
+\begin{figure}[h]
+\centering
+\includegraphics[width=10cm]{Statics_lorrytwo}
+\caption{}
+\label{fig:Statics_lorrytwo}
+\end{figure}
+\\
+Once again take moments about the back wheel:
+\begin{align*}
+\left(\frac{7}{6}l\right)kmg+(\alpha l)mg&=(l)N \\
+\Rightarrow \frac{7}{6}kmg+\alpha mg&=N
+\end{align*}
+and about the front wheel:
+\begin{align*}
+\left(\frac{1}{6}l\right)kmg+(l)N&=(1-\alpha)lmg \\
+\Rightarrow \frac{1}{6}kmg+N&=(1-\alpha)mg
+\end{align*}
+Adding these two equations we find
+\begin{align*}
+\frac{7}{6}kmg+\alpha mg+\frac{1}{6}kmg+N&=N+(1-\alpha)mg \\
+\Rightarrow \frac{4}{3}kmg&=(1-2\alpha)mg \\
+\Rightarrow k&=\frac{3}{4}(1-2\alpha)=\frac{3}{112}
+\end{align*}
+So the mass required would be $3m/112=75$ kg.
+\end{enumerate}
+}
+\end{problem}
