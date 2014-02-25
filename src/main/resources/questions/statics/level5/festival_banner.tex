@@ -1,20 +1,30 @@
+%% ID: festival_banner
+%% TITLE: Festival banner
+%% TYPE: question
+%% QUESTIONTYPE:  numerical
+%% CONCEPTS: forces, newtoni, newtonii
+%% VIDEOS: 
+%% LEVEL: 5
+%% TOPIC: mechanics/statics
+%% ORDER: 7
+
 \begin{problem}[Zephyr_Festival_Banner]
 {\exposition{For a festival a banner is to be hung between two equal height buildings, a distance \vari{l} apart, by a light, inextensible wire of length \vari{\lambda l}. So that it is not stretched the banner must be placed such that there is equal tension on each length of wire supporting it.
 
-The wire is attached on one side to the buliding's roof, and on the other side to a crane, of height \vari{h}. The banner needs to be hung at a distance \vari{y} vertically below the level of the buildings roof, and horizontal distance \vari{x} from the building without the crane.}
+The wire is attached on one side to the buliding's roof, and on the other side to a crane, of height \vari{h}. The banner needs to be hung at a distance \vari{y} vertically below the level of the building's roof, and horizontal distance \vari{x} from the building without the crane.}
 \begin{enumerate}
 	\item \question[a]{By considering the banner as a point mass, show that: 
 	\begin{equation*}
 	\sqrt{x^2 + y^2} + \sqrt{(y+h)^2 + (l-x)^2} = \lambda l
 	\end{equation*}}
 	\item \question[b]{Find \vari{y} in terms of \vari{x} and \vari{\lambda}.}
-	\item \question[c]{Rearrange to find $x$ and $y$ in terms of $h$ and $\lambda$. Explain the behaviour of these equations as $\lambda$ goes to $\sqrt{1 + \frac{h^2}{l^2}}$ and to infinity (assume $h$ remains finite)}
-	\item \question[d]{Assuming $\lambda > \sqrt{1 + \frac{h^2}{l^2}}$ find the tension $T$ in terms of the weight of the banner $W$, why are there no solutions for $\lambda < \sqrt{1 + \frac{h^2}{l^2}}$?}
-	\item \question[e]{One year the mayor demands that the banner should hang over the middle of the street, and be at least as high as the building it's connected to. Why is this impossible?}
-	\item \question[f]{To sate the mayors demands, the banner in now hung from a single ring that can move feely along the rope. Explain, qualitatively, where the banner will hang if this ring is frictionless. If the ring is not smooth, explain how now the mayors demands can be met.}
+	\item \question[c]{Rearrange to find \vari{x} and \vari{y} in terms of \vari{h} and \vari{\lambda}. Explain the behaviour of these equations as \vari{\lambda} goes to $\sqrt{1 + \frac{h^2}{l^2}}$ and to infinity (assume \vari{h} remains finite).}
+	\item \question[d]{why are there no solutions for $\lambda < \sqrt{1 + \frac{h^2}{l^2}}$?}
+	\item \question[e]{Assuming $\lambda > \sqrt{1 + \frac{h^2}{l^2}}$ and \valuedef{\lambda}{2}{} and the mass of the banner is \quantity{10}{kg}, find the tension \vari{T} in the banner.}
+	}
 \end{enumerate}
 }
-{Written by Zephyr Penoyre for the RSPP}
+{Written by Zephyr Penoyre for the RSPP, edited by MC.}
 {\answer[a]{}
 \answer[b]{}
 \answer[c]{}
@@ -24,7 +34,7 @@ The wire is attached on one side to the buliding's roof, and on the other side t
 \begin{enumerate}
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.5\textwidth]{Statics_banner}S
+	\includegraphics[width=0.5\textwidth]{../../../figures/Statics_banner.eps}
 	\caption{}
 	\label{fig:Statics_banner}
 \end{figure}
