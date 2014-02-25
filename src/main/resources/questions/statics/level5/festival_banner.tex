@@ -2,7 +2,7 @@
 %% TITLE: Festival banner
 %% TYPE: question
 %% QUESTIONTYPE:  numerical
-%% CONCEPTS: forces, newtoni, newtonii
+%% CONCEPTS: forces, newtoni, trig, vectors
 %% VIDEOS: 
 %% LEVEL: 5
 %% TOPIC: mechanics/statics
@@ -26,11 +26,9 @@ The wire is attached on one side to the buliding's roof, and on the other side t
 }
 {Written by Zephyr Penoyre for the RSPP, edited by MC.}
 {\answer[a]{}
-\answer[b]{}
-\answer[c]{}
-\answer[d]{}
-\answer[e]{}
-\answer[f]{}
+
+
+
 \begin{enumerate}
 \begin{figure}[h]
 	\centering
@@ -61,8 +59,8 @@ The wire is attached on one side to the buliding's roof, and on the other side t
 	 
 	 and thus:
 	 
-	 \begin{equation}	y = x \sqrt{\lambda^2 - 1} 
-	 \label{eqn:yx} \end{equation}
+	 \answer[b]{\begin{equation}	y = x \sqrt{\lambda^2 - 1} 
+	 \label{eqn:yx} \end{equation}}
 	 
 	 \item Rearranging equation (\ref{eqn:similar}) we get:
 	 
@@ -70,15 +68,17 @@ The wire is attached on one side to the buliding's roof, and on the other side t
 	  
 	  and therefore:
 	  
-	   \begin{equation}	x = \frac{1}{2} \left(  l - \frac{h}{\sqrt{\lambda^2 -1}} \right)  \end{equation}
+	  \answer[c]{ \begin{equation}	x = \frac{1}{2} \left(  l - \frac{h}{\sqrt{\lambda^2 -1}} \right)  \end{equation}
 	   
 	   and
 	  
-	   \begin{equation}	y = \frac{1}{2}( l\sqrt{\lambda^2 - 1} - h)  \end{equation}
+	   \begin{equation}	y = \frac{1}{2}( l\sqrt{\lambda^2 - 1} - h)  \end{equation}}
 	   
 	   As $\lambda$ goes to $\sqrt{1 + \frac{h^2}{l^2}}$, $\sqrt{\lambda^2 -1}$ goes to $\frac{h}{l}$ and therefore $x$ and $y$ both go to zero. This equates to the banner sitting at the bottom end of the wire.
 	   
 	   As $\lambda$ goes to infinity,  $\sqrt{\lambda^2 -1}$ goes to $\lambda$ which is much greater than $h$, thus x goes to $\frac{l}{2}$, i.e. the banner sits half way between the buildings. At the same time $y$ goes to $\frac{\lambda l}{2}$, which means the banner hangs at half the height of the total length of wire. Both of these results correspond to the banner sitting directly in the middle of the wire.
+	   
+	     \item \answer[d]{For $\lambda < \sqrt{1 + \frac{h^2}{l^2}}$, the distance between the two ends of the wire ($\sqrt{l^2 + h^2}$), i.e. from one rooftop to the top of the crane, is greater than the length of the wire $\lambda l$. This is at odds with the earlier assumption that the wire is inextensible and thus is a physical impossibility.}
 	   
 	   \item Resolving forces vertically, $2T\sin\alpha - W = 0$ which rearranges to give $T = \frac{W}{2\sin\alpha}$.
 	   
@@ -94,17 +94,17 @@ The wire is attached on one side to the buliding's roof, and on the other side t
 	  
 	  \begin{equation*} T = \frac{\lambda W}{2\sqrt{\lambda^2  -1}} \end{equation*}
 	  
-	  For $\lambda < \sqrt{1 + \frac{h^2}{l^2}}$, the distance between the two ends of the wire ($\sqrt{l^2 + h^2}$), i.e. from one rooftop to the top of the crane, is greater than the length of the wire $\lambda l$. This is at odds with the earlier assumption that the wire is inextensible and thus is a physical impossibility.
+	 \answer[e]{\valuedef{T}{56.6}{N}$}
 	  
-	  \item Imagine a situation where the banner is at a higher point than the rooftop the wire is attached to. If we still have equal tension then $\cos\alpha$ must still equal $\cos\beta$ to maintain equilibrium horizontally. Thus the angles between the wires and the horizontals must still be the same (i.e. $\alpha = \beta$).
+	  %\item Imagine a situation where the banner is at a higher point than the rooftop the wire is attached to. If we still have equal tension then $\cos\alpha$ must still equal $\cos\beta$ to maintain equilibrium horizontally. Thus the angles between the wires and the horizontals must still be the same (i.e. $\alpha = \beta$).
 	  
-	  Resolving forces vertically $W + T\sin\alpha - T\sin\alpha = 0$, as now one of the tension forces must act with a downwards component. This simply leaves $W = 0$ which is clearly not true and highlights a physical impossibility. The banner can never be at a higher elevation than the lowest point the wire is fixed at. Previously this problem wasn't encountered as the position of the banner assymptoted to $x = 0$ as $h$ was increased (or $\lambda$ decreased).
+	  %Resolving forces vertically $W + T\sin\alpha - T\sin\alpha = 0$, as now one of the tension forces must act with a downwards component. This simply leaves $W = 0$ which is clearly not true and highlights a physical impossibility. The banner can never be at a higher elevation than the lowest point the wire is fixed at. Previously this problem wasn't encountered as the position of the banner assymptoted to $x = 0$ as $h$ was increased (or $\lambda$ decreased).
 	  
-	 Thus the banner cannot hang above the level of the building, but what about at the same height. In this case the angle $\alpha$ would have to be 0, hence the wire horizontal. This would mean there was no vertical component of force on the banner from the wires and therefore nothing to support it's weight.
+	 %Thus the banner cannot hang above the level of the building, but what about at the same height. In this case the angle $\alpha$ would have to be 0, hence the wire horizontal. This would mean there was no vertical component of force on the banner from the wires and therefore nothing to support it's weight.
 	  
-	    \item If the ring is frictionless the banner can move completely freely along the string. Thus the banner will move to whichever position will minimise it's energy. As the string is inextensible and assuming the banner will eventually come to rest, the lowest energy position is that which minimises it's gravitational potential energy. Therefore the banner will hang at the lowest point that the length of wire allows.
+	    %\item If the ring is frictionless the banner can move completely freely along the string. Thus the banner will move to whichever position will minimise it's energy. As the string is inextensible and assuming the banner will eventually come to rest, the lowest energy position is that which minimises it's gravitational potential energy. Therefore the banner will hang at the lowest point that the length of wire allows.
 	    
-	    If the ring is not smooth, and assuming the coefficient of friction is sufficient that it will not slip, the tension in the two strings are no longer equal and there is now a family of solutions in which the mass is at least as high as the wires lowest fixed point.
+	    %If the ring is not smooth, and assuming the coefficient of friction is sufficient that it will not slip, the tension in the two strings are no longer equal and there is now a family of solutions in which the mass is at least as high as the wires lowest fixed point.
 
 \end{enumerate}
 }
