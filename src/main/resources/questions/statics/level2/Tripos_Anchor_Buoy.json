@@ -1,0 +1,15 @@
+{
+  "src": "Tripos_Anchor_Buoy.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "An Anchored Buoy", 
+  "relatedContent": [
+    "forces", 
+    "vectors1", 
+    "newtoni"
+  ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question_ numerical", 
+  "id": "Tripos_anchor_buoy"
+}

@@ -1,0 +1,14 @@
+{
+  "src": "phil_trapdoor_moments.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Trapdoor moment", 
+  "relatedContent": [
+    "forces", 
+    "moments"
+  ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question_ scq", 
+  "id": "horiz_trapdoor"
+}

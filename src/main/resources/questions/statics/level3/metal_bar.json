@@ -1,0 +1,15 @@
+{
+  "src": "metal_bar.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Metal bar see-saw", 
+  "relatedContent": [
+    "forces", 
+    "moments", 
+    "newtoni"
+  ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question_ numerical", 
+  "id": "metal_bar"
+}

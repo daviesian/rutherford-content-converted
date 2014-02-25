@@ -1,0 +1,14 @@
+{
+  "src": "phil_door_moments.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Pushing on a door", 
+  "relatedContent": [
+    "moments", 
+    "forces"
+  ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question_ scq", 
+  "id": "phil_door_moments"
+}

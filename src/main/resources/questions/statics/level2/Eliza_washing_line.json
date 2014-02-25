@@ -1,0 +1,15 @@
+{
+  "src": "Eliza_washing_line.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Towel on a Washing Line", 
+  "relatedContent": [
+    "forces", 
+    "vectors2", 
+    "newtoni"
+  ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question_ numerical", 
+  "id": "Eliza_washing_line"
+}

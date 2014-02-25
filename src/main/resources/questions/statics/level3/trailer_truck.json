@@ -1,0 +1,15 @@
+{
+  "src": "trailer_truck.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Trailer truck", 
+  "relatedContent": [
+    "forces", 
+    "moments", 
+    "newtoni"
+  ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question_ numerical", 
+  "id": "trailer_truck"
+}

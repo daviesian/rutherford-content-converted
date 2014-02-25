@@ -1,0 +1,15 @@
+{
+  "src": "Phil_table_forces.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Force on table legs", 
+  "relatedContent": [
+    "forces", 
+    "vectors1", 
+    "newtoni"
+  ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question_ numerical", 
+  "id": "A1986PIQ1l"
+}

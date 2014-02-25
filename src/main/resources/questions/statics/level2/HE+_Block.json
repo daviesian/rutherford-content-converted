@@ -1,0 +1,15 @@
+{
+  "src": "HE+_Block.tex", 
+  "attribution": null, 
+  "encoding": "latex", 
+  "title": "Suspended block", 
+  "relatedContent": [
+    "forces", 
+    "vectors2", 
+    "newtoni"
+  ], 
+  "author": null, 
+  "layout": "1-col", 
+  "type": "legacy_latex_question_ numerical", 
+  "id": "HE+_Block"
+}
