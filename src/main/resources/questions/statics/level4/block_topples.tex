@@ -1,0 +1,51 @@
+%% ID: block_topples
+%% TITLE: Toppling block
+%% TYPE: question
+%% QUESTIONTYPE:  numerical
+%% CONCEPTS: forces, moments, newtoni
+%% VIDEOS: 
+%% LEVEL: 4
+%% TOPIC: mechanics/statics
+%% ORDER: 6
+
+\begin{problem}[HSC1938PIIX2l]
+ {\question{A rectangular block with a square base of side \quantity{10}{cm} rests on on a horizontal surface.  If a horizontal force is applied near the bottom of one vertical face, the block slides.  If the force is applied near the top, the block topples over.  When the force is applied \quantity{20}{cm} from the bottom, the block sometimes slides and sometimes topples.  Find the coefficient of friction between the block and the surface.}}
+{\textit{Used with permission from UCLES, Higher School Certificate Physics, Paper 2.}} % <- Question Number missing
+{\answer{\valuedef{\mu}{\frac{1}{4}}}
+This question is asking about the conditions required for sliding and toppling. We are looking for a value of the coefficient of friction, $\mu$, where both conditions are satisfied.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.4\textwidth]{Statics_block_slide_topple}
+	\caption{}
+	\label{fig:Statics_block_slide_topple}
+\end{figure}
+
+\nl
+For the block to topple, there must be a resultant moment exerted about the pivot point in the direction of toppling. In this case at the very point of toppling, the reaction force from the surface is just equal to 0, and there is no resultant moment. Using Figure \ref{fig:Statics_block_slide_topple}, we can take moments about point $A$:
+\begin{equation*}	
+20P = 5mg	
+\end{equation*}
+\begin{equation*}	
+P = \frac{1}{4}mg 	
+\end{equation*}
+For the block to slide, the force pushing it must be greater than the maximum possible friction that can oppose this force, $F\s{max} = \mu R$. At the very point of sliding, $F = F\s{max}$. Resolving horizontally and vertically on the block:
+\begin{equation*}	
+F = P 	
+\end{equation*}
+\begin{equation*}	
+R = mg	
+\end{equation*}
+If $F = \mu R$:
+\begin{equation*}
+ P = \mu mg	
+ \end{equation*}
+Now we can substitute in our condition for toppling:
+\begin{equation*}	
+\frac{1}{4}mg = \mu mg	
+\end{equation*}
+\begin{equation*}	
+\mu = \frac{1}{4}	
+\end{equation*}
+}
+\end{problem}

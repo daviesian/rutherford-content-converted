@@ -1,0 +1,29 @@
+%% ID: phil_spring_triangle
+%% TITLE: Spring triangle
+%% TYPE: question
+%% QUESTIONTYPE:  scq
+%% CONCEPTS: forces, hooke, trig
+%% VIDEOS: 
+%% LEVEL: 4
+%% TOPIC: mechanics/statics
+%% ORDER: 1
+
+\begin{problem} [Phil_spring_triangle]
+{\exposition{A rod AB of length \value{d}{2}{m} is fixed horizontally. Two light identical springs of spring constant \value{k}{14}{N\,m\sup{-1}} are attached to the rod, one at each end. The loose ends of the springs are attached to each other at a point C and in this framework the springs are just taut. It is found that the angle made by one of the springs to the vertical $\alpha = 45^{\circ}$. A metal ball is then suspended from the springs at C and the angle made by one of the springs to the vertical is found to be $\beta = 30^{\circ}$.}
+\question{Taking the acceleration due to gravity \value{g}{9.8}{m\,s\sup{-2}}, what is the mass \vari{m} of the ball?}
+
+\begin{enumerate}
+
+\item \choice[a]{\quantity{0.725}{kg}}
+\item \choice[b]{\quantity{1.45}{kg}}\correct
+\item \choice[c]{\quantity{8.45}{kg}}
+\item \choice[d]{\quantity{4.22}{kg}}
+\item \choice[e]{\quantity{0.837}{kg}}
+\end{enumerate}
+}
+{\textit{Created for the Rutherford School Physics Project by PS.}}
+{\answer{The correct answer is (b). Initially, the length of the springs is equal to their natural length \vari{l}. Using trigonometry, $l\sin{\alpha} = \frac{d}{2}$, so $l = \frac{d}{2\sin{\alpha}}$. When the mass is suspended from the springs, their length is given by their natural length plus the extension \vari{x}. The same trig relationship shows that $\left(x+l\right)\sin{\beta} = \frac{d}{2}$; substituting in the expression for \vari{l} and rearranging gives $x = \frac{d}{2}\left(\frac{1}{\sin{\beta}} - \frac{1}{\sin{\alpha}}\right)$. 
+
+\nl Let \vari{T} be the tension in one of the springs. Resolving forces vertically on the ball when it is suspended gives $mg = 2T\cos{\beta}$. Hooke's Law tells us that $T = kx$, so $m = \frac{2kx\cos{\beta}}{g}$. Substituting in the expression for \vari{x} gives $m = \frac{kd\cos{\beta}}{g}\left(\frac{1}{\sin{\beta}}-\frac{1}{\sin{\alpha}}\right)$. Substitute the numerical values from the question to obtain the correct answer.}
+}
+\end{problem}

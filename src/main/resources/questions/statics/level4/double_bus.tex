@@ -1,0 +1,57 @@
+%% ID: double_bus
+%% TITLE: Double decker bus
+%% TYPE: question
+%% QUESTIONTYPE:  numerical
+%% CONCEPTS: forces, moments, newtoni
+%% VIDEOS: 
+%% LEVEL: 4
+%% TOPIC: mechanics/statics
+%% ORDER: 7
+
+\begin{hint}[A1974AMIQ5a]%topple condition %have removed show-that-ness from question, now is an open, find the type question
+{\exposition{A double-decker bus of mass \valuedef{M}{12000}{kg} has a width at its base of \valuedef{w}{2}{m}. Its centre of mass when empty is a height \valuedef{y_0}{0.9}{m} above the ground and equidistant between the two sides of the bus. Thirty-two passengers, each of mass \valuedef{m}{75}{kg}, are seated on each deck, symmetrically placed from side to side. The centre of mass of those on the lower deck is a height \valuedef{y_1}{1.1}{m} above the ground and that of those on the upper deck is a height \valuedef{y_2}{2.8}{m} above the ground.}
+\begin{enumerate}
+\item \question[a]{Find the angle \vari{\theta} which the bus must tilt by in order to topple.}
+\item \question[b]{If all the passengers on the right-hand side of the bus get off, leaving those on the left-hand side, the centre of mass of the remaining passengers is a distance \valuedef{x_0}{0.4}{m} from the left-hand side of the bus. Find the angle \vari{\alpha} which the bus must now tilt by to the left in order to topple and the angle \vari{\beta} which the bus must now tip by to the right in order to topple.
+
+\end{enumerate}}
+{\hinta{The bus will topple if its centre of mass is no longer above its base.}}
+{\textit{Adapted with permission from UCLES, A Level Applied Maths, June 1974, Paper I, Question 5.}}
+{\answer[a]{\valuedef{\tan(\theta)}{\frac{5}{6}}{}}
+\answer[b]{\valuedef{\tan(\alpha)}{\frac{36}{43}}{;} \valuedef{\tan(\beta)}{\frac{44}{43}}{}}
+\begin{enumerate}
+	\item In order to find out when the bus will topple, we need to find the position of the centre of mass of the loaded bus. To do this, we recall that the centre of mass is the average position of the mass of an object. In a large object made up of smaller objects, this average is weighted by the mass of each sub-object. With this in mind and letting $y$ be the height of the centre of mass of the whole bus, we can say that,
+		\begin{equation*}(32m+32m+M)y=32my_1+32my_2+My_0	\end{equation*}
+		\begin{equation*}y=\frac{32my_1+32my_2+My_0}{32m+32m+M}	\end{equation*}
+		\begin{equation*}y=\frac{32my_1+32my_2+My_0}{64m+M}	\end{equation*}
+%	diagram showing the centre of mass' position at the point of toppling
+	From this, we can see that
+		\begin{equation*}\tan(\theta)=\frac{1}{y}	\end{equation*}
+		\begin{equation*}\tan(\theta)=\frac{64m+M}{32my_1+32my_2+My_0}	\end{equation*}
+	And substituting the numbers from  the question in we find
+		\begin{equation*}\tan(\theta)=\frac{64\times 75+12000}{32\times75\times1.1+32\times75\times2.8+12000\times0.9}=\frac{5}{6}\approx0.833	\end{equation*}
+	\item If half the passengers of the bus get off, the centre of mass of the laden bus will no longer be in the middle of the bus and will also no longer be at the same height as before. In order to calculate the new height $y'$ of the centre of mass, we follow the same procedure as before
+		\begin{align*}(16m+16m+M)y&=16my_1+16my_2+My_0	
+\\				y&=\frac{16my_1+16my_2+My_0}{32m+M}\end{align*}
+	We also need to calculate how far the centre of mass is from the left hand side of a bus. We will call this distance $x$. We can find $x$ using an equivalent process to that above.
+		\begin{align*}(16m+16m+M)x&=16mx_0+16mx_0+\frac{w}{2}M	
+\\						x&=\frac{32mx_0+\frac{w}{2}M}{32m+M}\end{align*}
+	Now, using the same argument as before, we can calulate the angle $\alpha$ and $\beta$ %diagram illustrating this
+		\begin{align}\tan(\alpha)&=\frac{x}{y}													\notag
+\\				\tan(\alpha)&=\frac{32mx_0+\frac{w}{2}M}{16my_1+16my_2+My_0}						\label{Statics_bus_alpha}
+\\				\tan(\beta)&=\frac{w-x}{y}												\notag
+\\						&=\frac{w\left(32m+M\right)-32mx_0-\frac{w}{2}M}{16my_1+16my_2+My_0}		\notag
+\\						&=\frac{\frac{w}{2}M+32mw-32mx_0}{16my_1+16my_2+My_0}					\notag
+\\				\tan(\beta)&=\frac{\frac{w}{2}M+32m\left(w-x_0\right)}{16my_1+16my_2+My_0}				\label{Statics_bus_beta}\end{align}
+	Now, putting the numbers from the question into equation \ref{Statics_bus_alpha} and equation \ref{Statics_bus_beta} we find,
+		\begin{align*}\tan(\alpha)&=\frac{32\times 75\times0.4+\frac{2}{2}\times 12000}{16\times 75 \times 1.1+16\times 75 \times 2.8+12000\times 0.9}
+\\						&=\frac{12960}{15480}=\frac{36}{43}\approx0.837
+\\				\tan(\beta)&=\frac{\frac{2}{2}12000+32\times 75\left(2-0.4\right)}{16\times 75 \times 1.1+16\times 75 \times 2.8+12000\times 0.9}
+\\						&=\frac{15840}{15480}=\frac{44}{43}\approx1.023
+		\end{align*}
+	This shows that, with no passengers sitting on the right hand side, the bus is slightly harder to tip over to the left (due to the lower centre of mass) and much harder to tip over to the right.
+
+
+\end{enumerate}
+}
+\end{hint}
