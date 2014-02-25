@@ -166,6 +166,11 @@ def extractStructure(jsonMetaData, latexSourceToConvert):
 
     structuredOutput = list()
 
+    leftbr = latexSourceToConvert.count("{")
+    rightbr = latexSourceToConvert.count("}")
+    if ((leftbr+rightbr) % 2) == 1:
+        logging.warning("Odd number of brackets {} (%s) detected in %s. This could be an indicator of a problem or maybe just commented out latex." % (leftbr+rightbr,jsonMetaData['src']))
+
     # filter the source file because \nonumber commands break the parser
     latexSourceToConvert = re.sub(r'\\nonumber','',latexSourceToConvert)
 
