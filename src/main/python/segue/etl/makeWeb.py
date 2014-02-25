@@ -20,7 +20,6 @@ example usage
 
 """
 def execute(inputDir,outputDir):
-    jsonDir = os.path.join(outputDir,"json")
 
     def convert(arg,dirname,fnames):
         if dirname[-6:] == "common":
@@ -35,7 +34,10 @@ def execute(inputDir,outputDir):
                 convertedObject = etlFileManager.initiateFileBuilder(jsonMetaFile)
 
                 if convertedObject != None:
-                    newJsonFile = os.path.join(outputDir,convertedObject.id+'.json')
+                    if(outputDir == 'override'):
+                        newJsonFile = os.path.join(inputDir,dirname,convertedObject.id+'.json')
+                    else:    
+                        newJsonFile = os.path.join(outputDir,convertedObject.id+'.json')
 
                     # for now we can write to a file
                     with open(newJsonFile, 'w') as outfile:
@@ -51,12 +53,18 @@ def main(argv):
     parser = argparse.ArgumentParser()
     parser.add_argument("inputDir")
     parser.add_argument("outputDir")
+    parser.add_argument("--override",action='store_true')
     parser.add_argument("--workingDir",default=".")
     args = parser.parse_args()
     (inputDir,outputDir,workingDir) = map(os.path.abspath,(args.inputDir,args.outputDir,args.workingDir))
     ensureDirectory(workingDir+"/")
     os.chdir(workingDir)
+    
+    if(args.override):
+        outputDir = "override"
+
     execute(inputDir,outputDir)
+
 
 
 if __name__ == "__main__":
