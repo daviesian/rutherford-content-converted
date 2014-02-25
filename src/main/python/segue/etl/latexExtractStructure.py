@@ -415,7 +415,7 @@ def extractStructure(jsonMetaData, latexSourceToConvert):
                 label = findNode(node.parentNode, "label")
                 caption = findNode(node.parentNode, "caption")
                 if label != None:
-                    figureObject['labelid'] = label.getAttribute("label")
+                    figureObject['id'] = label.getAttribute("label")
 
                 if caption != None:
                     figureObject['value'] = caption.getAttribute("self").source
