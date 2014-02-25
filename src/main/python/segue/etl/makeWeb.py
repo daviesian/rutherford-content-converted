@@ -35,7 +35,7 @@ def execute(inputDir,outputDir):
 
                 if convertedObject != None:
                     if(outputDir == 'override'):
-                        newJsonFile = os.path.join(inputDir,dirname,convertedObject.id+'.json')
+                        newJsonFile = os.path.join(inputDir,dirname,filename)
                     else:    
                         newJsonFile = os.path.join(outputDir,convertedObject.id+'.json')
 
