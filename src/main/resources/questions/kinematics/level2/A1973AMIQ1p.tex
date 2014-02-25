@@ -1,0 +1,20 @@
+\begin{problem}[A1973AMIQ1p]
+{A lorry travelling along a narrow road with speed $u_1$ applies its brakes to give a uniform deceleration of magnitude $a_1$. At the same time a car, a distance $d$ behind the lorry and travelling in the same direction with speed $u_2$, applies its brakes to give a uniform deceleration of magnitude $a_2$. By considering the distance travelled by each vehicle before coming to rest, show that a collision will occur if $ a_2 \le k u_2^{2}$, and find $k$ in terms of $u_1$, $d$ and $a_1$.
+}
+{\textit{Adapted with permission from UCLES, A Level Applied Maths, June 1973, Paper I, Question 1}}
+{Both the car and the lorry are undergoing constant acceleration and so obey the SUVAT equations, this tells us that, if the lorry covers a distance $s_L$ before coming to rest,
+		\begin{equation*}0=u_1^2-2a_1s_L	\end{equation*}
+		\begin{equation*}u_1^2=2a_1s_L	\end{equation*}
+		\begin{equation}\label{Kinematics_lorry_crash_sL}s_L=\frac{u_1^2}{2a_1}	\end{equation}
+	The car also obeys the SUVAT equations and ends at rest and covers a distance $s_C$ before coming to rest telling us that,
+		\begin{equation*}0=u_2^2-2a_2s_C	\end{equation*}
+		\begin{equation*}u_2^2=2a_2s_C	\end{equation*}
+		\begin{equation}\label{Kinematics_lorry_crash_sC}s_C=\frac{u_2^2}{2a_2}	\end{equation}
+	The car is initially some distance $d$ behind the lorry and so they will collide if $s_L+d\le s_C$. Substituting our expressions for $s_L$ and $s_C$ from equation \eqref{Kinematics_lorry_crash_sL} and equation \eqref{Kinematics_lorry_crash_sC} we find
+		\begin{equation*}\frac{u_1^2}{2a_1}+d\le\frac{u_2^2}{2a_2}		\end{equation*}
+		\begin{equation*}u_1^{2}a_2+2da_1a_2\le u_2^{2}a_1			\end{equation*}
+		\begin{equation*}a_2\left(u_1^{2}+2da_1\right)\le u_2^{2}a_1		\end{equation*}
+		\begin{equation*}a_2\le\frac{u_2^{2}a_1}{u_1^{2} + 2da_1}		\end{equation*}
+	This is of the form $a_2\le k u_2^2$ as required with $k=\frac{a_1}{u_1^{2} + 2da_1}$.
+}
+\end{problem}
