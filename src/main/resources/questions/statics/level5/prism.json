@@ -1,16 +1,18 @@
 {
-  "src": "trapdoor.tex", 
+  "src": "prism.tex", 
   "attribution": null, 
   "encoding": "latex", 
-  "title": "Trapdoor", 
+  "title": "Prism", 
   "relatedContent": [
     "forces", 
-    "moments", 
+    "vectors1", 
     "newtoni", 
+    "newtonii", 
+    "newtoniii", 
     "trig"
   ], 
   "author": null, 
   "layout": "1-col", 
-  "type": "legacy_latex_question_ numerical", 
-  "id": "trapdoor"
+  "type": "legacy_latex_question_ scq", 
+  "id": "prism"
 }

@@ -1,16 +1,16 @@
 {
-  "src": "trapdoor.tex", 
+  "src": "pulleys.tex", 
   "attribution": null, 
   "encoding": "latex", 
-  "title": "Trapdoor", 
+  "title": "Pulley system", 
   "relatedContent": [
     "forces", 
-    "moments", 
+    "vectors1", 
     "newtoni", 
-    "trig"
+    "newtoniii"
   ], 
   "author": null, 
   "layout": "1-col", 
-  "type": "legacy_latex_question_ numerical", 
-  "id": "trapdoor"
+  "type": "legacy_latex_question_ scq", 
+  "id": "pulleys"
 }

@@ -1,16 +1,18 @@
 {
-  "src": "trapdoor.tex", 
+  "src": "two_spheres.tex", 
   "attribution": null, 
   "encoding": "latex", 
-  "title": "Trapdoor", 
+  "title": "Two spheres", 
   "relatedContent": [
     "forces", 
-    "moments", 
+    "friction", 
     "newtoni", 
-    "trig"
+    "newtoniii", 
+    "trig", 
+    "vectors"
   ], 
   "author": null, 
   "layout": "1-col", 
   "type": "legacy_latex_question_ numerical", 
-  "id": "trapdoor"
+  "id": "two_spheres"
 }

@@ -1,15 +1,14 @@
 {
-  "src": "ball_on_thread.tex", 
+  "src": "newtoniii.tex", 
   "attribution": null, 
   "encoding": "latex", 
-  "title": "Ball suspended by a thread", 
+  "title": "Newton III", 
   "relatedContent": [
     "forces", 
-    "vectors1", 
-    "trig"
+    "newtoniii"
   ], 
   "author": null, 
   "layout": "1-col", 
   "type": "legacy_latex_question_ scq", 
-  "id": "ball_on_thread"
+  "id": "newton_iii"
 }

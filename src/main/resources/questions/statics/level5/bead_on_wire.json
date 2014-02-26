@@ -1,16 +1,17 @@
 {
-  "src": "trapdoor.tex", 
+  "src": "bead_on_wire.tex", 
   "attribution": null, 
   "encoding": "latex", 
-  "title": "Trapdoor", 
+  "title": "Bead on a wire", 
   "relatedContent": [
     "forces", 
-    "moments", 
+    "friction", 
     "newtoni", 
+    "newtoniii", 
     "trig"
   ], 
   "author": null, 
   "layout": "1-col", 
   "type": "legacy_latex_question_ numerical", 
-  "id": "trapdoor"
+  "id": "bead_on_wire"
 }

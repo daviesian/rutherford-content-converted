@@ -1,15 +1,18 @@
 {
-  "src": "ball_on_thread.tex", 
+  "src": "rod_and_circle.tex", 
   "attribution": null, 
   "encoding": "latex", 
-  "title": "Ball suspended by a thread", 
+  "title": "Rod and circle", 
   "relatedContent": [
     "forces", 
     "vectors1", 
+    "newtoni", 
+    "newtonii", 
+    "newtoniii", 
     "trig"
   ], 
   "author": null, 
   "layout": "1-col", 
   "type": "legacy_latex_question_ scq", 
-  "id": "ball_on_thread"
+  "id": "rod_and_circle"
 }

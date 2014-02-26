@@ -1,15 +1,15 @@
 {
-  "src": "ball_on_thread.tex", 
+  "src": "phil_spring_triangle.tex", 
   "attribution": null, 
   "encoding": "latex", 
-  "title": "Ball suspended by a thread", 
+  "title": "Spring triangle", 
   "relatedContent": [
     "forces", 
-    "vectors1", 
+    "hooke", 
     "trig"
   ], 
   "author": null, 
   "layout": "1-col", 
   "type": "legacy_latex_question_ scq", 
-  "id": "ball_on_thread"
+  "id": "phil_spring_triangle"
 }

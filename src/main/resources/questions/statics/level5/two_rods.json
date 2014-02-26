@@ -1,16 +1,16 @@
 {
-  "src": "trapdoor.tex", 
+  "src": "two_rods.tex", 
   "attribution": null, 
   "encoding": "latex", 
-  "title": "Trapdoor", 
+  "title": "Two rods and a hinge", 
   "relatedContent": [
     "forces", 
     "moments", 
-    "newtoni", 
-    "trig"
+    "newtoniii", 
+    "friction"
   ], 
   "author": null, 
   "layout": "1-col", 
   "type": "legacy_latex_question_ numerical", 
-  "id": "trapdoor"
+  "id": "two_rods"
 }

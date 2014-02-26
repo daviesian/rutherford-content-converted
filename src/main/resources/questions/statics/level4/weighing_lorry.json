@@ -1,16 +1,15 @@
 {
-  "src": "trapdoor.tex", 
+  "src": "weighing_lorry.tex", 
   "attribution": null, 
   "encoding": "latex", 
-  "title": "Trapdoor", 
+  "title": "Weight of a lorry", 
   "relatedContent": [
     "forces", 
     "moments", 
-    "newtoni", 
-    "trig"
+    "newtoni"
   ], 
   "author": null, 
   "layout": "1-col", 
   "type": "legacy_latex_question_ numerical", 
-  "id": "trapdoor"
+  "id": "weighing_lorry"
 }

@@ -1,16 +1,15 @@
 {
-  "src": "trapdoor.tex", 
+  "src": "phil_masses_pivot.tex", 
   "attribution": null, 
   "encoding": "latex", 
-  "title": "Trapdoor", 
+  "title": "Bismar Scales", 
   "relatedContent": [
     "forces", 
     "moments", 
-    "newtoni", 
-    "trig"
+    "newtoni"
   ], 
   "author": null, 
   "layout": "1-col", 
   "type": "legacy_latex_question_ numerical", 
-  "id": "trapdoor"
+  "id": "phil_masses_pivot"
 }

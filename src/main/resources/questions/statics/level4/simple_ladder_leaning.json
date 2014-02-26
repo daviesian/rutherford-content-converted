@@ -1,15 +1,15 @@
 {
-  "src": "ball_on_thread.tex", 
+  "src": "simple_ladder_leaning.tex", 
   "attribution": null, 
   "encoding": "latex", 
-  "title": "Ball suspended by a thread", 
+  "title": "Leaning ladder", 
   "relatedContent": [
     "forces", 
-    "vectors1", 
+    "hooke", 
     "trig"
   ], 
   "author": null, 
   "layout": "1-col", 
   "type": "legacy_latex_question_ scq", 
-  "id": "ball_on_thread"
+  "id": "simple_ladder_leaning"
 }

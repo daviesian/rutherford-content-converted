@@ -1,16 +1,15 @@
 {
-  "src": "trapdoor.tex", 
+  "src": "block_topples.tex", 
   "attribution": null, 
   "encoding": "latex", 
-  "title": "Trapdoor", 
+  "title": "Toppling block", 
   "relatedContent": [
     "forces", 
     "moments", 
-    "newtoni", 
-    "trig"
+    "newtoni"
   ], 
   "author": null, 
   "layout": "1-col", 
   "type": "legacy_latex_question_ numerical", 
-  "id": "trapdoor"
+  "id": "block_topples"
 }

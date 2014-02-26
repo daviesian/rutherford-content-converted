@@ -1,8 +1,8 @@
 {
-  "src": "ball_on_thread.tex", 
+  "src": "bathysphere.tex", 
   "attribution": null, 
   "encoding": "latex", 
-  "title": "Ball suspended by a thread", 
+  "title": "Deep-sea submersible", 
   "relatedContent": [
     "forces", 
     "vectors1", 
@@ -11,5 +11,5 @@
   "author": null, 
   "layout": "1-col", 
   "type": "legacy_latex_question_ scq", 
-  "id": "ball_on_thread"
+  "id": "bathysphere"
 }
