@@ -1,0 +1,58 @@
+%% ID: train_stop_platform
+%% TITLE: Stopping at a Platform
+%% TYPE: question
+%% QUESTIONTYPE: numerical
+%% CONCEPTS: eq_of_motions_diff, forces, newtonii
+%% VIDEOS: 
+%% LEVEL: 3
+%% TOPIC: mechanics/kinematics
+%% ORDER: 7
+
+
+\begin{problem}[HSC1923PIIQ1a] % metric units added; quite a nice kinematics question - simple (GCSE / A2) but a few parts to it
+{\exposition{A steam train moving with a speed of \valuedef{v_0}{60}{km h\sup{-1}} is brought to rest by first shutting off the steam, when the train runs against a resistance equal to \quantity{1/100}{} of its weight, and later by applying the brakes, at which point the train runs against a force equal to \quantity{1/8}{} of the weight of the train.}  \question{If the steam is shut off when the train is a distance \valuedef{d}{1/3}{km} from a station, find where the brakes must be applied in order that the train may be brought to rest in the station.}}
+{\textit{Adapted with permission from UCLES, Higher School Certificate Physics, June 1923, Paper 2, Question 1.}}
+{
+%AWFUL WAY TO SOLVE
+%We can separate the motion into two sections, one where only the resistance force $F_1$ is acting, and the other where both the resistance and the braking force ($F_2$) are acting. During both sections the force is constant, and therefore acceleration is constant and we can use the SUVAT equations. If we define $t_1$ as the time with only resistance acting, $t_2$ as the time with both acting, then $v_0, v_1$ and $v_2$ are the speeds at times $t=0, t=t_1$ and $t=t_2$ respectively. Using $F=ma$ and $v=u+at$ we find
+%\begin{align}
+%v_1=v_0-\left(\frac{F_1}{m}\right)t_1 \label{eq:trainone}
+%\end{align}
+%and 
+%\begin{align}
+%v_2=v_1-\left(\frac{F_1+F_2}{m}\right)t_2 \label{eq:traintwo}
+%\end{align}
+%We require $v_2=0$ for the train to be stopped, and we are given $v_0$. We are left with three unknowns ($v_1, t_1$ and $t_2$) so we need one more equation. The total distance travelled can be calculated using $s=ut+\frac{1}{2}at^2$, remembering that there will be two contributions, one from each section.. We require this distance to be $d$ for the train to stop at the station so:
+%\begin{align}
+%d=s_1+s_2=v_0t_1-\frac{1}{2}\left(\frac{F_1}{m}\right)t_1^2+v_1t_2-\frac{1}{2}\left(\frac{F_1+F_2}{m}\right)t_2^2 \label{eq:trainthree}
+%\end{align}
+%Substituting the expression for $v_1$ from equation \eqref{eq:trainone} into equation \eqref{eq:traintwo} gives
+%\begin{align*}
+%v_2=0&=v_0-\left(\frac{F_1}{m}\right)t_1-\left(\frac{F_1+F_2}{m}\right)t_2 \\
+%\Rightarrow t_2&=\frac{m}{F_1+F_2}\left(v_0-\left(\frac{F_1}{m}\right)t_1\right) \\
+%\Rightarrow t_2&=\frac{1}{F_1+F_2}\left(mv_0-F_1t_1\right)
+%\end{align*}
+%Then substituting for both $t_2$ and $v_1$ in equation \eqref{eq:trainthree} gives us an equation for $t_1$:
+%\begin{align*}
+%d=v_0t_1-\frac{1}{2}\left(\frac{F_1}{m}\right)t_1^2+\left(v_0-\left(\frac{F_1}{m}\right)t_1\right)\left(\frac{1}{F_1+F_2}\left(mv_0-F_1t_1\right)\right)-\frac{1}{2}\left(\frac{F_1+F_2}{m}\right)\left(\frac{1}{F_1+F_2}\left(mv_0-F_1t_1\right)\right)^2
+%\end{align*}
+%MUCH BETTER WAY TO SOLVE:
+We can separate the motion into two sections, one where only the resistance force is acting, and the other where both the resistance and the braking force are acting. During both sections the force is constant, and therefore acceleration is constant and we can use the SUVAT equations. Let \vari{a_1} and \vari{a_2} be the accelerations and \vari{s_1} and \vari{s_2} the distances travelled in the first and second sections respectively, and if \vari{v_1} is the speed at the moment the brakes are applied then:
+\begin{align}
+v_1^2&=v_0^2+2a_1s_1 \label{eq:trainone} \\
+0&=v_1^2+2a_2s_2 \label{eq:traintwo}
+\end{align}
+since the train has a final speed of zero. We also require
+\begin{align}
+s_1+s_2=d \label{eq:trainthree}
+\end{align}
+for the train to stop at the station. Substituting an expression for \vari{v_1\sup{2}} from equation \eqref{eq:trainone} into \eqref{eq:traintwo}, then using equation \eqref{eq:trainthree} gives
+\begin{align*}
+v_0^2+2a_1s_1+2a_2s_2&=0 \\
+\Rightarrow v_0^2+2a_1(d-s_2)+2a_2s_2&=0 \\
+\Rightarrow 2s_2(a_1-a_2)&=v_0^2+2a_1d \\
+\Rightarrow s_2&=\frac{a_1d+v_0^2/2}{a_1-a_2}
+\end{align*}
+\valuedef{a_1}{-g/100}{m s\sup{-2}}, \valuedef{a_2}{-g/8}{m s\sup{-2}}, \valuedef{d}{1000/3}{m} and \valuedef{v_0}{16.67}{m s\sup{-1}}. \answer{The train needs to apply the brakes a distance 94.3 m from the station.}
+}
+\end{problem}

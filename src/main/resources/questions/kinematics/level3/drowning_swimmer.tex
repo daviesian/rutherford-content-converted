@@ -1,0 +1,66 @@
+%% ID: drowning_swimmer
+%% TITLE: Saving a drowning swimmer 
+%% TYPE: question
+%% QUESTIONTYPE: numerical
+%% CONCEPTS: eq_of_motions_diff
+%% VIDEOS: 
+%% LEVEL: 3
+%% TOPIC: mechanics/kinematics
+%% ORDER: 10
+
+
+\begin{problem}[Jan_Drowning_Sea] 
+{\exposition{A swimmer is drowning at B, a distance \vari{a/2} away from the beach as in Figure \ref{fig:Kinematics_Drowning_Sea_1}. A lifeguard patrolling along the very edge of the beach spots the swimmer when the lifeguard is at point A, which a distance\vari{a} away from the point on the beach that is closest to the drowning swimmer. The average speed of the lifeguard running along the beach is \vari{v}, and her average swimming speed is\valuedef{v_s}{v/3}{}.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.31\textwidth]{Kinematics_Drowning_Sea_1}
+	\caption{}
+	\label{fig:Kinematics_Drowning_Sea_1}
+\end{figure}}
+
+	\begin{enumerate}
+	\item \question[a]{How long would it take for the lifeguard to reach the drowning swimmer at B if she entered the water at A and started swimming immediately?}
+	\item \question[b]{Instead she runs along the beach to a point C before she starts swimming. Find the quickest time, \vari{t_{min}}, in which the lifeguard can reach the drowning swimmer.}
+	\end{enumerate}
+
+\exposition{Leave your answers in terms of $a$ and $v$ only.}}
+\hinta{For part (b), let the distance AC be \vari{x}. A useful result for when $f(x) = \sqrt{x^2 + (a)^2}$ is $f'(x) = \frac{x}{\sqrt{x^2 + (a)^2}}$.}
+{\textit{Written by JZ and NHB for The Rutherford Schools Physics Project.}}
+{	\begin{enumerate}
+	\item This is quite a simple application of Pythagoras' Theorem. The lifeguard will swim the distance AB at a speed \valuedef{v_s}{v/3}{}, hence we can find the time taken, \vari{t}, if we know distance AB:
+	
+\begin{align*} AB = \sqrt{a^2+\left(\frac{a}{2}\right)^2} = \sqrt{\frac{5}{4}a^2} = \frac{\sqrt{5}}{2}a \end{align*}
+
+\begin{align*} \textrm{$t =$ distance/speed } = \frac{\left(\frac{\sqrt{5}}{2}a\right)}{\left(\frac{v}{3}\right)} = \frac{3\sqrt{5}a}{2v} \end{align*}
+
+\answer[a]{The lifeguard will take a time \valuedef{t}{\frac{3\sqrt{5}a}{2v}}{}}
+
+	\item Now we need to consider two parts of the journey. See Figure \ref{fig:Kinematics_Drowning_Sea_2}.
+	
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.3\textwidth]{Kinematics_Drowning_Sea_2}
+	\caption{}
+	\label{fig:Kinematics_Drowning_Sea_2}
+\end{figure}
+
+The time taken, \vari{t}, is given by:
+
+\begin{align*} t &= \frac{\textrm{AC}}{v} + \frac{\textrm{CB}}{\left(\frac{v}{3}\right)}\\
+&= \frac{a-x}{v} + \frac{3\sqrt{x^2 +\left(\frac{a}{2}\right)^2}}{v}
+\intertext{For minimum:} \frac{\textrm{d}t}{\textrm{d}x} &= \frac{-1}{v} + \frac{3x}{v\sqrt{x^2 +\left(\frac{a}{2}\right)^2}} = 0\\
+3x &= \sqrt{x^2 + \left(\frac{a}{2}\right)^2} \\
+x^2 &= \frac{a^2}{4 \times 8} \\
+x &= \frac{\sqrt{2}a}{8}\end{align*}
+
+Now we just put this value of $x$ back into our equation for time, and this should be a minimum value:
+
+\begin{align*} t_{min} &= \frac{a-\frac{\sqrt{2}a}{8}}{v} + \frac{3\sqrt{\frac{a^2}{32} +\left(\frac{a}{2}\right)^2}}{v}\\ \\ &= \frac{(8-\sqrt{2})a + 9\sqrt{2}a}{8v} \\
+\\ &= (1+\sqrt{2})\frac{a}{v} \end{align*}
+
+\answer[b]{The lifeguard will now take a time \valuedef{t_min}{ (1+\sqrt{2})\frac{a}{v}}{}
+
+\end{enumerate}
+
+}
+\end{hint}

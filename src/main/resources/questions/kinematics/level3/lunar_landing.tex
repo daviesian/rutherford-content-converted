@@ -1,0 +1,30 @@
+%% ID: lunar_landing
+%% TITLE: Lunar Landing
+%% TYPE: question
+%% QUESTIONTYPE: numerical
+%% CONCEPTS: eq_of_motions_diff, forces, newtoni, newtonii
+%% VIDEOS: 
+%% LEVEL: 3
+%% TOPIC: mechanics/kinematics
+%% ORDER: 5
+
+\begin{problem}[A1988PSIQ3l]
+{\exposition{A lunar landing module of mass \valuedef{m}{5000}{kg} is descending to the Moon's surface at a steady velocity of \quantity{10}{ms\sup{-1}}. At a height of \quantity{120}{m}, a small object falls from its landing gear. Taking the Moon's gravitational acceleration as \quantity{1.6}{ms\sup{-2}},}
+\begin{enumerate} 
+  	\item \question[a]{At what speed does the object strike the Moon?}
+  	\item \question[b]{What is the vertical force required by engine of the module in order to keep it descending at the constant speed? Be careful with the direction (take downwards as positive).}
+  	\end{enumerate}
+}
+{\textit{Adapted with permission from UCLES, A Level Physical Science, June 1988, Paper 1, Question 3.}}
+{\begin{enumerate}
+
+	\item This is a simple application of SUVAT; \valuedef{u}{10}{m s\sup{-1}}, \valuedef{a}{1.6}{m s\sup{-2}} and \valuedef{s}{120}{m}, so the equation $v^{2} = u^{2} + 2as$ can be used to find \vari{v}. $v^{2} = 100 + 384 = 484$, so \answer[a]{$v = 22$ ms$^{-1}$.}
+	\item For a constant velocity, there must be no resultant force on the module. Hence the size of the vertical force upwards, \vari{F}, must equal the weight of the module:
+	
+\begin{align*} F &=mg \\
+& = 5000 \times 1.6 = 8000 \textrm{ N} \end{align*}
+
+Direction is important, we called the \textit{upwards} force \vari{F}, so the vertical force is \answer{$\quantity{-8000}{N}}.
+\end{enumerate}
+}
+\end{problem}

@@ -1,0 +1,51 @@
+%% ID: bolt_thrower
+%% TITLE: Bolt Thrower
+%% TYPE: question
+%% QUESTIONTYPE: numerical
+%% CONCEPTS: eq_of_motions_diff, forces, trig, vectors1
+%% VIDEOS: 
+%% LEVEL: 3
+%% TOPIC: mechanics/kinematics
+%% ORDER: 9
+
+\begin{problem}[Tristan_Bolt_Thrower] %[A1989PIQ3i] %projectiles, SUVAT %adapted so loosely as to be unrecognisable
+{\exposition{A castle wall has bolt throwers which fire a bolt horizontally at a speed \vari{v}. In order to fire over the enemy's shields, the bolt must make an angle of \quantity{\theta}{45\sup{\circ}} to the horizontal when it hits the ground. The bolt throwers can be mounted at different heights in the wall and set to fire at different speeds.}
+
+\question{Find the maximum range $s$ at a given height $h$ and the speed at which the bolt thrower must fire in order to achieve this maximum range.}
+ }
+{\textit{Written by TR for The Rutherford Schools Physics Project.}}
+{
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.4\textwidth]{Kinematics_bolt_projectile}
+	\caption{The motion of the bolt with all relevant quantities defined.}
+	\label{fig:Kinematics_projectile_arrow}
+\end{figure}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.3\textwidth]{Kinematics_bolt_velocity}
+	\caption{The components of the bolt's velocity as the bolt hits the ground.}
+	\label{fig:Kinematics_bolt_velocities}
+\end{figure}
+\\
+\\
+	We know that the bolt has to land at \quantity{\theta}{45\sup{\circ}} to the horizontal. As no force acts horizontally on the bolt, we can relate the final vertical component of velocity, \vari{v_y} to the speed at which the bolt is fired using trigonometry,
+	\begin{equation*}\frac{v_y}{v}=\tan(\theta)\end{equation*}
+	We know from SUVAT that the final velocity of a body initially at rest is equal to $at$ where $a$ is the acceleration. Therefore, the vertical velocity when the bolt hits the ground some time $t$ after it is fired is given by
+	\begin{equation*}v_y=gt\end{equation*}
+	It follows then that
+	\begin{equation}\label{Kinematics_bolt_1}v=\frac{gt}{\tan(\theta)}\end{equation}
+	This depends on \vari{t} which we do not want so, using SUVAT to find the time taken for the bolt to fall a height \vari{h},
+	\begin{equation*}-h=-\frac{1}{2}gt^2\end{equation*}
+	\begin{equation*}t^2=\frac{2h}{g}\end{equation*}
+	\begin{equation}\label{Kinematics_bolt_2}t=\sqrt{\frac{2h}{g}}\end{equation}
+	Substituting equation \ref{Kinematics_bolt_2} into equation \ref{Kinematics_bolt_1}
+	\begin{equation*}v=\frac{g\sqrt{\frac{2h}{g}}}{\tan(\theta)}=\frac{\sqrt{2gh}}{\tan(\theta)}\end{equation*}
+	Substituting in the value \quantity{\theta}{45\sup{\circ}},
+	\begin{equation*}v=\sqrt{2gh}\end{equation*}
+	The horizontal distance travelled when the bolt hits the ground is  the horizonal distance travelled moving at a speed \vari{v} for time \vari{t}. Hence using SUVAT:
+	\begin{equation*}s=\sqrt{2gh}\cdot\sqrt{\frac{2h}{g}}\end{equation*}
+	\begin{equation*}s=2h\end{equation*}
+	\answer{The bolt thrower must throw at a speed \valuedef{v}{\sqrt{2gh}}{} to achieve the maximum range of \valuedef{s}{2h}{}.}
+}
+\end{problem}
