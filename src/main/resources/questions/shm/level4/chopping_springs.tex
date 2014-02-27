@@ -1,0 +1,39 @@
+%% ID: chopping_springs
+%% TITLE: Chopping Up Springs
+%% TYPE: question
+%% QUESTIONTYPE: numerical
+%% CONCEPTS: forces, hooke, shm
+%% VIDEOS: 
+%% LEVEL: 4
+%% TOPIC: mechanics/shm
+%% ORDER: 
+
+%Physics: Hooke's law, period
+%Maths: 
+\begin{problem}[A1982PIQ3l]
+{\exposition{The period of oscillation of a mass \vari{m} at the end of a light spring of spring constant \vari{k} is \vari{T_1}.} \question[a]{Write down the relation between \vari{T_1}, \vari{m} and \vari{k}.} 
+\begin{enumerate}
+
+\item \question[b]{If the spring were cut into two pieces of equal length and one portion were used to support the same mass, what would be the period \vari{T_2}?}
+
+\item \question[c]{If both portions of the spring were used in parallel, what would be the period \vari{T_3}?}
+
+\end{enumerate}
+\exposition{Give your answers for \vari{T_2} and \vari{T_3} in terms of \vari{T_1}.}
+}
+{\textit{Used with permission from UCLES, A Level Physics, June 1982, Paper 1, Question 3.}}
+{\answer[a]{$T_1 = 2\pi\sqrt{\frac{m}{k}}$}
+
+\begin{enumerate}
+
+	\item Spring constant \vari{k} is inversely proportional to length. This can be shown by thinking about two springs, with one half the length of the other but identical in every other respect. If you apply the same force to each spring, the shorter one will extend by only half as much. $F = kx$, so if \vari{F} is the same for both springs but \vari{x} is halved for the shorter spring, then its spring constant \vari{k} must be twice that of the longer spring. In this question, the spring's length is halved, so \vari{k} doubles. $T = 2\pi\sqrt{\frac{m}{k}}$, so $T_2 = 2\pi\sqrt{\frac{m}{2k}} = \frac{1}{\sqrt{2}}T_1 = \frac{\sqrt{2}}{2}T_1$.
+	
+	\answer[b]{\valuedef{T_2}{\frac{1}{\sqrt{2}}T_1}{}}
+	
+	\item If two springs are used in parallel, then each spring only experiences half the tension that a single spring would experience, so extends half as far. This means that the effective spring constant for two springs in parallel is twice that of a single spring; which in this question is twice again the orginal spring constant. Using our formula for period, $T_3 = 2\pi\sqrt{\frac{m}{4k}} = \frac{1}{2}T_1$.
+	
+	\answer[c]{\valuedef{T_3}{\frac{1}{2}T_1}{}}
+
+\end{enumerate}
+}
+\end{problem}

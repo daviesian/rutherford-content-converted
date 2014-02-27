@@ -1,0 +1,52 @@
+%% ID: swinging_rod
+%% TITLE: A swinging rod
+%% TYPE: question
+%% QUESTIONTYPE: numerical
+%% CONCEPTS: shm
+%% VIDEOS: 
+%% LEVEL: 4
+%% TOPIC: mechanics/shm
+%% ORDER: 7
+
+
+%Physics: period, SHM, omega
+%Maths: trig, trig calculus
+\begin{problem}[IntA1987APIQ1p]
+{\exposition{A uniform rod of mass \valuedef{m}{200}{kg} is supported horizontally by two vertical ropes of length \valuedef{L}{14.0}{m} which are attached to each end of the rod. It is made to swing like a simple pendulum with oscillations of amplitude \valuedef{A}{0.50}{m}.}
+\begin{enumerate}
+		\item \question[a]{Calculate the period and the maximum acceleration of the rod in these oscillations.}
+		\item \question[b]{What would the period of the oscillations be if the length of the supporting ropes were reduced to \quantity{9.0}{m}?}
+		\item \question[c]{What would the period be if a rod with only half the mass of the original one were suspended from the ropes of length \quantity{14.0}{m}?}
+\end{enumerate}
+}
+{\textit{Adapted with permission from UCLES, A Level Additional Physics, November~1987, Paper~1, Question~1.}}
+{This question can actually be attempted without too much mathematics, and provided we use the assertion that is oscillates like a simple pendulum:
+\begin{enumerate}
+	\item If the rod is undergoing SHM with a small amplitude, we can approximate it as just moving horizontally in order to find the acceleration.
+If $x = A\cos(\omega t)$, where we will simply quote the angular frequency of a pendulum $\omega^{2} = \frac{g}{l}$, then the acceleration is $\ddot{x} = -\omega^{2}A \cos(\omega t)$ which has a maximum value of:
+\begin{align*} 
+a_{\textrm{max}} &= \omega^{2}A \\ 
+&= \left(\frac{g}{l}\right)A \\ 
+&= \frac{(9.8)(0.5)}{(14)} \textrm{ ms}^{-2} \\ 
+&= 0.35 \textrm{ ms}^{-2} 
+\end{align*}
+
+\answer[a]{The period of oscillations would be \valuedef{T}{7.5}{s} and the maximum acceleration of the rod would be \valuedef{a}{0.35}{m s\sup{-2}}.}
+
+	\item The equation linking period to the length of the pendulum is: 
+\begin{equation*}
+ T = \frac{2 \pi}{\omega} = 2\pi \sqrt{\frac{l}{g}}
+\end{equation*} 
+and so putting in the new length of the pendulum, we find: 
+\begin{align*}
+T_{\textrm{new}} &= 2\pi \sqrt{\frac{l_{\textrm{new}}}{g}} \\ 
+&= 2\pi \sqrt{\frac{(9)}{(9.8)}} \textrm{ s} \\ 
+&= 6.02 \textrm{ s}
+
+\answer[b]{The period of oscillations would be \valuedef{T}{6.0}{s}}
+
+\end{align*}
+	\item \answer[c]{The motion of a simple pendulum is independent of mass, and so the period will be the same as for the original rod, \valuedef{T}{7.5}{s}.}
+\end{enumerate}
+}
+\end{problem}
