@@ -1,0 +1,86 @@
+%% ID: moi_objects
+%% TITLE: An object's Moment of Inertia
+%% TYPE: question
+%% QUESTIONTYPE: numeric
+%% CONCEPTS: moi, integration
+%% VIDEOS: 
+%% LEVEL: 5
+%% TOPIC: mechanics/dynamics
+%% ORDER: 9
+
+\begin{hint}[Ed_MoI_One]
+{\exposition{Calculate the moments of inertia of the following objects:}
+\begin{enumerate}
+\item \question[a]{7 point masses of mass \vari{m}, situated at the vertices and centre of a regular hexagon of side length \vari{l}, about the axis perpendicular to the plane of the hexagon and passing through its centre.}
+\item  \question[b]{A uniform rod of mass \vari{m} and length \vari{l}, about its end.}
+\item  \question[c]{A uniform rod of mass \vari{m} and length \vari{l}, about its centre of mass.}
+\item  \question[d]{The same situation as in part a), but now with 6 rods of mass \vari{m} and length \vari{l} connecting the mass at the centre of the hexagon to the other 6 masses.}
+\end{enumerate}
+}
+{
+\begin{enumerate}
+\setcounter{enumi}{1}
+\item \hint[a]{You need to consider an infinitesimal element, of width \vari{\d x} and a distance \vari{x} from one end, and integrate along the rod. %definitely need video instruction first}
+\setcounter{enumi}{2}
+\item \hint[b]{This can be done from first principles using integration, or by using the parallel axis theorem and the result from part b).}
+\end{enumerate}
+}
+{\textit{Created for the Rutherford School Physics Project by ES.}}
+{\answer[a]{\valuedef{I}{6ml^2}{}}
+\answer[b]{\valuedef{I_{\text{CoM}}}{\frac{1}{3}ml^2}{}}
+\answer[c]{\valuedef{I_{\text{CoM}}}{\frac{1}{12}ml^2}{}}
+\answer[d]{\valuedef{I}{9ml^2}{}}
+\begin{enumerate}
+\item Each of the 6 masses at the vertices are a distance $l$ away from the CoM and the mass at the centre has $r=0$ so makes no contribution. Since $I=ml^2$ for each mass, the total is $I=6ml^2$. 
+(The central mass gives no contribution as it has no perpendicular distance from the point of rotation)
+\item The rod can be modelled as in Figure \ref{fig:AngularMotion_rod}
+\begin{figure}[h]
+\centering
+\includegraphics[width=7cm]{AngularMotion_rod}
+\caption{}
+\label{fig:AngularMotion_rod}
+\end{figure}
+\\
+$I=\int x^2dm$ and $dm=\rho dx$ for mass per unit length $\rho$,  therefore
+\begin{equation*}
+I=\int^l_0\rho x^2dx=\rho[x^3/3]^l_0=\rho l\cdot l^2/3=\frac{1}{3}ml^2
+\end{equation*}
+\item Either repeat the integration with different limits or use the parallel axis theorem. First the integration method:
+\begin{figure}[h] 
+\centering
+\includegraphics[width=7cm]{AngularMotion_rodtwo}
+\caption{}
+\label{fig:AngularMotion_rodtwo}
+\end{figure}
+\\
+Figure \ref{fig:AngularMotion_rodtwo} shows the new co-ordinates for the problem, with a general element $dx$ a distance $x$ from the origin. Let the rod have mass per unit length $\rho$ then 
+\begin{align*}
+\operatorname{d}\!m&=\rho \operatorname{d}\!x \\
+\Rightarrow I_{\textrm{CoM}}&=\int_{-l/2}^{l/2}x^2\operatorname{d}\!m=\int_{-l/2}^{l/2}x^2\rho\operatorname{d}\!x \\
+&=\rho[x^3/3]_{-l/2}^{l/2}=2\rho(l/2)^3/3 \\
+&=\frac{1}{12}\rho x^3
+\end{align*}
+and finally since $m=\rho l$
+\begin{align*}
+I_{\textrm{CoM}}=\frac{1}{12}ml^2
+\end{align*}
+The other way of doing this problem would be to use the parallel axis theorem, so that
+\begin{equation*}
+I_{\textrm{end}}=I_{\textrm{CoM}}+md^2 
+\end{equation*}
+where $d$ is the distance between the two parallel axes. Here $d=l/2$ so
+\begin{equation*}
+I_{\textrm{CoM}}=I_{\textrm{end}}-ml^2/4
+\end{equation*}
+This method is slightly quicker since we just calculated $I_{\textrm{end}}$ to be $\frac{1}{3}ml^2$, therefore
+\begin{align*}
+I_{\textrm{CoM}}=\frac{1}{3}ml^2-\frac{1}{4}ml^2=\frac{1}{12}ml^2 
+\end{align*}
+as before.
+\item Just add the contribution from the six rods, all rotating around their end points, so 
+\begin{equation*}
+I=6ml^2+6\cdot\frac{1}{3}ml^2=9ml^2
+\end{equation*}
+\end{enumerate}
+}
+\end{hint}

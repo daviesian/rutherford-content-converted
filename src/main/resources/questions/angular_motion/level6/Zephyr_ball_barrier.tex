@@ -1,0 +1,52 @@
+\begin{problem}[Zephyr_ball_diagram] % simple knowledge but requires thought and a diagram - quite a nice problem and all in symbols
+{A horizontal force is applied to the axle of a wheel of radius $r$ and mass $m$ to pull it over a vertical obstacle of height $h$ (where $r > h$). By explicitly considering the work done by the torque due to this force, calculate the total energy expended to pull the ball over the barrier. Is this the value you would expect?}
+{\textit{Written by Zephyr Penoyre for the RSPP}}
+{
+Figure \ref{fig:AngularMotion_Zephyr_wheel} shows the forces acting around the pivot at the top of the obstacle:
+\begin{figure}[h]
+\centering
+\includegraphics[width=6cm]{AngularMotion_Zephyr_wheel}
+\caption{}
+\label{fig:AngularMotion_Zephyr_wheel}
+\end{figure}
+\\
+In order for the wheel to move, the horizontal force, which we'll call $F$, must just exceed that needed to support the mass. Imagine that the force is equal to the minimum necessary plus some tiny increment more, the wheel will still move, thus the force needed here is the minimum force needed to support the mass.
+
+Taking moments around the point where the sphere touches the obstacle:
+\begin{equation*}
+Fr\sin{\theta} - mgr\cos{\theta} = 0 \Rightarrow F = \dfrac{mg\cos{\theta}}{\sin{\theta}}
+\end{equation*}
+
+Therefore the torque provided by $F$, $G\s{F} = Fr\sin{\theta} = mgr\cos{\theta}$.
+
+The work done by a constant torque $G$ turning through some angle $\theta$ is $G\theta$. (Notice the analogy with $Wd = F x$)
+
+As we do not have a constant torque, rather one that depends on angle $\theta$, we must integrate $G\s{F}$ over $\theta$ from some $\theta\s{0}$, the angle subtended when the wheel is resting on the ground, to $\dfrac{\pi}{2}$ as beyond this point no extra force is needed to pull the wheel over the top of the barrier.
+
+Therefore
+\begin{equation*}
+Wd = \int_{\theta\s{0}}^{\frac{\pi}{2}} G\s{F} \d{\theta} =  \int_{\theta\s{0}}^{\frac{\pi}{2}} mgr\cos{\theta} \d{\theta}
+\end{equation*}
+\begin{equation}
+\Rightarrow Wd = \left[mgr\sin{\theta} \right]_{\theta\s{0}}^{\frac{\pi}{2}} = mgr(1 - \sin{\theta\s{0}})
+\label{workDone}
+\end{equation}
+
+Now we just need to find $\sin{\theta\s{0}}$. This corresponds to the point where the wheel is touching the ground, thus the height of the c.o.m. is $r$. From this we can conclude the triangle in Figure (\ref{AngularMotion_wheelangle}), and thus we can find $\sin{\theta\s{0}} = \dfrac{r-h}{r}$
+\begin{figure}[h]
+\centering
+\includegraphics[width=6cm]{AngularMotion_wheelangle}
+\caption{}
+\label{fig:AngularMotion_wheelangle}
+\end{figure}
+\\
+Substituting into equation (\ref{workDone}) we find
+\begin{equation*}
+Wd =mgr\left(1 - \dfrac{r-h}{r} \right) = mgh
+\end{equation*}
+
+Which is exactly what we would expect as this is the magnitude of the gravitational energy we've had to overcome to raise the wheel over the barrier. 
+
+(N.b. As we've made the assumption that the force is only incrementally larger than needed to support the wheel, the speed at this point will be negligible and both linear and rotational kinetic energy terms can be ignored)
+}
+\end{problem}

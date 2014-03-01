@@ -1,0 +1,49 @@
+\begin{hint}[IntA1989PSsQ2a]
+{
+\begin{enumerate}
+\item When nuclear reactions in the Sun cease as its supply of fuel runs out, the Sun will collapse inwards and the angular velocity of its rotation will increase. Show that 
+\begin{equation*}
+R^2/T=A
+\end{equation*}
+where $R$ is the radius of the Sun, $T$ is its rotational period and $A$ is a constant, and find an expression for $A$ in terms of the Sun's angular momentum $L$ and its mass $M$. Hence using $M = 2 $x$10^{30}$ kg, $R = 7 $x$10^{8}$ m and that the sun rotates by roughly $10^{\circ}$ a day, find the angular momentum of the sun.
+\item Once the sun collapses to a certain critical radius $R_c$, the angular velocity at the surface will become so great that material will be lost around the Sun's equator. Find an expression for $R_c$ in terms of $L$ and $M$. Substitute in the earlier values for $L$ and $M$ to find $R_c$.
+\end{enumerate}
+}
+{
+\begin{enumerate}
+\item The moment of inertia of a uniform solid sphere about an axis through its centre is $\frac{2}{5}MR^2$.
+\item For the last part, consider what condition is required for material to be in a stable motion as the Sun spins. What kind of motion is it performing?
+\end{enumerate}
+}
+{\textit{Used with permission from UCLES, A Level Physical Science, November 1989, Special Paper, Question 2.}}
+{ %this solution needs to have vectors in it and probably the addition of a diagram for clarity
+\begin{enumerate}
+\item $L=I\omega$ for moment of inertia $I$, angular speed $\omega$. $I=\frac{2}{5}MR^2$ and $\omega=2\pi/T$ so
+ \begin{equation*} \frac{2}{5}MR^2\cdot\frac{2\pi}{T}=L
+\end{equation*}
+\begin{equation*} \Rightarrow \frac{R^2}{T}=\frac{5L}{4\pi M}=A
+\end{equation*}
+Rearranging gives $L = \dfrac{4\pi M R^2}{5T}$.
+
+The period T is the time taken for the sun to turn by $360^{\circ}$, therefore the period is 36 days, or roughly $3$x$10^6$ seconds.
+
+Substituting all these values in gives $L = 8$x$10^{41}$ kgms\sup{-1}
+
+\item The point here is at some point the angular speed becomes greater than the largest possible angular speed for circular motion. For circular motion we have 
+\begin{equation*} F_c=\frac{GMm}{R^2}=mR\omega^2
+\end{equation*}
+\begin{equation*} \Rightarrow \frac{R^3}{T^2}=\frac{GM}{4\pi^2}
+\end{equation*}
+From before, 
+\begin{equation*} \frac{R^2}{T}=\frac{5L}{4\pi M} \Rightarrow \frac{R^4}{T^2}=\frac{25L^2}{16\pi^2M^2}
+\end{equation*}
+So
+\begin{equation*} \frac{GMR_c}{4\pi^2}=\frac{25L^2}{16\pi^2M^2}
+\end{equation*}
+\begin{equation*} \Rightarrow R_c=\frac{25L^2}{4GM^3}
+\end{equation*}
+\end{enumerate}
+
+Substituting in  $M = 2 $x$10^{30}$ kg and  $L = 8$x$10^{41}$ kgms\sup{-1} gives $ R_c = 7000$  m
+}
+\end{hint}

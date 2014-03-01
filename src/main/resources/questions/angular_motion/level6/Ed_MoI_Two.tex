@@ -1,0 +1,89 @@
+\begin{hint}[Ed_MoI_Two]
+{
+Calculate the moments of inertia of the following objects:
+\begin{enumerate}
+\item A disc of radius $R$ and mass $m$, about a perpendicular axis through its centre. 
+\item A wheel composed of a disc of radius $R$ and mass $6m$, twelve spokes of mass $m$ and length $l$, and a ring of mass $6m$. 
+\item A disc of radius $R$ and mass $m$, about a diameter.
+\item The same disc as in parts f and h but now with a hole of radius $a$ removed from its centre, about a perpendicular axis passing through its centre. 
+\item The same disc but now the hole of radius $a$ is centred a distance $d$ away from the centre of the larger disc. 
+\item A sphere of mass $m$ about an axis through its centre.
+\end{enumerate}
+}
+%may need to add significantly more hints; not sure how much they will know. Possible will need to start from very beginning of moments of inertia,  but at least will have to explain parallel and perpendicular axes theorems and some hints on what co-ordinate systems to use. 
+{
+\begin{enumerate}
+\item Consider an infinitesimally thin ring, in polar co-ordinates,  and then integrate. 
+\setcounter{enumi}{2} 
+\item Consider the symmetry of the problem and use the perpendicular axis theorem.  
+\setcounter{enumi}{5}
+\item Consider the moment of inertia of an infinitesimally thin disc and integrate. 
+\end{enumerate}
+}
+{%\textit{Used/Adapted with permission from UCLES, A/O Level Physics/Maths/Physical Science, June/November 198, Paper, Question.}
+}
+{
+\begin{enumerate}
+\item Figure \ref{fig:AngularMotion_disc} shows how to set up the problem, by dividing the disc into thin rings:
+\begin{figure}[h]
+\centering
+\includegraphics[width=7cm]{AngularMotion_disc}
+\caption{}
+\label{fig:AngularMotion_disc}
+\end{figure}
+\\
+$I=\int r^2dm$ for a continuous body and here the mass of the thin disc is $dm=2\pi\rho rdr$ for mass per unit area $\rho$ so 
+\begin{align*}
+I=\int^R_0 2\pi\rho r^3dr=2\pi\rho[r^4/4]^R_0=\frac{1}{2}\pi\rho R^4 
+\end{align*}
+and the total mass of the disc is $\pi\rho R^2$ so 
+\begin{align*}
+=\rho\pi R^2\cdot\frac{1}{2}R^2=\frac{1}{2}mR^2
+\end{align*}
+\item The moments of inertia can just be added again, but this time the parallel axis theorem must be used for the spokes. So
+\begin{equation*}
+I_{\textrm{wheel}}=I_{\textrm{disc}}+I_{\textrm{ring}}+12\left(I_{\textrm{rod}}+mR^2\right)
+\end{equation*}
+The required $I_{\textrm{rod}}$ is the one about the end ($\frac{1}{3}ml^2$), and the moment of inertia of a ring is just $Ml^2$ since all mass is a distance $l$ away from the CoM. So we find
+\begin{equation*}
+I_{\textrm{wheel}}=\frac{1}{2}(6m)R^2+(6m)l^2+12\left(\frac{1}{3}ml^2+mR^2\right)=10ml^2+15mR^2
+\end{equation*}
+\item Use the perpendicular axis theorem, which states $I_\textrm{z}=I_\textrm{x}+I_\textrm{y}$ for a lamina. By symmetry, the moments of inertia about the x and y axes must be equal, and we have already calculated what $I_\textrm{z}$ is. Therefore
+\begin{equation*}
+I_\textrm{z}=I_\textrm{x}+I_\textrm{y}=2I_\textrm{x}=\frac{1}{2}mR^2 \Rightarrow I_\textrm{x}=\frac{1}{4}mR^2
+\end{equation*}
+\item We can treat this object as the superposition of the full disc of radius $R$ and another disc with a density that is equal in magnitude but has the opposite sign. Its mass will be proportional to the area so
+\begin{equation*}
+I=\frac{1}{2}mR^2-\frac{1}{2}\cdot\frac{a^2}{R^2}ma^2=\frac{1}{2}mR^2\left(1-\frac{a^4}{R^4}\right)
+\end{equation*}
+\item We use the same technique of superposition but now the negative mass' moment of inertia has to be calculated using the parallel axis theorem. 
+\begin{equation*}
+I=\frac{1}{2}mR^2-\frac{a^2}{R^2}m\left(\frac{a^2}{2}+d^2\right)=\frac{1}{2}mR^2\left(1-\frac{a^2}{R^4}\left(a^2+2d^2\right)\right)
+\end{equation*}
+\item The moment of inertia of the sphere is calculated by integrating over infinitesimal discs, as shown in Figure \ref{fig:AngularMotion_sphere} 
+\begin{figure}[h] 
+\centering
+\includegraphics[width=7cm]{AngularMotion_sphere}
+\caption{}
+\label{fig:AngularMotion_sphere}
+\end{figure}
+\\
+Since $I_{\textrm{disc}}=\frac{1}{2}mR^2$, and here the radius of each disc is $y$, we have $dI=\frac{1}{2}\rho\pi y^2dz$ for density $\rho$. 
+\begin{equation*}
+I=\int^R_{-R}\frac{1}{2}\rho\pi y^2\cdot y^2 dz 
+\end{equation*}
+$R^2=y^2+z^2$ so 
+\begin{equation*}
+I=\int^R_{-R}\frac{1}{2}\rho\pi \left(R^2-z^2\right)^2
+\end{equation*}
+Expanding the brackets to solve the integral gives 
+\begin{equation*}
+I=\frac{1}{2}\rho\pi\left[R^4z-\frac{2}{3}R^2z^3+\frac{1}{5}z^5\right]^R_{-R}=\frac{8}{15}\rho\pi R^5
+\end{equation*}
+Finally, $m=\frac{4}{3}\rho\pi R^3$ so 
+\begin{equation*}
+I=\frac{4}{3}\rho\pi R^3\cdot \frac{2}{5}R^2=\frac{2}{5}mR^2
+\end{equation*}
+\end{enumerate}
+}
+\end{hint}

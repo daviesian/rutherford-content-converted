@@ -1,0 +1,85 @@
+\begin{problem}[Zephyr_lunar_collision]
+{
+Orbital bombardment is the name for the process where asteroids could be nudged out of their current stable orbit and sent careening into a target. One day a particularly eccentric spaceship captain decides he doesn't like earth's moon and attempts to destroy it by sending an asteroid to collide with it.
+\\
+\linebreak
+  He chooses an asteroid with the exact same mass as the moon and alters it's orbit so it will hit the moon. Only after the asteroid is launched does one of his staff point out that earth might be in danger as well.
+\\
+\linebreak
+ The asteroid collides head on and the resulting cloud of debris stays together. Given that the moon is initially orbiting at radius $r$, earth's radius is $R$ and using the acceleration of free fall at the earth's surface $g$, show that the maximum speed the asteroid can hit the moon without the cloud colliding with the earth is
+ \begin{equation*}
+ u\s{ast} = R \sqrt{\dfrac{g}{r}} \left(1 - \sqrt{\dfrac{8R}{(r + R)} } \right)
+ \end{equation*}
+}
+{\textit{Created by Zephyr Penoyre for the RSPP}}
+{Figure (\ref{fig:AngularMotion_mooncollision}) shows the path of the moon before the collision in solid blue, and the critical path of the cloud after the collision in dashed red.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=7cm]{AngularMotion_mooncollision}
+\caption{}
+\label{fig:AngularMotion_mooncollision}
+\end{figure}
+
+After the collision the cloud will continue to orbit the earth and thus angular momentum and energy are still conserved. Even if the cloud would collide with earth, it will still orbit as usual until the collision. Let the cloud have mass $m$, and earth mass $M$.
+
+ The collision is head on, so the cloud after the collision will still be moving tangentially to the vector between it and earth, at some speed $u$. Thus we know the cloud has angular momentum $L = mru$ which is conserved.
+
+  Let the speed at the point of closest approach to earth, here assumed to be earth's radius $R$, be $v$. Hence $L = mRv$ and therefore 
+  \begin{equation}
+  L= mru = mRv \Rightarrow v = \dfrac{ru}{R}
+  \label{angMom}
+  \end{equation}
+  
+  Energy is also conserved throughout the subsequent orbit therefore summing kinetic and potential energies (remembering potential is negative here)
+  
+\begin{equation}
+ E = \frac{m u^2}{2} - \frac{GMm}{r} =  \frac{m v^2}{2} - \frac{GMm}{R}
+ \label{energy}
+ \end{equation}
+ 
+ Combining equations (\ref{angMom}) and (\ref{energy}) and rearranging
+ 
+ \begin{equation*}
+ u^2 \left(\frac{r^2}{R^2} - 1\right) = 2GM\left(\frac{1}{R} - \frac{1}{r}\right)
+ \end{equation*}
+ 
+ which can be simplified to
+ 
+ \begin{equation}
+ u^2 = 2GM \left(\dfrac{r-R}{rR}\right) \left(\dfrac{R^2}{r^2 -R^2}\right) = \dfrac{2GMR}{r(r+R)}
+ \label{uSquared}
+ \end{equation}
+  
+  We can eliminate the mass of the earth and gravitational constant using the gravitational acceleration at earth’s surface, $g = \dfrac{GM}{R^2}$ which we can rearrange to get $GM =gR^2$.
+  
+  Putting this into equation (\ref{uSquared}) we get
+  
+   \begin{equation*}
+ u = \sqrt{\dfrac{2gR^3}{r(r+R)}}
+ \end{equation*}
+ 
+ Now we simply have to find the speed the asteroid must collide with such that the resulting cloud will have velocity $u$. As the mass of asteroid and moon are equal, and the total mass of the cloud is $m$, the mass of each must be $\dfrac{m}{2}$. Let the initial velocity of the moon be $u\s{0}$. The minimum speed necessary for the asteroid will be such that the cloud is moving in the same direction before and after the collision (there is another, higher speed, solution for the case where the cloud is moving at $u$ in the opposite direction)
+ 
+  Conserving momentum in 1D (as collision is head-on)
+     \begin{equation}
+ \frac{m}{2}u\s{0} - \frac{m}{2}u\s{ast} = mu \Rightarrow u\s{ast} = u\s{0} - 2u = u\s{0} - \sqrt{\dfrac{8gR^3}{r(r+R)}}
+ \label{uAsteroid}
+ \end{equation}
+  
+  Now we need to express $u\s{0}$ in terms of $r$ and $R$. Starting from $u\s{0} = r \omega\s{0}$ where $\omega\s{0}$ is the angular speed of the moon's undisturbed orbit.
+  
+  As the undisturbed orbit is circular, we know the gravitational force, $\dfrac{GMm}{r^2}$ (where $m$ is now the mass of the moon) matches the centripetal acceleration $mr\omega\s{0}^2$. Rearranging and using $GM = gr^2$:
+  
+  \begin{equation*}
+  \omega\s{0}^2 = \dfrac{GM}{r^3} \Rightarrow r\omega\s{0} = r\sqrt{ \dfrac{gR^2}{r^3}} = R \sqrt{\dfrac{g}{r}}
+\end{equation*}
+
+Finally we can just substitute back this into equation (\ref{uAsteroid}) and pulling out the factor of $R\sqrt{\dfrac{g}{r}}$ gives
+
+ \begin{equation*}
+ u\s{ast} = R \sqrt{\dfrac{g}{r}} \left(1 - \sqrt{\dfrac{8R}{(r + R)} } \right)
+ \end{equation*}
+
+}
+\end{problem}

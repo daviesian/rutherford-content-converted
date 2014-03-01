@@ -1,0 +1,48 @@
+\begin{problem}[Zephyr_dense_rod] 
+{A rod of length $l$ and mass $m$ is pivoted around one end. It has non uniform mass per unit length, of the form $\mu = \alpha x$ where x is the distance from the pivot. Find the moment of inertia of the rod relative when around the pivot.
+
+\begin{enumerate}
+	\item $m l^2$
+	\item $\dfrac{ml^2}{2}$
+	\item $\dfrac{ml^2}{3}$
+	\item $\dfrac{ml^2}{4}$
+	\item $\dfrac{ml^2}{6}$
+\end{enumerate}}
+{Assume on the time-scale we're looking at, negligible new mass is accumulated by the disk}
+{\textit{Written by Zephyr Penoyre for the RSPP}
+}
+{\\
+The correct answer is (b).
+Much like for the case of uniform density, to calculate the moment of inertia we have to sum up infinitesimal mass elements. The mass of an element $\delta m$ at $x$ of length $\delta x$ is
+
+\begin{equation*}
+\delta m = \mu~ \delta x = \alpha x ~ \delta x
+\end{equation*}
+
+Thus the mass of the whole bar is found by summing these mass contributions over the length of the bar
+
+\begin{equation*}
+m = \sum_{x=0}^{x =l} \alpha x ~ \delta x
+\end{equation*}
+
+As $\delta x$ goes to zero, the sum goes to a continuous integral, i.e.
+
+\begin{equation*}
+m = \int_{x=0}^{x =l} \alpha x ~ \d{ x} = \left[ \alpha \dfrac{x^2}{2} \right]_0^l = \dfrac{\alpha l^2}{2}
+\end{equation*}
+
+The moment of inertia of the mass element $\delta m$, is $\delta I$ where
+
+\begin{equation*}
+\delta I =  \delta m~ x^2 = \alpha x^3 ~\delta x
+\end{equation*}
+
+And again taking the sum as $\delta x$ goes to zero, i.e. the integral
+
+\begin{equation*}
+I = \int_{x=0}^{x =l} \alpha x^3 ~ \d{ x} = \left[ \alpha \dfrac{x^4}{4} \right]_0^l = \dfrac{\alpha l^4}{4}
+\end{equation*}
+
+and substituting our expression for $m$ into this, we find $I = \dfrac{ml^2}{2}$
+}
+\end{problem}

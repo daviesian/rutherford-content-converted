@@ -1,0 +1,28 @@
+%% ID: record
+%% TITLE: Old fashioned records
+%% TYPE: question
+%% QUESTIONTYPE: scq
+%% CONCEPTS: moi, ang_mom, ang_vel
+%% VIDEOS: 
+%% LEVEL: 5
+%% TOPIC: mechanics/dynamics
+%% ORDER: 5
+
+\begin{problem}[Ed_record_angular_velocity]
+{\esposition{An old fashioned record (a disc) with moment of inertia \quantity{0.1}{kg\,m\sup2} is rotating freely about a vertical axis with an angular velocity of \quantity{1}{rad\,s\sup{-1}}. A pencil sharpener (much smaller than the disc so it can be treated as a point mass) of mass \quantity{10}{g} is placed a distance of \quantity{20}{cm} from the centre of the disc, without imparting any impulse.}
+\question{What is the new angular velocity of the record?}
+}
+{\textit{Created for the Rutherford School Physics Project by ES.}}
+{\answer{\valuedef{\omega}{0.98}{rad\,s\sup{-1}}}
+The key point is to notice that angular momentum, $\vtr{J}$, must be conserved. Initially
+\begin{equation*}
+J=I_0\omega_0
+\end{equation*}
+where $I_0$ is the moment of inertia of the disc, $0.1\textrm{ kg m}^2$, and $\omega_0$ is its initial angular speed, $1\textrm{ rad s}^{-1}$. After the addition of the pencil sharpener, the moment of inertia changes from $I_0$ to $I_0+mr^2$, where $m$ is the mass of the pencil sharpener, and $r$ is the distance from the centre of the disc. Therefore we can find the final angular speed $\omega_1$
+\begin{align*}
+I_0\omega_0&=\left(I_0+mr^2\right)\omega_1 \\
+\Rightarrow \omega_1&=\frac{I_0\omega_0}{\left(I_0+mr^2\right)} \\
+&=0.98\textrm{ rad s}^{-1}
+\end{align*}
+}
+\end{problem} 

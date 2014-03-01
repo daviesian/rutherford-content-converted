@@ -1,0 +1,64 @@
+\begin{hint}[HSC1929MIIQ8a] % metric units added; needs understanding of what a flywheel is first - either introduction to the question or sheet, or a diagram, or a hint needed
+% translated 2 ~kg weight to Newtons (numbers need checking and possibly changing to give a nice answer.  Quite hard.
+{A flywheel of mass $m = 65.4$ kg is made in the form of a circular disc of radius $r = 18$~cm; it is driven by a belt whose tensions at the points where it runs on and off the rim of the flywheel are $T_{1} = 20$~N and $T_{2} = 500$~N respectively, as shown in Figure \ref{fig:AngularMotion_flywheel}:
+\begin{figure}[h]
+\centering
+\includegraphics[width=5cm]{AngularMotion_flywheel}
+\caption{}
+\label{fig:AngularMotion_flywheel}
+\end{figure}
+\\
+\begin{enumerate}
+\item If the wheel is rotating at a certain instant at $\omega = 2\pi$ rad s$^{-1}$, find how long it will be before the angular speed has reached $\Omega = 7 \pi$ rad s$^{-1}$.  
+\item While the flywheel is rotating at this latter speed, $\Omega$, the belt is slipped off and a brake applied.  Find the constant braking couple required to stop the wheel in 7 revolutions.
+\end{enumerate}
+}
+{
+The moment of inertia if a disc mass $m$ and radius $r$ about an axis perpendicular to the plane and through the centre of mass is $\frac{1}{2}mr^2$. 
+}
+{\textit{Adapted with permission from UCLES, Higher School Certificate Mathematics, June 1929, Paper 2, Question 8.}}
+{
+\begin{enumerate}
+\item
+The net torque on the flywheel in the anti-clockwise direction is given by 
+\begin{align*}
+G=rT_2-rT_1=I\ddot\theta
+\end{align*}
+Since this torque is constant, we could apply the angular version of the SUVAT equations. A more general method that gives the right answer even for non constant torque is just to integrate the equation with respect to time:
+\begin{align*}
+\frac{G}{I}&=\ddot\theta \\
+\Rightarrow \frac{G}{I}t+\omega&=\dot\theta
+\end{align*}
+since at $t=0$, $\dot\theta=\omega$. Notice how this is the angular equivalent of $v=u+at$. We want the time taken for the flywheel to reach an angular speed $\Omega$, call it $t_1$, so set $\dot\theta=\Omega$ and solve for $t_1$:
+\begin{align*}
+\frac{G}{I}t_1+\omega&=\Omega \\
+\Rightarrow t_1&=\frac{I}{G}\left(\Omega-\omega\right)
+\end{align*}
+Notice how leaving everything in symbols until the very end makes checking your work for mistakes much easier and also avoids rounding errors. To find the numerical answer we need to use $I\s{disc}=\frac{1}{2}mr^2$ and the earlier expression for $G$, to give:
+\begin{align*}
+t_1=\frac{mr^2}{2r(T_2-T_1)}\left(\Omega-\omega\right) \\
+\Rightarrow	t\s{1} = \frac{65.4 \times 0.18^{2}}{2\times 0.18\left(500 - 20\right)}\left(7\pi - 2\pi\right) \\
+\Rightarrow	t\s{1} = 0.193 \textrm{ s}
+\end{align*}
+\item To find a general expression for angle turned through, $\theta$, we can just integrate our earlier expression for $\dot\theta$ with respect to time. Therefore
+\begin{align*}
+\frac{G}{I}t+\Omega&=\dot\theta \\
+\Rightarrow \frac{G}{2I}t^2+\Omega t+\theta_0&=\theta
+\end{align*}
+since now $\dot\theta=\Omega$ at $t=0$. We can set $\theta_0=0$ since we only care about how much it rotates after $t=0$. Then set $\theta=14\pi$ to correspond to 7 revolutions and $\dot\theta=0$ since we are looking at the instant when the flywheel stops rotating. We then have two simultaneous equations for $G$ and $t_2$:
+\begin{align}
+\frac{G}{I}t_2+\Omega&=0 \label{eq:flywheelone} \\
+\frac{G}{2I}t_2^2+\Omega t_2&=14\pi \label{eq:flywheeltwo}
+\end{align}
+First rearrange equation \eqref{eq:flywheelone} to get an expression for $t_2$ and then substitute it into equation \eqref{eq:flywheeltwo}:
+\begin{align*}
+t_2=-\frac{\Omega I}{G}& \\
+\Rightarrow \frac{G}{2I}\left(-\frac{\Omega I}{G}\right)^2+\Omega \left(-\frac{\Omega I}{G}\right)&=14\pi \\
+\Rightarrow \frac{\Omega^2I}{2G}-\frac{\Omega^2I}{G}&=14\pi
+\end{align*}
+\begin{equation*}	\Rightarrow G =-\frac{\Omega^2I}{28\pi} = -\frac{\Omega^2mr^2}{56\pi} 	\end{equation*}
+\begin{equation*}	\Rightarrow G = -\frac{\left(7\pi\right)^2\times 65.4 \times 0.18^2}{56\times\pi} = -5.82\textrm{ N m}	\end{equation*}
+Therefore the breaking couple required has magnitude 5.82 N m.
+\end{enumerate}
+}
+\end{hint}

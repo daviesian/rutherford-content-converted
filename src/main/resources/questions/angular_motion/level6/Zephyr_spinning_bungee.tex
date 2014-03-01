@@ -1,0 +1,42 @@
+\begin{problem}[Zephyr_spinning_bungee] 
+{
+As a way to prepare astronauts for the extreme conditions their bodies will be subjected to in spaceflight they are put in a centrifuge which spins extremely fast to acclimatise them to the extreme acceleration they will undergo.
+
+A tiny European country are starting their own spaceflight program, but cannot afford to build a centrifuge with a solid arm, instead they plan to use a bungee cord, that is extensible but has no elastic limit (i.e. it will continue to obey Hooke's law no matter what the force applied to it).
+
+On a test run, with no astronaut in the pod, the centrifuge breaks and cannot be stopped from rotating at some incredible high, constant angular velocity. Eventually the power is shut off and the centrifuge stops spinning instantly.
+
+Assuming air resistance small is but non-negligible, which of the following will be true
+
+\begin{enumerate}
+	\item Angular momentum will be conserved
+	\item The total energy of the pod and the bungee will be conserved
+	\item The radius of the rotation will decrease
+	\item The radius of the rotation will increase
+	\item The radius of the rotation will vary sinusoidally
+\end{enumerate}
+}
+{\textit{Written by Zephyr Penoyre for the RSPP}}
+{
+The correct answer is (c).
+The first thing to think about here is why the centrifuge need to be providing power in the first place, if there were no other forces acting on the system, the tension in the bungee would, at some radius, match the centrpetal force required for a stable circular orbit.
+
+However, there is an external force acting here, in the form of air resistance, and power must be supplied constantly to maintain the angular velocity (note, the radial velocity is comparatively tiny so the force due to air resistance does not directly affect the tension in the string). Thus the angular velocity must be decreasing as their is a torque acting on the system.
+
+Because there is an external force taking energy away from the system, angular momentum and energy are not conserved.
+
+Let's say that some angular speed $\omega$, there is a an equilibrium position $r\s{0}$ where the tension in the string matches the centripetal force needed. Thus at some radius $r$
+
+\begin{equation*}
+F = m r \omega^2 = k(r - r\s{0})
+\end{equation*}
+
+Rearranging to find in terms of $r$
+
+\begin{equation*}
+r = \dfrac{k r\s{0}}{k-m\omega^2}
+\end{equation*}
+
+Thus as $\omega$ decreases, the term in denominator increases and thus $r$ decreases.
+}
+\end{problem}
