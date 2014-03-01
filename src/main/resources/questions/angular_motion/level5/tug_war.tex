@@ -1,19 +1,30 @@
+%% ID: tug_war
+%% TITLE: Tug of war
+%% TYPE: question
+%% QUESTIONTYPE: numeric
+%% CONCEPTS: eq_of_motion_diff, momentum, moi
+%% VIDEOS: 
+%% LEVEL: 5
+%% TOPIC: mechanics/dynamics
+%% ORDER: 7
+
 \begin{problem}[Ed_tug_of_war]
-{
+{\exposition{
 \begin{figure}[h] 
 \centering
 \includegraphics[width=8cm]{AngularMotion_tug}
 \caption{}
 \label{fig:AngularMotion_tug}
 \end{figure}
-Two people are playing the game ``rotational tug of war". This involves two players at either end of a rod of mass $m=500\textrm{ kg}$ and length $l=5\textrm{ m}$ pivoted about its centre (which is fixed in the ground), both pulling as hard as they can, as shown in Figure \ref{fig:AngularMotion_tug} above. You win the game if you rotate the rod by an angle of $180^{\circ}$.
+Two people are playing the game ``rotational tug of war". This involves two players at either end of a rod of mass \valuedef{m}{500}{kg} and length \valuedef{l}{5}{m} pivoted about its centre (which is fixed in the ground), both pulling as hard as they can, as shown in Figure \ref{fig:AngularMotion_tug} above. You win the game if you rotate the rod by an angle of \quantity{180}{^{\circ}}.}
 \begin{enumerate}
-\item Player $1$ exerts a force of constant magnitude $F_1=300\textrm{ N}$, whilst player $2$ exerts a force of constant magnitude $F_2=350\textrm{ N}$. Find how long it takes player $2$ to win. 
-\item For the next game player 3 joins in, and exerts a force of constant magnitude of $F_3= 150\textrm{ N}$ whilst standing halfway between the centre of the rod and player $1$. Find out whether players 1 and 3 win this time or player 2 wins again, and how long this game takes. 
+\item \question[a]{Player 1 exerts a force of constant magnitude \valuedef{F_1}{300}{N}, whilst player 2 exerts a force of constant magnitude \valuedef{F_2}{350}{N}. Find how long it takes player 2 to win.} 
+\item \question[b]{For the next game player 3 joins in, and exerts a force of constant magnitude of \valuedef{F_3}{150}{N} whilst standing halfway between the centre of the rod and player 1. Find out whether players 1 and 3 win this time or player 2 wins again, and how long this game takes.}
 \end{enumerate}
  }
 {\textit{Written by Ed Scott and Zephyr Penoyre for the RSPP}}
-{
+{\answer[a]{\valuedef{t}{5.1}{s}}
+\answer[b]{\valuedef{t}{7.2}{s}}
 \begin{enumerate}
 \item The net moment on the rod, in the anti-clockwise direction, is given by 
 \begin{equation*}
