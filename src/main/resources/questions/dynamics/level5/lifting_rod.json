@@ -1,18 +1,89 @@
 {
-  "src": "lifting_rod.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Lifting a Rod", 
-  "relatedContent": [
-    "energy", 
-    "eq_of_motion_diff", 
-    "newtonii", 
-    "resolving_vectors", 
-    "vectors", 
-    "moments"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_numeric", 
-  "id": "lifting_rod"
+ "attribution": "Adapted with permission from UCLES, A Level Additional Physics, November1987, Paper1, Question1.", 
+ "title": "Lifting a Rod", 
+ "relatedContent": [
+  "energy", 
+  "eq_of_motion_diff", 
+  "newtonii", 
+  "resolving_vectors", 
+  "vectors", 
+  "moments"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A non-uniform rod of mass \n$\\valuedef{m}{200}{kg}$\n and length \n$\\valuedef{l}{10.0}{m}$\n has its centre of mass \n$\\valuedef{d}{4.0}{m}$\n from one end. It is supported horizontally by two vertical ropes which are attached to points \n$\\valuedef{s}{1.0}{m}$\n from each end.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "The tensions in the ropes are \n$\\valuedef{T_{1}}{735}{N}$\n and \n$\\valuedef{T_{2}}{1225}{N}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Calculate the tension in each rope.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "The rod is raised by accelerating it at \n$\\valuedef{a}{0.20}{m\\,  s\\sup {-2}}$\n to a speed \n$\\valuedef{v}{0.60}{m\\,  s\\sup {-1}}$\n, which remains constant until the total height gained is \n$\\valuedef{h}{12.0}{m}$\n.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "The total of the tensions in the ropes when the rod is accelerating is \n$\\valuedef{T_{tot}}{2000}{N}$\n.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Calculate the sum of the tensions in the ropes when the rod is accelerating", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "The total of the tensions in the ropes when the rod is moving at a constant speed is \n$\\valuedef{T_{tot}}{1960}{N}$\n.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Calculate the sum of the tensions in the ropes when the rod is moving up at a steady speed", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "The power required when lifting the rod at \n$\\vari{v}$\n is \n$\\valuedef{P}{1176}{W}$\n.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Calculate the power required when lifting the rod at \n$\\vari{v}$", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "The distance moved whilst accelerating is \n$\\valuedef{s_{1}}{0.9}{m}$\n, and that moved whilst at a constant speed is \n$\\valuedef{s_{2}}{11.1}{m}$\n.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Calculate the distance for which the rod was accelerating and the distance for which it moved at \n$\\vari{v}$", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "The work done while raising the rod is \n$\\valuedef{W}{\\frac{1}{2}mv^{2} + mgh}{}$\n. This is the sum of the kinetic and gravitational potential energy the rod gained as it was lifted.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Using the above, or otherwise, find the work done raising the rod in terms of \n$\\vari{m}$\n, \n$\\vari{v}$\n and \n$\\vari{h}$\n. Comment on the value.", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_numeric", 
+ "id": "lifting_rod"
 }

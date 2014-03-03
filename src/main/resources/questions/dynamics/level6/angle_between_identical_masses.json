@@ -1,16 +1,60 @@
 {
-  "src": "angle_between_identical_masses.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Angle Between Two Identical Masses", 
-  "relatedContent": [
-    "energy", 
-    "momentum", 
-    "momentumii", 
-    "vectors"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_scq", 
-  "id": "angle_between_identical_masses"
+ "attribution": "Another old question from multiple places", 
+ "title": "Angle Between Two Identical Masses", 
+ "relatedContent": [
+  "energy", 
+  "momentum", 
+  "momentumii", 
+  "vectors"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A particle with mass \n$\\vari{m}$\n travelling at speed \n$\\vari{u}$\n collides with a stationary particle of the same mass.", 
+   "encoding": "html"
+  }, 
+  {
+   "encoding": "html", 
+   "value": "What is the angle between the velocities of the two masses after this collision?", 
+   "choices": [
+    {
+     "type": "choice", 
+     "value": "$\\vari{26.6^{\\circ }}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\vari{53.2^{\\circ }}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\vari{45^{\\circ }}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\vari{180^{\\circ }}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "correct": true, 
+     "value": "$\\vari{90^{\\circ }}$", 
+     "encoding": "html"
+    }
+   ], 
+   "answer": {
+    "type": "content", 
+    "value": "The correct answer is (d).", 
+    "encoding": "html"
+   }, 
+   "type": "choiceQuestion"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_scq", 
+ "id": "angle_between_identical_masses"
 }

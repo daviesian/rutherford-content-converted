@@ -1,15 +1,59 @@
 {
-  "src": "hailstorm.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "A Hailstorm", 
-  "relatedContent": [
-    "momentum", 
-    "newtonii", 
-    "vectors"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_scq", 
-  "id": "hailstorm"
+ "attribution": "Used with permission from UCLES, A Level Physics, November 1989, Paper 1, Question 24.", 
+ "title": "A Hailstorm", 
+ "relatedContent": [
+  "momentum", 
+  "newtonii", 
+  "vectors"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A surface is bombarded by particles, each of mass \n$\\vari{m}$\n, which have velocity \n$\\vari{v}$\n normal to the surface. On average, \n$\\vari{n}$\n particles strike a unit area each second and rebound elastically.", 
+   "encoding": "html"
+  }, 
+  {
+   "encoding": "html", 
+   "value": "What is the pressure on the surface?", 
+   "choices": [
+    {
+     "type": "choice", 
+     "value": "$\\vari{nmv}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\vari{\\frac{1}{3}nmv^{2}}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "correct": true, 
+     "value": "$\\vari{2nmv}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\vari{nmv^{2}}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\vari{\\frac{1}{2}nmv^{2}}$", 
+     "encoding": "html"
+    }
+   ], 
+   "answer": {
+    "type": "content", 
+    "value": "The correct answer is (b). This follows from \n$\\valuedef{F}{\\frac{\\d p}{\\d t}}{}$\n, with the momentum change of each particle being \n$\\valuedef{(mv) - (-mv)}{2mv}{}$\n and since \n$\\vari{n}$\n is particles per unit area per unit time it will convert the momentum change into a pressure: \n$\\vari{\\Delta p \\times \\frac{\\text {Number}}{\\Delta t \\times \\text {Area}}}$\n$=$\n$\\valuedef{\\frac{\\text {Total Force}}{\\text {Area}}}{\\text {Pressure}}{}$\n, where \n$\\valuedef{\\text {Total Force}}{\\frac{\\Delta p}{\\Delta t}}{}$\n.", 
+    "encoding": "html"
+   }, 
+   "type": "choiceQuestion"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_scq", 
+ "id": "hailstorm"
 }

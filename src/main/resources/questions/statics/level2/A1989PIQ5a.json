@@ -1,14 +1,58 @@
 {
-  "src": "A1989PIQ5a.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Pulling Out a Nail", 
-  "relatedContent": [
-    "forces", 
-    "vectors2"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_ scq", 
-  "id": "A1989PIQ5a"
+ "attribution": "Used with permission from UCLES, A Level Physics, June 1989, Paper 1, Question 5.", 
+ "title": "Pulling Out a Nail", 
+ "relatedContent": [
+  "forces", 
+  "vectors2"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A nail is embedded into a wooden post. A cord is used to pull the nail out; it is attached to the head of the nail and pulls at an angle of 30\n$^{\\circ }$\n to the post with a tension of 50 N.", 
+   "encoding": "html"
+  }, 
+  {
+   "encoding": "html", 
+   "value": "What is the force tending to pull the nail out of the post?", 
+   "choices": [
+    {
+     "type": "choice", 
+     "value": "$50\\cos {30^{\\circ }}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$50\\tan {30^{\\circ }}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "correct": true, 
+     "value": "$50\\sin {30^{\\circ }}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$50/\\sin {30^{\\circ }}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$50/\\cos {30^{\\circ }}$", 
+     "encoding": "html"
+    }
+   ], 
+   "answer": {
+    "type": "content", 
+    "value": "The correct answer is (b).", 
+    "encoding": "html"
+   }, 
+   "type": "choiceQuestion"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_ scq", 
+ "id": "A1989PIQ5a"
 }

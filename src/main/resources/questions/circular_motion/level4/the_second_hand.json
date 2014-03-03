@@ -1,14 +1,58 @@
 {
-  "src": "the_second_hand.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "The Second Hand", 
-  "relatedContent": [
-    "angular_circular", 
-    "A1987PIQ7l_video"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_scq", 
-  "id": "the_second_hand"
+ "attribution": "Used with permission from UCLES, A Level Physics, June 1987, Paper 1, Question 7.", 
+ "title": "The Second Hand", 
+ "relatedContent": [
+  "angular_circular", 
+  "A1987PIQ7l_video"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "The second hand of a large clock is \n$\\quantity{3.0}{m}$\n long.", 
+   "encoding": "html"
+  }, 
+  {
+   "encoding": "html", 
+   "value": "What is its mean angular speed?", 
+   "choices": [
+    {
+     "type": "choice", 
+     "value": "$\\quantity{1.4 \\times 10^{-4}}{rad\\,  s\\sup {-1}}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\quantity{5.2 \\times 10^{-3}}{rad\\,  s\\sup {-1}}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\quantity{1.7 \\times 10^{-3}}{rad\\,  s\\sup {-1}}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\quantity{3.0 \\times 10^{-1}}{rad\\,  s\\sup {-1}}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "correct": true, 
+     "value": "$\\quantity{1.0 \\times 10^{-1}}{rad\\,  s\\sup {-1}}$", 
+     "encoding": "html"
+    }
+   ], 
+   "answer": {
+    "type": "content", 
+    "value": "The correct answer is (d).", 
+    "encoding": "html"
+   }, 
+   "type": "choiceQuestion"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_scq", 
+ "id": "the_second_hand"
 }

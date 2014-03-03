@@ -1,14 +1,53 @@
 {
-  "src": "IntA1983PIIQ7l.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Helicopter rising", 
-  "relatedContent": [
-    "forces", 
-    "newtoni"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_ scq", 
-  "id": "IntA1983PIIQ7l"
+ "attribution": "Used with permission from UCLES, International A Level Physics, November 1983, Paper 2, Question 7.", 
+ "title": "Helicopter rising", 
+ "relatedContent": [
+  "forces", 
+  "newtoni"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "encoding": "html", 
+   "value": "A helicopter of mass \n$\\quantity{3000}{kg}$\n rises vertically with a constant speed of \n$\\quantity{25}{m\\,  s \\sup {-1}}$\n. Taking the acceleration of free fall as \n$\\quantity{9.8}{m\\,  s\\sup {-2}}$\n, what is the net force acting on the helicopter?", 
+   "choices": [
+    {
+     "type": "choice", 
+     "correct": true, 
+     "value": "Zero", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\quantity{45 600}{N}$\n upwards", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\quantity{29 400}{N}$\n downwards", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\quantity{104 400}{N}$\n downwards", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\quantity{75 000}{N}$\n upwards", 
+     "encoding": "html"
+    }
+   ], 
+   "answer": {
+    "type": "content", 
+    "value": "The correct answer is (a). Newton&apos;s first law states that if the resultant force on an object is zero, then its velocity will be constant. We are told the velocity is constant, therefore, the net force acting on the helicopter must be zero.", 
+    "encoding": "html"
+   }, 
+   "type": "choiceQuestion"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_ scq", 
+ "id": "IntA1983PIIQ7l"
 }

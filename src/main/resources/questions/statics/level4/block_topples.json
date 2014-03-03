@@ -1,15 +1,31 @@
 {
-  "src": "block_topples.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Toppling block", 
-  "relatedContent": [
-    "forces", 
-    "moments", 
-    "newtoni"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_ numerical", 
-  "id": "block_topples"
+ "attribution": "Used with permission from UCLES, Higher School Certificate Physics, Paper 2.", 
+ "title": "Toppling block", 
+ "relatedContent": [
+  "forces", 
+  "moments", 
+  "newtoni"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A rectangular block with a square base of side \n$\\quantity{10}{cm}$\n rests on on a horizontal surface. If a horizontal force is applied near the bottom of one vertical face, the block slides. If the force is applied near the top, the block topples over. When the force is applied \n$\\quantity{20}{cm}$\n from the bottom, the block sometimes slides and sometimes topples.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\valuedef{\\mu }{\\frac{1}{4}}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Find the coefficient of friction between the block and the surface.", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_ numerical", 
+ "id": "block_topples"
 }

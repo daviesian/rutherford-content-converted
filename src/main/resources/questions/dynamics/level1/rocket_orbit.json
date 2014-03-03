@@ -1,13 +1,79 @@
 {
-  "src": "rocket_orbit.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Rocket in orbit", 
-  "relatedContent": [
-    "newtonii"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_numeric", 
-  "id": "rocket_orbit"
+ "attribution": "Question by RWH", 
+ "title": "Rocket in orbit", 
+ "relatedContent": [
+  "newtonii"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A rocket similar to that which launches NASA&apos;s space shuttle into a low earth orbit has a take-off mass of \n$\\quantity{2000}{tonnes}$\n (\n$\\quantity{1}{tonne}$\n$ = 1\\times $\n$\\quantity{10^3}{kg}$\n) and provides a thrust at take-off of \n$\\quantity{24}{MN}$\n (\n$\\quantity{1}{MN}$\n$ = 1\\times $\n$\\quantity{10^6}{N}$\n). The thrust remains constant and \n$\\valuedef{g}{10}{m\\,  s\\sup {-2}}$\n. Air resistance can be neglected at take-off. ", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Sketch a diagram of the rocket and mark on the forces acting during take-off.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Calculate the acceleration of the rocket at take-off.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "What fraction of the acceleration due to gravity (\n$\\vari{g}$\n) is this?", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "To reach orbit, the shuttle has to achieve a speed of \n$\\quantity{8}{km\\,  s\\sup {-1}}$\n. How long would this take with this acceleration?", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "The fuel is burnt off at the rate of \n$\\quantity{4.0}{tonnes}$\n each second. For how long can the engines provide the thrust?", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "What simple explanation is there for the large difference in the two times that you have calculated in (4.) and (5.) for the shuttle to reach orbit?", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_numeric", 
+ "id": "rocket_orbit"
 }

@@ -1,15 +1,53 @@
 {
-  "src": "discs_on_a_table.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Discs on a Table", 
-  "relatedContent": [
-    "energy", 
-    "momentum", 
-    "vectors"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_numeric", 
-  "id": "discs_on_a_table"
+ "attribution": "Adapted with permission from UCLES, A Level Further Mathematics, June1989, SyllabusC, SpecialPaper, Question8.", 
+ "title": "Discs on a Table", 
+ "relatedContent": [
+  "energy", 
+  "momentum", 
+  "vectors"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A table top is in the form of a smooth horizontal rectangle ABCD with AB \n$=$\n$\\vari{a}$\n, BC \n$=$\n$\\vari{b}$\n where \n$\\vari{a}$\n$>$\n$\\vari{b}$\n. A small circular disc \n$\\vari{P}$\n of mass \n$\\vari{m}$\n is at rest at the centre of the table. An identical disk \n$\\vari{Q}$\n is projected with speed \n$\\vari{u}$\n along the table top in a direction parallel to AB and collides with \n$\\vari{P}$\n, slightly off-centre. After the collision \n$\\vari{P}$\n and \n$\\vari{Q}$\n move directly towards B and C respectively.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "<p>\n<p>\n<img src=\"figures/Dynamics_ZMF_table_collision.png\"/>\n</p>\n<p>\n<figcaption></figcaption>\n</p>\n</p>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Draw diagrams illustrating the situation before and after the collision both the frame of the table and in the zero momentum frame (ZMF).", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<p>\nThe loss of kinetic energy in the collision is: \n</p>\n<p>\n<table>\n<tr>\n<td>$\\displaystyle  \\frac{(a^{2} - b^{2}) mu^{2}}{4a^{2}}  $</td>\n</tr>\n</table>\n</p>", 
+   "encoding": "html"
+  }, 
+  {
+   "encoding": "html", 
+   "value": "Show that the discs reach B and C simultaneously, and find the time from the collision until \n$\\vari{Q}$\n reaches C.", 
+   "answer": {
+    "type": "content", 
+    "value": "The time taken for P and Q to reach B and C respectively is \n$t = \\frac{a}{u}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "hints": [
+    {
+     "type": "content", 
+     "value": "The zero momentum frame (ZMF) is a set of axes moving such that the total momentum of the objects being considered is zero. To transform into it, subtract the speed of the centre of mass of the bodies. It is defined in terms of vectors, but here we only need the 1D form: \n$\\valuedef{v_{\\text {ZMF}}}{\\frac{m_{1}v_{1} + m_{2}v_{2}}{m_{1} + m_{2}}}{}$\n in the direction of \n$\\vari{v_{1}}$\n and \n$\\vari{v_{2}}$\n. The ZMF is sometimes called the Centre of Mass frame, since in it the Centre of Mass is fixed.", 
+     "encoding": "html"
+    }
+   ]
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_numeric", 
+ "id": "discs_on_a_table"
 }

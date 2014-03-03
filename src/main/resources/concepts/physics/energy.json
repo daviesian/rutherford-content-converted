@@ -1,14 +1,140 @@
 {
-  "src": "energy.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Energy", 
-  "relatedContent": [
-    "newtonii", 
-    "eq_of_motion_diff"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "concept", 
-  "id": "energy"
+ "attribution": null, 
+ "title": "Energy", 
+ "relatedContent": [
+  "newtonii", 
+  "eq_of_motion_diff"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "<h3>Energy, work and power</h3>", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Definitions Energy, either potential or kinetic (due to motion), is possessed by a body. It can be converted into other forms and will ultimately degrade to heat energy (the random motions of atoms and molecules). The unit of energy is the Joule.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Potential energy: Bodies possess potential energy by virtue of their position in space, state of charge, . . . \nFor instance: \n<ol>\n<li><p>\nGravitational potential energy\n is: \n</p><p>\n<table>\n<tr>\n<td>$\\displaystyle  V = m g h \\;  \\;  \\;  \\text {or} \\;  \\;  \\;  V = - m_1m_2 G/r.  $</td>\n</tr>\n</table>\n</p><p>\nThe former is for a body of mass \n$\\vari{m}$\n in a uniform gravitational field with acceleration \n$\\vari{g}$\n when it is a height \n$\\vari{h}$\n above a reference level. For instance, this formulation is suitable for bodies close to the surface of the Earth where the gravitational field (pull from the Earth) does not vary much with height.\n</p><p>\nThe latter is for or two masses \n$\\vari{m_1}$\n and \n$\\vari{m_2}$\n separated by a distance \n$\\vari{r}$\n, with \n$\\vari{G}$\n the universal gravitational constant. The negative sign indicates attraction &ndash; the energy is reduced further as the masses approach each other. See below for the connection between force, work and potential energy change. \n</p></li>\n<li><p>\nElectric potential energy\n is: \n</p><p>\n<table>\n<tr>\n<td>$\\displaystyle  V = - q E h \\;  \\;  \\;  \\text {or} \\;  \\;  \\;  V = q_1q_2/(4\\pi \\epsilon _0 r).  $</td>\n</tr>\n</table>\n</p><p>\nThe former is for a body of charge \n$\\vari{q}$\n in a uniform electric field \n$\\vari{E}$\n with \n$\\vari{h}$\n the distance moved by the charge along the electric field from a reference position.\n</p><p>\nIn general fields vary with position, and the latter is the potential energy associated with two charges \n$\\vari{q_1}$\n and \n$\\vari{q_2}$\n separated by \n$\\vari{r}$\n, where \n$\\vari{\\epsilon _0}$\n is a constant known as the permittivity of free space. The potential energy is positive if \n$\\vari{q_1}$\n and \n$\\vari{q_2}$\n are both of the same sign &ndash; like charges repel and lower their energy by moving apart. \n</p></li>\n</ol>", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Kinetic energy: Bodies possess energy known as kinetic energy, \n$\\vari{K}$\n , by virtue of their motion. Translational motion with speed \n$\\vari{v}$\n , or rotational motion with angular speed \n$\\vari{\\omega }$\n , lead to kinetic energies:", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<table>\n<tr>\n<td>$\\displaystyle  K = \\frac{1}{2}m v^2 \\;  \\;  \\;  \\text {or} \\;  \\;  \\;  K = \\frac{1}{2}I \\omega ^2.  $</td>\n</tr>\n</table>\n Here \n$\\vari{m}$\n is the particle mass, and \n$\\vari{\\frac{1}{2}m v^2}$\n is the familiar kinetic energy. The angular equivalent of mass is the moment of inertia \n$\\vari{I}$\n &mdash; see notes on angular motion. Kinetic energy takes many forms. We focus on that due to simple translational motion.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Conservation of energy In the absence of friction (resisting motion and leading to heat), the sum \n$\\vari{E}$\n of the kinetic and potential energy is conserved.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<table>\n<tr>\n<td>$\\displaystyle  E = K + V = \\text {constant}.  $</td>\n</tr>\n</table>\n The energy can be converted between the forms \n$\\vari{K}$\n and \n$\\vari{V}$\n by the particle doing work, or work being done on the particle. So when \n$\\vari{V(x)}$\n varies with position \n$\\vari{x}$\n , then so will \n$\\valuedef{K}{E - V(x)}{}$\n also vary. In turn, speed \n$\\vari{v(x)}$\n must vary with position since \n$\\vari{K = \\frac{1}{2}m v^2}$\n . This approach to dynamics is explored in \"Conservation Methods in Dynamics\". \nWhen there is friction, then heat \n$\\vari{Q}$\n can be produced from the motion. A stricter statement of energy conservation is", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<table>\n<tr>\n<td>$\\displaystyle  E = K + V + Q = \\textrm{constant}.  $</td>\n</tr>\n</table>\n However, conversion of energy back from heat \n$\\vari{Q}$\n to kinetic \n$\\vari{K}$\n or potential energy \n$\\vari{V}$\n is never perfect and leads us to the study of Thermodynamics.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Quick Questions", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\valuedef{E}{10}{J}$\n, \n$\\valuedef{v}{2\\sqrt {5}}{m\\,  s\\sup {-1}}$\n, \n$\\valuedef{Q}{10}{J}$\n.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "What is the gravitational potential energy of a mass of \n$\\quantity{1}{kg}$\n resting \n$\\quantity{1}{m}$\n above the ground? [Take \n$\\valuedef{g}{10}{m\\,  s\\sup {-2}}$\n.] After being dropped, what speed does the mass attain before hitting the ground? How much heat is produced when motion has ceased?", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<br/>", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "There is no friction, therefore the initial energy will equal the final energy. Thus, \n$\\vari{m g h = 1/2 m v^2}$\n, which gives: \n$\\vari{v^2 = 2 g h}$\n. If the particle has an initial velocity, then \n$\\vari{m g h + \\frac{1}{2} m u^2 = \\frac{1}{2} m v^2}$\n, instead.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "By considering energy, show that the speed \n$\\vari{v}$\n reached when a particle is dropped from rest through a height \n$\\vari{h}$\n is \n$\\vari{v^2 = 2gh}$\n. Show that if it initially has a downward speed \n$\\vari{u}$\n as it starts dropping through \n$\\vari{h}$\n, then its final speed is \n$\\vari{v^2 = u^2 + 2gh}$\n. [Notice how this energy method yields the result \n$\\vari{v^2 - u^2 = 2 as}$\n familiar from kinematics.]", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<br/>", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "(i)\n$\\valuedef{E_i}{\\frac{1}{2} m v^2}{}$\n; (ii) \n$\\valuedef{h_f}{\\frac{1}{2} v^2/g}{}$\n; (iii) \n$\\vari{h_f/4}$\n: \n$\\valuedef{u}{\\frac{\\sqrt {3}v}{2},}{}$\n$\\vari{h_f/2}$\n: \n$\\valuedef{u}{\\frac{u}{\\sqrt {2}},}{}$\n$\\vari{3h_f/4}$\n: \n$\\valuedef{u}{\\frac{v}{4}}{}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "<p>\nA particle of mass \n$\\vari{m}$\n approaches a slope with initial speed \n$\\vari{v_0}$\n. It moves up the slope conserving energy.\n</p>\n<p>\n(i) What is its initial energy?\n</p>\n<p>\n(ii) To what vertical height \n$\\vari{h_f}$\n does it rise when it finally stops?\n</p>\n<p>\n(iii) What speed is it travelling at when it attains heights \n$\\vari{h_f /4}$\n, \n$\\vari{h_f /2}$\n and \n$\\vari{3h_f/4}$\n? What is the speed at these heights on the way down when the particle reverses direction at the top of its trajectory?\n</p>", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Work Work \n$\\vari{W}$\n is given by", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<table>\n<tr>\n<td>$\\displaystyle  W = {F}{x}  $</td>\n</tr>\n</table>\n where \n$\\vari{x}$\n is the distance moved by the point of application of the force \n$\\vari{F}$\n in the direction of the force. The units of work are J \n$=$\n = N \n m. Evidently there is no work done if \n$\\vari{F}$\n is perpendicular to \n$\\vari{x}$\n &mdash; we more properly refer to force and displacement as vectors, \n$\\vari{\\vtr F}$\n and \n$\\vari{\\vtr x}$\n . \n<br/>\n(a) Picking up a mass with a vertical force and raising it through a height \n$\\vari{h}$\n.\n (a) Picking up a mass with a vertical force and raising it through a height \n$\\vari{h}$\n . \nIn this case \n$\\valuedef{F}{mg}{}$\n and \n$\\valuedef{x}{h}{}$\n whereupon \n$\\valuedef{W}{mgh}{}$\n. Note that the work done is stored as gravitational potential energy of the form discussed above. Clearly forces arise when potentials vary with position. \nIf the mass is allowed to drop back, the gravitational force can be used to e.g. turn an electrical generator and electrical work can be recovered. That in turn could be used to charge a battery and the energy would finally be chemical potential energy.\n In this case \n$\\valuedef{F}{mg}{}$\n and \n$\\valuedef{x}{h}{}$\n whereupon \n$\\valuedef{W}{mgh}{}$\n . Note that the work done is stored as gravitational potential energy of the form discussed above. Clearly forces arise when potentials vary with position. \nIf the mass is allowed to drop back, the gravitational force can be used to e.g. turn an electrical generator and electrical work can be recovered. That in turn could be used to charge a battery and the energy would finally be chemical potential energy. \n(b) The circular motion of a mass at the end of a string with the tension in the string creating the centripetal acceleration.\n (b) The circular motion of a mass at the end of a string with the tension in the string creating the centripetal acceleration. \nThe force and acceleration are perpendicular to the motion and no work is done. The energy (and speed) of the particle do not increase as the motion elapses.\n The force and acceleration are perpendicular to the motion and no work is done. The energy (and speed) of the particle do not increase as the motion elapses. ", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Quick Questions", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "As heat", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "A horizontal force \n$\\vari{F}$\n pulls a mass on a rough surface of sliding friction \n$\\vari{\\mu _k}$\n through a distance \n$\\vari{d}$\n. Show that the work done is \n$\\valuedef{W}{mg \\mu _k d}{}$\n. Where does the work end up? [If necessary, consult the concept sheet on Friction.]", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<br/>", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "Is given as a \nshow that\n in the question", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "The same force, \n$\\vari{F}$\n, is applied at an angle \n$\\vari{\\theta }$\n to the horizontal. Show that now, \n$\\valuedef{W}{\\mu _k\\cos \\theta (mg - F \\sin \\theta )d}{}$\n.", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "concept", 
+ "id": "energy"
 }

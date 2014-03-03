@@ -1,15 +1,59 @@
 {
-  "src": "A1988PIQ1.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Hanging A Picture", 
-  "relatedContent": [
-    "forces", 
-    "vectors2", 
-    "newtoni"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_ scq", 
-  "id": "A1988PIQ1"
+ "attribution": "Used with permission from UCLES, A Level Physics, June 1988, Paper 1, Question 1.", 
+ "title": "Hanging A Picture", 
+ "relatedContent": [
+  "forces", 
+  "vectors2", 
+  "newtoni"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A picture weighing 10.0 N hangs freely by two strings attached to a hook above the picture. Each string forms an angle of 60\n$^{\\circ }$\n with the top of the picture frame.", 
+   "encoding": "html"
+  }, 
+  {
+   "encoding": "html", 
+   "value": "What is the tension in one of the strings?", 
+   "choices": [
+    {
+     "type": "choice", 
+     "value": "2.9 N", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "correct": true, 
+     "value": "5.8 N", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "5.0 N", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "10.0 N", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "8.7 N", 
+     "encoding": "html"
+    }
+   ], 
+   "answer": {
+    "type": "content", 
+    "value": "The correct answer is (c).", 
+    "encoding": "html"
+   }, 
+   "type": "choiceQuestion"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_ scq", 
+ "id": "A1988PIQ1"
 }

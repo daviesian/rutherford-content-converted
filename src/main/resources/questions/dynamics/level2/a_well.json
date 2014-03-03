@@ -1,15 +1,51 @@
 {
-  "src": "a_well.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "A Well", 
-  "relatedContent": [
-    "newtonii", 
-    "eq_of_motion_diff", 
-    "O1978PIIQ1a_video"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_numeric", 
-  "id": "a_well"
+ "attribution": "Adapted with permission from UCLES, O Level Physics, June 1978, Paper 1, Question 1.", 
+ "title": "A Well", 
+ "relatedContent": [
+  "newtonii", 
+  "eq_of_motion_diff", 
+  "O1978PIIQ1a_video"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A sphere of polystyrene and a small sphere of lead, each of mass \n$\\quantity{0.2}{kg}$\n are released together from rest and fall down a deep well with water at the bottom. The lead cube is found to take \n$\\quantity{4.0}{s}$\n to reach the water surface.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "v = u + at = 0 + (9.8)(4) = \n$\\quantity{39.2}{m\\,  s\\sup {-1}}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Calculate the speed with which the lead cube hits the water?", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "question", 
+   "value": "What is the depth of the well to the water&apos;s surface.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "The polystyrene cube takes \n$\\quantity{6.0}{s}$\n longer to hit the water.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "R = \nUpward Force\n = mg - ma = 0.2g - (0.2)(1.568) = \n$\\quantity{1.6464}{N}$\n$\\quantity{1.65}{N}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": null, 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_numeric", 
+ "id": "a_well"
 }

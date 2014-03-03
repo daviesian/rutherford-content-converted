@@ -1,15 +1,31 @@
 {
-  "src": "superball.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Superball", 
-  "relatedContent": [
-    "energy", 
-    "momentum", 
-    "momentumii"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_numeric", 
-  "id": "superball"
+ "attribution": "Found in Harvard questions of the week, but also seen in many different places", 
+ "title": "Superball", 
+ "relatedContent": [
+  "energy", 
+  "momentum", 
+  "momentumii"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A basketball of mass \n$\\vari{m_1}$\n and radius \n$\\vari{r_1}$\n and a tennis ball of mass \n$\\vari{m_2}$\n and radius \n$\\vari{r_2}$\n are held with the bottom of the tennis ball touching the top of the basketball, and the bottom of the basketball is a height \n$\\vari{h}$\n above the ground. The balls are then dropped together.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "The tennis ball bounces up a height \n$\\valuedef{\\Delta H}{9h}{}$\n, and so the final height of the centre of mass will be given by \n$\\valuedef{H}{9h + 2r_1 + r_2}{}$\n.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "What is the maximum height that the centre of mass the tennis ball reaches after the balls bounce off the floor?", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_numeric", 
+ "id": "superball"
 }

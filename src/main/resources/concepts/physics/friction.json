@@ -1,16 +1,108 @@
 {
-  "src": "friction.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Friction", 
-  "relatedContent": [
-    "vectors", 
-    "newtonii", 
-    "newtoni", 
-    "newtoniii"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "concept", 
-  "id": "friction"
+ "attribution": null, 
+ "title": "Friction", 
+ "relatedContent": [
+  "vectors", 
+  "newtonii", 
+  "newtoni", 
+  "newtoniii"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "<h3>Friction</h3>", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Definitions ", 
+   "encoding": "html"
+  }, 
+  {
+   "src": "../../figures/friction_defs.svg", 
+   "type": "image", 
+   "id": "fig:friction-defs", 
+   "value": "A block sitting \nat rest \non a rough plane. The weight has an equilibrating force \n$\\valuedef{\\vtr {R}}{- m\\vtr {g}}{}$\n acting on it from the plane. An applied force \n$\\vari{\\vtr {F}}$\n is resisted by a frictional force \n$\\valuedef{\\vtr {F}_f}{-\\vtr {F}}{}$\n from the plane acting on the block. The plane in turn has the frictional reaction force \n$\\vari{-\\vtr {F}_f}$\n acting on it from the block.", 
+   "encoding": "html"
+  }, 
+  {
+   "src": "../../figures/friction_table.svg", 
+   "type": "image", 
+   "id": "tab:coeffs", 
+   "value": " Typical values for the coefficient of friction for a variety of materials.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Figure \n1\n shows a block of mass \n$\\vari{m}$\n sitting at rest on a rough plane. The weight, reaction, applied and frictional forces are shown. The frictional force is of magnitude \n$\\valuedef{F_f}{F}{}$\n equal to the applied force so the block does not move horizontally. By Coulomb&apos;s law of friction:", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<table>\n<tr>\n<td>$\\displaystyle  F_ f \\le \\mu R  $</td>\n</tr>\n</table>\n where \n$\\vari{\\mu }$\n is the coefficient of static friction and depends on the character of the two surfaces in contact, but \nnot\n not their area. It does not have units since it is a ratio \n$\\vari{F_f/R}$\n of forces. \nWhen the applied force exceeds \n$\\vari{\\mu R}$\n , then the block starts to slide. The frictional force is now \n$\\valuedef{F_f}{\\mu _d }{}$\n where \n$\\vari{\\mu _d}$\n is the coefficient of sliding, dynamic or kinetic friction. Clearly \n$\\vari{\\mu _d < \\mu }$\n , so once sliding starts under the influence of an applied force, then the resistive effect of the frictional contact between the surfaces is reduced. Typical values of \n$\\vari{\\mu }$\n are given in table \n1\n . ", 
+   "encoding": "html"
+  }, 
+  {
+   "src": "../../figures/slope.svg", 
+   "type": "image", 
+   "id": "fig:slope", 
+   "value": "A rough slope inclined at angle \n$\\vari{\\theta }$\n to the horizontal with a block of mass \n$\\vari{m}$\n resting on it. The vector triangle resolves the weight force parallel and perpendicular to the slope.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Quick Questions", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "From the vector triangle of figure \n1\n, one sees that the normal component of the weight force into the surface is of magnitude \n$\\vari{mg\\cos \\theta }$\n which is also the value of the reaction force \n$\\vari{R}$\n. Hence the maximum frictional resistive force acting up the slope on the block is \n$\\valuedef{F_f}{\\mu mg \\cos \\theta }{}$\n. The component of weight down the slope is \n$\\vari{mg\\sin \\theta }$\n. At the maximal angle before slipping, this downwards component is exactly balanced by the frictional force, that is\n$\\vari{mg\\sin \\theta =}$\n$\\valuedef{\\mu mg \\cos \\theta \\rightarrow \\tan \\theta }{\\mu }{}$\non cancelling \n$\\vari{mg}$\n on each side and dividing through by \n$\\vari{\\cos \\theta }$\n.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "A rough slope with a coefficient of friction \n$\\vari{\\mu }$\n with a block makes an angle \n$\\vari{\\theta }$\n with the horizontal. At what angle does a block resting on the surface start slipping?", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<br/>", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\valuedef{\\theta }{\\arctan (\\mu _k)}{}$\n.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "If the angle becomes such that the block starts sliding, to what value must \n$\\vari{\\theta }$\n be reduced to stop it sliding?", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<br/>", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\valuedef{a}{g(\\mu -\\mu _k)/\\sqrt {1 + \\mu ^2}}{}$\n.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Harder*: If the block just starts sliding and the slope is not reduced, what is the acceleration of the block down the slope?", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Friction \n Rolling For cylinders and spheres to roll rather than skid, frictional contact with their support surface is required. Once rolling is achieved the frictional force, acting at the point of contact, is not a moving force and does no work. Friction determines the dynamics without causing energy loss. ", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "concept", 
+ "id": "friction"
 }

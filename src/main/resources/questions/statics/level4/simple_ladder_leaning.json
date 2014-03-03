@@ -1,15 +1,59 @@
 {
-  "src": "simple_ladder_leaning.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Leaning ladder", 
-  "relatedContent": [
-    "forces", 
-    "hooke", 
-    "trig"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_ scq", 
-  "id": "simple_ladder_leaning"
+ "attribution": "Created for the Rutherford School Physics Project by MC.", 
+ "title": "Leaning ladder", 
+ "relatedContent": [
+  "forces", 
+  "hooke", 
+  "trig"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A uniform ladder of mass \n$\\vari{m}$\n and length \n$\\vari{l}$\n leans against a frictionless wall at an angle \n$\\vari{\\theta }$\n to the horizontal, with its bottom resting on a rough surface with a coefficient of friction \n$\\vari{\\mu }$\n.", 
+   "encoding": "html"
+  }, 
+  {
+   "encoding": "html", 
+   "value": "If \n$\\valuedef{\\theta }{30^{\\circ }}{}$\n, what is the minimum value for \n$\\vari{\\mu }$\n so that the ladder does not slip?", 
+   "choices": [
+    {
+     "type": "choice", 
+     "value": "$\\valuedef{\\mu }{\\frac{1}{2}}{}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\valuedef{\\mu }{\\frac{1}{\\sqrt {2}}}{}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\valuedef{\\mu }{\\frac{1}{\\sqrt {3}}}{}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\valuedef{\\mu }{1}{}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "correct": true, 
+     "value": "$\\valuedef{\\mu }{\\frac{\\sqrt {3}}{2}}{}$", 
+     "encoding": "html"
+    }
+   ], 
+   "answer": {
+    "type": "content", 
+    "value": "The answer is d.", 
+    "encoding": "html"
+   }, 
+   "type": "choiceQuestion"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_ scq", 
+ "id": "simple_ladder_leaning"
 }

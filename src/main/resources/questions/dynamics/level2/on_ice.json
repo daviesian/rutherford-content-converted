@@ -1,18 +1,74 @@
 {
-  "src": "on_ice.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "On Ice", 
-  "relatedContent": [
-    "newtonii", 
-    "eq_of_motion_diff", 
-    "vectors", 
-    "resolving_vectors", 
-    "O1979PIIQ3a_Part_a_video", 
-    "O1979PIIQ3a_part_b_video"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_numeric", 
-  "id": "on_ice"
+ "attribution": "Adapted with permission from UCLES, O Level Physics, June 1979, Paper 2, Question 3.", 
+ "title": "On Ice", 
+ "relatedContent": [
+  "newtonii", 
+  "eq_of_motion_diff", 
+  "vectors", 
+  "resolving_vectors", 
+  "O1979PIIQ3a_Part_a_video", 
+  "O1979PIIQ3a_part_b_video"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A rock is resting on a horizontal sheet of ice and acted on by two forces of magnitudes \n$\\quantity{15}{N}$\n and \n$\\quantity{20}{N}$\n, in perpendicular directions North and East respectively. The friction between the rock and the ice is negligible.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "The rock accelerates at \n$\\quantity{4.0}{m\\,  s\\sup {-2}}$\n.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "= \n = 53.1^\n from North.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Find the direction in which it moves with respect to North.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "m = \n = \n = \n$\\quantity{6.25}{kg}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "What is the mass of the rock?", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "The forces continue to act so that the rock moves in a straight line for \n$\\quantity{6.0}{s}$\n.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "v = [0 + (4)(6)] \n$\\quantity{}{m\\,  s\\sup {-1}}$\n = \n$\\quantity{24}{m\\,  s\\sup {-1}}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Calculate the velocity acquired by the rock in this time.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "s = ut + \nat^\n2\n = (0)(6) + \n(4)(6^\n2\n) = \n$\\quantity{72}{m}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Calculate also the distance it has travelled.", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_numeric", 
+ "id": "on_ice"
 }

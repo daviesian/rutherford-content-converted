@@ -1,14 +1,30 @@
 {
-  "src": "record_player.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "The Record Player", 
-  "relatedContent": [
-    "angular_circular", 
-    "IntA1986PIIQ2l_video"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_numeric", 
-  "id": "record_player"
+ "attribution": "Used with permission from UCLES, A Physics, November 1986, Paper 2, Question 2.", 
+ "title": "The Record Player", 
+ "relatedContent": [
+  "angular_circular", 
+  "IntA1986PIIQ2l_video"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A record is played at \n$\\quantity{45}{rpm}$\n, and then slowed down to \n$\\quantity{33\\frac{1}{3}}{rpm}$\n.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "The ratio of the magnitude of the centripetal accelerations of a point on the rim of the record before and after the change is valuedef\n1.82", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Find the ratio of the magnitude of the centripetal accelerations of a point on the rim of the record before and after the change. Write your answer to two decimal places.", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_numeric", 
+ "id": "record_player"
 }

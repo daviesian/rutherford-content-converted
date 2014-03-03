@@ -1,18 +1,29 @@
 {
-  "src": "three_spheres.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Three spheres", 
-  "relatedContent": [
-    "forces", 
-    "moments", 
-    "newtoni", 
-    "newtoniii", 
-    "trig", 
-    "vectors1"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_ numerical", 
-  "id": "three_spheres"
+ "attribution": "Created for the Rutherford School Physics Project by MW and JZ.", 
+ "title": "Three spheres", 
+ "relatedContent": [
+  "forces", 
+  "moments", 
+  "newtoni", 
+  "newtoniii", 
+  "trig", 
+  "vectors1"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\valuedef{T}{\\frac{mg}{3\\sqrt {6}}}{.}$\n Substituting in \n$\\valuedef{m}{0.8}{kg}$\n, we find \n$\\valuedef{T}{1.1}{N}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Three spheres are in a triangular arrangement on a plane, spot welded together where they touch. Another sphere is placed on top of the first three. Take the spheres to be identical, of mass \n$\\vari{m}$\n and radius \n$\\vari{a}$\n. Assume where necessary that the contacts are smooth. What is the tension in the weld necessary to keep the pyramid stable when the mass is 0.8 kg?", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_ numerical", 
+ "id": "three_spheres"
 }

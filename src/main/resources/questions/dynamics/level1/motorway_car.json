@@ -1,14 +1,53 @@
 {
-  "src": "motorway_car.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Car on a motorway", 
-  "relatedContent": [
-    "energy", 
-    "momentum"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_scq", 
-  "id": "motorway_car"
+ "attribution": "Question by RWH", 
+ "title": "Car on a motorway", 
+ "relatedContent": [
+  "energy", 
+  "momentum"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "encoding": "html", 
+   "value": "A car driving along the motorway accelerates and doubles its speed. The momentum and kinetic energy of the car respectively increase by a factor of", 
+   "choices": [
+    {
+     "type": "choice", 
+     "value": "Momentum \n$\\times $\n$\\vari{4}$\n: \nKinetic Energy \n$\\times $\n$\\vari{4}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "Momentum \n$\\times $\n$\\vari{2}$\n: \nKinetic Energy \n$\\times $\n$\\vari{2}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "Momentum \n$\\times $\n$\\vari{4}$\n: \nKinetic Energy \n$\\times $\n$\\vari{2}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "Momentum \n$\\times $\n$\\vari{1}$\n: \nKinetic Energy \n$\\times $\n$\\vari{1}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "correct": true, 
+     "value": "Momentum \n$\\times $\n$\\vari{2}$\n: \nKinetic Energy \n$\\times $\n$\\vari{4}$", 
+     "encoding": "html"
+    }
+   ], 
+   "answer": {
+    "type": "content", 
+    "value": "The correct answer is (d). Momentum is mass \n$\\times $\n velocity. The direction remains the same, but the size or the magnitude (the speed) is doubled. So the momentum is doubled. \n$\\valuedef{KE}{\\frac{1}{2}m v^2}{}$\n and if the speed is doubled then speed squared increases by a factor of four. (Remember that the factor is by how much you multiply the original value to get the new value).", 
+    "encoding": "html"
+   }, 
+   "type": "choiceQuestion"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_scq", 
+ "id": "motorway_car"
 }

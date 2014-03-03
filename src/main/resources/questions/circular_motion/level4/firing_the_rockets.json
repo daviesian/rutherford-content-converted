@@ -1,18 +1,62 @@
 {
-  "src": "firing_the_rockets.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Firing the Rockets", 
-  "relatedContent": [
-    "newtoni", 
-    "newtonii", 
-    "angular_circular", 
-    "vectors", 
-    "resolving_vectors", 
-    "A1988PIQ7l_video"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_scq", 
-  "id": "firing_the_rockets"
+ "attribution": "Used with permission from UCLES, A Level Physics, June 1988, Paper 1, Question 7.", 
+ "title": "Firing the Rockets", 
+ "relatedContent": [
+  "newtoni", 
+  "newtonii", 
+  "angular_circular", 
+  "vectors", 
+  "resolving_vectors", 
+  "A1988PIQ7l_video"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "An artificial satellite travels in a circular orbit about the Earth. Its rocket engine is then fired and produces a force on the satellite exactly equal and opposite to that exerted by the Earth&apos;s gravitational field.", 
+   "encoding": "html"
+  }, 
+  {
+   "encoding": "html", 
+   "value": "How would the satellite would then start to move?", 
+   "choices": [
+    {
+     "type": "choice", 
+     "value": "Along a spiral path towards the Earth&apos;s surface.", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "correct": true, 
+     "value": "Along a tangent to the orbit.", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "Along the line joining it to the centre of the Earth (i.e. radially).", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "In a circular orbit with a shorter period.", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "In a circular orbit with a longer period.", 
+     "encoding": "html"
+    }
+   ], 
+   "answer": {
+    "type": "content", 
+    "value": "The correct answer is (c).", 
+    "encoding": "html"
+   }, 
+   "type": "choiceQuestion"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_scq", 
+ "id": "firing_the_rockets"
 }

@@ -1,17 +1,167 @@
 {
-  "src": "momentum.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Momentum", 
-  "relatedContent": [
-    "momentumii", 
-    "energy", 
-    "impulse", 
-    "vectors", 
-    "newtonii"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "concept", 
-  "id": "momentum"
+ "attribution": null, 
+ "title": "Momentum", 
+ "relatedContent": [
+  "momentumii", 
+  "energy", 
+  "impulse", 
+  "vectors", 
+  "newtonii"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "<h3>Momentum and its conservation;collisions &mdash; Part 1.</h3>\nWe define momentum. Also revise Newton&apos;s Laws and impulse in the concepts pages for Newton&apos;s Laws and for Impulse. Collisions are a good illustration. Part 2 gives more powerful techniques for collisions, for instance in particle physics.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Definition of momentum For a particle, momentum is mass times velocity: \n$\\valuedef{\\vtr {p}}{m \\vtr {v}}{}$\n . \n<br/>\nIt is a \nvector\n vector with units \n$\\quantity{}{kg\\,  m\\,  s\\sup {-1}}$\n .", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Quick Questions", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\quantity{20}{kg\\,  m\\,  s\\sup {-1}}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Two particles are moving in the same direction with momentum \n$\\quantity{10}{kg\\,  m\\,  s\\sup {-1}}$\n. What is their total momentum?", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<br/>", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\quantity{0}{kg\\,  m\\,  s\\sup {-1}}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Two particles are moving in opposite directions, each with momentum \n$\\quantity{10}{kg\\,  m\\,  s\\sup {-1}}$\n. What is their total momentum?", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Conservation of momentum The momentum is conserved in the absence of forces external to the system. \nThis concept is one of the most important in physics and follows from Newton&apos;s laws. Newton&apos;s second law (N2L, \"force = mass times acceleration\") can be written:", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<table>\n<tr>\n<td>$\\displaystyle  \\vtr {F} = m \\vtr {a} = m \\d\\vtr {v}/\\d t = \\d\\vtr {p}/\\d t .  $</td>\n</tr>\n</table>\n N1L says that in the absence of forces, particles continue moving without further change of velocity. Setting \n$\\valuedef{\\vtr {F}}{0}{}$\n in N2L above shows that then \n$\\vari{\\vtr {v}}$\n is unchanging, as is momentum \n$\\vari{\\vtr {p}}$\n , that is momentum is conserved. \nConsider a system consisting of two particles colliding head on, figure \n1\n (a). The box indicates the system is \"closed\" &mdash; there are forces within it (when the particles collide), but not on it from outside.", 
+   "encoding": "html"
+  }, 
+  {
+   "src": "../../figures/isolated_inelastic.svg", 
+   "type": "image", 
+   "id": "fig:isolated_inelastic", 
+   "value": "(a) The collision of two particles isolated from the rest of the world. (b.1) Two particles before an inelastic collision (b.2) sticking together after inelastically colliding.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Momentum is \nalways\n always conserved. But energy can be converted to other forms (e.g. to heat) so collisions may or may not be elastic (that is conserving mechanical energy). So one has:", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<table>\n<tr>\n<td>$\\displaystyle  \\vtr {p}_1 + \\vtr {p}_2 = \\vtr {p}_1&apos; + \\vtr {p}_2&apos;  $</td>\n</tr>\n</table>\n where the prime \n$&apos;$\n &apos; indicates after the collision.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Levels 1 &ndash; 4. Quick Questions Figures \n1\n (b.1) and (b.2) show two particles colliding and then sticking together. ", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "After the collision one has \n$\\quantity{5}{kg\\,  m\\,  s\\sup {-1}}$\n = \n$\\quantity{3}{kg}$\n$\\times $\n$\\quantity{v'}{m\\,  s\\sup {-1}}$\n. Thus \n$\\valuedef{v'}{5/3}{m\\,  s\\sup {-1}}$\n.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "<p>\nIf \n$\\valuedef{m_1}{1}{kg}$\n, \n$\\valuedef{m_2}{2}{kg}$\n, \n$\\valuedef{v_1}{3}{m\\,  s\\sup {-1}}$\n and \n</p>\n<p>\n$\\valuedef{v_2}{1}{m\\,  s\\sup {-1}}$\n, then the total momentum before the collision is \n$\\valuedef{1 \\times 3 + 2 \\times 1}{5}{kg\\,  m\\,  s\\sup {-1}}$\n. \n</p>\n<p>\nIt remains this value. What is the value of the speed of the combined particle after the collusion \n$\\vari{v'}$\n? \n</p>", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\quantity{1 \\frac{1}{3}}{J}$\n lost energy.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Calculate how much energy has been lost in the collision by calculating the total kinetic energy before and after.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<br/>", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\valuedef{v'}{2}{m\\,  s\\sup {-1}}$\n;\n$\\quantity{3}{J}$\n energy lost.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Describe the collision (with sticking) in the case \n$\\valuedef{m_1}{m_2}{}$\n = \n$\\quantity{1}{kg}$\n.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<br/>", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "<p>\nConserving momentum gives: \n$\\valuedef{m v}{m (v_1' + v_2')}{}$\n hence \n$\\valuedef{v}{v_1' + v_2'}{}$\n.\n</p>\n<p>\nConserving energy gives: \n$\\valuedef{\\frac{1}{2}m v^2}{\\frac{1}{2}m (v_1'^2 + v_2'^2)}{}$\n. Hence \n</p>\n<p>\n$\\valuedef{v^2}{v_1'^2 + v_2'^2}{}$\n. \n</p>\n<p>\nPut \n$\\valuedef{v_1'}{v - v_{2}'}{}$\n from above into this energy relation: \n</p>\n<p>\n<table>\n<tr>\n<td>$\\displaystyle  v^2 = (v - v_2&apos;)^2 + v_2&apos;^2 = v^2 - 2 v v_1&apos; +v_1&apos;^2 + v_1&apos;^2 $</td>\n</tr>\n<tr>\n<td>$\\displaystyle \\rightarrow 2 v v_2&apos; = 2 v_2&apos;^2 \\rightarrow v_2&apos; = v .  $</td>\n</tr>\n</table>\n</p>\n<p>\nPut this value of \n$\\vari{v_{2}'}$\n into the momentum relation and find that \n$\\valuedef{v_{1}'}{0}{}$\n. \n</p>\n<p>\n<br/>\n</p>\n<p>\nThe first particle stops and the second continues with the velocity (and momentum) of the first &mdash; like in Newton&apos;s cradle.\n</p>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Consider two particles of equal mass, \n$\\valuedef{m_1}{m_2}{}$\n = \n$\\vari{m}$\n where \n$\\valuedef{v_1}{v}{}$\n simply, and the other particle is initially at rest, \n$\\valuedef{v_2}{0}{}$\n. They collide elastically; see figure\n1\n. What are the final speeds \n$\\vari{v_{1}'}$\n and \n$\\vari{v_{2}'}$\n?", 
+   "encoding": "html"
+  }, 
+  {
+   "src": "../../figures/elastic_wall.svg", 
+   "type": "image", 
+   "id": "fig:elastic_wall", 
+   "value": "(a) An elastic collision of two equal particles, one being initially at rest. (b) A particle colliding with a wall. In the intermediate state it is instantaneously at rest and deformed.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Consider a particle bouncing off a wall; figure \n1\n (b). \nThe incident particle has a force from the wall acting on it during the collision. Momentum of the particle is not conserved. But \nthe total momentum\n the total momentum of the particle plus the wall \nis conserved\n is conserved . ", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\vari{m(v+v')}$\n to the left. \n$\\vari{mv}$\n to the left when the collision with the wall is totally inelastic.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "What is the change of momentum if the collision is elastic? (Remember momentum and its changes are vectors &ndash; your answer requires a magnitude and a direction.) What is the momentum change if the collision is completely inelastic?", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Impulse Impulse is the change of momentum. It is force times time, for a constant force acting. The term is generally (but not always) used when momentum is transferred over a short time (e.g. during a collision). It is described fully in the impulse concept sheet. ", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "concept", 
+ "id": "momentum"
 }

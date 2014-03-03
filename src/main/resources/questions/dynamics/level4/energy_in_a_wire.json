@@ -1,14 +1,53 @@
 {
-  "src": "energy_in_a_wire.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Energy in a Wire", 
-  "relatedContent": [
-    "energy", 
-    "vectors"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_scq", 
-  "id": "energy_in_a_wire"
+ "attribution": "Used with permission from UCLES, A Level Physics, November 1987, Paper 1, Question 30.", 
+ "title": "Energy in a Wire", 
+ "relatedContent": [
+  "energy", 
+  "vectors"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "encoding": "html", 
+   "value": "A wire that obeys Hooke&apos;s Law is of length \n$\\vari{l_{1}}$\n when it is in equilibrium under a tension \n$\\vari{T_{1}}$\n, and its length becomes \n$\\vari{l_{2}}$\n when the tension is increased to \n$\\vari{T_{2}}$\n. What is the extra energy stored in the wire as a result of this process?", 
+   "choices": [
+    {
+     "type": "choice", 
+     "value": "$\\vari{\\frac{1}{4}(T_{2} + T_{1})(l_{2} - l_{1})}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "correct": true, 
+     "value": "$\\vari{\\frac{1}{2}(T_{2} + T_{1})(l_{2} - l_{1})}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\vari{\\frac{1}{4}(T_{2} + T_{1})(l_{2} + l_{1})}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\vari{(T_{2} - T_{1})(l_{2} - l_{1})}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\vari{\\frac{1}{2}(T_{2} + T_{1})(l_{2} + l_{1})}$", 
+     "encoding": "html"
+    }
+   ], 
+   "answer": {
+    "type": "content", 
+    "value": "The correct answer is (c). This follows from the fact it is equal to the average force times the distance moved against the force, which is the work against the spring. This is valid because the force is linear with displacement, \n$\\valuedef{\\vtr {F}}{-k\\vtr {x}}{}$\n.", 
+    "encoding": "html"
+   }, 
+   "type": "choiceQuestion"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_scq", 
+ "id": "energy_in_a_wire"
 }

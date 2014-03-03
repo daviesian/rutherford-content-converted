@@ -1,20 +1,76 @@
 {
-  "src": "three_particles.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Three Particles", 
-  "relatedContent": [
-    "momentum", 
-    "energy", 
-    "newtonii", 
-    "momentumii", 
-    "resolving_vectors", 
-    "vectors", 
-    "eq_of_motion_diff", 
-    "relative_motion"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_numeric", 
-  "id": "three_particles"
+ "attribution": "Adapted with permission from UCLES, A Level Further Mathematics, Syllabus C, June1988, Paper4, Question1.", 
+ "title": "Three Particles", 
+ "relatedContent": [
+  "momentum", 
+  "energy", 
+  "newtonii", 
+  "momentumii", 
+  "resolving_vectors", 
+  "vectors", 
+  "eq_of_motion_diff", 
+  "relative_motion"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "<p>\nThree identical particles \n$\\vari{A}$\n, \n$\\vari{B}$\n, and \n$\\vari{C}$\n are moving in a plane and, at time \n$\\vari{t}$\n, their position vectors, \n$\\vari{\\vtr {a}}$\n, \n$\\vari{\\vtr {b}}$\n, \n$\\vari{\\vtr {c}}$\n, with respect to an origin \n$\\vari{O}$\n are: \n</p>\n<p>\n<tr>\n<td>$\\displaystyle  \\vtr {a}  $</td>\n<td>$\\displaystyle  = $</td>\n<td>$\\displaystyle  (2t +1)\\vtr {i} + (2t+ 3)\\vtr {j}  $</td>\n</tr>\n<tr>\n<td>$\\displaystyle \\vtr {b}  $</td>\n<td>$\\displaystyle  = $</td>\n<td>$\\displaystyle  (10 - t)\\vtr {i} + (12 - t)\\vtr {j}  $</td>\n</tr>\n<tr>\n<td>$\\displaystyle \\vtr {c}  $</td>\n<td>$\\displaystyle  = $</td>\n<td>$\\displaystyle  (t^{3} - 15t + 4)\\vtr {i} + (-3t^{2} + 2t + 1)\\vtr {j}  $</td>\n</tr>\n</p>", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\vari{v_{rel}}$\n$=$\n$\\valuedef{\\sqrt {(-5)^{2} + (-12)^{2}}}{}{}$\n$=$\n$\\quantity{13}{}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Find the magnitude of the velocity of particle \n$\\vari{C}$\n relative to particle \n$\\vari{A}$\n when \n$\\valuedef{t}{2}{}$\n.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "The vector makes an angle of \n$\\vari{\\arctan \\left(\\frac{5}{12}\\right)}$\n to the negative \n$\\vari{x}$\n-axis, which is \n$157.4^{\\circ }$\n clockwise or equivalently \n$202.6^{\\circ }$\n anticlockwise.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Find the angle which this relative velocity makes with \n$\\vari{\\vtr {i}}$\n at this time.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "t \n$\\displaystyle = 3 $", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Verify that particles \n$\\vari{A}$\n and \n$\\vari{B}$\n are both moving along the straight line with equation \n$\\valuedef{y}{x + 2}{}$\n.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "<p>\n<tr>\n<td>$\\displaystyle  \\vtr {v}_{A_{f}}  $</td>\n<td>$\\displaystyle  = - \\vtr {i} - \\vtr {j}  $</td>\n</tr>\n<tr>\n<td>$\\displaystyle \\vtr {v}_{B_{f}}  $</td>\n<td>$\\displaystyle  = 2\\vtr {i} + 2\\vtr {j}  $</td>\n</tr>\n</p>\n<p>\nwhich is simply a swapping over of velocities, as expected in an elastic collision with identical particles.\n</p>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Given that the collision between particles \n$\\vari{A}$\n and \n$\\vari{B}$\n is elastic, find the velocities of \n$\\vari{A}$\n and \n$\\vari{B}$\n immediately after the collision.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "<p>\n<tr>\n<td>$\\displaystyle  \\vtr {s}_{A_{f}}  $</td>\n<td>$\\displaystyle  = (7 - \\tau )\\vtr {i} + (9 - \\tau )\\vtr {j}  $</td>\n</tr>\n<tr>\n<td>$\\displaystyle \\vtr {s}_{B_{f}}  $</td>\n<td>$\\displaystyle  = (2\\tau + 7)\\vtr {i} + (2\\tau + 9)\\vtr {j}  $</td>\n</tr>\n</p>\n<ol>\n</ol>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "What are the position vectors of \n$\\vari{A}$\n and \n$\\vari{B}$\n a time \n$\\vari{\\tau }$\n after the collision?", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_numeric", 
+ "id": "three_particles"
 }

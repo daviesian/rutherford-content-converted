@@ -1,14 +1,58 @@
 {
-  "src": "rapid_acceleration.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Rapid Acceleration", 
-  "relatedContent": [
-    "newtonii", 
-    "hooke"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_scq", 
-  "id": "rapid_acceleration"
+ "attribution": "Used with permission from UCLES, A Level Physics, November 1986, Paper 1, Question 4.", 
+ "title": "Rapid Acceleration", 
+ "relatedContent": [
+  "newtonii", 
+  "hooke"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A car of mass \n$\\vari{m}$\n has an engine which can deliver power \n$\\vari{P}$\n.", 
+   "encoding": "html"
+  }, 
+  {
+   "encoding": "html", 
+   "value": "What is the minimum time in which the car can be accelerated from rest to speed \n$\\vari{v}$\n?", 
+   "choices": [
+    {
+     "type": "choice", 
+     "value": "$\\vari{\\frac{mv}{P}}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "correct": true, 
+     "value": "$\\vari{\\frac{mv^{2}}{2P}}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\vari{\\frac{P}{mv}}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\vari{\\frac{mv^{2}}{4P}}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\vari{\\frac{2P}{mv^{2}}}$", 
+     "encoding": "html"
+    }
+   ], 
+   "answer": {
+    "type": "content", 
+    "value": "The correct answer is (c). This can be seen since Energy Gained = Power \n$\\times $\n Time, and the energy we want to gain is the kinetic energy at speed \n$\\vari{v}$\n, equal to \n$\\vari{\\frac{1}{2}mv^{2}}$\n. This gives \n$\\valuedef{Pt}{\\frac{1}{2}mv^{2}}{}$\n, which rearranges to the correct answer.", 
+    "encoding": "html"
+   }, 
+   "type": "choiceQuestion"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_scq", 
+ "id": "rapid_acceleration"
 }

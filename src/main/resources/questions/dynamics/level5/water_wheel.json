@@ -1,18 +1,34 @@
 {
-  "src": "water_wheel.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "The Water Wheel", 
-  "relatedContent": [
-    "momentum", 
-    "newtonii", 
-    "relative_motion", 
-    "resolving_vectors", 
-    "vectors", 
-    "impulse"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_numeric", 
-  "id": "water_wheel"
+ "attribution": "Adapted with permission from UCLES, Higher School Certificate Physics, June1931, Paper2, Question2.", 
+ "title": "The Water Wheel", 
+ "relatedContent": [
+  "momentum", 
+  "newtonii", 
+  "relative_motion", 
+  "resolving_vectors", 
+  "vectors", 
+  "impulse"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A horizontal jet of water with flow rate \n$\\valuedef{Q}{500}{kg\\,  s\\sup {-1}}$\n and moving at a speed \n$\\valuedef{v}{4}{m\\,  s\\sup {-1}}$\n strikes the tips of the blades of a water wheel. The blades are moving with half the speed of the water, and the water drops off with no horizontal velocity relative to the blades.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "F \n$\\displaystyle = (2 \\times 500) = \\mbox{\\quantity{1000}{m\\,  s\\sup {-1}}} $", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Find the force exerted on the wheel.", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_numeric", 
+ "id": "water_wheel"
 }

@@ -1,15 +1,26 @@
 {
-  "src": "trailer_truck.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Trailer truck", 
-  "relatedContent": [
-    "forces", 
-    "moments", 
-    "newtoni"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_ numerical", 
-  "id": "trailer_truck"
+ "attribution": "Adapted with permission from UCLES, A Level Physics, June 1989, Paper 1, Question 2.", 
+ "title": "Trailer truck", 
+ "relatedContent": [
+  "forces", 
+  "moments", 
+  "newtoni"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\valuedef{F}{20}{kN}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "A trailer towed by a truck has a length 0\n20\nm\n and has a mass 0\n3000\nkg\n evenly distributed along that length. There is a crate of mass 0\n2000\nkg\n sitting on the trailer at a distance 0\n5\nm\n from the back of the trailer. The trailer has a set of wheels at one end and sits on top of the back of the truck&apos;s carriage at the other. Assuming 0\n10\nm\n s\n-2\n, find the magnitude \n$\\vari{F}$\n of the contact force between the carriage and the trailer.", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_ numerical", 
+ "id": "trailer_truck"
 }

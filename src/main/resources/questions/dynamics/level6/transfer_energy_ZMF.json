@@ -1,16 +1,62 @@
 {
-  "src": "transfer_energy_ZMF.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Transfer of Energy in Collisions", 
-  "relatedContent": [
-    "energy", 
-    "momentum", 
-    "momentumii", 
-    "vectors"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_numeric", 
-  "id": "transfer_energy_ZMF"
+ "attribution": "Cambridge University Tripos 2004", 
+ "title": "Transfer of Energy in Collisions", 
+ "relatedContent": [
+  "energy", 
+  "momentum", 
+  "momentumii", 
+  "vectors"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A particle of mass \n$\\vari{m_{1}}$\n and velocity \n$\\vari{v}$\n makes an elastic, head-on collision with a stationary particle of mass \n$\\vari{m_{2}}$\n.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "The velocity of the zero momentum frame relative to the laboratory frame is \n$\\valuedef{u}{\\frac{m_1 v}{m_1 + m_2}}{}$\n.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Find the velocity of the zero momentum frame relative to the laboratory frame.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "question", 
+   "value": "<p>\nBy considering the collision in the zero momentum frame, show that in the laboratory frame the fraction of the initial kinetic energy transferred to \n$\\vari{m_{2}}$\n is given by \n</p>\n<p>\n<div>$$  \\frac{4m_{1} m_{2}}{(m_{1}+m_{2})^{2}}. \n\n $$</div>\n</p>", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Three balls of masses \n$\\vari{m_{1}}$\n, \n$\\vari{m_{2}}$\n and \n$\\vari{m_{3}}$\n are suspended in a horizontal line by light wires and are almost touching. The mass \n$\\vari{m_{1}}$\n is given a horizontal velocity \n$\\vari{v}$\n so that it collides head-on with the mass \n$\\vari{m_{2}}$\n.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "<p>\nThe kinetic energy of the final particle after both collisions is \n$\\valuedef{E_k}{\\frac{8 m_{1}^2 m_{2}^2 m_3 v^2}{(m_{1}+m_{2})^{2}(m_{2}+m_{3})^{2}}}{}$\n, as shown in Figure \n1\n. \n</p>\n<p>\n<p>\n<p>\n<img src=\"figures/tripos_elastic_zmf_2.png\"/>\n</p>\n<p>\n<figcaption></figcaption>\n</p>\n</p>\n</p>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Find an expression for the final kinetic energy of \n$\\vari{m_{3}}$\n, and sketch it as a function of \n$\\vari{m_{2}}$\n.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "For the maximum energy transfer to \n$\\vari{m_3}$\n we should choose \n$\\vari{m_2}$\n$=$\n$\\vari{\\sqrt {m_1 m_3}}$\n.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "What value of \n$\\vari{m_{2}}$\n results in the maximum energy transfer to the mass \n$\\vari{m_{3}}$\n?", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_numeric", 
+ "id": "transfer_energy_ZMF"
 }

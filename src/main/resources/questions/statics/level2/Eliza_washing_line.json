@@ -1,15 +1,43 @@
 {
-  "src": "Eliza_washing_line.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Towel on a Washing Line", 
-  "relatedContent": [
-    "forces", 
-    "vectors2", 
-    "newtoni"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_ numerical", 
-  "id": "Eliza_washing_line"
+ "attribution": "Created for the Rutherford School Physics Project by EM and PS.", 
+ "title": "Towel on a Washing Line", 
+ "relatedContent": [
+  "forces", 
+  "vectors2", 
+  "newtoni"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "Consider a wet towel of mass \n$2m$\n as in Figure \n1\n. It is hung on a length \n$4a$\n of light inextensible string by two pegs a distance \n$a$\n from each end. The ends of the string are attached to two washing poles \n$4b$\n apart, where \n$b < a$\n.", 
+   "encoding": "html"
+  }, 
+  {
+   "encoding": "html", 
+   "value": "Give expressions for the tensions in all three parts of the string in terms of \n$m$\n, \n$g$\n, \n$a$\n and \n$b$\n.", 
+   "answer": {
+    "type": "content", 
+    "value": "The tensions in the parts of the string are \n$T\\s {1} = T\\s {3} = \\frac{mga}{2\\sqrt {b\\left(a - b\\right)}}$\n and T\n2\n = ", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "hints": [
+    {
+     "type": "content", 
+     "value": "Define an angle in terms of the lengths \n$a$\n and \n$b$\n, then try resolving forces about one of the pegs.", 
+     "encoding": "html"
+    }
+   ]
+  }, 
+  {
+   "type": "content", 
+   "value": "<p>\n<p>\n<p>\n<img src=\"Statics_washing_line_unmarked\"/>\n</p>\n<p>\n<figcaption></figcaption>\n</p>\n</p>\n</p>", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_ numerical", 
+ "id": "Eliza_washing_line"
 }

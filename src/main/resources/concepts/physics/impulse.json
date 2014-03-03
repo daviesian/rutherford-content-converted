@@ -1,0 +1,247 @@
+{
+ "attribution": null, 
+ "title": "Impulse", 
+ "relatedContent": [
+  "vectors", 
+  "momentum", 
+  "newtonii", 
+  "energy"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "<h3>Impulse</h3>", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "What is impulse? When Newton described his second law of motion he said that an impulse causes a change in momentum in the direction that the impulse is applied. We often find it useful to discuss this law in terms of a \nresultant\n resultant force and the rate of change of momentum (or for constant mass \n$\\valuedef{\\vtr F}{m{\\vtr a}}{}$\n ) but thinking in terms of an impulse allows us to take into account the length of time for which the force is applied. ", 
+   "encoding": "html"
+  }, 
+  {
+   "src": "../../figures/Impulse1.svg", 
+   "type": "image", 
+   "value": "How does the final speed of a broken down car change if you apply the same force for different lengths of time?", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "If we think about some real physical situations, our intuition tells us that if we apply a force to an object for longer, its final velocity will be greater. Imagine trying to push start a car. If the car is at rest and you begin pushing with a constant force, then the longer you keep pushing, the faster the car will be moving when you let go. \nThe definition or formula to calculate an impulse is simply,", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<div>$$  {\\vtr I}={\\vtr F}{t}. \n\n $$</div>\n As force is a vector quantity so must the impulse be a vector; Newton&apos;s second law hints at this because he tells us that it is important to consider the direction in which the impulse was applied.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "But what does it mean? This formula does not give us much of a sense of what impulse \nactually\n actually is or what it means. Let&apos;s go back to the idea that Newton describes in his second law of motion that \nan applied impulse acts to change the momentum of a body in the direction that the impulse is applied\n an applied impulse acts to change the momentum of a body in the direction that the impulse is applied . ", 
+   "encoding": "html"
+  }, 
+  {
+   "src": "../../figures/Momentum1.svg", 
+   "type": "image", 
+   "id": "impulse1", 
+   "value": "The graph of a constant force of \n$\\quantity{10}{N}$\n applied to an object for \n$\\quantity{5}{s}$\n. The impulse that the object experiences is \n$\\valuedef{{\\vtr F}t}{50}{N\\,  s}$\n which is also given by the area under the line of the graph, shown in pink.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "When we apply an impulse to something our intuition tells us that it will change from being at rest to moving with some speed in the direction that we applied the impulse. By applying an impulse we will change its momentum from zero to some value given by its mass times its velocity and we would guess that the larger the impulse the greater the change in momentum.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Levels 1-4 If a constant force is applied to a body for a given time then the impulse is the vector quantity given by", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<div id=\"imp1\">$$  \\label{imp1} \n\n\\vtr {Impulse} = \\vtr {I} = \\vtr {force} \\times \\mbox{time} ={\\vtr F}t \n\n $$</div>\n This relationship (equation \n1\n ) shows that we can increase the magnitude of the impulse by either increasing the magnitude of the force or increasing the amount of time over which we apply the force. \nSo following Newton&apos;s Law,", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<table>\n<tr>\n<td>$\\displaystyle  \\mbox{Impulse} $</td>\n<td>$\\displaystyle  = $</td>\n<td>$\\displaystyle  \\mbox{change in momentum}  $</td>\n</tr>\n<tr>\n<td>$\\displaystyle  $</td>\n<td>$\\displaystyle  = $</td>\n<td>$\\displaystyle  \\mbox{final momentum} - \\mbox{initial momentum}  $</td>\n</tr>\n<tr>\n<td>$\\displaystyle {\\vtr F}t  $</td>\n<td>$\\displaystyle  = $</td>\n<td>$\\displaystyle  m{\\vtr v}-m{\\vtr u} = m({\\vtr v}-{\\vtr u})  $</td>\n</tr>\n</table>\n where \n$\\vari{m}$\n is the mass of the body, \n$\\vari{\\vtr v}$\n is the final velocity of the body after we have applied the impulse, \n$\\vari{\\vtr u}$\n is the initial velocity of the body, \n$\\vari{\\vtr F}$\n is the force that we apply and \n$\\vari{t}$\n is the time over which we apply the force. \nWe can now see the connection to Newton&apos;s Second Law as we learn it at school if we do a little rearrangement of our formula,", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<table>\n<tr>\n<td>$\\displaystyle  {\\vtr F}t $</td>\n<td>$\\displaystyle  = $</td>\n<td>$\\displaystyle  m({\\vtr v}-{\\vtr u})  $</td>\n</tr>\n<tr>\n<td>$\\displaystyle {\\vtr F} $</td>\n<td>$\\displaystyle  = $</td>\n<td>$\\displaystyle  m\\frac{({\\vtr v}-{\\vtr u})}{t}  $</td>\n</tr>\n</table>\nA change in velocity \n$(v-u)$\n (v-u) divided by the time it takes for that change \n$t$\n t is the average acceleration of the body, so", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<div>$$  {\\vtr F}=m{\\vtr a} \n\n $$</div>", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Quick Questions", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\valuedef{v}{6}{m\\,  s\\sup {-1}}$\n$\\quantity{=21.6}{kph}$\n$\\quantity{=13.5}{mph}$\n.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "A broken down car of \n$\\quantity{1000}{kg}$\n is pushed with a force of \n$\\quantity{50}{N}$\n for \n$\\quantity{2}{minutes}$\n. If we neglect friction, what speed would the car finally reach?", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<br/>", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\valuedef{\\vtr F}{-25}{N}$\n, i.e. the force is in the opposite direction to the motion of the ball.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "What force does a netball player apply to a ball of mass, \n$\\quantity{500}{g}$\n, when she catches it from her team-mate if the ball is travelling at \n$\\quantity{5}{m\\,  s\\sup {-1}}$\n and it takes her \n$\\quantity{0.1}{s}$\n to catch it? How could she reduce the amount of force that she needs to apply?", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<br/>", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\valuedef{\\vtr F}{-125}{N}$\n, i.e. the force is in the opposite direction to the initial motion and in the direction back towards your opponent.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "A perfectly hard air hockey puck of \n$\\quantity{50}{g}$\n, is travelling towards you at \n$\\quantity{10}{m\\,  s\\sup {-1}}$\n and you want to send it back to your opponent at \n$\\quantity{15}{m\\,  s\\sup {-1}}$\n. Your bat will be in contact with the puck for \n$\\quantity{0.01}{s}$\n, what force do you need to apply to the puck?", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<br/>", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\valuedef{u}{60}{m\\,  s\\sup {-1}}$\n downwards.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "In July 2011 a baby fell 10 stories from a hotel window and was caught by a passer-by and they both survived (http://www.bbc.co.uk/news/magazine-14150524). If the force that the catcher experienced was \n$\\quantity{30}{kN}$\n over a period of \n$\\quantity{0.02}{s}$\n, how fast was the baby falling just before the catch happened (we estimate the mass of the baby as \n$\\quantity{10}{kg}$\n)?", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<br/>", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\valuedef{u}{60}{m\\,  s\\sup {-1}}$\n towards the wall. This is not physically possible because in reality the collision will not be elastic.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "A squash ball, of mass \n$\\quantity{25}{g}$\n, rebounds off a wall at \n$\\quantity{60}{m\\,  s\\sup {-1}}$\n and the wall exerts an force of \n$\\quantity{300}{N}$\n for a period of \n$\\quantity{10}{ms}$\n. How fast is the ball going when it first collides with the wall? Is your answer physically possible? If not why not?", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Level 5 + The simplest case, in which we can calculate an impulse, is where a constant force is applied to a body for an amount of time \n$\\vari{t}$\n (as shown in figure \n1\n ) but we might also want to consider situations where the strength of the force varies in time (figure \n2\n ). If the force is not constant with time then we need to calculate the total impulse applied over a given time interval to calculate the total change in momentum. This total impulse is again equal to the area under the force-time graph. \nThe geometry in our example is reasonably simple (figure \n2\n ) so we can use the area of a triangle subtracted from the area of a rectangle to work this area out.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<table>\n<tr>\n<td>$\\displaystyle  Area = {\\vtr I}  $</td>\n<td>$\\displaystyle  = $</td>\n<td>$\\displaystyle  {\\vtr F_ f}t_ f-\\frac{({\\vtr F_ f}-{\\vtr F_ i})t_ f}{2}  $</td>\n</tr>\n<tr>\n<td>$\\displaystyle {\\vtr I} $</td>\n<td>$\\displaystyle  = $</td>\n<td>$\\displaystyle  \\frac{({\\vtr F_ f}+{\\vtr F_ i})t_ f}{2} \\label{area_ tri}  $</td>\n</tr>\n</table>", 
+   "encoding": "html"
+  }, 
+  {
+   "src": "../../figures/Momentum2.svg", 
+   "type": "image", 
+   "id": "impulse2", 
+   "value": "The graph of a force that changes over time from an initial value of \n$\\vari{F_i}$\n to \n$\\vari{F_f}$\n over a time of \n$\\vari{t}$\n seconds. The impulse that the object experiences can be calculated using the area under the line of graph, shown in pink.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "But we can also use this force-time graph to illustrate how we would calculate the impulse in a general case, when the area cannot be simply expressed because the force-time relationship is more complex. \nWe can calculate the area under the force line by adding up the areas of a series of small rectangles of width \n$\\vari{\\d t}$\n from \n$\\valuedef{t}{0}{}$\n to \n$\\valuedef{t}{t_f}{}$\n . Using figure \n1\n we can see that the area of a small rectangle is given by the height of the rectangle \n$\\vari{\\vtr F}$\n multiplied by the width of the rectangle \n$\\vari{\\d t}$\n . The instantaneous impulse, \n$\\vari{\\d{\\vtr I}}$\n at time \n$\\vari{t}$\n is therefore", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<div>$$  \\d{\\vtr I} = {\\vtr F}\\d t \n\n $$</div>\n The force-time graph in figure \n1\n shows that the force varies with time as a straight line, so \n$\\valuedef{\\vtr F}{kt+c}{}$\n , where the gradient of the line", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<div>$$  k=\\frac{({\\vtr F_ f}-{\\vtr F_ i})}{t_ f} \n\n $$</div>\n and the vertical intercept, \n$\\valuedef{c}{\\vtr F_i}{}$\n , so therefore the force at any given time is.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<div>$$  {\\vtr F}=\\frac{({\\vtr F_ f}-{\\vtr F_ i})t}{t_ f}+{\\vtr F_ i} \n\n $$</div>\nTo find the total impulse we need to add up all the small areas which we can do by integrating this equation for the force over time.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<table>\n<tr>\n<td>$\\displaystyle  {\\vtr I} $</td>\n<td>$\\displaystyle  = $</td>\n<td>$\\displaystyle  \\int _0^{t_ f}{{\\vtr F} \\d t}  $</td>\n</tr>\n<tr>\n<td>$\\displaystyle  $</td>\n<td>$\\displaystyle  = $</td>\n<td>$\\displaystyle  \\int _0^{t_ f}\\left[\\frac{({\\vtr F_ f}-{\\vtr F_ i})t}{t_ f}+{\\vtr F_ i}\\right] \\d t $</td>\n</tr>\n<tr>\n<td>$\\displaystyle {\\vtr I} $</td>\n<td>$\\displaystyle  = $</td>\n<td>$\\displaystyle  \\left[\\frac{({\\vtr F_ f}-{\\vtr F_ i})t^2}{2t_ f}+{\\vtr F_ i}t\\right]_0^{t_ f} $</td>\n</tr>\n<tr>\n<td>$\\displaystyle {\\vtr I} $</td>\n<td>$\\displaystyle  = $</td>\n<td>$\\displaystyle  \\frac{({\\vtr F_ f}-{\\vtr F_ i})t_ f}{2}+{\\vtr F_ i}t_ f $</td>\n</tr>\n<tr>\n<td>$\\displaystyle {\\vtr I} $</td>\n<td>$\\displaystyle  = $</td>\n<td>$\\displaystyle  \\frac{({\\vtr F_ f}+{\\vtr F_ i})t_ f}{2}  $</td>\n</tr>\n</table>\n We can see, therefore, that integrating the equation for the force over time produces the same result as calculating the area under the graph by triangles given by equation \n1\n .", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Quite Quick Questions", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\valuedef{v}{25}{m\\,  s\\sup {-1}}$\n in the direction of motion.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "An impulse is applied to a ball of mass, \n$\\quantity{500}{g}$\n, according to the force-time relation shown in figure \n1\n in the same direction as its initial velocity. What is the final velocity of the ball if it has an initial velocity of \n$\\quantity{10}{m\\,  s\\sup {-1}}$\n and the parameters of the force-time graph are, \n$\\valuedef{t_f}{1}{s}$\n, \n$\\valuedef{F_i}{5}{N}$\n and \n$\\valuedef{F_f}{10}{N}$\n.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<br/>", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\valuedef{I}{2000}{N\\,  s}$\n in the direction opposite to the motion of the pram.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "A pram complete with baby (\n$\\quantity{20}{kg}$\n) is left \n$\\quantity{1}{km}$\n up along a straight path from the bottom of a hill which is inclined at \n$\\vari{30^\\circ }$\n to the horizontal. The pram&apos;s brakes fail and the pram begins to perfectly roll down the hill under gravity. What impulse will be required to stop the pram at the bottom of the hill? [Let the acceleration due to gravity, \n$\\valuedef{g}{10}{m\\,  s\\sup {-2}}$\n].", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<br/>", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "[\n$\\valuedef{v}{\\frac{-kA}{m}\\int _0^{t\u2019} \\cos (\\omega t) \\d t}{}$\n,\n$\\valuedef{v}{\\frac{kA\\sin (\\omega t')}{m\\omega }}{}$\n]", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "<p>\nA pinball table uses a compressed spring, with spring constant \n$\\vari{k}$\n, to accelerate a steel ball of mass \n$\\vari{m}$\n, from rest to as high a speed as possible. Hooke&apos;s Law tells us that the force exerted by the spring depends on the extension, \n$\\vari{x}$\n of the spring; \n</p>\n<p>\n<div>$$  {\\vtr F}=-k{\\vtr x} \n\n $$</div>\n</p>\n<p>\nand the extension of the spring in our example will change with time as \n$\\valuedef{x}{A\\cos (\\omega t)}{}$\n. Write down the integral expression for the impulse over the interval \n$\\valuedef{t}{0}{}$\n to \n$\\vari{t'}$\n that would allow us to calculate the velocity of the ball when it leaves the spring at time \n$\\vari{t'}$\n. Using this expression what is the velocity of the steel ball after a time, \n$\\vari{t'}$\n.\n</p>", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "concept", 
+ "id": "impulse"
+}

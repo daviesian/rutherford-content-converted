@@ -1,15 +1,51 @@
 {
-  "src": "weighing_lorry.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Weight of a lorry", 
-  "relatedContent": [
-    "forces", 
-    "moments", 
-    "newtoni"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_ numerical", 
-  "id": "weighing_lorry"
+ "attribution": "Adapted with permission from UCLES, Higher School Certificate Mathematics, June 1930, Paper 3, Question 5.", 
+ "title": "Weight of a lorry", 
+ "relatedContent": [
+  "forces", 
+  "moments", 
+  "newtoni"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "<p>\nA haulage company wants to determine the loaded weight of a lorry with four equal wheels, which is too large to stand with all four wheels on a single weighing platform. \n</p>\n<p>\nThe lorry is placed so that the two front wheels are on one weighing platform and the two back wheels on another; the masses recorded are \n$\\quantity{1350}{kg}$\n and \n$\\quantity{1450}{kg}$\n respectively. The axles are \n$\\quantity{3}{m}$\n apart. Find:\n</p>", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\valuedef{m}{2800}{kg}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "the mass of the loaded lorry.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\valuedef{d}{1.55}{m}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "the distance of the centre of gravity from the front axle.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\valuedef{M}{75}{kg}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "what additional mass would have to be placed \n$\\quantity{50}{cm}$\n in front of the front axle to make the weights borne by the axles equal.", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_ numerical", 
+ "id": "weighing_lorry"
 }

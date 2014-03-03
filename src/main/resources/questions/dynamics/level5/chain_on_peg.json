@@ -1,13 +1,24 @@
 {
-  "src": "chain_on_peg.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "A Chain on a Peg", 
-  "relatedContent": [
-    "energy"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_symbolic", 
-  "id": "chain_on_peg"
+ "attribution": "Used with permission from UCLES, Higher School Certificate Applied Mathematics, June 1932, Question 7.", 
+ "title": "A Chain on a Peg", 
+ "relatedContent": [
+  "energy"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A heavy uniform chain hangs over a small smooth peg with equal lengths \n$\\vari{a}$\n on each side. Masses \n$\\vari{m}$\n and \n$\\vari{3m}$\n are attached to the two ends, and the system is released from rest.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "question", 
+   "value": "Prove, by the principle of conservation of energy, that the mass \n$\\vari{m}$\n reaches the peg with velocity \n$\\vari{\\sqrt {ga}}$\n, whatever the mass of the chain may be.", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_symbolic", 
+ "id": "chain_on_peg"
 }

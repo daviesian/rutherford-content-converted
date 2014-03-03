@@ -1,18 +1,62 @@
 {
-  "src": "rod_and_circle.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Rod and circle", 
-  "relatedContent": [
-    "forces", 
-    "vectors1", 
-    "newtoni", 
-    "newtonii", 
-    "newtoniii", 
-    "trig"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_ scq", 
-  "id": "rod_and_circle"
+ "attribution": "Used with permission from UCLES, A Level Further Maths, Syllabus C, June 1989, Paper II, Question 1", 
+ "title": "Rod and circle", 
+ "relatedContent": [
+  "forces", 
+  "vectors1", 
+  "newtoni", 
+  "newtonii", 
+  "newtoniii", 
+  "trig"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "<p>\nA smooth uniform rod of mass \n$\\vari{m}$\n and length \n$\\vari{2a}$\n is freely hinged to the ground at the point A between two smooth parallel vertical walls. The rod&apos;s other end, B, rests against one of the walls and a uniform circular lamina of mass \n$\\vari{\\frac{m}{2}}$\n is in contact with the other wall at a point P and with the rod at a point Q, as shown in figure \n1\n below. The rod and the lamina rest in equilibrium in the same vertical plane which is perpendicular to both walls. \n</p>\n<p>\n<p>\n<p>\n<img src=\"figures/Statics_rodandcircleq.png\"/>\n</p>\n<p>\n<figcaption></figcaption>\n</p>\n</p>\n</p>", 
+   "encoding": "html"
+  }, 
+  {
+   "encoding": "html", 
+   "value": "Given that the rod is inclined at an angle \n$\\valuedef{\\theta }{60^\\circ }{}$\n to the horizontal and that the distance \n$\\valuedef{AQ}{\\frac{2}{3}a}{}$\n, find the magnitude of the reaction force at B.", 
+   "choices": [
+    {
+     "type": "choice", 
+     "value": "$\\vari{mg}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\vari{\\frac{\\sqrt 3}{2}mg}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "correct": true, 
+     "value": "$\\vari{\\frac{7\\sqrt 3}{18}mg}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\vari{\\frac{1}{2}mg}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\vari{\\frac{\\sqrt 3}{9}mg}$", 
+     "encoding": "html"
+    }
+   ], 
+   "answer": {
+    "type": "content", 
+    "value": "The correct answer is (b).", 
+    "encoding": "html"
+   }, 
+   "type": "choiceQuestion"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_ scq", 
+ "id": "rod_and_circle"
 }

@@ -1,16 +1,27 @@
 {
-  "src": "trapdoor.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Trapdoor", 
-  "relatedContent": [
-    "forces", 
-    "moments", 
-    "newtoni", 
-    "trig"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_ numerical", 
-  "id": "trapdoor"
+ "attribution": "Adapted with permission from UCLES, AS Level Additional Physics, June 1989, Paper 1, Question 1", 
+ "title": "Trapdoor", 
+ "relatedContent": [
+  "forces", 
+  "moments", 
+  "newtoni", 
+  "trig"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\valuedef{F}{\\frac{1}{4}mg}{;}$\n$\\valuedef{\\tan {\\varphi }}{\\frac{7\\sqrt {3}}{3}}{}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "A uniform rectangular trap door of mass \n$\\vari{m}$\n is hinged at one of its ends. It is held open making an angle \n$\\quantity{\\theta }{60$^{\\circ }$}$\n to the horizontal with a force of magnitude \n$\\vari{F}$\n at the open end acting perpendicular to the trap door. Find an expression for \n$\\vari{F}$\n and find the value of \n$\\vari{\\tan {\\varphi }}$\n, where \n$\\vari{\\varphi }$\n is the angle made by the line of action of the reaction force at the hinge above the horizontal.", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_ numerical", 
+ "id": "trapdoor"
 }

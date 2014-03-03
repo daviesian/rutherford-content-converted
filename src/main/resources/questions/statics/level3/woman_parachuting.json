@@ -1,13 +1,52 @@
 {
-  "src": "woman_parachuting.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Parachuting to Earth", 
-  "relatedContent": [
-    "newtoniii "
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_ scq", 
-  "id": "woman_parachuting"
+ "attribution": "Used with permission from UCLES, A Level Physics, June 1981, Paper 2, Question 6.", 
+ "title": "Parachuting to Earth", 
+ "relatedContent": [
+  "newtoniii "
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "encoding": "html", 
+   "value": "A woman is parachuting at constant speed towards the surface of the Earth. The force which, according to Newton&apos;s third law, makes an action-reaction pair with the gravitational force on her is,", 
+   "choices": [
+    {
+     "type": "choice", 
+     "value": "the tension in the harness of the parachute.", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "correct": true, 
+     "value": "the gravitational force on the Earth due to the woman.", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "the viscous force of the woman and her parachute in the air.", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "the tension in the fabric of the parachute.", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "the viscous force of the air on the woman and her parachute.", 
+     "encoding": "html"
+    }
+   ], 
+   "answer": {
+    "type": "content", 
+    "value": "<p>\nThe correct answer is (c). Newton&apos;s third law states that each action-reaction pair of forces are of the same type, equal in magnitude and opposite in direction. The reaction to the gravitational force on the woman from the Earth must therefore be the gravitational force on the Earth from the woman, as both forces are due to gravity. \n</p>", 
+    "encoding": "html"
+   }, 
+   "type": "choiceQuestion"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_ scq", 
+ "id": "woman_parachuting"
 }

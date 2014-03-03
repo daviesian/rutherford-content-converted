@@ -1,0 +1,53 @@
+{
+ "attribution": "Used with permission from UCLES, A Level Physics, June 1987, Paper 1, Question 4.", 
+ "title": "Newton III", 
+ "relatedContent": [
+  "forces", 
+  "newtoniii"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "encoding": "html", 
+   "value": "Which one of the following pairs of forces is \nnot\n a valid example of action and reaction to which Newton&apos;s third law of motion applies?", 
+   "choices": [
+    {
+     "type": "choice", 
+     "value": "the forces of repulsion between an atom in the surface of a table and an atom in the surface of a book resting on the table.", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "the forces of attraction experienced by each of two gas molecules passing near to each other.", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "the forces of repulsion experienced by each of two parallel wires carrying currents in opposite directions.", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "correct": true, 
+     "value": "the centripetal force keeping a satellite in orbit round the Earth and the weight of the satellite.", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "the forces of attraction between an electron and a proton in a hydrogen atom.", 
+     "encoding": "html"
+    }
+   ], 
+   "answer": {
+    "type": "content", 
+    "value": "The correct answer is (e). Newton&apos;s third law of motion describes each action and reaction pair of forces as being of the same type, equal in magnitude and opposite in direction. This is true for all of the examples except for the satellite; the centripetal force keeping the satellite in orbit and the weight of the satellite are the same force, and this force is due to the gravitational pull of the Earth on the satellite.", 
+    "encoding": "html"
+   }, 
+   "type": "choiceQuestion"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_ scq", 
+ "id": "newton_iii"
+}

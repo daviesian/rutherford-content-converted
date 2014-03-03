@@ -1,16 +1,44 @@
 {
-  "src": "geostationary_orbit.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Geostationary Orbit", 
-  "relatedContent": [
-    "angular_circular", 
-    "energy", 
-    "vectors", 
-    "A1989PSIIQ3_video"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_numeric", 
-  "id": "geostationary_orbit"
+ "attribution": "Used with permission from UCLES, A Level Physical Science, June 1989, Paper 2, Question 3. ", 
+ "title": "Geostationary Orbit", 
+ "relatedContent": [
+  "angular_circular", 
+  "energy", 
+  "vectors", 
+  "A1989PSIIQ3_video"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A satellite is to be placed in a circular orbit around the Earth.", 
+   "encoding": "html"
+  }, 
+  {
+   "encoding": "html", 
+   "value": "Use the information and data below to calculate the required radius of the orbit if the satellite is in a geostationary orbit (remains above the same point on the equator). Please give your answer to two significant figures.", 
+   "answer": {
+    "type": "content", 
+    "value": "The orbit of the satellite must have a radius of \n$\\valuedef{r}{4.2\\times 10^7}{m}$\n.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "hints": [
+    {
+     "type": "content", 
+     "value": "<p>\n$\\valuedef{G}{6.67\\times 10^{-11}}{m\\sup {3}\\,  kg\\sup {-1}\\,  s\\sup {-2}}$\n<br/>\n</p>\n<p>\n$\\valuedef{M}{5.97\\times 10^{24}}{kg}$\n</p>", 
+     "encoding": "html"
+    }
+   ]
+  }, 
+  {
+   "type": "content", 
+   "value": "<p>\nThe gravitational force \n$\\vari{F_{A}}$\n between the satellite and the Earth is in the inward radial direction and its magnitude is given by the equation \n</p>\n<p>\n<table>\n<tr>\n<td>$\\displaystyle  F_ A=GMm/R^2  $</td>\n</tr>\n</table>\n</p>\n<p>\nwhere \n$\\vari{G}$\n is the gravitational constant; \n$\\vari{M}$\n and \n$\\vari{m}$\n are the masses of the Earth and the satellite respectively; and \n$\\vari{R}$\n is the radius of the orbit.\n</p>", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_numeric", 
+ "id": "geostationary_orbit"
 }

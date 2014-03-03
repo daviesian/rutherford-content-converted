@@ -1,0 +1,136 @@
+{
+ "attribution": null, 
+ "title": "Equations of Motion", 
+ "relatedContent": [
+  "vectors", 
+  "calculus", 
+  "newtonii"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "<h3>Equations of Motion (SUVAT)</h3>\nThe equations of motion relate the displacement of an object with its velocity, acceleration and time. The motion of a particle can follow many different paths, but in the following sections we will focus on motion in a straight line, i.e. in one dimension.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Equations of Motion using Differentiation and Integration", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Displacement and Velocity The average velocity \n$\\vari{v}$\n of car can be determined by taking its distance travelled \n$\\vari{\\Delta s}$\n and dividing it by the time taken to travel that distance, \n$\\vari{\\Delta t}$\n :", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<div>$$  v = \\frac{\\Delta s}{\\Delta t} \n\n $$</div>\n This equation just gives us an indication of the average speed of the car. It does not indicate whether the car was speeding up or slowing down over that distance. In order to find the velocity of the car at a given location from the starting point, we need to break up the distance travelled in to many small chunks. The more the size of the chunks are reduced, the closer the time interval tends to zero, eventually giving the \ninstantaneous velocity\n instantaneous velocity . This is written as:", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<div id=\"instv\">$$  v = \\frac{\\d\\   s}{\\d\\   t} \\label{inst_ v} \n\n $$</div>\n If you have done some integration and differentiation, you will recognise that the velocity is simply the time derivative of the displacement.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Quick Question", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "<p>\nThe instantaneous velocity \n$\\vari{v}$\n is \n$\\vari{\\frac{\\d\\   s}{\\d\\   t}}$\n. Thus, \n</p>\n<p>\n<div>$$  v = \\frac{\\d\\,  (4t - 5 t^2)}{\\d\\   t} = 4 - (2\\times 5 t) = 4-10t \n\n $$</div>\n</p>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "If the displacement is given by \n$\\valuedef{s}{4t - 5 t^2}{}$\n, what is \n$\\vari{v}$\n?", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "So we can find the velocity from the displacement using differentiation, how do we find the displacement after a certain time if the velocity is known? Let us rearrange the equation for the velocity:", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<div id=\"insts\">$$  \\d s = v \\d\\   t \\label{inst_ s} \n\n $$</div>\n Now integrating both sides, gives the displacement at a given point in time:", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<div>$$  \\int \\d s = \\int v \\d\\   t = vt + c \n\n $$</div>\n$\\vari{c}$\n is just the constant of integration. If \n$\\valuedef{t}{0}{}$\n , then \n$\\valuedef{s}{c}{}$\n , and so \n$\\vari{c}$\n is the initial position of the car.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Velocity and Acceleration The car may be continuously changing speed. And so how can we quantify the change in the velocity as function of time? Let&apos;s start by considering the average change of the velocity over time, known as the acceleration \n$\\vari{a}$\n :", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<div>$$  a = \\frac{\\Delta v}{\\Delta t} \n\n $$</div>\n Similarly to the velocity in the previous section, this change may not be constant at each point on the car&apos;s trajectory. Reducing the time intervals to almost zero, the average acceleration can be rewritten as the instantaneous acceleration, \n$\\valuedef{a}{\\frac{\\d\\   v}{\\d\\   t}}{}$\n . And so, the acceleration is the time derivative of the velocity. From the previous section, we know that \n$\\valuedef{v}{\\frac{\\d\\   s}{\\d\\   t}}{}$\n . Thus, the acceleration can be related to the displacement of the car by:", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<div>$$  a = \\frac{\\d\\left (\\d\\   s/ \\d\\   t\\right)}{\\d\\   t} = \\frac{\\d^  {\\   2}s}{\\d\\   t^2} \n\n $$</div>\n The acceleration is the second time derivative of the displacement.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Quick Question", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$a = \\frac{\\d^  {\\   2}\\   (4t - 5 t^2)}{\\d\\   t^2} = \\frac{\\d\\   \\left(4-10t\\right)}{\\d\\   t} =$\n$\\quantity{- 10}{m\\,  s\\sup {-2}}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "What is the acceleration of an object if its displacement is the same as that given in question 1, \n$\\valuedef{s}{4t - 5 t^2}{}$\n?", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "As before, the velocity and the displacement from the acceleration by integration with respect to time, once in the case of velocity and twice to obtain the displacement.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<div>$$  v = \\int a \\d\\   t = at + c \n\n $$</div>\n where \n$\\vari{c}$\n is equal the \n$\\vari{u}$\n , the velocity at \n$\\valuedef{t}{0}{s}$\n . And the displacement is:", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<table>\n<tr>\n<td>$\\displaystyle  v = \\int a \\d t  $</td>\n<td>$\\displaystyle  = $</td>\n<td>$\\displaystyle  at + u \\label{vel}  $</td>\n</tr>\n<tr>\n<td>$\\displaystyle s = \\int \\left(at + u\\right) \\d t  $</td>\n<td>$\\displaystyle  = $</td>\n<td>$\\displaystyle  \\frac{1}{2} a t^2 + u t + s_0 \\label{s}  $</td>\n</tr>\n</table>\n where \n$\\vari{s_0}$\n is the position of the car at \n$\\valuedef{t}{0}{s}$\n .", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Rearranging Equations These equations can be rearranged such that the position can be found as a function of the velocity and the acceleration if the time is not known. Rewriting equation \n1\n as a function of \n$\\vari{t}$\n :", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<div>$$  t = \\frac{v-u}{a} \n\n $$</div>\n Now inserting it into the equation for the position, we get:", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<table>\n<tr>\n<td>$\\displaystyle  s  $</td>\n<td>$\\displaystyle  = $</td>\n<td>$\\displaystyle  \\frac{1}{2} a \\left(\\frac{v-u}{a}\\right)^2 + u\\left(\\frac{v-u}{a}\\right) + s_0  $</td>\n</tr>\n<tr>\n<td>$\\displaystyle s  $</td>\n<td>$\\displaystyle  = $</td>\n<td>$\\displaystyle  \\frac{1}{2}\\frac{(v-u)^2 + 2uv - 2u^2}{a} + s_0  $</td>\n</tr>\n<tr>\n<td>$\\displaystyle s  $</td>\n<td>$\\displaystyle  = $</td>\n<td>$\\displaystyle  \\frac{1}{2}\\frac{v^2 + u^2 - 2uv + 2uv - 2u^2}{a} + s_0  $</td>\n</tr>\n<tr>\n<td>$\\displaystyle s  $</td>\n<td>$\\displaystyle  = $</td>\n<td>$\\displaystyle  \\frac{1}{2} \\frac{v^2 - u^2}{a} + s_0  $</td>\n</tr>\n</table>\n If the initial position is \n$\\valuedef{s_0}{0}{m}$\n , this equation can be rearranged to:", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<div>$$  v^2 = u^2 + 2as \n\n $$</div>", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "concept", 
+ "id": "eq_of_motion_diff"
+}

@@ -1,11 +1,11 @@
 {
-  "src": "algebra.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": null, 
-  "relatedContent": [], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "concept", 
-  "id": "algebra"
+ "attribution": null, 
+ "title": null, 
+ "relatedContent": [], 
+ "author": null, 
+ "children": [], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "concept", 
+ "id": "algebra"
 }

@@ -1,16 +1,67 @@
 {
-  "src": "roundabout.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Car on a Roundabout", 
-  "relatedContent": [
-    "angular_circular", 
-    "friction", 
-    "vectors", 
-    "resolving_vectors"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_symbolic", 
-  "id": "roundabout"
+ "attribution": "Created for the Rutherford School Physics Project by NHB and ES", 
+ "title": "Car on a Roundabout", 
+ "relatedContent": [
+  "angular_circular", 
+  "friction", 
+  "vectors", 
+  "resolving_vectors"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A car approaches a roundabout of radius \n$\\vari{R}$\n.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "The maximum speed at which the car can go round the roundabout without slipping is \n$\\valuedef{v}{\\sqrt {\\mu gR}}{}$\n.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "What is the maximum speed at which it can travel in order to go around without slipping, if the coefficient of friction between the road and car is \n$\\vari{\\mu }$\n?", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "This time a racing car approaches a corner of radius \n$\\vari{R}$\n, banked at an angle \n$\\vari{\\theta }$\n to the horizontal.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "<p>\nThe maximum speed for the car to successfully go around the banked corner without slipping is \n</p>\n<p>\n<table>\n<tr>\n<td>$\\displaystyle  v=\\sqrt {gR\\tan \\theta }  $</td>\n</tr>\n</table>\n</p>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "What is the maximum speed at which the car can travel if it is icy so there is no friction between the wheels and the road?", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "<p>\nThe maximum speed for the car to not slip up the slope is given by \n</p>\n<p>\n<table>\n<tr>\n<td>$\\displaystyle  v = \\sqrt {\\frac{\\sin \\theta +\\mu \\cos \\theta }{\\cos \\theta -\\mu \\sin \\theta }\\cdot gR}  $</td>\n</tr>\n</table>\n</p>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "What is the maximum speed at which the car can travel and not slip if the road is rough, with coefficient of friction is \n$\\vari{\\mu }$\n?", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "<p>\nThe minimum speed required to prevent the car from slipping is given by \n</p>\n<p>\n<table>\n<tr>\n<td>$\\displaystyle  v =\\sqrt {\\frac{\\sin \\theta -\\mu \\cos \\theta }{\\cos \\theta +\\mu \\sin \\theta }\\cdot gR}  $</td>\n</tr>\n</table>\n</p>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": null, 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_symbolic", 
+ "id": "roundabout"
 }

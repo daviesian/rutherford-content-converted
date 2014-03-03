@@ -1,18 +1,57 @@
 {
-  "src": "prism.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Prism", 
-  "relatedContent": [
-    "forces", 
-    "vectors1", 
-    "newtoni", 
-    "newtonii", 
-    "newtoniii", 
-    "trig"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_ scq", 
-  "id": "prism"
+ "attribution": "Used with permission from Cambridge University Tripos, Physics Paper 1A, Question A4.", 
+ "title": "Prism", 
+ "relatedContent": [
+  "forces", 
+  "vectors1", 
+  "newtoni", 
+  "newtonii", 
+  "newtoniii", 
+  "trig"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "encoding": "html", 
+   "value": "<p>\nThe prism (whose cross section is an isosceles triangle) shown in Figure \n1\n has a mass of \n$\\valuedef{m}{0.1}{kg}$\n, and you wish to lift it, touching the upper two faces only. If the coefficient of friction between the prism&apos;s surface and your skin is \n$\\valuedef{\\mu }{0.4}{}$\n, how hard must you push directly against each face in order to support the prism? \n</p>\n<p>\n<p>\n<p>\n<img src=\"figures/Statics_prismq.png\"/>\n</p>\n<p>\n<figcaption></figcaption>\n</p>\n</p>\n</p>", 
+   "choices": [
+    {
+     "type": "choice", 
+     "correct": true, 
+     "value": "$\\quantity{3.85}{N}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\quantity{4.74}{N}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\quantity{0.51}{N}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\quantity{1.27}{N}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\quantity{0.85}{N}$", 
+     "encoding": "html"
+    }
+   ], 
+   "answer": {
+    "type": "content", 
+    "value": "The correct answer is (a)", 
+    "encoding": "html"
+   }, 
+   "type": "choiceQuestion"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_ scq", 
+ "id": "prism"
 }

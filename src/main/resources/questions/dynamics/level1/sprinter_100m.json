@@ -1,14 +1,80 @@
 {
-  "src": "sprinter_100m.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Sprinter running 100m", 
-  "relatedContent": [
-    "newtonii", 
-    "energy"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_numeric", 
-  "id": "sprinter_100m"
+ "attribution": null, 
+ "title": "Sprinter running 100m", 
+ "relatedContent": [
+  "newtonii", 
+  "energy"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "An \n$\\quantity{80}{kg}$\n sprinter runs a \n$\\quantity{100}{m}$\n race in \n$\\quantity{10.4}{s}$\n. He accelerates to \n$\\quantity{9}{m\\,  s\\sup {-1}}$\n in the first \n$\\quantity{1.2}{s}$\n with constant acceleration (this is a simplified model).", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "What average force does he push with to get up to speed?", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "<p>\nWhat is the ratio of the accelerating force produced by his \n</p>\n<p>\nlegs to the weight of his whole body supported by his legs? \n</p>", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "What distance does he travel in the first \n$\\quantity{1.2}{s}$\n?", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "How much energy does he convert in \n$\\quantity{1.2}{s}$\n?", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "What average power do his legs produce to accelerate him to his racing speed?", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Since his legs can easily hold up more than twice his weight (he could easily lift a fellow athlete on to his shoulders) why is it that he cannot accelerate much faster at the start of the race?", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_numeric", 
+ "id": "sprinter_100m"
 }

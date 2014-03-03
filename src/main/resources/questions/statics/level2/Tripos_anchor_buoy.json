@@ -1,0 +1,43 @@
+{
+ "attribution": "Used with permission from Cambridge University Tripos.", 
+ "title": "An Anchored Buoy", 
+ "relatedContent": [
+  "forces", 
+  "vectors1", 
+  "newtoni"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "An iron anchor (of mass \n$m=500$\n kg and density \n$\\rho = 8000$\n kg\n m\n$^{-3}$\n) is attached by a light, thin cable to a light spherical buoy of radius \n$r$\n intended to mark its position.", 
+   "encoding": "html"
+  }, 
+  {
+   "encoding": "html", 
+   "value": "How large must the buoy be to prevent the anchor dragging it under the surface when the water is too deep for the cable to reach the bottom?", 
+   "answer": {
+    "type": "content", 
+    "value": "The radius of the buoy must be greater than \n$\\valuedef{r}{0.47}{m}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "hints": [
+    {
+     "type": "content", 
+     "value": "Archimedes&apos; principle tells us that any object, wholly or partially submerged in a fluid is buoyed up by a force equal to the weight of the volume of fluid it displaces.", 
+     "encoding": "html"
+    }
+   ]
+  }, 
+  {
+   "type": "content", 
+   "value": "Assume water has density \n$\\rho &apos;=1000$\n kg m\n$^{-3}$", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_ numerical", 
+ "id": "Tripos_anchor_buoy"
+}

@@ -1,16 +1,42 @@
 {
-  "src": "launching_a_rocket.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Launching a Rocket", 
-  "relatedContent": [
-    "momentum", 
-    "newtonii", 
-    "newtoniii", 
-    "vectors"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_symbolic", 
-  "id": "launching_a_rocket"
+ "attribution": "Adapted with permission from HE+. ", 
+ "title": "Launching a Rocket", 
+ "relatedContent": [
+  "momentum", 
+  "newtonii", 
+  "newtoniii", 
+  "vectors"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A rocket with initial mass \n$\\vari{M_{0}}$\n and exhaust speed \n$\\vari{v}$\n is sitting on its launch pad. Its engines eject mass at a constant rate of magnitude \n$\\valuedef{\\lvert \\frac{\\d M}{\\d t}\\rvert }{\\mu }{}$\n.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "<p>\n<table>\n<tr>\n<td>$\\displaystyle  a_0 = \\frac{\\mu v}{M_{0}} - g  $</td>\n</tr>\n</table>\n</p>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "What is the initial acceleration, \n$\\vari{a_{0}}$\n?", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "<p>\n<table>\n<tr>\n<td>$\\displaystyle  \\mu = \\mbox{\\quantity{5150}{kg\\,  s\\sup {-1}}}  $</td>\n</tr>\n</table>\n</p>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Given that \n$\\valuedef{M_{0}}{1\\times 10^{6}}{kg}$\n, \n$\\valuedef{v}{2000}{m\\,  s\\sup {-1}}$\n and we require \n$\\valuedef{a_{0}}{0.5}{m\\,  s\\sup {-2}}$\n, what must \n$\\vari{\\mu }$\n be?", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_symbolic", 
+ "id": "launching_a_rocket"
 }

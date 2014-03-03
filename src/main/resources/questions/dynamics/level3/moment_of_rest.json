@@ -1,14 +1,58 @@
 {
-  "src": "moment_of_rest.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "A Moment of Rest", 
-  "relatedContent": [
-    "momentum", 
-    "vectors"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_scq", 
-  "id": "moment_of_rest"
+ "attribution": "Used with permission from UCLES, A Level Physics, June 1988, Paper 1, Question 4.", 
+ "title": "A Moment of Rest", 
+ "relatedContent": [
+  "momentum", 
+  "vectors"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "Two bodies, P and Q, of equal mass are travelling towards one another on a level frictionless track, with speeds \n$\\vari{u}$\n and \n$\\vari{v}$\n respectively. They make an elastic collision. At some instant during the collision, P is brought instantaneously to rest.", 
+   "encoding": "html"
+  }, 
+  {
+   "encoding": "html", 
+   "value": "What is the speed of Q at this instant?", 
+   "choices": [
+    {
+     "type": "choice", 
+     "value": "zero", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\vari{2(v - u)}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "correct": true, 
+     "value": "$\\vari{(v - u)}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\vari{\\sqrt {uv}}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\vari{\\frac{1}{2}(v - u)}$", 
+     "encoding": "html"
+    }
+   ], 
+   "answer": {
+    "type": "content", 
+    "value": "The correct answer is (b). This can be obtained by using the conservation of momentum; the total momentum is \n$\\vari{m(v - u)}$\n for all time, and if P has no momentum then Q has this total momentum and so the speed in (b).", 
+    "encoding": "html"
+   }, 
+   "type": "choiceQuestion"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_scq", 
+ "id": "moment_of_rest"
 }

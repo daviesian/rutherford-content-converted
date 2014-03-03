@@ -1,16 +1,50 @@
 {
-  "src": "powering_up.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Powering Up", 
-  "relatedContent": [
-    "energy", 
-    "newtonii", 
-    "vectors", 
-    "resolving_vectors"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_scq", 
-  "id": "powering_up"
+ "attribution": "Used with permission from UCLES, A Level Physics, November 1988, Paper 1, Question 5.", 
+ "title": "Powering Up", 
+ "relatedContent": [
+  "energy", 
+  "newtonii", 
+  "vectors", 
+  "resolving_vectors"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "choices": [
+    {
+     "type": "choice", 
+     "value": "$\\vari{mavg\\sin (\\theta )}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "correct": true, 
+     "value": "$\\vari{mav + mgv\\sin (\\theta )}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\vari{mav\\sin (\\theta ) + mgv}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\vari{\\frac{mav + mgv}{\\sin (\\theta )}}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\vari{(mav + mgv)\\sin (\\theta )}$", 
+     "encoding": "html"
+    }
+   ], 
+   "type": "choiceQuestion", 
+   "value": "What is the power required to give a body of mass \n$\\vari{m}$\n a forward acceleration \n$\\vari{a}$\n when it is moving with velocity \n$\\vari{v}$\n up a frictionless track inclined at an angle \n$\\vari{\\theta }$\n to the horizontal?", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_scq", 
+ "id": "powering_up"
 }

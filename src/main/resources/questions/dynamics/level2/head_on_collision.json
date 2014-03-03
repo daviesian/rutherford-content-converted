@@ -1,17 +1,61 @@
 {
-  "src": "head_on_collision.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Head-on Collision", 
-  "relatedContent": [
-    "momentum", 
-    "vectors", 
-    "resolving_vectors", 
-    "momentumii", 
-    "IntA1988PIQ4l_video"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_scq", 
-  "id": "head_on_collision"
+ "attribution": "Used with permission from UCLES, A Level Physics, November 1988, Paper 1, Question 4.", 
+ "title": "Head-on Collision", 
+ "relatedContent": [
+  "momentum", 
+  "vectors", 
+  "resolving_vectors", 
+  "momentumii", 
+  "IntA1988PIQ4l_video"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "Two masses, X and Y, are moving directly towards one another along a line. The momentum of X before the collision is \n$\\quantity{20}{kg\\,  m\\,  s\\sup {-1}}$\n and the momentum of Y before the collision is \n$\\quantity{12}{kg\\,  m\\,  s\\sup {-1}}$\n. After the collision, the masses move in opposite directions and the momentum of X is \n$\\quantity{2}{kg\\,  m\\,  s\\sup {-1}}$\n.", 
+   "encoding": "html"
+  }, 
+  {
+   "encoding": "html", 
+   "value": "What is the magnitude of the momentum of Y?", 
+   "choices": [
+    {
+     "type": "choice", 
+     "value": "$\\quantity{6}{kg\\,  m\\,  s\\sup {-1}}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "correct": true, 
+     "value": "$\\quantity{10}{kg\\,  m\\,  s\\sup {-1}}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\quantity{8}{kg\\,  m\\,  s\\sup {-1}}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\quantity{34}{kg\\,  m\\,  s\\sup {-1}}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\quantity{30}{kg\\,  m\\,  s\\sup {-1}}$", 
+     "encoding": "html"
+    }
+   ], 
+   "answer": {
+    "type": "content", 
+    "value": "The correct answer is (c). The total momentum in the direction X is moving in is \n$\\quantity{8}{kg\\,  m\\,  s\\sup {-1}}$\n initially, so when X reverses direction and so has a momentum of \n$\\quantity{-2}{kg\\,  m\\,  s\\sup {-1}}$\n; to make the total equal \n$\\quantity{8}{kg\\,  m\\,  s\\sup {-1}}$\n and conserve momentum, the momentum of Y must be \n$\\quantity{10}{kg\\,  m\\,  s\\sup {-1}}$\n.", 
+    "encoding": "html"
+   }, 
+   "type": "choiceQuestion"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_scq", 
+ "id": "head_on_collision"
 }

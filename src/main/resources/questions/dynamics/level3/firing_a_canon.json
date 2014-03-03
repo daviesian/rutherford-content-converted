@@ -1,16 +1,52 @@
 {
-  "src": "firing_a_canon.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Firing a Canon", 
-  "relatedContent": [
-    "energy", 
-    "momentum", 
-    "impulse", 
-    "eq_of_motion_diff"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_symbolic", 
-  "id": "firing_a_canon"
+ "attribution": "Used with permission from UCLES, A Level Applied Mathematics, June1972, Paper2, Question2.", 
+ "title": "Firing a Canon", 
+ "relatedContent": [
+  "energy", 
+  "momentum", 
+  "impulse", 
+  "eq_of_motion_diff"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A gun of mass \n$\\valuedef{M}{1000}{kg}$\n stands on horizontal ground and can move horizontally against a recoil mechanism. With its barrel raised at an angle of \n$\\valuedef{\\theta }{60^{\\circ }}{}$\n to the ground, it fires a projectile of mass \n$\\valuedef{m}{20}{kg}$\n with a speed \n$\\valuedef{u}{306}{m\\,  s\\sup {-1}}$\nrelative to the barrel\n.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\valuedef{I}{3000}{kg\\,  m\\,  s\\sup {-1}}$\n and \n$\\valuedef{E}{904500}{J}$\n.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Calculate the horizontal impulse on the gun and the total kinetic energy produced by the explosion which fired the projectile. Clearly state the units in which both quantities are measured.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\valuedef{F}{18000}{N}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "If the recoil mechanism brings the gun to rest when it has moved back \n$\\valuedef{r}{25}{cm}$\n; find the force exerted by the mechanism, assuming it to be constant.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\valuedef{t}{\\frac{1}{6}}{s}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "What is the time taken for the gun to recoil through this distance?", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_symbolic", 
+ "id": "firing_a_canon"
 }

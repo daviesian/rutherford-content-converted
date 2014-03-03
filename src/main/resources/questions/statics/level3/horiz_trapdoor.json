@@ -1,0 +1,53 @@
+{
+ "attribution": "Created for the Rutherford School Physics Project by PS.", 
+ "title": "Trapdoor moment", 
+ "relatedContent": [
+  "forces", 
+  "moments"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "encoding": "html", 
+   "value": "A horizontal trapdoor AB of length 30 m is hinged at A. A vertical force of 50 N pulls upwards at B. What is the moment acting about the hinge due to the force?", 
+   "choices": [
+    {
+     "type": "choice", 
+     "value": "$\\quantity{50}{N\\,  m}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\quantity{750}{N\\,  m}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\quantity{150}{N\\,  m}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\quantity{2500}{N\\,  m}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "correct": true, 
+     "value": "$\\quantity{1500}{N\\,  m}$", 
+     "encoding": "html"
+    }
+   ], 
+   "answer": {
+    "type": "content", 
+    "value": "The correct answer is (d). The moment is equal to the force multiplied by the perpendicular distance from the line of action of the force to the pivot. In this case this distance is equal to the length of the trapdoor. Moment = \n$\\valuedef{50 \\times 30}{1500}{N\\,  m}$\n.", 
+    "encoding": "html"
+   }, 
+   "type": "choiceQuestion"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_ scq", 
+ "id": "horiz_trapdoor"
+}

@@ -1,16 +1,72 @@
 {
-  "src": "festival_banner.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Festival banner", 
-  "relatedContent": [
-    "forces", 
-    "newtoni", 
-    "trig", 
-    "vectors"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_ numerical", 
-  "id": "festival_banner"
+ "attribution": "Written by Zephyr Penoyre for the RSPP, edited by MC.", 
+ "title": "Festival banner", 
+ "relatedContent": [
+  "forces", 
+  "newtoni", 
+  "trig", 
+  "vectors"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "<p>\nFor a festival a banner is to be hung between two equal height buildings, a distance \n$\\vari{l}$\n apart, by a light, inextensible wire of length \n$\\vari{\\lambda l}$\n. So that it is not stretched the banner must be placed such that there is equal tension on each length of wire supporting it. \n</p>\n<p>\nThe wire is attached on one side to the buliding&apos;s roof, and on the other side to a crane, of height \n$\\vari{h}$\n. The banner needs to be hung at a distance \n$\\vari{y}$\n vertically below the level of the building&apos;s roof, and horizontal distance \n$\\vari{x}$\n from the building without the crane.\n</p>", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "<p>\nBy considering the banner as a point mass, show that: \n</p>\n<p>\n<table>\n<tr>\n<td>$\\displaystyle  \\sqrt {x^2 + y^2} + \\sqrt {(y+h)^2 + (l-x)^2} = \\lambda l  $</td>\n</tr>\n</table>\n</p>", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "<div id=\"eqn:yx\">$$  y = x \\sqrt {\\lambda ^2 - 1} \n\n\\label{eqn:yx} \n\n $$</div>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Find \n$\\vari{y}$\n in terms of \n$\\vari{x}$\n and \n$\\vari{\\lambda }$\n.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "<p>\n<div>$$  x = \\frac{1}{2} \\left( l - \\frac{h}{\\sqrt {\\lambda ^2 -1}} \\right)  $$</div>\n</p>\n<p>\nand \n</p>\n<p>\n<div>$$  y = \\frac{1}{2}( l\\sqrt {\\lambda ^2 - 1} - h)  $$</div>\n</p>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Rearrange to find \n$\\vari{x}$\n and \n$\\vari{y}$\n in terms of \n$\\vari{h}$\n and \n$\\vari{\\lambda }$\n. Explain the behaviour of these equations as \n$\\vari{\\lambda }$\n goes to \n$\\sqrt {1 + \\frac{h^2}{l^2}}$\n and to infinity (assume \n$\\vari{h}$\n remains finite).", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "For \n$\\lambda < \\sqrt {1 + \\frac{h^2}{l^2}}$\n, the distance between the two ends of the wire (\n$\\sqrt {l^2 + h^2}$\n), i.e. from one rooftop to the top of the crane, is greater than the length of the wire \n$\\lambda l$\n. This is at odds with the earlier assumption that the wire is inextensible and thus is a physical impossibility.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "why are there no solutions for \n$\\lambda < \\sqrt {1 + \\frac{h^2}{l^2}}$\n?", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\valuedef{T}{56.6}{N}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Assuming \n$\\lambda > \\sqrt {1 + \\frac{h^2}{l^2}}$\n and \n$\\valuedef{\\lambda }{2}{}$\n and the mass of the banner is \n$\\quantity{10}{kg}$\n, find the tension \n$\\vari{T}$\n in the banner.", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_ numerical", 
+ "id": "festival_banner"
 }

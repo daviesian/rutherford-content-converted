@@ -1,15 +1,41 @@
 {
-  "src": "space_justice.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Space Justice", 
-  "relatedContent": [
-    "energy", 
-    "momentum", 
-    "momentumii"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_numeric", 
-  "id": "space_justice"
+ "attribution": "Cambridge University Tripos 2011", 
+ "title": "Space Justice", 
+ "relatedContent": [
+  "energy", 
+  "momentum", 
+  "momentumii"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A police spaceship, of mass \n$\\valuedef{m}{10,000}{kg}$\n, travelling at a speed \n$\\valuedef{u}{2}{km\\,  s\\sup {-1}}$\n needs to arrest another ship travelling ahead of it at \n$\\quantity{2.5}{km\\,  s\\sup {-1}}$\n. The police spaceship is capable of splitting itself into two equal parts and supplying them with kinetic energy from a single reserve of \n$\\quantity{2}{GJ}$\n.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "The velocity of the faster part of the police spaceship is \n$\\valuedef{0.632 +2}{2.632}{km\\,  s\\sup {-1}}$\n and since this is faster than the other ship, the police will eventually catch them.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": " Is the reserve sufficient?", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "The time taken for the police spaceship to catch the over craft is about \n$\\quantity{6.3}{hours}$\n.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Bonus: If the reserve is sufficient; how long would it take for the police spaceship to catch the other craft, given that it was initially 3000 km behind?", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_numeric", 
+ "id": "space_justice"
 }

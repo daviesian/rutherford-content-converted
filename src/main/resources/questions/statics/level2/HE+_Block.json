@@ -1,15 +1,36 @@
 {
-  "src": "HE+_Block.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Suspended block", 
-  "relatedContent": [
-    "forces", 
-    "vectors2", 
-    "newtoni"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_ numerical", 
-  "id": "HE+_Block"
+ "attribution": "Used with permission from HE+.", 
+ "title": "Suspended block", 
+ "relatedContent": [
+  "forces", 
+  "vectors2", 
+  "newtoni"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A block of mass \n$m=10$\n kg is suspended in equilibrium by forces \n$F_1$\n and \n$F_2$\n, as shown below in Figure \n1\n.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "The two forces are \n$\\valuedef{F_1}{113}{N}$\n and \n$\\valuedef{F_2}{56.6}{N}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "If \n$\\theta =60^\\circ $\n, what are the magnitudes of \n$F_1$\n and \n$F_2$\n? ", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<p>\n<p>\n<img src=\"Statics_fsonb\"/>\n</p>\n<p>\n<figcaption></figcaption>\n</p>\n</p>", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_ numerical", 
+ "id": "HE+_Block"
 }

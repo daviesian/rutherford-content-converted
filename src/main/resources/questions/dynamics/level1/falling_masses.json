@@ -1,14 +1,52 @@
 {
-  "src": "falling_masses.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Falling masses", 
-  "relatedContent": [
-    "newtoni", 
-    "newtonii"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_scq", 
-  "id": "falling_masses"
+ "attribution": null, 
+ "title": "Falling masses", 
+ "relatedContent": [
+  "newtoni", 
+  "newtonii"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "encoding": "html", 
+   "value": "Two different masses are released and fall to the floor. If the air resistance can be neglected,", 
+   "choices": [
+    {
+     "type": "choice", 
+     "value": "the smaller mass falls faster than the larger mass.", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": null, 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": null, 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": null, 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": null, 
+     "encoding": "html"
+    }
+   ], 
+   "answer": {
+    "type": "content", 
+    "value": "The correct answer is (c). They fall to the floor because the force of gravity pulls them towards the Earth. We could just say that the observation is that different masses fall at the same rate (try it out). We can also try and work out what might be going on. When an object falls, it is attracted to the earth, whilst the Earth is also attracted towards the object. However, the earth is so massive that it seems to remain in place. Using Newton&apos;s 2nd Law, \n$\\valuedef{F}{ma}{}$\n, the acceleration, which the question asks about, depends on the mass and the force. But the force of gravity works in such a way that the weight of an object is also proportional to the mass, as in \n$\\valuedef{F}{mg}{}$\n. So for double the mass, we have double the forcing pulling the object downwards, but using \n$\\valuedef{F}{ma}{}$\n, both doubling the force and doubling the mass result in the same acceleration towards the floor. ", 
+    "encoding": "html"
+   }, 
+   "type": "choiceQuestion"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_scq", 
+ "id": "falling_masses"
 }

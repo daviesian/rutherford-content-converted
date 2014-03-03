@@ -1,16 +1,59 @@
 {
-  "src": "pulleys.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Pulley system", 
-  "relatedContent": [
-    "forces", 
-    "vectors1", 
-    "newtoni", 
-    "newtoniii"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_ scq", 
-  "id": "pulleys"
+ "attribution": "Written by Zephyr Penoyre for the RSPP", 
+ "title": "Pulley system", 
+ "relatedContent": [
+  "forces", 
+  "vectors1", 
+  "newtoni", 
+  "newtoniii"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "<p>\nA simple pulley system consists of a light inextensible string and two pulleys, the higher attached to a solid ceiling and with a weight hung off the other as shown: \n</p>\n<p>\n<p>\n<p>\n<img src=\"figures/Statics_Pulleys.png\"/>\n</p>\n<p>\n<figcaption></figcaption>\n</p>\n</p>\n</p>", 
+   "encoding": "html"
+  }, 
+  {
+   "encoding": "html", 
+   "value": "The force \n$F$\n needed here to support weight \n$W$\n is \n$\\frac{W}{2}$\n, what force would be needed if a third pulley was added to the system?", 
+   "choices": [
+    {
+     "type": "choice", 
+     "value": "$\\vari{W/2}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\vari{W/3}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\vari{W/4}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\vari{W}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\vari{W/\\sqrt {2}}$", 
+     "encoding": "html"
+    }
+   ], 
+   "answer": {
+    "type": "content", 
+    "value": "The correct answer is (c).", 
+    "encoding": "html"
+   }, 
+   "type": "choiceQuestion"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_ scq", 
+ "id": "pulleys"
 }

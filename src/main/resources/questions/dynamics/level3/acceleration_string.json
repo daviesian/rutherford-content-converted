@@ -1,14 +1,65 @@
 {
-  "src": "acceleration_string.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Acceleration on a String", 
-  "relatedContent": [
-    "energy", 
-    "momentum"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_numeric", 
-  "id": "acceleration_string"
+ "attribution": "Adapted with permission from UCLES, AO Level Physics, November 1984, Paper 1, Question 1.", 
+ "title": "Acceleration on a String", 
+ "relatedContent": [
+  "energy", 
+  "momentum"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "<p>\nA particle Q of mass \n$\\quantity{2}{kg}$\n is resting on a frictionless surface. It is attached to one end of a piece of elastic string, with the other end of the elastic being attached to a fixed point. Q is then pulled back and released from rest with the elastic extended \n$\\quantity{0.5}{m}$\n beyond its natural length. \n</p>\n<p>\nAfter the particle has been accelerated, the string becomes slack. Rather than being let to continue in some kind of oscillatory motion, the string is cut when it first becomes slack. It is travelling at a speed of \n$\\quantity{4.0}{m\\,  s\\sup {-1}}$\n when this occurs. \n</p>\n<p>\nAssuming no losses to friction or other dissipative forces:\n</p>", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "<tr>\n<td>$\\displaystyle  E = \\frac{1}{2}mv^{2} = \\frac{1}{2}(2)(4)^{2} = \\mbox{\\quantity{16}{J}}  $</td>\n</tr>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Calculate the energy stored in the elastic.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "<table>\n<tr>\n<td>$\\displaystyle  T_{max} = kx = (128)(0.5) = \\mbox{\\quantity{64}{N}}  $</td>\n</tr>\n</table>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "What is the maximum tension in the elastic during the process?", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Q then makes an elastic collision with a stationary body P and rebounds back along the same track at \n$\\quantity{3.0}{m\\,  s\\sup {-1}}$\n.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "0\n1\nm\n s\n-1\n and 0\n14\nkg", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Calculate the mass of P, and its velocity after the collision.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "<p>\n<div>$$  t&  = \\mbox{\\quantity{0.4}{s}} \n\n $$</div>\n</p>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "If Q had instead been accelerated from rest by a small motor giving a power of \n$\\quantity{40}{W}$\n, how long would it have taken to reach a speed of \n$\\quantity{4.0}{m\\,  s\\sup {-1}}$\n?", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_numeric", 
+ "id": "acceleration_string"
 }

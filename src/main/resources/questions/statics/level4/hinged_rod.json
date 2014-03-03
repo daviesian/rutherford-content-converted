@@ -1,15 +1,31 @@
 {
-  "src": "hinged_rod.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "A hinged rod", 
-  "relatedContent": [
-    "forces", 
-    "friction", 
-    "newtoni"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_ numerical", 
-  "id": "hinged_rod"
+ "attribution": "Used, with permission from UCLES, A Level Maths, Syllabus A, June 1987, Special Paper, Question 10.", 
+ "title": "A hinged rod", 
+ "relatedContent": [
+  "forces", 
+  "friction", 
+  "newtoni"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A uniform rod of length \n$\\vari{2a}$\n runs from A to B and has mass \n$\\vari{km}$\n. The rod is hinged at both ends with the point A fixed. The other end is freely hinged to another rod of length \n$\\vari{2a}$\n and mass \n$\\vari{m}$\n. Both rods are in equilibrium with the first rod horizontal and the second is inclined at some angle \n$\\vari{\\theta }$\n to the vertical with its unhinged end in contact with the rough floor. The coefficient of friction between the rod and the floor is \n$\\vari{\\mu }$\n. See Figure \n1\n.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "<p>\nShow that \n</p>\n<p>\n<table>\n<tr>\n<td>$\\displaystyle  \\mu \\ge \\frac{1+k}{2+k}\\tan (\\theta )  $</td>\n</tr>\n</table>\n</p>", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_ numerical", 
+ "id": "hinged_rod"
 }

@@ -1,14 +1,53 @@
 {
-  "src": "heavy_ball.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Falling heavy ball", 
-  "relatedContent": [
-    "eq_of_motion_diff", 
-    "newtonii"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_scq", 
-  "id": "heavy_ball"
+ "attribution": null, 
+ "title": "Falling heavy ball", 
+ "relatedContent": [
+  "eq_of_motion_diff", 
+  "newtonii"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "encoding": "html", 
+   "value": "Using a value of \n$\\valuedef{g}{10}{m\\,  s\\sup {-2}}$\n, a heavy ball is dropped from rest. Ignoring air resistance, its speed after one, two and three seconds is", 
+   "choices": [
+    {
+     "type": "choice", 
+     "value": "$\\quantity{1}{m\\,  s\\sup {-1}}$\n, \n$\\quantity{2}{m\\,  s\\sup {-1}}$\n, \n$\\quantity{3}{m\\,  s\\sup {-1}}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\quantity{1}{m\\,  s\\sup {-1}}$\n, \n$\\quantity{4}{m\\,  s\\sup {-1}}$\n, \n$\\quantity{9}{m\\,  s\\sup {-1}}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\quantity{0}{m\\,  s\\sup {-1}}$\n, \n$\\quantity{20}{m\\,  s\\sup {-1}}$\n, \n$\\quantity{40}{m\\,  s\\sup {-1}}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\quantity{1}{m\\,  s\\sup {-1}}$\n, \n$\\quantity{4}{m\\,  s\\sup {-1}}$\n, \n$\\quantity{8}{m\\,  s\\sup {-1}}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "correct": true, 
+     "value": "$\\quantity{10}{m\\,  s\\sup {-1}}$\n, \n$\\quantity{20}{m\\,  s\\sup {-1}}$\n, \n$\\quantity{30}{m\\,  s\\sup {-1}}$", 
+     "encoding": "html"
+    }
+   ], 
+   "answer": {
+    "type": "content", 
+    "value": "The correct answer is (d). \n$\\vari{g}$\n is the particular value of the acceleration due to the gravitational pull of the earth. If it is any old acceleration due to a force, then the letter a is used. Acceleration is the rate of change of velocity. So, starting from rest, after \n$\\quantity{1}{s}$\n the velocity must be \n$\\quantity{10}{m\\,  s\\sup {-1}}$\n downwards, and after another second it will again have increased by another \n$\\quantity{10}{m\\,  s\\sup {-1}}$\n, making \n$\\quantity{20}{m\\,  s\\sup {-1}}$\n, and then to \n$\\quantity{30}{m\\,  s\\sup {-1}}$\n after the third second. ", 
+    "encoding": "html"
+   }, 
+   "type": "choiceQuestion"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_scq", 
+ "id": "heavy_ball"
 }

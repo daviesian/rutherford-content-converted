@@ -1,0 +1,165 @@
+{
+ "attribution": null, 
+ "title": "Newton's First Law", 
+ "relatedContent": [
+  "newtonii", 
+  "newtoniii", 
+  "vectors", 
+  "calculus"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "<h3>Newton&apos;s First Law of Motion</h3>", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "As Newton stated it... Every body continues in its state of being at rest or in uniform motion unless acted upon by a resultant force. ", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Application of Newton I", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Levels 1 &ndash; 3 ", 
+   "encoding": "html"
+  }, 
+  {
+   "src": "../../figures/FreeBody1.svg", 
+   "type": "image", 
+   "value": "The free body diagram of the forces acting \non a cardboard box\n at rest on a table, where \n$\\vari{W}$\n is the weight of the box and \n$\\vari{N}$\n is the normal reaction of the table on the box. The forces on the table are not drawn here.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "There are two things that we should note in relation to this law: \n<ol>\n<li><p>\nOften we forget the important second part of this law - that it applies to bodies that are moving at constant velocity, not just those that are at rest. \n</p></li>\n<li><p>\nWhen we look at bodies in equilibrium - where all the forces are balanced and there is no acceleration - we often think that we are applying Newton&apos;s Second Law (N2L) but actually it is Newton&apos;s First Law (N1L) that tells us there must be zero resultant force. \n</p></li>\n</ol>\nFor example\n , a cardboard box is \nat rest\n at rest on a table, what is the magnitude of the normal reaction of the table on the box? \nWe begin with the free body force diagram for the box. Newton&apos;s First Law tells us that, as the box is in equilibrium (at rest), the sum of all the forces must equal zero (technically all the torques must also be equal to zero but we will come on to that at a later level).", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<table>\n<tr>\n<td>$\\displaystyle  N-W=0  $</td>\n</tr>\n<tr>\n<td>$\\displaystyle N=W  $</td>\n</tr>\n</table>\n Therefore the normal reaction \nof the table on the box\n of the table on the box is equal to the weight of the box.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Quick Questions [Where appropriate take the acceleration due to gravity to be, \n$\\valuedef{g}{10}{m\\,  s\\sup {-2}}$\n .] ", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "${F}={10}$\nN", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "A box is being dragged along a frictional floor by a tension, \n$T=10$\n N, in a rope that is parallel to the ground. If the box is moving at constant velocity what is the magnitude of the frictional force that must be acting on the box?", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<br/>", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "${N}={10g\\cos (30^\\circ )} =$\n$\\quantity{50\\sqrt {3}}{N}$\n, the direction is perpendicular to the plane", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "A wooden block of mass, \n$\\quantity{10}{kg}$\n, rests on a frictional plane that is inclined at an angle of \n$30^\\circ $\n to the horizontal. What is the magnitude and direction of normal reaction, \n$\\vari{N}$\n, of the plane on the block if the block remains at rest?", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<br/>", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "${N}={(M+10m)g\\sin (\\theta )}$\n, the direction is perpendicular to the plane", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "A trailer of mass, \n$\\vari{M}$\n, containing 10 blocks, each of mass \n$\\vari{m}$\n, is at rest on a frictional plane that is inclined at an angle of \n$\\vari{\\theta }$\n to the vertical. What is the magnitude and direction of the normal reaction, \n$\\vari{N}$\n, of the plane on the trailer?", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Levels 4+ ", 
+   "encoding": "html"
+  }, 
+  {
+   "src": "../../figures/FreeBody2.svg", 
+   "type": "image", 
+   "id": "NI2", 
+   "value": "The free body diagram of the forces acting \non a cardboard box\n that is moving at a constant velocity,\n$\\vari{v}$\n, parallel to the surface of a frictional table, where \n$\\vari{W}$\n is the weight of the box, \n$\\vari{N}$\n is the normal reaction of the table on the box, \n$\\vari{F}$\n is the frictional force applied to the box by the table and \n$\\vari{P}$\n is the pulling force we need to apply to keep the box at constant velocity, \n$\\vari{v}$\n. ", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Newton&apos;s First Law applies in 1, 2 or 3 dimensions and we can apply it in any direction. If a body is at rest or continuing at constant velocity then the resultant force in any direction must be equal to zero. Let us imagine a box that is being dragged along parallel to the surface of a \nfrictional\n frictional table at a constant velocity, \n$\\vari{v}$\n , as shown in figure \n1\n . What can we work out about the normal reaction, \n$\\vari{N}$\n , and the force, \n$\\vari{P}$\n , that we need to apply to the box in order to maintain this constant velocity? \nNewton&apos;s First Law tells us that the sum of all forces must equal zero both parallel and perpendicular to the table&apos;s surface, therefore", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<table>\n<tr>\n<td>$\\displaystyle  N-W $</td>\n<td>$\\displaystyle  = $</td>\n<td>$\\displaystyle  0 \\   \\   \\mbox{therefore} \\   \\   N=W \\   \\   \\mbox{and} $</td>\n</tr>\n<tr>\n<td>$\\displaystyle P-F $</td>\n<td>$\\displaystyle  = $</td>\n<td>$\\displaystyle  0 \\   \\   \\mbox{therefore}\\   \\   P=F  $</td>\n</tr>\n</table>", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Quite Quick Questions [Where appropriate take the acceleration due to gravity to be, \n$\\valuedef{g}{10}{m\\,  s\\sup {-2}}$\n .] ", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "<p>\n${F}={T\\cos (30)}=$\n$\\quantity{5\\sqrt {3}}{ N}$\n;\n<br/>\n</p>\n<p>\n$N+T\\sin (30)-mg=0$\n therefore\n<br/>\n</p>\n<p>\n$N=mg-T\\sin (30)=10-5$\n = \n$\\quantity{5}{N}$\n</p>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "A box is being dragged along the floor by the tension, \n$\\valuedef{T}{10}{N}$\n, in a rope, where the rope is inclined at an angle of \n$30^\\circ $\n to the ground. If the box is moving at constant velocity what is the magnitude of the frictional force that must be acting on the box? What is the magnitude of the normal reaction, \n$\\vari{N}$\n, of the ground on the box if the mass of the box is \n$\\quantity{1}{kg}$\n?", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<br/>", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "${N}={10g\\cos (30)} =$\n$\\quantity{50\\sqrt {3}}{N}$\n, the direction is perpendicular to the plane;\n<br/>\n$\\valuedef{T}{10g\\sin (30)=5g}{}$\n = \n$\\quantity{50}{N}$\n.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "A wooden block of mass, \n$\\quantity{10}{kg}$\n, rests on a frictionless, inclined plane at angle of \n$30^\\circ $\n to the horizontal and is held in place by a rope running parallel to the surface of the plane. What is the magnitude and direction of normal reaction of the plane on the block? What is the tension in the rope?", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<br/>", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "${N}={(M+10m)g\\sin (\\theta )}$\n, the direction is perpendicular to the plane; \n$\\valuedef{T}{(M+10m)g\\cos \\theta }{}$\n.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "A trailer of mass, \n$\\vari{M}$\n, containing 10 blocks, each of mass \n$\\vari{m}$\n, moves at constant velocity up a frictionless, inclined plane via a rope that is, parallel to the surface of the plane, and attached to a motor. The plane is angled at \n$\\vari{\\theta }$\n to the vertical. What is the magnitude and direction of the normal reaction of the plane on the trailer? What is the tension in the rope?", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "concept", 
+ "id": "newtoni"
+}

@@ -1,14 +1,50 @@
 {
-  "src": "child_seesaw.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Child on a see-saw", 
-  "relatedContent": [
-    "energy", 
-    "moments"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_numeric", 
-  "id": "child_seesaw"
+ "attribution": null, 
+ "title": "Child on a see-saw", 
+ "relatedContent": [
+  "energy", 
+  "moments"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A child of mass \n$\\quantity{25}{kg}$\n sits at one end of a see-saw, \n$\\quantity{2}{m}$\n away from the pivot.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Where should her \n$\\quantity{60}{kg}$\n parent sit in order to balance the see-saw?", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "If the child tips the see-saw very gently by pushing on the ground with her legs so that she rises by \n$\\quantity{0.4}{m}$\n, how far will her parent fall on the other side?", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "How does the potential energy gained by the child compare with the potential energy lost by the parent?", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_numeric", 
+ "id": "child_seesaw"
 }

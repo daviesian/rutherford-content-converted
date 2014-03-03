@@ -1,14 +1,36 @@
 {
-  "src": "A1986PIQ1l.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Size of a combined force", 
-  "relatedContent": [
-    "forces", 
-    "vectors1"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_ scq", 
-  "id": "A1986PIQ1l"
+ "attribution": "Created for the Rutherford School Physics Project by PS.", 
+ "title": "Force on table legs", 
+ "relatedContent": [
+  "forces", 
+  "vectors1", 
+  "newtoni"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A table consists of a circular wooden board of mass \n$m = 3$\n kg resting on top of three vertical legs, each of mass \n$M = 0.5$\n kg. The legs are equidistant from the centre of the table and form an equilateral triangle. Use \n$g = 9.8$\n m s\n$^{-2}$\n.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "question", 
+   "value": "Find the magnitude of the reaction force from one of the legs on the tabletop.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "The magnitude of the reaction force from the ground on one of the legs is equal to \n$\\valuedef{N}{14.7}{N}$\n.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Find the magnitude of the reaction force from the ground on one of the legs.", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_ numerical", 
+ "id": "A1986PIQ1l"
 }

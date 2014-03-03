@@ -1,17 +1,103 @@
 {
-  "src": "airzooka.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "airzooka", 
-  "relatedContent": [
-    "momentum", 
-    "energy", 
-    "newtoni", 
-    "newtonii", 
-    "eq_of_motion_diff"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_numeric", 
-  "id": "airzooka"
+ "attribution": "Question by RWH", 
+ "title": "airzooka", 
+ "relatedContent": [
+  "momentum", 
+  "energy", 
+  "newtoni", 
+  "newtonii", 
+  "eq_of_motion_diff"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "An airzooka can fire a pocket of air across a room by quickly firing a squirt of air out of an elasticated polythene bag.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "If the volume of the air pocket is \n$\\quantity{2}{litres}$\n, what is the mass if the density of air is \n$\\quantity{1.2}{kg\\,  m\\sup {-3}}$\n (there are \n$\\quantity{1000}{litres}$\n in \n$\\quantity{1}{m\\sup {3}}$\n)?", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "What is its kinetic energy if it crosses a \n$\\quantity{6}{m}$\n wide room in \n$\\quantity{0.4}{s}$\n?", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "What is the momentum of the air pocket?", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Before the air pocket is fired, it is stationary. It consists of air molecules moving around randomly at about \n$\\quantity{500}{m\\,  s\\sup {-1}}$\n (a little faster than the speed of sound). If the average mass of one molecule is \n$\\quantity{5\\times 10^{-26}}{kg}$\n, how many molecules are there in the \n$\\quantity{2}{litres}$\n pocket of air?", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "What is the total kinetic energy of all of the molecules?", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "What is the total momentum of all of the molecules?", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "If the kinetic energy is calculated using the answer to part (1.) for the mass of the pocket, and the speed of the molecules is \n$\\quantity{500}{m\\,  s\\sup {-1}}$\n, do you obtain the same as the answer to part (5.), the total kinetic energy of the molecules?", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Why can the answer to part (6.), the total momentum, not be calculated using the mass of the pocket in part (1.) and the \n$\\quantity{500}{m\\,  s\\sup {-1}}$\n average speed of the molecules?", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_numeric", 
+ "id": "airzooka"
 }

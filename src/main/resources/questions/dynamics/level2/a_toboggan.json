@@ -1,14 +1,58 @@
 {
-  "src": "a_toboggan.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": " A Toboggan", 
-  "relatedContent": [
-    "newtonii", 
-    "IntA1987PIQ1l_video"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_scq", 
-  "id": "a_toboggan"
+ "attribution": "Adapted with permission from UCLES, A Level Physics, November 1987, Paper 1, Question 1.", 
+ "title": " A Toboggan", 
+ "relatedContent": [
+  "newtonii", 
+  "IntA1987PIQ1l_video"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A toboggan is sliding down a hillside with a uniform acceleration.", 
+   "encoding": "html"
+  }, 
+  {
+   "encoding": "html", 
+   "value": "What is the resultant force acting on the toboggan?", 
+   "choices": [
+    {
+     "type": "choice", 
+     "value": "It is zero.", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "It increases uniformly with time.", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "correct": true, 
+     "value": "It is constant.", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "It is proportional to the displacement from a fixed point.", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "It decreases uniformly with time.", 
+     "encoding": "html"
+    }
+   ], 
+   "answer": {
+    "type": "content", 
+    "value": "The correct answer is (b). This just relies on a statement of Newton&apos;s Second Law.", 
+    "encoding": "html"
+   }, 
+   "type": "choiceQuestion"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_scq", 
+ "id": "a_toboggan"
 }

@@ -1,14 +1,53 @@
 {
-  "src": "two_skaters.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Two skaters", 
-  "relatedContent": [
-    "energy", 
-    "momentum"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_scq", 
-  "id": "two_skaters"
+ "attribution": null, 
+ "title": "Two skaters", 
+ "relatedContent": [
+  "energy", 
+  "momentum"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "encoding": "html", 
+   "value": "Two ice skaters on an ice rink skate towards each other. They collide and stay together. It is useful to know what quantity is the same before and after the collision (conserved). In the collision", 
+   "choices": [
+    {
+     "type": "choice", 
+     "value": "The kinetic energy is conserved but the momentum is not conserved.", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "The momentum is conserved only if the skaters have the same mass.", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "correct": true, 
+     "value": "The momentum is conserved but the kinetic energy is not conserved.", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "Both the kinetic energy and momentum are conserved.", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "Neither the kinetic energy nor the momentum is conserved.", 
+     "encoding": "html"
+    }
+   ], 
+   "answer": {
+    "type": "content", 
+    "value": "The correct answer is (b). Kinetic energy is a label for one type of energy that is associated with motion. If the motion decreases then the KE decreases (energy will be converted to thermal energy in the collision, so that the total energy remains the same). There is no law of conservation of KE, but there is a law of Conservation of Momentum, which comes from Newton&apos;s 1st and 2nd Laws of motion. Here the direction matters, and the positive and negative directions of the skaters accounts for the fact that if there is little momentum before the collision so that there will be the same little amount of momentum after the collision.", 
+    "encoding": "html"
+   }, 
+   "type": "choiceQuestion"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_scq", 
+ "id": "two_skaters"
 }

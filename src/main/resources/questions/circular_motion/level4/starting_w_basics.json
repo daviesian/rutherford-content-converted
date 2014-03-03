@@ -1,17 +1,56 @@
 {
-  "src": "starting_w_basics.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Starting with the Basics", 
-  "relatedContent": [
-    "angular_circular", 
-    "newtonii", 
-    "vectors", 
-    "resolving_vectors", 
-    "AO1989PIQ10l_video"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_scq", 
-  "id": "starting_w_basics"
+ "attribution": "Used with permission from UCLES, AO Level Physics, June 1989, Paper 1, Question 10.", 
+ "title": "Starting with the Basics", 
+ "relatedContent": [
+  "angular_circular", 
+  "newtonii", 
+  "vectors", 
+  "resolving_vectors", 
+  "AO1989PIQ10l_video"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "encoding": "html", 
+   "value": "When a particle travels in a circle of radius \n$\\vari{r}$\n with constant speed \n$\\vari{v}$\n, what is its acceleration?", 
+   "choices": [
+    {
+     "type": "choice", 
+     "correct": true, 
+     "value": "$\\vari{\\frac{v^{2}}{r}}$\n towards the centre.", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "Zero", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\vari{\\frac{v^{2}}{r}}$\n away from the centre.", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\vari{rv^{2}}$\n away from the centre.", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\vari{rv^{2}}$\n towards the centre.", 
+     "encoding": "html"
+    }
+   ], 
+   "answer": {
+    "type": "content", 
+    "value": "The correct answer is (a).", 
+    "encoding": "html"
+   }, 
+   "type": "choiceQuestion"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_scq", 
+ "id": "starting_w_basics"
 }

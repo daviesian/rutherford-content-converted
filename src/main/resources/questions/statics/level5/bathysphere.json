@@ -1,15 +1,59 @@
 {
-  "src": "bathysphere.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Deep-sea submersible", 
-  "relatedContent": [
-    "forces", 
-    "vectors1", 
-    "trig"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_ scq", 
-  "id": "bathysphere"
+ "attribution": "Used with permission from UCLES, Higher School Certificate Physics, June 1932, Paper 2, Question 4.", 
+ "title": "Deep-sea submersible", 
+ "relatedContent": [
+  "forces", 
+  "vectors1", 
+  "trig"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A bathysphere is a spherical deep-sea submersible which is lowered into the sea on a long cable. It&apos;s shell can be made thick enough to withstand depths over \n$\\quantity{1,000}{m}$\n. It can be modelled as a spherical shell with a small window of very thick glass, which can be considered as a point mass.", 
+   "encoding": "html"
+  }, 
+  {
+   "encoding": "html", 
+   "value": "Before being lowered the bathysphere is floating on the surface, half submerged, by considering the angle of the window to the vertical and the potential energy of the whole system, which of the following is true:", 
+   "choices": [
+    {
+     "type": "choice", 
+     "value": "There are no points of equilibrium", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "There is one point of equilibrium, which is stable", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "There is one point of equilibrium, which is unstable", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "there are two points of equilibrium, both are stable", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "correct": true, 
+     "value": "There are two points of equilibrium, only one is stable", 
+     "encoding": "html"
+    }
+   ], 
+   "answer": {
+    "type": "content", 
+    "value": "The correct answer is (d).", 
+    "encoding": "html"
+   }, 
+   "type": "choiceQuestion"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_ scq", 
+ "id": "bathysphere"
 }

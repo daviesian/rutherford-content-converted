@@ -1,16 +1,32 @@
 {
-  "src": "fairground_ride.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "A Fairground Ride", 
-  "relatedContent": [
-    "angular_circular", 
-    "friction", 
-    "vectors", 
-    "resolving_vectors"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_symbolic", 
-  "id": "fairground_ride"
+ "attribution": "Created for the Rutherford School Physics Project by NHB and ES", 
+ "title": "A Fairground Ride", 
+ "relatedContent": [
+  "angular_circular", 
+  "friction", 
+  "vectors", 
+  "resolving_vectors"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A fairground ride consists of a rough cylinder that rotates about a vertical axis through its centre. Once people are inside and the cylinder is rotating fast enough the floor is removed but the thrillseekers do not fall down.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "The minimum angular speed needed for the ride to be safe is \n$\\valuedef{\\omega }{\\sqrt {\\frac{g}{\\mu R}}}{}$\n.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "What is the minimum angular speed at which it needs to rotate for the ride to be safe?", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_symbolic", 
+ "id": "fairground_ride"
 }

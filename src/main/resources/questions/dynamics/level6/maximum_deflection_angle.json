@@ -1,17 +1,33 @@
 {
-  "src": "maximum_deflection_angle.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Maximum Deflection of a Particle", 
-  "relatedContent": [
-    "energy", 
-    "momentum", 
-    "momentumii", 
-    "vectors", 
-    "resolving_vectors"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_numeric", 
-  "id": "maximum_deflection_angle"
+ "attribution": "Seen in many places, including 1A question sheet", 
+ "title": "Maximum Deflection of a Particle", 
+ "relatedContent": [
+  "energy", 
+  "momentum", 
+  "momentumii", 
+  "vectors", 
+  "resolving_vectors"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A particle of mass \n$\\vari{m_{1}}$\n collides with a stationary particle of mass \n$\\vari{m_{2}}$\n (\n$\\vari{m_{1}}$\n$>$\n$\\vari{m_{2}}$\n).", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\vari{\\sin {\\phi }}$\n$=$\n$\\valuedef{\\frac{v_1}{v_CM}}{\\frac{m_2}{m_1}}{}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "What is the maximum angle of deflection of mass \n$\\vari{m_{1}}$\n?", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_numeric", 
+ "id": "maximum_deflection_angle"
 }

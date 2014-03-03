@@ -1,0 +1,66 @@
+{
+ "attribution": null, 
+ "title": "Vectors -- 1", 
+ "relatedContent": [
+  "resolving_vectors", 
+  "momentum", 
+  "newtonii", 
+  "newtoniii", 
+  "momentumii", 
+  "angular_circular"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "<h3>Vectors &mdash; 1</h3>", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Examples of vectors Vectors have a magnitude (length when drawn) and direction. Physical examples include: \n<br/>\n$\\vtr {v}$\nv\n v velocity \n<br/>\n$\\vtr {r}$\nr\n r displacement \n<br/>\n$\\vtr {E}$\nE\n E electric field \n<br/>\n$\\vtr {A}$\nA\n A area \n<br/>\n$\\vtr {f}$\nf\n f force \n<br/>\nQuantities with magnitude but not direction are \nscalars\n scalars . For example: \n<br/>\n$m$\n m mass \n<br/>\n$U$\n U energy \n<br/>\n$T$\n T temperature \n<br/>\n$q$\n q charge \n<br/>", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Direction of vectors Vectors are not generally tied to an origin, see figure \n1\n (a) with several equivalent vectors \n$\\vtr {v}$\nv\n v . A vector \n$\\vtr {r}$\nr\n r is shown from the origin to \n$(x,y)$\n (x,y) .", 
+   "encoding": "html"
+  }, 
+  {
+   "src": "../../figures/basic-vectors.svg", 
+   "type": "image", 
+   "id": "fig:basic-vectors", 
+   "value": "(a) Several equivalent. vectors \n$\\vtr {v}$\n. A specific vector \n$\\vtr {r}$\n connects the origin to a point \n$\\vtr {r} = (x,y)$\n. (b) Tip to tail addition of two vectors (c) Subtraction of a vector &ndash; tip to tail addition of \n$-\\vtr {v}$\n to \n$\\vtr {u}$\n. (d) Many different vectors \n$\\vtr {v}$\n with the same length (modulus) \n$v$\n. ", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Addition and subtraction Traversing one vector from tail to tip and then the next gives a resultant: \n<br/>\n$\\vtr {u} + \\vtr {v} \\equiv \\vtr {v} + \\vtr {u}$\nu\n u + \nv\n v \nv\n v + \nu\n u , \n<br/>\nfigure \n1\n (b). \nSubtraction is the addition of \n$-\\vtr {v}$\n - \nv\n v to \n$\\vtr {u}$\nu\n u instead, giving \n$\\vtr {u} - \\vtr {v}$\nu\n u - \nv\n v , figure \n1\n (c). Thus \n$\\vtr {u}$\nu\n u , \n$\\vtr {v}$\nv\n v and \n$\\vtr {u} \\pm \\vtr {v}$\nu\n u \nv\n v form pairs of identical vector triangles in each of the parallelograms above.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Modulus or length of a vector The length, modulus, or magnitude of a vector \n$\\vtr {v}$\nv\n v is denoted by \n$v$\n v (without the bold, underlining or whatever denotes a vector) or sometimes \n$|\\vtr {v}|$\n | \nv\n v | . The radius \n$\\vari{v}$\n of the circle in figure \n1\n (d) is the magnitude of the vectors differing only in direction.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Specifying vectors by their components", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "<p>\n$3\\sqrt {2}$\n</p>\n<ol>\n</ol>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "<p>\nDraw, from the origin, in the \n$x,y$\n plane the two vectors \n$\\vtr {v}_1 = (1,4)$\n and \n$\\vtr {v}_2 = (4,1)$\n. \n</p>\n<p>\n<ol>\n<li><p>\nShow that the vector connecting \n$(4,1)$\n to \n$(1,4)$\n is \n$\\vtr {v}_1 - \\vtr {v}_2$\n. \n</p></li>\n<li><p>\nDraw an appropriate, simple right angled triangle that would allow you to evaluate the length of \n$\\vtr {v}_1 - \\vtr {v}_2$\n. What is\n$|\\vtr {v}_1 - \\vtr {v}_2| $\n? \n</p></li>\n</ol>\n</p>", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "concept", 
+ "id": "vectors"
+}

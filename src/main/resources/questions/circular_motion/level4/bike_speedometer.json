@@ -1,13 +1,29 @@
 {
-  "src": "bike_speedometer.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Speedometer on a Bike Wheel", 
-  "relatedContent": [
-    "angular_circular"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_numeric", 
-  "id": "bike_speedometer"
+ "attribution": "Used with permission from UCLES, A Level Physics, June 1984, Paper 1, Question 1.", 
+ "title": "Speedometer on a Bike Wheel", 
+ "relatedContent": [
+  "angular_circular"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "The reading of a speedometer fitted to the front wheel of a bicycle is directly proportional to the angular speed of the wheel. A certain speedometer is correctly calibrated for use with a wheel of diameter \n$\\quantity{66}{cm}$\n but, by mistake, is fitted to a \n$\\quantity{60}{cm}$\n wheel.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "<p>\nAttaching the speedometer to a bike that has a smaller wheel radiuswill give a calculated linear speed that is too great, since the angular speed will be multiplied by \n$\\quantity{0.66}{m}$\n instead of the actual \n$\\quantity{0.60}{m}$\n. The percentage error is simply given by \n</p>\n<p>\n<table>\n<tr>\n<td>$\\displaystyle  \\frac{66-60}{60}\\cdot 100=10#37;  $</td>\n</tr>\n</table>\n</p>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Explain whether the indicated linear speed would be greater or less than the actual linear speed and find the percentage error in the readings.", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_numeric", 
+ "id": "bike_speedometer"
 }

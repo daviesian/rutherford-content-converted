@@ -1,15 +1,59 @@
 {
-  "src": "elastic_circular_motion.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Elastic Circular Motion", 
-  "relatedContent": [
-    "angular_circular", 
-    "resolving_vectors", 
-    "A1987PIQ9l_video"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_scq", 
-  "id": "elastic_circular_motion"
+ "attribution": "Adapted with permission from UCLES, A Level Physics, June 1987, Paper 1, Question 9.", 
+ "title": "Elastic Circular Motion", 
+ "relatedContent": [
+  "angular_circular", 
+  "resolving_vectors", 
+  "A1987PIQ9l_video"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A mass, \n$\\vari{m}$\n of \n$\\quantity{0.050}{kg}$\n is attached to one end of a piece of elastic of unstretched length, \n$\\valuedef{l}{0.50}{m}$\n. The force constant, \n$\\vari{k}$\n of the elastic (i.e. the force required to produce unit extension) is \n$\\quantity{40}{N\\,  m\\sup {-1}}$\n. The mass is rotated steadily on a smooth table around a fixed point in a horizontal circle of radius \n$\\valuedef{r}{0.70}{m}$\n.", 
+   "encoding": "html"
+  }, 
+  {
+   "encoding": "html", 
+   "value": "What is the approximate speed of the mass?", 
+   "choices": [
+    {
+     "type": "choice", 
+     "correct": true, 
+     "value": "$\\quantity{11}{m\\,  s\\sup {-1}}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\quantity{20}{m\\,  s\\sup {-1}}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\quantity{15}{m\\,  s\\sup {-1}}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\quantity{28}{m\\,  s\\sup {-1}}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\quantity{24}{m\\,  s\\sup {-1}}$", 
+     "encoding": "html"
+    }
+   ], 
+   "answer": {
+    "type": "content", 
+    "value": "The correct answer is (a).", 
+    "encoding": "html"
+   }, 
+   "type": "choiceQuestion"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_scq", 
+ "id": "elastic_circular_motion"
 }

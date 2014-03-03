@@ -1,15 +1,66 @@
 {
-  "src": "space_monster_attack.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Space monster attack", 
-  "relatedContent": [
-    "forces", 
-    "newtoni", 
-    "moments"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_ numerical", 
-  "id": "space_monster_attack"
+ "attribution": "Written by Zephyr Penoyre for the RSPP", 
+ "title": "Space monster attack", 
+ "relatedContent": [
+  "forces", 
+  "newtoni", 
+  "moments"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "answer": {
+    "type": "content", 
+    "value": "", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "By considering a triangle as a collection of infinitesimally small rectangles, show that the centre of mass of a lamina in the shape of a right-angled triangle, resting on it&apos;s shortest side, is a third of the height from the base.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "The centre of mass sits on the line of symmetry, one third of the height above the base.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Hence find the position of the centre of mass of any triangle which is symmetric in a line that passes through it&apos;s base.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "The centre of mass sits on the ships vertical line of symmetry. The distance from the base of the ship to the centre of mass is given by \n<div>$$  D = \\frac{25b}{16\\sqrt {2}}  $$</div>\n.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "<p>\nThe spaceship shown in Figure \n1\n consists of four sections, a square bridge, two sets of rectangular living quarters and a triangular engine bay. The engine bay is twice as dense as the other parts of the ship. Find the position of the centre of mass of the ship given \n$a = 3b$\n. \n</p>\n<p>\n<p>\n<p>\n<img src=\"figures/Statics_spaceship.png\"/>\n</p>\n<p>\n<figcaption></figcaption>\n</p>\n</p>\n</p>", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\valuedef{D}{\\frac{73b}{48\\sqrt {2}}}{}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "<p>\nThese spaceships are designed so they can dock together in a fleet of four, as shown in Figure \n1\n. Unfortunately whilst docked the fleet floats close to an asteroid on which lurks a ravenous Bugblatter Beast of Traal. The beast swallows one of the ships whole leaving the formation looking like Figure (\n2\n). Find the centre of mass of the remaining fleet. \n</p>\n<p>\n<p>\n<p>\n<img src=\"figures/Statics_spaceship_docking.png\"/>\n</p>\n<p>\n<figcaption></figcaption>\n</p>\n</p>\n</p>\n<p>\n<p>\n<p>\n<img src=\"figures/Statics_spaceship_attacked.png\"/>\n</p>\n<p>\n<figcaption></figcaption>\n</p>\n</p>\n</p>", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\theta = 10.8^{\\circ }$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "<p>\nIn an attempt to stop the other ships escaping the Bugblatter Beast disables the main engines of the remaining ships using it&apos;s electrified tentacles. Unbeknownst to it though, each of the ships has a tiny docking engine at the front tip of the bridge. The beast grabs the bridges of ships \n$A$\n and \n$C$\n, on their very corners and pulls them in equal and opposite vertical directions, trying to rip the ships apart with it&apos;s two monstrous heads. \n</p>\n<p>\nThe ships docking engines can point in any direction, and the captain knows that if she can ensure the ship does not rotate then the beast will get confused and forget about it&apos;s quarry. Assuming the engines can produce exactly enough force to save the crew if pointed in the right direction, which directions should they point in order to confuse the beast?\n</p>", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_ numerical", 
+ "id": "space_monster_attack"
 }

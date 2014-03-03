@@ -1,15 +1,48 @@
 {
-  "src": "double_bus.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Double decker bus", 
-  "relatedContent": [
-    "forces", 
-    "moments", 
-    "newtoni"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_ numerical", 
-  "id": "double_bus"
+ "attribution": "", 
+ "title": "Double decker bus", 
+ "relatedContent": [
+  "forces", 
+  "moments", 
+  "newtoni"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A double-decker bus of mass \n$\\valuedef{M}{12000}{kg}$\n has a width at its base of \n$\\valuedef{w}{2}{m}$\n. Its centre of mass when empty is a height \n$\\valuedef{y_0}{0.9}{m}$\n above the ground and equidistant between the two sides of the bus. Thirty-two passengers, each of mass \n$\\valuedef{m}{75}{kg}$\n, are seated on each deck, symmetrically placed from side to side. The centre of mass of those on the lower deck is a height \n$\\valuedef{y_1}{1.1}{m}$\n above the ground and that of those on the upper deck is a height \n$\\valuedef{y_2}{2.8}{m}$\n above the ground.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\valuedef{\\tan (\\theta )}{\\frac{5}{6}}{}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Find the angle \n$\\vari{\\theta }$\n which the bus must tilt by in order to topple.", 
+   "encoding": "html"
+  }, 
+  {
+   "encoding": "html", 
+   "value": "<p>\nIf all the passengers on the right-hand side of the bus get off, leaving those on the left-hand side, the centre of mass of the remaining passengers is a distance \n$\\valuedef{x_0}{0.4}{m}$\n from the left-hand side of the bus. Find the angle \n$\\vari{\\alpha }$\n which the bus must now tilt by to the left in order to topple and the angle \n$\\vari{\\beta }$\n which the bus must now tip by to the right in order to topple. \n</p>\n<ol>\n</ol>", 
+   "answer": {
+    "type": "content", 
+    "value": "$\\valuedef{\\tan (\\alpha )}{\\frac{36}{43}}{;}$\n$\\valuedef{\\tan (\\beta )}{\\frac{44}{43}}{}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "hints": [
+    {
+     "type": "content", 
+     "value": "The bus will topple if its centre of mass is no longer above its base.", 
+     "encoding": "html"
+    }
+   ]
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_ numerical", 
+ "id": "double_bus"
 }

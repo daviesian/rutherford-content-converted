@@ -1,15 +1,54 @@
 {
-  "src": "ball_on_thread.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Ball suspended by a thread", 
-  "relatedContent": [
-    "forces", 
-    "vectors1", 
-    "trig"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_ scq", 
-  "id": "ball_on_thread"
+ "attribution": "Used with permission from UCLES, A Level Physics, November 1983, Paper 2, Question 1.", 
+ "title": "Ball suspended by a thread", 
+ "relatedContent": [
+  "forces", 
+  "vectors1", 
+  "trig"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "encoding": "html", 
+   "value": "A small ball of mass \n$\\vari{m}$\n is suspended by a light thread. When a strong wind blows horizontally, exerting a constant force F on the ball, the thread makes an angle \n$\\vari{\\theta }$\n to the vertical. Which one of the following expressions correctly defines \n$\\vari{\\theta }$\n?", 
+   "choices": [
+    {
+     "type": "choice", 
+     "value": "$\\valuedef{\\cos {\\theta }}{\\frac{F}{mg}}{}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\valuedef{\\sin {\\theta }}{\\frac{F}{mg}}{}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "correct": true, 
+     "value": "$\\valuedef{\\tan {\\theta }}{\\frac{F}{mg}}{}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\valuedef{\\tan {\\theta }}{\\frac{mg}{F}}{}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\valuedef{\\cos {\\theta }}{\\frac{mg}{F}}{}$", 
+     "encoding": "html"
+    }
+   ], 
+   "answer": {
+    "type": "content", 
+    "value": "The correct answer is (b). The ball is kept in equilibrium by three forces: its weight acting downwards, the horizontal force exerted by the wind, and the tension exerted by the thread at an angle of \n$\\vari{\\theta }$\n to the vertical. Resolve horizontally to obtain \n$\\valuedef{F}{T\\sin {\\theta }}{}$\n, and resolve vertically to obtain \n$\\valuedef{mg}{T\\cos {\\theta }}{}$\n. Divide the first equation by the second to get the answer, \n$\\valuedef{\\tan {\\theta }}{\\frac{F}{mg}}{}$\n.", 
+    "encoding": "html"
+   }, 
+   "type": "choiceQuestion"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_ scq", 
+ "id": "ball_on_thread"
 }

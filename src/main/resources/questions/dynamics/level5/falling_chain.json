@@ -1,16 +1,47 @@
 {
-  "src": "falling_chain.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "A Falling Chain", 
-  "relatedContent": [
-    "energy", 
-    "momentum", 
-    "eq_of_motion_diff", 
-    "newtonii"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_symbolic", 
-  "id": "falling_chain"
+ "attribution": "Used with permission from HE+.", 
+ "title": "A Falling Chain", 
+ "relatedContent": [
+  "energy", 
+  "momentum", 
+  "eq_of_motion_diff", 
+  "newtonii"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A long chain, with mass per unit length \n$\\valuedef{\\lambda }{1}{kg\\,  m\\sup {-1}}$\n, is suspended vertically above a table by one end. The chain is allowed to fall, but held so that it always falls at \n$\\valuedef{v}{5}{m\\,  s\\sup {-1}}$\n.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "The force exerted down on the table is \n$\\valuedef{F}{270}{N}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "After \n$\\valuedef{t}{5}{s}$\n what is the force exerted downwards on the table?", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Now a chain with length \n$\\valuedef{l}{5}{m}$\n is held above a table by one end, then allowed to fall freely under gravity.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "The total force on the table as the end of the chain hits the table is \n$\\valuedef{F}{147}{N}$\n, three times the total weight of the chain.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": " The moment the last piece of the chain touches the table, what is the total force being exerted on the table?", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_symbolic", 
+ "id": "falling_chain"
 }

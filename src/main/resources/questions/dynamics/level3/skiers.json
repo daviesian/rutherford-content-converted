@@ -1,13 +1,52 @@
 {
-  "src": "skiers.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "The Skiers", 
-  "relatedContent": [
-    "energy"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_scq", 
-  "id": "skiers"
+ "attribution": "Adapted with permission from UCLES, A Level Physics, June 1987, Paper 1, Question 5.", 
+ "title": "The Skiers", 
+ "relatedContent": [
+  "energy"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "encoding": "html", 
+   "value": "Two skiers want to reach the top of an incline without pushing. The first skier, of mass \n$\\vari{m}$\n, reaches the start of the incline with a speed \n$\\vari{v}$\n. He just makes it to the top of the incline. The second skier, of mass \n$\\vari{\\frac{2}{3}m}$\n, has a speed \n$\\vari{\\frac{2}{3}v}$\n at the bottom of the incline. Will she make it to the top without pushing? It can be assumed that frictional forces are negligible.", 
+   "choices": [
+    {
+     "type": "choice", 
+     "value": "No, she makes it to \n$\\vari{\\frac{8}{27}h}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "No, she makes it to \n$\\vari{\\frac{8}{9}h}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "correct": true, 
+     "value": "No, she makes it to \n$\\vari{\\frac{4}{9}h}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "Yes, she makes it to the top with a non-zero velocity", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "Yes, she just makes it to the top", 
+     "encoding": "html"
+    }
+   ], 
+   "answer": {
+    "type": "content", 
+    "value": "<p>\nThe correct answer is (b). This can be seen by conserving energy; the initial \n$\\valuedef{h}{\\frac{v^{2}}{2g}}{}$\n and the second height would be \n$\\valuedef{h_{2}}{\\frac{2v^{2}}{9}}{}$\n = \n$\\vari{\\frac{4}{9}h}$\n. \n</p>\n<p>\nMotion where gravitational potential is the only energy loss is independent of mass, since the \n$\\vari{m}$\n cancels out in \n$\\valuedef{\\frac{1}{2}mv^{2}}{mgh}{}$\n. \n</p>", 
+    "encoding": "html"
+   }, 
+   "type": "choiceQuestion"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_scq", 
+ "id": "skiers"
 }

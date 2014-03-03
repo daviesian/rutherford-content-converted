@@ -1,16 +1,42 @@
 {
-  "src": "spouting_can.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "The Spouting Can", 
-  "relatedContent": [
-    "energy", 
-    "eq_of_motion_diff", 
-    "vectors", 
-    "resolving_vectors"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_symbolic", 
-  "id": "spouting_can"
+ "attribution": null, 
+ "title": "The Spouting Can", 
+ "relatedContent": [
+  "energy", 
+  "eq_of_motion_diff", 
+  "vectors", 
+  "resolving_vectors"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "<p>\nThe &apos;spouting can&apos;, as shown in Figure \n1\n, is sometimes used to demonstrate the variation of pressure with depth. When the corks are removed from the tubes in the side of the can, water of density \n$\\vari{\\rho }$\n flows out with a speed that depends on depth. \n</p>\n<p>\n<p>\n<p>\n<img src=\"figures/Dynamics_Spouting_Can.png\"/>\n</p>\n<p>\n<figcaption></figcaption>\n</p>\n</p>\n</p>", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "<p>\n<table>\n<tr>\n<td>$\\displaystyle  x_1 = 2\\sqrt {3}ga \\quad \\quad \\quad \\quad x_2 = 4ga \\quad \\quad \\quad \\quad x_3 = 2\\sqrt {3}ga  $</td>\n</tr>\n</table>\n</p>\n<p>\nSo the sketch will look a little different to the one given in the question, with the water from hole \n$\\vari{2}$\n travelling the furthest. A better sketch is presented in Figure \n1\n. \n</p>\n<p>\n<p>\n<p>\n<img src=\"figures/Dynamics_Spouting_Can_3.png\"/>\n</p>\n<p>\n<figcaption></figcaption>\n</p>\n</p>\n</p>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "If the level of water in the can is maintained constant, calculate the work done by hydrostatic pressure when volume \n$\\vari{\\Delta V}$\n leaves a tube at a depth \n$\\vari{h}$\n below the surface.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Assuming that all this work provides the kinetic energy of the emerging water, show that the speed \n$\\vari{v}$\n of efflux (outflow) is \n$\\vari{\\sqrt {2gh}}$\n.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<p>\nIn a certain can, the three tubes are set at equal distances \n$\\vari{a}$\n above the base of the can. When asked to draw the paths of the water coming from the three jets (the overall depth of the water being \n$\\vari{4a}$\n), a student made the sketch shown in Figure \n1\n. \n[b]\nFind the values of the distances \n$\\vari{x_{1}}$\n, \n$\\vari{x_{2}}$\n and \n$\\vari{x_{3}}$\n in terms of \n$\\vari{a}$\n, and sketch a better diagram.\n</p>\n<p>\n<p>\n<p>\n<img src=\"figures/Dynamics_Spouting_Can_2.png\"/>\n</p>\n<p>\n<figcaption></figcaption>\n</p>\n</p>\n</p>", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_symbolic", 
+ "id": "spouting_can"
 }

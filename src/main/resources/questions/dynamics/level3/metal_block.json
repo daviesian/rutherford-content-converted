@@ -1,16 +1,62 @@
 {
-  "src": "metal_block.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "A Metal Block", 
-  "relatedContent": [
-    "energy", 
-    "momentum", 
-    "eq_of_motion_diff", 
-    "friction"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_numeric", 
-  "id": "metal_block"
+ "attribution": "Adapted with permission from UCLES, A Level Physical Science, June1987, Paper2, Question9.", 
+ "title": "A Metal Block", 
+ "relatedContent": [
+  "energy", 
+  "momentum", 
+  "eq_of_motion_diff", 
+  "friction"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A metal block of mass \n$\\vari{m}$\n rests on a rough wooden surface. A thread is attached to the right side of the block and a tension is applied to cause it to move. The motion is opposed by a constant frictional force \n$\\vari{F_r}$\n between the block and the surface.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "<p>\nFigure \n1\n is a diagram showing all of the forces acting on the block: \n</p>\n<p>\n<p>\n<p>\n<img src=\"figures/Dynamics_block_string.png\"/>\n</p>\n<p>\n<figcaption></figcaption>\n</p>\n</p>\n</p>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Draw a diagram to show all the forces on the block immediately after motion commences.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "<table>\n<tr>\n<td>$\\displaystyle  a_ n = a + \\frac{T}{4m}  $</td>\n</tr>\n</table>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "When the tension in the thread is \n$\\vari{T}$\n, the acceleration of the block is measured to be \n$\\vari{a}$\n. Calculate the new acceleration, \n$\\vari{a_n}$\n, if the tension is increased to \n$\\vari{\\frac{5}{4}T}$\n.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "The block will accelerate up to a maximum speed \n$\\valuedef{u_{max}}{a_{n}t}{}$\n, which comes from \n$\\valuedef{v}{u + at}{}$\n but where \n$\\valuedef{u}{0}{m\\,  s\\sup {-1}}$\n, \n$\\valuedef{a}{a_{n}}{}$\n, \n$\\valuedef{t}{t}{}$\n and \n$\\valuedef{v}{u_{max}}{}$\n which will occur as the string breaks and the block stops accelerating. After this point the only force acting to affect the block&apos;s motion is the friction (the normal reaction and the weight are perpendicular to the motion, so do not affect it), and the block will decelerate to a halt.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "<p>\nWith the tension of \n$\\vari{\\frac{5}{4}T}$\n applied, the block accelerates from rest but after a time \n$\\vari{t}$\n the string breaks. Explain the subsequent motion of the block, and also show that it travels a total distance of \n</p>\n<p>\n<table>\n<tr>\n<td>$\\displaystyle  s = \\frac{1}{2} \\left(a_{n} + \\frac{a_{n}^{2}m}{F_{r}} \\right)t^{2}  $</td>\n</tr>\n</table>\n</p>\n<p>\nfrom its initial position.\n</p>", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "<p>\n<div>$$  W = \\mbox{\\quantity{242}{J}} \n\n $$</div>\n</p>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Given that \n$\\valuedef{T}{400}{N,}$\n$\\valuedef{m}{100}{kg}$\n, \n$\\valuedef{t}{2}{s}$\n and \n$\\valuedef{a}{0.1}{m\\,  s\\sup {-2}}$\n, calculate the work done by the block after the string breaks.", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_numeric", 
+ "id": "metal_block"
 }

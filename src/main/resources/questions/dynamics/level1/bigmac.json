@@ -1,13 +1,59 @@
 {
-  "src": "bigmac.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "A Big Mac", 
-  "relatedContent": [
-    "energy"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_numeric", 
-  "id": "bigmac"
+ "attribution": null, 
+ "title": "A Big Mac", 
+ "relatedContent": [
+  "energy"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A Big Mac has \n$\\quantity{2.2}{MJ}$\n of chemical potential energy which can be released by eating it.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "How much energy is needed to lift a \n$\\quantity{50}{kg}$\n student upwards through a height of \n$\\quantity{0.4}{m}$\n?", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "How many step-ups of \n$\\quantity{0.4}{m}$\n would the student need to make in order to burn off the energy of a Big Mac?", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "How many Big Macs would he need to consume in order to reach the top of Mount Everest, a height of \n$\\quantity{8}{km}$\n?", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "If the energy of a Big Mac could be used by itself to propel itself upwards, how high could it rise? (The mass of a Big Mac is \n$\\quantity{0.22}{kg}$\n.)", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_numeric", 
+ "id": "bigmac"
 }

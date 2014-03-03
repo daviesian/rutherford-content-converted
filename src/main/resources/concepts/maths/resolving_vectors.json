@@ -1,0 +1,115 @@
+{
+ "attribution": null, 
+ "title": "Vectors -- 2", 
+ "relatedContent": [
+  "vectors", 
+  "momentum", 
+  "newtonii", 
+  "newtoniii", 
+  "momentumii"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "<h3>Vectors &mdash; 2</h3>", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Projection \n resolution of vectors The projection (or resolution) of \n$\\vari{\\vtr {u}}$\n onto the \ndirection\n direction of \n$\\vtr {v}$\nv\n v is \n$u \\cos \\theta $\n u \n, figure \n1\n (a). The projections of \n$\\vari{\\vtr {u}}$\n onto the coordinate axes, figure \n1\n (b), of magnitude \n$\\vari{x}$\n and \n$\\vari{y}$\n , form an ordered pair \n$\\vari{(x,y)}$\n . This is called the coordinate representation or Cartesian form of the vector. In the example \n$\\valuedef{x}{3}{}$\n and \n$\\valuedef{y}{1}{}$\n .", 
+   "encoding": "html"
+  }, 
+  {
+   "src": "../../figures/project-vectors.svg", 
+   "type": "image", 
+   "id": "fig:project-vectors", 
+   "value": "(a) Vector \n$\\vari{\\vtr {u}}$\n is projected on to the direction of \n$\\vari{\\vtr {v}}$\n. (b) The component form of the vector \n$\\valuedef{\\vtr {u}}{(3,1)}{}$\n displaying its projection on the \n$\\vari{x}$\n and \n$\\vari{y}$\n axes. (c) Work done by the motion of the point of application of the force \n$\\vari{\\vtr {f}}$\n along the direction of \n$\\vari{\\vtr {d}}$\n. (d) The coordinate axes are in effect (unit) vectors themselves, conventionally called \n$\\vari{\\vtr {i}}$\n, \n$\\vari{\\vtr {j}}$\n, . . . A vector \n$\\vari{\\vtr {u}}$\n can be thought of as being made up of these coordinate axis unit vectors but with magnitude being the projection of \n$\\vari{\\vtr {u}}$\n along each one. ", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<p>\n<div class=\"quick-question\"><div class=\"question\"><p>What is the angle \n$\\theta $\n in the figure? Give other equivalent forms for \n$\\theta $\n.</p></div><div class=\"answer hidden\"><p>$\\valuedef{\\theta }{\\arctan (1/3)}{}$\n. </p></div></div>\n</p>", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\valuedef{\\theta }{\\arctan (1/3)}{}$\n. ", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "What is the angle \n$\\theta $\n in the figure? Give other equivalent forms for \n$\\theta $\n.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Modulus, magnitude, or length of vectors; unit vectors Pythagoras in figure \n1\n (b) gives the vector&apos;s length \n$\\vari{|\\vtr {u}|}$\n$=$\n = \n$\\valuedef{u}{\\sqrt {x^2 + y^2}}{}$\n . \n<p>\n<div class=\"quick-question\"><div class=\"question\"><p>Draw a 3-D set of axes \n$\\vari{x,y,z}$\n and a general vector with components \n$(x,y,z) = \\vtr {v}$\n, say. By employing Pythagoras with suitable right triangles, find \n$|\\vtr {v}|$\n.</p></div><div class=\"answer hidden\"><p>$v = \\sqrt {x^2+y^2+z^2}$\n.</p></div></div>\n<br/>\n</p>\n<p>\nUnit vectors have a length \n$=1$\n. Any finite vector can be made a unit vector by dividing it by its own length, for instance \n$\\vtr {v}/v$\n is the unit vector in the direction of \n$\\vtr {v}$\n and it has no units.\n</p>\n<p>\n<div class=\"quick-question\"><div class=\"question\"><p>What unit vector corresponds to that connecting the origin with \n$(2,2,2)$\n?</p></div><div class=\"answer hidden\"><p>$\\frac{1}{\\sqrt {3}}(1,1,1)$\n.</p></div></div>\n<br/>\n</p>\n<p>\n<div class=\"quick-question\"><div class=\"question\"><p>Draw a unit cube with an origin of axes at 1 corner so that other corners are at \n$(1,0,0)$\n, \n$(0,1,1)$\n, etc. \nSatisfy yourself that vectors along edges between directly connected corners are unit vectors. \nGive the component form of the vectors along face diagonals from the origin to the 3 directly connected corners. How long are they? \nGive the vector going from the origin to the opposing corner along a body diagonal. How long is it? \nGive the form of the unit vector along this diagonal.</p></div><div class=\"answer hidden\"><p>$(1,1,0)$\n, \n$(1,0,1)$\n and \n$(0,1,1)$\n, with lengths \n$\\sqrt {2}$\n; to the opposing corner is \n$(1,1,1)$\n with length \n$\\sqrt {3}$\n and unit vector \n$\\frac{1}{\\sqrt {3}}(1,1,1)$\n.</p></div></div>\nThese exercises will be useful in calculating the effect of radiation from the Sun on objects.\n</p>", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$v = \\sqrt {x^2+y^2+z^2}$\n.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Draw a 3-D set of axes \n$\\vari{x,y,z}$\n and a general vector with components \n$(x,y,z) = \\vtr {v}$\n, say. By employing Pythagoras with suitable right triangles, find \n$|\\vtr {v}|$\n.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<br/>\nUnit vectors have a length \n$=1$\n =1 . Any finite vector can be made a unit vector by dividing it by its own length, for instance \n$\\vtr {v}/v$\nv\n v /v is the unit vector in the direction of \n$\\vtr {v}$\nv\n v and it has no units. ", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\frac{1}{\\sqrt {3}}(1,1,1)$\n.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "What unit vector corresponds to that connecting the origin with \n$(2,2,2)$\n?", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<br/>", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$(1,1,0)$\n, \n$(1,0,1)$\n and \n$(0,1,1)$\n, with lengths \n$\\sqrt {2}$\n; to the opposing corner is \n$(1,1,1)$\n with length \n$\\sqrt {3}$\n and unit vector \n$\\frac{1}{\\sqrt {3}}(1,1,1)$\n.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "<p>\nDraw a unit cube with an origin of axes at 1 corner so that other corners are at \n$(1,0,0)$\n, \n$(0,1,1)$\n, etc. \n</p>\n<p>\nSatisfy yourself that vectors along edges between directly connected corners are unit vectors. \n</p>\n<p>\nGive the component form of the vectors along face diagonals from the origin to the 3 directly connected corners. How long are they? \nGive the vector going from the origin to the opposing corner along a body diagonal. How long is it? \nGive the form of the unit vector along this diagonal.\n</p>", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "These exercises will be useful in calculating the effect of radiation from the Sun on objects.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "The vector dot product The work done by a force \n$\\vtr {f}$\nf\n f in moving along \n$\\vtr {d}$\nd\n d is \n$W = fd\\cos \\theta $\n W = fd \n, see figure \n1\n (c): the distance actually moved, \nalong the direction of the force\n along the direction of the force , is \n$d\\cos \\theta $\n d \n(i.e. the projection of \n$\\vtr {d}$\nd\n d onto \n$\\vtr {f}$\nf\n f ). The work done, is this distance times the magnitude of the force. \n<br/>\nWork is the scalar (dot) product of the two vectors: \n$W = \\vtr {f} \\cdot \\vtr {d} = fd\\cos \\theta $\n W = \nf\n f \nd\n d = fd \n. The dot product of perpendicular vectors is zero. Thus \n$\\vtr {i} \\cdot \\vtr {j} = \\vtr {j} \\cdot \\vtr {k} = \\vtr {k} \\cdot \\vtr {i} = 0$\ni\n i \nj\n j = \nj\n j \nk\n k = \nk\n k \ni\n i = 0 . \n<p>\n<div class=\"quick-question\"><div class=\"question\"><p>If \n$\\vtr {u}$\n has projections \n$u_ x$\n along \n$x$\n, \n$u_ y$\n along \n$y$\n etc., show \n$\\vtr {u}$\n is \n$\\vtr {u} = u_ x\\vtr {i} + \\dots $\n; see figure\n1\n(d). Show the dot product is \n$\\vtr {u} \\cdot \\vtr {v} = u_ x v_ x + u_ y v_ y + \\dots $\n.</p></div><div class=\"answer hidden\"><p>This \n$\\vtr {u}$\n has the correct projections along all the axes. Some dot products of \n$\\vtr {i}$\n, \n$\\vtr {j}$\n etc. are unity and others are zero &ndash; write them out and see.</p></div></div>\n</p>", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "This \n$\\vtr {u}$\n has the correct projections along all the axes. Some dot products of \n$\\vtr {i}$\n, \n$\\vtr {j}$\n etc. are unity and others are zero &ndash; write them out and see.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "If \n$\\vtr {u}$\n has projections \n$u_ x$\n along \n$x$\n, \n$u_ y$\n along \n$y$\n etc., show \n$\\vtr {u}$\n is \n$\\vtr {u} = u_ x\\vtr {i} + \\dots $\n; see figure\n1\n(d). Show the dot product is \n$\\vtr {u} \\cdot \\vtr {v} = u_ x v_ x + u_ y v_ y + \\dots $\n.", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "concept", 
+ "id": "resolving_vectors"
+}

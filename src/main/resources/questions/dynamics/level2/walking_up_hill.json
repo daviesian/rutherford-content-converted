@@ -1,18 +1,51 @@
 {
-  "src": "walking_up_hill.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Walking up a Hill", 
-  "relatedContent": [
-    "energy", 
-    "trigonometry", 
-    "vectors", 
-    "resolving_vectors", 
-    "O1980PIQ2a_work_video", 
-    "O1980PIQ2a_1in5slope_video"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_numeric", 
-  "id": "walking_up_hill"
+ "attribution": "Adapted with permission from UCLES, O Level Physics, June 1980, Paper 1, Question 2.", 
+ "title": "Walking up a Hill", 
+ "relatedContent": [
+  "energy", 
+  "trigonometry", 
+  "vectors", 
+  "resolving_vectors", 
+  "O1980PIQ2a_work_video", 
+  "O1980PIQ2a_1in5slope_video"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A person of mass \n$\\quantity{80}{kg}$\n walks for \n$\\quantity{102}{m}$\n along a path going up a hill of uniform gradient 1 in 5.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\vari{W}$\n = \n$\\vari{mgh}$\n = \n$\\valuedef{(80)(9.8)(20)}{15.7}{kJ}$\n.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Calculate the work done against gravity by this person.", 
+   "encoding": "html"
+  }, 
+  {
+   "encoding": "html", 
+   "value": "What happens to this energy?", 
+   "answer": {
+    "type": "content", 
+    "value": "This energy is transformed into gravitational potential energy.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "hints": [
+    {
+     "type": "content", 
+     "value": "A gradient of 1 in 5 means that for every \n$\\quantity{5}{m}$\n horizontally, \n$\\quantity{1}{m}$\n is gained in vertical height. It is also called a slope of \n$\\quantity{20}{#37; }$\n.", 
+     "encoding": "html"
+    }
+   ]
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_numeric", 
+ "id": "walking_up_hill"
 }

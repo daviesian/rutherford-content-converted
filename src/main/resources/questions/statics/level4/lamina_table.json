@@ -1,15 +1,21 @@
 {
-  "src": "lamina_table.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Lamina on a table", 
-  "relatedContent": [
-    "forces", 
-    "moments", 
-    "newtoni"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_ numerical", 
-  "id": "lamina_table"
+ "attribution": null, 
+ "title": "Lamina on a table", 
+ "relatedContent": [
+  "forces", 
+  "moments", 
+  "newtoni"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A uniform rectangular lamina ABCD rests in a vertical plane with an edge AB in contact with a rough horizontal table. A gradually increasing force acts along the diagonal AC from A to C. \n[a]\nIf the edges AB and BC are respectively of lengths \n$\\vari{a}$\n and \n$\\vari{b}$\n and \n$\\vari{\\mu }$\n is the coefficient of friction between the lamina and the table, prove that the lamina will slip before it topples if \n$\\mu < \\frac{a}{b}$\n.\n[b]\nShow that when slipping begins the point of application of the resultant reaction of the table on the lamina is at a distance \n$\\frac{1}{2}(a + \\mu b)$\n from A.", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_ numerical", 
+ "id": "lamina_table"
 }

@@ -1,14 +1,58 @@
 {
-  "src": "spring_and_thread.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "A Spring and a Thread", 
-  "relatedContent": [
-    "newtonii", 
-    "hooke"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_scq", 
-  "id": "spring_and_thread"
+ "attribution": "Used with permission from UCLES, A Level Physics, November 1987, Paper 1, Question 5.", 
+ "title": "A Spring and a Thread", 
+ "relatedContent": [
+  "newtonii", 
+  "hooke"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A light spring has a mass of \n$\\quantity{0.20}{kg}$\n suspended from its lower end. A second mass of \n$\\quantity{0.10}{kg}$\n is suspended from the first by a thread. The arrangement is allowed to come into static equilibrium and then the thread is burned through.", 
+   "encoding": "html"
+  }, 
+  {
+   "encoding": "html", 
+   "value": "At this instant, what is the upward acceleration of the \n$\\quantity{0.20}{kg}$\n mass?", 
+   "choices": [
+    {
+     "type": "choice", 
+     "value": "$\\quantity{0}{m\\,  s\\sup {-2}}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "correct": true, 
+     "value": "$\\quantity{4.9}{m\\,  s\\sup {-2}}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\quantity{3.2}{m\\,  s\\sup {-2}}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\quantity{9.8}{m\\,  s\\sup {-2}}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\quantity{6.6}{m\\,  s\\sup {-2}}$", 
+     "encoding": "html"
+    }
+   ], 
+   "answer": {
+    "type": "content", 
+    "value": "<p>\nThe correct answer is (c). This can be seen by considering the forces on the end of the spring before and after the string is burnt. Before the string is burnt the downward force of \n$\\quantity{(0.1 + 0.2)g}{N}$\n balanced the upward force from the spring, \n$\\vari{kx}$\n, i.e. \n$\\valuedef{kx}{2.94}{N}$\n. When the string is burnt, the upward force is still \n$\\vari{kx}$\n, but the downward force is now only \n$\\quantity{0.1g}{N}$\n; so a net force upwards on the mass attached to the end of the spring. The total force is \n$\\vari{kx-0.1g}$\n$=$\n$\\valuedef{0.3g - 0.2g}{0.1g}{N}$\n and so an acceleration of \n$\\valuedef{\\frac{F}{m}}{\\frac{1}{2}g}{m\\,  s\\sup {-2}}$\n. \n</p>", 
+    "encoding": "html"
+   }, 
+   "type": "choiceQuestion"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_scq", 
+ "id": "spring_and_thread"
 }

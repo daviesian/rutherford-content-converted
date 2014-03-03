@@ -1,14 +1,53 @@
 {
-  "src": "phil_door_moments.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Pushing on a door", 
-  "relatedContent": [
-    "moments", 
-    "forces"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_ scq", 
-  "id": "phil_door_moments"
+ "attribution": "Created for the Rutherford School Physics Project by PS.", 
+ "title": "Pushing on a door", 
+ "relatedContent": [
+  "moments", 
+  "forces"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "encoding": "html", 
+   "value": "A woman pushes on a door at a distance \n$\\vari{d}$\n from the hinges to open it. She pushes with a force of \n$\\vari{F}$\n at an angle \n$\\vari{\\theta }$\n to the door. What is the moment acting about the hinges?", 
+   "choices": [
+    {
+     "type": "choice", 
+     "value": "$\\vari{Fd}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\vari{Fd\\cos {\\theta }}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "correct": true, 
+     "value": "$\\vari{Fd\\sin {\\theta }}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\vari{\\frac{F\\cos {\\theta }}{d}}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\vari{\\frac{F\\sin {\\theta }}{d}}$", 
+     "encoding": "html"
+    }
+   ], 
+   "answer": {
+    "type": "content", 
+    "value": "<p>\n<p>\n<p>\n<img src=\"figures/Statics_door_moments.png\"/>\n</p>\n<p>\n<figcaption></figcaption>\n</p>\n</p>\n</p>\n<p>\nThe correct answer is (b). We can calculate the moment my multiplying the perpendicular component of the force by the distance from the pivot. The perpendicular component of the force is \n$\\vari{F\\sin {\\theta }}$\n and the distance from the pivot is \n$\\vari{d}$\n, therefore the moment is \n$\\vari{Fd\\sin {\\theta }}$\n.\n</p>", 
+    "encoding": "html"
+   }, 
+   "type": "choiceQuestion"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_ scq", 
+ "id": "phil_door_moments"
 }

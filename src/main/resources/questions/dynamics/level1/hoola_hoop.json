@@ -1,0 +1,49 @@
+{
+ "attribution": null, 
+ "title": "A hoola-hoop", 
+ "relatedContent": [
+  "energy"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A hoola-hoop is a large plastic hoop that you can swing around your waist. It has a diameter of \n$\\quantity{1.2}{m}$\n and a mass of \n$\\quantity{0.5}{kg}$\n.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Where is the centre of mass of the hoola-hoop (mark it on a sketch)?", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "If the hoop is held on the floor in a vertical position so that it could be rolled along, but is instead released and allowed to fall to the ground, what is the gravitational potential energy lost?", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "If it is released whilst having a very small push to roll it along, it will fall to the floor in a rolling motion, taking about \n$\\quantity{8}{seconds}$\n to end up flat on the floor. If all of the energy went into sound energy, what is the average sound power that could be emitted by the falling hoop during this time?", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_numeric", 
+ "id": "hoola_hoop"
+}

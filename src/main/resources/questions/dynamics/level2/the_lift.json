@@ -1,16 +1,67 @@
 {
-  "src": "the_lift.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "The Lift", 
-  "relatedContent": [
-    "momentum", 
-    "energy", 
-    "eq_of_motion_diff", 
-    "newtonii"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_symbolic", 
-  "id": "the_lift"
+ "attribution": "Used with permission from HE+.", 
+ "title": "The Lift", 
+ "relatedContent": [
+  "momentum", 
+  "energy", 
+  "eq_of_motion_diff", 
+  "newtonii"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A lift, of mass \n$\\vari{m}$\n, is travelling downwards at a speed \n$\\vari{u}$\n. It is brought to rest by a constant acceleration over a distance \n$\\vari{h}$\n.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "<tr>\n<td>$\\displaystyle  T  $</td>\n<td>$\\displaystyle  = mg - ma  $</td>\n</tr>\n<tr>\n<td>$\\displaystyle  $</td>\n<td>$\\displaystyle  = mg + \\frac{mu^{2}}{2h}  $</td>\n</tr>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "What is the tension, \n$\\vari{T}$\n, in the lift cable when the lift is stopping?", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "<table>\n<tr>\n<td>$\\displaystyle  \\text {Work} $</td>\n<td>$\\displaystyle  = - mgh - \\frac{1}{2}mu^{2}  $</td>\n</tr>\n</table>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "What is the work done by the tension whilst stopping the lift?", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "A lift, of mass \n$\\vari{m}$\n, is travelling upwards at a speed \n$\\vari{u}$\n. It is brought to rest by a constant acceleration over a distance \n$\\vari{h}$\n.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "<tr>\n<td>$\\displaystyle  T  $</td>\n<td>$\\displaystyle  = mg + ma  $</td>\n</tr>\n<tr>\n<td>$\\displaystyle  $</td>\n<td>$\\displaystyle  = mg - \\frac{mu^{2}}{2h}  $</td>\n</tr>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "What is the tension, \n$\\vari{T}$\n, in the lift cable when the lift is stopping?", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "<table>\n<tr>\n<td>$\\displaystyle  \\text {Work} $</td>\n<td>$\\displaystyle  = - mgh - \\frac{1}{2}mu^{2}  $</td>\n</tr>\n</table>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "What is the work done by the tension whilst stopping the lift?", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_symbolic", 
+ "id": "the_lift"
 }

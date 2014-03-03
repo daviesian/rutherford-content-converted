@@ -1,15 +1,46 @@
 {
-  "src": "shelf_brackets.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Shelf and brackets", 
-  "relatedContent": [
-    "forces", 
-    "moments", 
-    "newtoni"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_ numerical", 
-  "id": "shelf_brackets"
+ "attribution": "The centre of mass of a triangle lies at a point  of the perpendicular distance from the base to the tip.", 
+ "title": "Shelf and brackets", 
+ "relatedContent": [
+  "forces", 
+  "moments", 
+  "newtoni"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A shelf of uniform density is supported by two brackets \n$\\frac{1}{8}$\n and \n$\\frac{1}{4}$\n of the total length, \n$\\vari{L}$\n, from each end respectively.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\valuedef{\\frac{F_1}{F_2}}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Find the ratio of the forces from the brackets.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<p>\nThe rectangular shelf is now replaced with a triangular shelf, as shown in Figure \n1\n. \n</p>\n<p>\n<p>\n<p>\n<img src=\"figures/Statics_triangle_shelf_question.png\"/>\n</p>\n<p>\n<figcaption>The new triangular shelf as seen from above</figcaption>\n</p>\n</p>\n</p>", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\valuedef{\\frac{F_1}{F_2}}{\\frac{2}{13}}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Find the new ratio of the forces on the two brackets.", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_ numerical", 
+ "id": "shelf_brackets"
 }

@@ -1,15 +1,54 @@
 {
-  "src": "javelin_thrower.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "The Javelin Thrower", 
-  "relatedContent": [
-    "momentum", 
-    "eq_of_motion_diff", 
-    "newtonii"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_scq", 
-  "id": "javelin_thrower"
+ "attribution": "Adapted with permission from UCLES, A Level Physics, June 1989, Paper 1, Question 1.", 
+ "title": "The Javelin Thrower", 
+ "relatedContent": [
+  "momentum", 
+  "eq_of_motion_diff", 
+  "newtonii"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "encoding": "html", 
+   "value": "A javelin thrower exerts a force on the javelin of \n$\\quantity{100}{N}$\n for \n$\\quantity{0.3}{s}$\n. A javelin weighs \n$\\quantity{800}{g}$\n. What is the rate of change of the momentum of the javelin?", 
+   "choices": [
+    {
+     "type": "choice", 
+     "value": "$\\quantity{416.7}{kg\\,  m\\,  s\\sup {-2}}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "correct": true, 
+     "value": "$\\quantity{100}{kg\\,  m\\,  s\\sup {-2}}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\quantity{333}{kg\\,  m\\,  s\\sup {-2}}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\quantity{24}{kg\\,  m\\,  s\\sup {-2}}$", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "$\\quantity{30}{kg\\,  m\\,  s\\sup {-2}}$", 
+     "encoding": "html"
+    }
+   ], 
+   "answer": {
+    "type": "content", 
+    "value": "The correct answer is (c). This can come from \n$\\valuedef{F}{\\frac{\\d p}{\\d t}}{}$\n or from working it out long hand using SUVAT, and dividing the change of momentum by the time interval.", 
+    "encoding": "html"
+   }, 
+   "type": "choiceQuestion"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_scq", 
+ "id": "javelin_thrower"
 }

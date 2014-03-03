@@ -1,13 +1,24 @@
 {
-  "src": "powerful_stuff.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Powerful Stuff", 
-  "relatedContent": [
-    "energy"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_scq", 
-  "id": "powerful_stuff"
+ "attribution": "Used with permission from UCLES, AO Level Physics, June 1989, Paper 1, Question 1.", 
+ "title": "Powerful Stuff", 
+ "relatedContent": [
+  "energy"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "answer": {
+    "type": "content", 
+    "value": "The correct answer is (c). This can be seen from \n$\\valuedef{P}{\\vtr {F}\\cdot \\vtr {v}}{}$\n or a similar formula which gives power; the units of \n$\\vari{F}$\n are \n$\\quantity{}{N}$\n, and the units of \n$\\vari{v}$\n are \n$\\quantity{}{m\\,  s\\sup {-1}}$\n.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Which of the following is a unit of power?", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_scq", 
+ "id": "powerful_stuff"
 }

@@ -1,17 +1,53 @@
 {
-  "src": "inelastic_collision_ZMF.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Inelastic Collision in the ZMF", 
-  "relatedContent": [
-    "energy", 
-    "momentum", 
-    "momentumii", 
-    "vectors", 
-    "resolving_vectors"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_numeric", 
-  "id": "inelastic_collision_ZMF"
+ "attribution": "Cambridge University Tripos 1996", 
+ "title": "Inelastic Collision in the ZMF", 
+ "relatedContent": [
+  "energy", 
+  "momentum", 
+  "momentumii", 
+  "vectors", 
+  "resolving_vectors"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A collision occurs between two (non-relativistic) bodies of equal mass \n$\\vari{m}$\n and velocity vectors \n$\\vari{\\vtr {v}_{1}}$\n and \n$\\vari{\\vtr {v}_{2}}$\n.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\vari{\\frac{1}{4}m|\\vtr {v}_{1}-\\vtr {v}_{2}|^2}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "How much kinetic energy is available for conversion to other forms of energy?", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "A particle of mass \n$\\vari{m}$\n travelling with speed \n$\\vari{V}$\n along the \n$\\vari{+x}$\n direction collides elastically with a stationary particle of mass \n$\\vari{2m}$\n.The particle of mass \n$\\vari{m}$\n is deflected through an angle of \n$\\vari{30^{\\circ }}$\n.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "The velocity of the particle of mass \n$\\vari{2m}$\n, is equal to \n$\\vari{\\frac{2v}{3}\\cos {(\\phi )}}$\n and the velocity of the particle of mass \n$\\vari{m}$\n, is equal to \n$\\vari{\\frac{2\\sqrt {3}}{9}(1-2\\cos {(2\\phi )})v}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "What are the final velocity vectors of the two particles in the Laboratory frame?", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Your answer should be illustrated by appropriate diagrams in both the laboratory and zero momentum frames.", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_numeric", 
+ "id": "inelastic_collision_ZMF"
 }

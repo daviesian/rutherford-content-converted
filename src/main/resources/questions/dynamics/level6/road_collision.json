@@ -1,20 +1,36 @@
 {
-  "src": "road_collision.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Road Collision", 
-  "relatedContent": [
-    "energy", 
-    "friction", 
-    "momentum", 
-    "newtonii", 
-    "momentumii", 
-    "vectors", 
-    "resolving_vectors", 
-    "newtoni"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_numeric", 
-  "id": "road_collision"
+ "attribution": "Created by MC for the Rutherford Schools Physics Project", 
+ "title": "Road Collision", 
+ "relatedContent": [
+  "energy", 
+  "friction", 
+  "momentum", 
+  "newtonii", 
+  "momentumii", 
+  "vectors", 
+  "resolving_vectors", 
+  "newtoni"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A car of mass \n$\\quantity{1500}{kg}$\n was travelling down a motorway when a larger car of mass \n$\\quantity{2500}{kg}$\n moved in from another lane at an angle of \n$\\valuedef{\\alpha }{15}{$^{\\circ }$}$\n to the direction of the road and collided with it. After the collision these two cars stuck to each other, moving at an angle \n$\\valuedef{\\theta }{8}{$^{\\circ }$}$\n to the direction of the road. They came to a stop \n$\\quantity{46}{m}$\n from the point of collision.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "The inital speeds of the cars were \n$\\valuedef{u_{1}}{21.5}{m\\,  s\\sup {-1}}$\n for the larger car and \n$\\valuedef{u_{1}}{21.5}{m\\,  s\\sup {-1}}$\n for the smaller car.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Assuming that the the coefficient of friction between the road and the combined two cars after the collision is 0.7 and no air resistance, find the speeds of the cars just before the collision.", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_numeric", 
+ "id": "road_collision"
 }

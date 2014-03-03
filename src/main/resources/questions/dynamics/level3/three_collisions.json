@@ -1,14 +1,50 @@
 {
-  "src": "three_collisions.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Three Collisions", 
-  "relatedContent": [
-    "energy", 
-    "momentum"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_symbolic", 
-  "id": "three_collisions"
+ "attribution": null, 
+ "title": "Three Collisions", 
+ "relatedContent": [
+  "energy", 
+  "momentum"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "Three particles A, B, and C, each of mass \n$\\vari{m}$\n, lie at rest in that order in a straight line on a smooth horizontal table. The particle A is then projected directly towards B with speed \n$\\vari{u}$\n.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "<p>\n<tr>\n<td>$\\displaystyle  v_{1} = 0  $</td>\n<td>$\\displaystyle  $</td>\n<td>$\\displaystyle  w_{2} = 0  $</td>\n<td>$\\displaystyle  $</td>\n<td>$\\displaystyle  w_{3} = u  $</td>\n</tr>\n</p>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Find the velocities of the three particles immediately after the second impact, assuming the collisions are perfectly elastic.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "<p>\n<tr>\n<td>$\\displaystyle  v_{1} = - \\frac{1}{3}u  $</td>\n<td>$\\displaystyle  $</td>\n<td>$\\displaystyle  w_{2} = - \\frac{2}{15}u  $</td>\n<td>$\\displaystyle  $</td>\n<td>$\\displaystyle  w_{3} = \\frac{8}{15}u  $</td>\n</tr>\n</p>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Again find the velocities of the three particles immediately after the second impact, assuming the collisions are perfectly elastic.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "<p>\n<table>\n<tr>\n<td>$\\displaystyle  v_{f} = \\frac{1}{6} u  $</td>\n</tr>\n</table>\n</p>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "What is the velocity of the composite particle after the second impact, if the balls now collide completely inelastically?", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_symbolic", 
+ "id": "three_collisions"
 }

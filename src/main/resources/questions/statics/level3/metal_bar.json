@@ -1,15 +1,31 @@
 {
-  "src": "metal_bar.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Metal bar see-saw", 
-  "relatedContent": [
-    "forces", 
-    "moments", 
-    "newtoni"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_ numerical", 
-  "id": "metal_bar"
+ "attribution": "Used with permission from UCLES, A Level Physical Science, November 1987, Paper 2, Question 3", 
+ "title": "Metal bar see-saw", 
+ "relatedContent": [
+  "forces", 
+  "moments", 
+  "newtoni"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A long uniform metal bar of mass \n$\\valuedef{M}{1}{kg}$\n is pivoted about its mid-point and three masses are hung from it, the first is a distance \n$\\vari{x_1}$\n to the left of the pivot and has a mass \n$\\valuedef{m_1}{5}{kg}$\n. The second is a distance \n$\\valuedef{x_2}{10}{cm}$\n to the left of the pivot and has a mass \n$\\valuedef{m_2}{20}{kg}$\n. The third mass is a distance \n$\\valuedef{x_3}{45}{cm}$\n to the right of the pivot and has a mass \n$\\valuedef{m_3}{10}{kg}$\n. The whole system is in equilibrium.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\valuedef{R}{352.8}{N;}$\n$\\valuedef{x_1}{0.5}{m}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Calculate the reaction force at the pivot and find the distance \n$\\vari{x_1}$\n.", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_ numerical", 
+ "id": "metal_bar"
 }

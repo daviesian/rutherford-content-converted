@@ -1,15 +1,71 @@
 {
-  "src": "uniform_ladder.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "A uniform ladder", 
-  "relatedContent": [
-    "forces", 
-    "friction", 
-    "newtoni"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_ numerical", 
-  "id": "uniform_ladder"
+ "attribution": "Used with permission from UCLES, A Level Further Maths, Syllabus C, June 1987, Paper II, Question 1.", 
+ "title": "A uniform ladder", 
+ "relatedContent": [
+  "forces", 
+  "friction", 
+  "newtoni"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A uniform ladder AB of mass \n$\\vari{m}$\n rests in equilibrium. A is in contact with a smooth vertical wall and B in contact with a rough horizonal floor. The ladder lies in a vertical plane perpendicular to the wall and makes an acute angle \n$\\vari{\\alpha }$\n to the horizontal. A horizontal force \n$\\vari{P}$\n is applied to the ladder in a direction away from and perpendicular to the wall. This force acts at the point one quarter of the way up the ladder. ", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "<p>\n<table>\n<tr>\n<td>$\\displaystyle  N\\s {A} = \\frac{1}{2}mg\\cot {\\alpha } - \\frac{1}{4}P  $</td>\n</tr>\n</table>\n</p>\n<p>\nWe can find the reaction force \n$\\vari{N\\s {B}}$\n at B by resolving vertically on the ladder. \n</p>\n<p>\n<table>\n<tr>\n<td>$\\displaystyle  N\\s {B} = mg  $</td>\n</tr>\n</table>\n</p>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Find, in terms of \n$\\vari{P}$\n, \n$\\vari{m}$\n and \n$\\vari{\\alpha }$\n the magnitudes of the normal reactions at A and B (\n$\\vari{N\\s {A}}$\n and \n$\\vari{N\\s {B}}$\n respectively) ", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Show that the frictional force on the ladder at B has magnitude \n$\\frac{3}{4}P+\\frac{1}{2}mg\\cot (\\alpha )$", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "If the coefficient of friction between the ladder and the floor at B is \n$\\vari{\\mu }$\n, the value of \n$\\vari{P}$\n is gradually increased from zero. Find how equilibrium will be broken in the following cases", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "If \n$\\mu = \\cot {\\alpha }$\n, then \n$\\mu < \\mu \\s {crit}$\n so equilibrium will be broken by the ladder sliding.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "$\\mu =\\cot (\\alpha )$", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "If \n$\\mu = 4\\cot {\\alpha }$\n, then \n$\\mu > \\mu \\s {crit}$\n so equilibrium will be broken by the ladder toppling.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "$\\mu =4\\cot (\\alpha )$", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_ numerical", 
+ "id": "uniform_ladder"
 }

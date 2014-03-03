@@ -1,0 +1,118 @@
+{
+ "attribution": null, 
+ "title": "Newton's Second Law", 
+ "relatedContent": [
+  "newtoni", 
+  "newtoniii", 
+  "vectors", 
+  "calculus", 
+  "NewtonII_video"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "<h3>Newton&apos;s Second Law of Motion</h3>", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "As Newton stated it... The change of momentum of a body is proportional to the impulse applied to that body, and happens along the straight line on which the impulse is applied.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<div id=\"eqn:NII\">$$  Impulse=\\vtr {I} = \\Delta {\\vtr p} = \\Delta (m \\vtr {v}) \\label{eqn:NII} \n\n $$</div>", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "At school we commonly use this as...", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<div>$$  {\\vtr F}=m{\\vtr a} \n\n $$</div>\n but we should be careful as this assumes that the mass of the object remains constant. How do we get to this statement from Newton&apos;s original description (expressed in equation \n1\n )? What does this law tell us if we do not make any assumptions about the mass?", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Levels 1-4 The change in momentum depends on both the mass of the object and the velocity of the object and therefore it is possible in the real world that both of these could change due to the application of a resultant force. In the simplest cases however, we assume that the mass remains the same (does not change with time) and that it is only the velocity that is changing. \nLet us begin with Newton&apos;s Second Law as he expressed it but convert it instead to a more familiar form, in terms of an applied force rather than an applied impulse, and \nassuming that the mass of our object is constant\n assuming that the mass of our object is constant .", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<table>\n<tr>\n<td>$\\displaystyle  {\\vtr I} $</td>\n<td>$\\displaystyle  = $</td>\n<td>$\\displaystyle  \\Delta ({m {\\vtr v}}) =m(\\Delta {\\vtr v})\\   \\   \\   (\\mbox{assuming mass is constant}) $</td>\n</tr>\n<tr>\n<td>$\\displaystyle {\\vtr F}\\Delta t $</td>\n<td>$\\displaystyle  = $</td>\n<td>$\\displaystyle  m(\\Delta {\\vtr v})  $</td>\n</tr>\n<tr>\n<td>$\\displaystyle {\\vtr F} $</td>\n<td>$\\displaystyle  = $</td>\n<td>$\\displaystyle  \\frac{m\\Delta ({\\vtr v})}{\\Delta t} \\label{eqn:NIIF}  $</td>\n</tr>\n</table>\n And with one further realisation that \n$\\frac{\\Delta {\\vtr v}}{\\Delta t}$\n is an acceleration", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<div>$$  {\\vtr F}=m {\\vtr a} \n\n $$</div>", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Quick Questions", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "${\\vtr a}={2}$\nm\n s\n-2", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "If a resultant force of \n$\\quantity{20}{N}$\n acts horizontally on a mass of \n$\\quantity{10}{kg}$\n, what will be the resulting acceleration, \n$\\vari{a}$\n?", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<br/>", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "<p>\n<div>$$  {\\vtr a}=\\frac{{\\vtr T}-{\\vtr F_ r}}{M} \n\n $$</div>\n</p>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "A block of mass \n$\\vari{M}$\n is being pulled along a frictional surface by a rope with tension, \n$\\vari{\\vtr {T}}$\n. The opposing frictional force due to the surface is \n$\\vari{\\vtr F_{r}}$\n. What is the acceleration, \n$\\vari{\\vtr a}$\n, of the block?", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "${\\vtr F}={2000}$\nN\n, in the opposite direction to the initial velocity of the train.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "As a train enters a station the buffers bring the train gently to rest from a speed of \n$\\quantity{2}{m\\,  s\\sup {-1}}$\n over \n$\\quantity{5}{s}$\n. What force, \n$\\vari{\\vtr F}$\n, must these buffers apply to a train of mass \n$\\quantity{5000}{kg}$\n, and how does the direction of the force compare with the direction of the initial speed of the train?", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Level 5+ When considering Newton&apos;s Second Law for a system in which a force is being applied to an object of changing mass, we need to consider not only the change in velocity over time but also the change in mass with time. Let us consider, for example, a rocket in outer space that is burning fuel at a constant rate to produce a constant force of propulsion. Here, mass is being continually lost and the velocity of the rocket is continuously changing due to the resulting constant force - so we have both changing mass and changing velocity. \nThese changes are \ncontinuous\n continuous and therefore we can no longer represent Newton&apos;s Second Law in terms of large changes in time, \n$\\vari{\\Delta t}$\n , but instead have to consider how the mass and velocity change in infinitesimal amounts of time. So", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<div>$$  {\\vtr F}= \\frac{\\delta {\\vtr p}}{\\delta t}= \\frac{\\delta (m {\\vtr v})}{\\delta t}. \n\n $$</div>\n Now taking the limit as \n$\\vari{\\delta t \\rightarrow 0}$\n , Newton&apos;s Second Law can be expressed in its derivative form", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<div id=\"NII2\">$$  {\\vtr F}=\\frac{\\d{\\vtr p}}{dt}=\\frac{\\d(m{\\vtr v})}{\\d t} \\label{NII2} \n\n $$</div>\n Equation \n1\n states that the resultant applied force causes an instantaneous rate of change of momentum, given by the derivative of the momentum with respect to time. Momentum is the product of mass and velocity and therefore we must differentiate each of the terms, with respect to time, using the product rule.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<div>$$  {\\vtr F}=\\frac{\\d(m{\\vtr v})}{\\d t}={\\vtr v}\\frac{\\d m}{\\d t}+m\\frac{\\d{\\vtr v}}{\\d t} \n\n $$</div>", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "concept", 
+ "id": "newtonii"
+}

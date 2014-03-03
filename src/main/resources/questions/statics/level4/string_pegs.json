@@ -1,14 +1,25 @@
 {
-  "src": "string_pegs.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Pegs and string", 
-  "relatedContent": [
-    "forces", 
-    "newtoniii"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_ scq", 
-  "id": "string_pegs"
+ "attribution": "Used with permission from UCLES, A Level Physics, June 1985, Paper 1, Question 2.", 
+ "title": "Pegs and string", 
+ "relatedContent": [
+  "forces", 
+  "newtoniii"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "answer": {
+    "type": "content", 
+    "value": "The correct answer is (e).", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "<p>\nA string is tied to two pegs P and R, with R above and to the right of P. A mass \n$\\vari{m}$\n is attached to a point Q on the string such that the section PQ is horizontal and the section QR makes an angle of \n$\\quantity{30}{\\sup {\\circ }}$\n to the horizontal. If the system is in equilibrium, what is the tension in the section of string PQ? \n</p>\n<p>\n<ol>\n<li><p>\n[a]\n$\\vari{\\frac{1}{4}mg}$\n</p></li>\n<li><p>\n[b]\n$\\vari{\\frac{1}{2}mg}$\n</p></li>\n<li><p>\n[c]\n$\\vari{\\frac{\\sqrt {3}}{3}mg}$\n</p></li>\n<li><p>\n[d]\n$\\vari{\\frac{\\sqrt {3}}{2}mg}$\n</p></li>\n<li><p>\n[e]\n$\\vari{\\sqrt {3}mg}$\n</p></li>\n</ol>\n</p>", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_ scq", 
+ "id": "string_pegs"
 }

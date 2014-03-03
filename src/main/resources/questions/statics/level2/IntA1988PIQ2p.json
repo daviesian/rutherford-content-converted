@@ -1,11 +1,37 @@
 {
-  "src": "IntA1988PIQ2p.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "A Framework", 
-  "relatedContent": [], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_ numerical", 
-  "id": "IntA1988PIQ2p"
+ "attribution": "Adapted with permission from UCLES, A Level Physics, November 1988, Paper I, Question 2", 
+ "title": "A Framework", 
+ "relatedContent": [], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "Four light, hinged rods are connected together in order to make a framework to support a load. Rod AB is hinged to a wall at A. Rod CD is half the length of AB and is hinged to the same wall at C, which is directly below A. The other two rods (which are the same length as AB) are smoothly hinged at each end; one to the points A and D, and the other to the points B and D.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "<p>\n<p>\n<img src=\"Statics_framework_angles\"/>\n</p>\n<p>\n<figcaption></figcaption>\n</p>\n</p>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Draw a diagram, labelling the rods according to the text.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "Angle CDB is \n$120^{\\circ }$\n.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "What is the value of the angle CDB?", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_ numerical", 
+ "id": "IntA1988PIQ2p"
 }

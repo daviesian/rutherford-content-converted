@@ -1,16 +1,32 @@
 {
-  "src": "ballistic_pendulum.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "A Ballistic Pendulum", 
-  "relatedContent": [
-    "energy", 
-    "momentum", 
-    "momentumii", 
-    "vectors"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_numeric", 
-  "id": "ballistic_pendulum"
+ "attribution": null, 
+ "title": "A Ballistic Pendulum", 
+ "relatedContent": [
+  "energy", 
+  "momentum", 
+  "momentumii", 
+  "vectors"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A block of wood weighing \n$\\valuedef{M}{2.5}{kg}$\n is suspended from fixed pegs by vertical strings \n$\\valuedef{l}{3}{m}$\n long, in a set up known as a ballistic pendulum. A bullet weighing \n$\\valuedef{m}{10}{g}$\n and moving horizontally with a velocity \n$\\valuedef{u}{300}{m\\,  s\\sup {-1}}$\n enters and remains in the block.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\valuedef{\\theta }{12.7^\\circ }{}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "<p>\nFind the angle through which the block swings. \n</p>", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_numeric", 
+ "id": "ballistic_pendulum"
 }

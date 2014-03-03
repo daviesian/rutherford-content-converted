@@ -1,18 +1,54 @@
 {
-  "src": "two_spheres.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Two spheres", 
-  "relatedContent": [
-    "forces", 
-    "friction", 
-    "newtoni", 
-    "newtoniii", 
-    "trig", 
-    "vectors"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_ numerical", 
-  "id": "two_spheres"
+ "attribution": "Adapted with permission from UCLES, A Level Further Maths, Syllabus C, June 1988, Paper II, Question 1", 
+ "title": "Two spheres", 
+ "relatedContent": [
+  "forces", 
+  "friction", 
+  "newtoni", 
+  "newtoniii", 
+  "trig", 
+  "vectors"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "Two rough uniform spheres A and B have radii \n$\\vari{8a}$\n and \n$\\vari{4a}$\n and masses \n$\\vari{4m}$\n and \n$\\vari{m}$\n respectively. The spheres rest on a rough horizontal table in contact with one another at a point C. A horizontal force of magnitude \n$\\vari{2mg}$\n is applied to the highest point on A, D. The line of action of this force and all the points mentioned lie in the same vertical plane.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Show that the magnitude of the frictional force at the base of A is zero.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\valuedef{N_A}{mg(4-2\\sqrt 2)}{.}$\n Substituting in \n$\\valuedef{m}{5}{kg}$\n gives \n$\\valuedef{N_A}{5.75}{kg}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "For \n$\\valuedef{m}{0.5}{kg}$\n, find the magnitude of the normal reaction at the base of A.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\valuedef{\\mu }{\\frac{1}{\\sqrt {2}}}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "The coefficient of friction between the two spheres and between each sphere and the table is \n$\\vari{\\mu }$\n. Find the smallest value of \n$\\vari{\\mu }$\n for which the balls remain at equilibrium.", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_ numerical", 
+ "id": "two_spheres"
 }

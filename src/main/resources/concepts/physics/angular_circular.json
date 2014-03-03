@@ -1,16 +1,73 @@
 {
-  "src": "angular_circular.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Circular kinematics", 
-  "relatedContent": [
-    "newtoni", 
-    "newtonii", 
-    "vectors", 
-    "calculus"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "concept", 
-  "id": "angular_circular"
+ "attribution": null, 
+ "title": "Circular kinematics", 
+ "relatedContent": [
+  "newtoni", 
+  "newtonii", 
+  "vectors", 
+  "calculus"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "<h3>Circular motion</h3>", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Circular kinematics ", 
+   "encoding": "html"
+  }, 
+  {
+   "src": "../../figures/circular.svg", 
+   "type": "image", 
+   "id": "fig:circular", 
+   "value": "Anti-clockwise motion with speed \n$\\vari{v}$\n around the perimeter of a circle of radius \n$\\vari{a}$\n. The angle \n$\\vari{\\theta }$\n increases in the anticlockwise (positive) sense. A small arc \n$\\vari{\\d l = v \\d t}$\n subtends an angle \n$\\vari{\\d\\theta }$\n in a time \n$\\vari{\\d t}$\n.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Figure \n1\n shows a circle of radius \n$\\vari{a}$\n with an arc of length \n$l$\n l subtending angle \n$\\vari{\\theta }$\n at the centre. Thus \n$\\vari{\\theta }$\n is the angle between the radii going to the ends of the arc. Arc length, radius and angle are connected by \n$\\vari{l = a \\theta }$\n . The angle in radians is \n$\\vari{\\theta = l/a}$\n . A differential length is connected to a differential angle similarly: \n$\\vari{\\d l = a \\d\\theta }$\n . \nThe angle increases at rate \n$\\vari{\\omega = \\d\\theta / \\d t}$\n , with \n$\\vari{\\omega }$\n the angular frequency or speed in radians per second. The above gives us \n$\\vari{v = \\d l/\\d t = a \\d\\theta /\\d t = a \\omega }$\n . Thus the speed around the circle and the angular frequency are related by:", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<table>\n<tr>\n<td>$\\displaystyle  v = a \\omega \\;  \\;  \\;  \\textrm{or} \\;  \\;  \\;  \\omega = v/a.  $</td>\n</tr>\n</table>\n The direction of the velocity is tangential. The units of \n$\\vari{\\omega }$\n are s \n-1\n -1 , radians being dimensionless. \nFor constant angular speed, the angle is \n$\\vari{\\theta = \\omega t}$\n in time \n$\\vari{t}$\n . \nThe period \n$\\vari{T}$\n is the time taken to traverse one revolution or \none cycle: \n$\\valuedef{\\theta }{0}{}$\n$\\rightarrow $\n$\\valuedef{\\theta }{2\\pi }{}$\n . \nThus \n$\\valuedef{2\\pi }{\\omega T}{}$\n and hence: \n$\\valuedef{\\omega }{2\\pi /T}{}$\n or \n$\\valuedef{T}{2\\pi /\\omega }{}$\n . ", 
+   "encoding": "html"
+  }, 
+  {
+   "src": "../../figures/centripetal.svg", 
+   "type": "image", 
+   "id": "fig:centripetal-derive", 
+   "value": "Velocities \n$\\vari{\\vtr {v}}$\n and \n$\\vari{\\vtr {v}'}$\n at successive times separated by \n$\\vari{\\d t}$\n and angles separated by \n$\\vari{\\d\\theta }$\n. The vector triangle of \n$\\vtr {v}&apos; - \\vtr {v} = \\vtr {\\d v}$\n shows that the change in \n$\\vari{\\vtr {v}}$\n over the time \n$\\vari{\\d t}$\n is towards the centre.", 
+   "encoding": "html"
+  }, 
+  {
+   "src": "../../figures/centripetal_derive.svg", 
+   "type": "image", 
+   "id": "fig:centripetal-derive", 
+   "value": "Velocities \n$\\vari{\\vtr {v}}$\n and \n$\\vari{\\vtr {v}'}$\n at successive times separated by \n$\\vari{\\d t}$\n and angles separated by \n$\\vari{\\d\\theta }$\n. The vector triangle of \n$\\vtr {v}&apos; - \\vtr {v} = \\vtr {\\d v}$\n shows that the change in \n$\\vari{\\vtr {v}}$\n over the time \n$\\vari{\\d t}$\n is towards the centre.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Circular dynamics In circular motion the direction of motion is tangential and always changing; figure \n1\n . The speed is constant. The force required to change the velocity, and hence the momentum is always to the centre of the circle and perpendicular to the motion. This \ncentripetal\n centripetal force does no work. The energy of the particle is unchanging. Note that the velocity and thus momentum has reversed direction between the points 1 (at the top of the circle) and 3 (at the bottom of the circle) as a result of the continuing action of the centripetal force. \nFigure \n2\n shows the velocity changing in a time \n$\\d t$\nt\n t . The difference between the velocities, \n$\\vari{\\d\\vtr {v}}$\n , points inwards &mdash; see the vector triangle. Since \n$\\vari{\\vtr {v}}$\n and \n$\\vari{\\vtr {v}'}$\n are of the same length and \n$\\vari{\\d\\vtr {v}}$\n is small, once can think of the latter as an arc of a circle of radius \n$\\vari{v}$\n and thus \n$\\vari{\\d\\vtr {v}}$\n has length \n$\\vari{v \\d\\theta }$\n . The acceleration is inwards and of magnitude:", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<table>\n<tr>\n<td>$\\displaystyle  a = \\d v/\\d t = v \\d\\theta /\\d t = v \\omega .  $</td>\n</tr>\n</table>\n Since \n$\\valuedef{v}{\\omega r}{}$\n , we have two equivalent expressions for the \ncentripetal\n centripetal (inward) acceleration \n$\\vari{a}$\n :", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "<table>\n<tr>\n<td>$\\displaystyle  a = v^2/r \\equiv \\omega ^2 r .  $</td>\n</tr>\n</table>", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "concept", 
+ "id": "angular_circular"
 }

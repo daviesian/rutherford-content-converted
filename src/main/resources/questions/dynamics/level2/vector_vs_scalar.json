@@ -1,14 +1,53 @@
 {
-  "src": "vector_vs_scalar.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": " Vector vs Scalar", 
-  "relatedContent": [
-    "vectors", 
-    "IntA1987PIQ3l_video"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_scq", 
-  "id": "vector_vs_scalar"
+ "attribution": "Used with permission from UCLES, A Level Physics, November 1987, Paper 1, Question 3.", 
+ "title": " Vector vs Scalar", 
+ "relatedContent": [
+  "vectors", 
+  "IntA1987PIQ3l_video"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "encoding": "html", 
+   "value": "Which of the following pairs contains one vector quantity and one scalar quantity?", 
+   "choices": [
+    {
+     "type": "choice", 
+     "value": "Displacement \n: \nAcceleration", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "Momentum \n: \nVelocity", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "correct": true, 
+     "value": "Force \n: \nKinetic Energy", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "Work \n: \nPotential Energy", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "choice", 
+     "value": "Power \n: \nSpeed", 
+     "encoding": "html"
+    }
+   ], 
+   "answer": {
+    "type": "content", 
+    "value": "The correct answer is (b). Displacement, acceleration, force, momentum and velocity are all vector quantities. Kinetic Energy, power, speed, work and potential energy are all scalar quantities.", 
+    "encoding": "html"
+   }, 
+   "type": "choiceQuestion"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_scq", 
+ "id": "vector_vs_scalar"
 }

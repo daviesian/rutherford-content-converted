@@ -1,17 +1,28 @@
 {
-  "src": "the_hosepipe.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "The Hosepipe", 
-  "relatedContent": [
-    "momentum", 
-    "newtonii", 
-    "friction", 
-    "resolving_vectors", 
-    "vectors"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_numeric", 
-  "id": "the_hosepipe"
+ "attribution": "Adapted with permission from UCLES, Higher School Certificate Mathematics, June1931, Paper3, Question3.", 
+ "title": "The Hosepipe", 
+ "relatedContent": [
+  "momentum", 
+  "newtonii", 
+  "friction", 
+  "resolving_vectors", 
+  "vectors"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "A hose pipe delivers a jet of water \n$\\valuedef{d}{2}{cm}$\n in diameter, which impinges horizontally and normally on a side of a box weighing \n$\\valuedef{m}{1}{kg}$\n, whose base rests in contact with a rough horizontal floor; the coefficient of friction between the box and floor is \n$\\valuedef{\\mu }{\\frac{1}{2}}{}$\n.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "question", 
+   "value": "Assuming that the water is of density \n$\\valuedef{\\rho }{1000}{kg\\,  m\\sup {-3}}$\n and does not recoil from the box, determine the smallest velocity of the jet that will cause the box to move.", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_numeric", 
+ "id": "the_hosepipe"
 }

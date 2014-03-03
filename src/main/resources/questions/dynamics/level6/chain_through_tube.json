@@ -1,17 +1,67 @@
 {
-  "src": "chain_through_tube.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "A Chain Sliding through a Tube", 
-  "relatedContent": [
-    "energy", 
-    "momentum", 
-    "newtonii", 
-    "vectors", 
-    "resolving_vectors"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_numeric", 
-  "id": "chain_through_tube"
+ "attribution": "Used with permission from UCLES, A Level Further Mathematics, Syllabus A, June 1987, Special Paper, Question 10.", 
+ "title": "A Chain Sliding through a Tube", 
+ "relatedContent": [
+  "energy", 
+  "momentum", 
+  "newtonii", 
+  "vectors", 
+  "resolving_vectors"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "<p>\nA uniform heavy inextensible chain AD of length \n$\\vari{\\left( 4 + \\frac{\\pi }{2} \\right)l}$\n and mass \n$\\vari{\\rho }$\n per unit length is at rest in the position shown in Figure \n1\n , in which the points A, B, C and D lie in a vertical plane. The section AB of length \n$\\vari{2l}$\n rests on a smooth horizontal table. The next section of the chain is within a fixed smooth tube BC in the form of a quadrant of a circle, radius \n$\\vari{l}$\n, whose centre \n$\\vari{O}$\n is vertically below B. The section CD of the chain hangs vertically. \n</p>\n<p>\n<p>\n<p>\n<img src=\"figures/Dynamics_chain_sliding.png\"/>\n</p>\n<p>\n<figcaption></figcaption>\n</p>\n</p>\n</p>\n<p>\nThe chain is released from rest at \n$\\valuedef{t}{0}{s}$\n. At time \n$\\vari{t}$\n the length of the vertical section CD is \n$\\vari{2l + x}$\n, where \n$\\vari{x \\le 2l}$\n, and the speed of the chain is \n$\\vari{v}$\n.\n</p>", 
+   "encoding": "html"
+  }, 
+  {
+   "encoding": "html", 
+   "value": "Find \n$\\vari{v^{2}}$\n in terms of \n$\\vari{l}$\n, \n$\\vari{x}$\n and \n$\\vari{g}$\n.", 
+   "answer": {
+    "type": "content", 
+    "value": "<p>\n<tr>\n<td>$\\displaystyle  v^{2} = \\frac{2gx}{(8 + \\pi )l}(6l + x)  $</td>\n</tr>\n</p>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "hints": [
+    {
+     "type": "content", 
+     "value": "It is easiest to consider equating the kinetic energy gained after moving a distance \n$\\vari{x}$\n to the gravitational potential energy (GPE) lost in the same distance.", 
+     "encoding": "html"
+    }
+   ]
+  }, 
+  {
+   "encoding": "html", 
+   "value": "Derive an expression for the horizontal component of the momentum of the section of chain within the tube as a function of \n$\\vari{\\rho }$\n, \n$\\vari{l}$\n and \n$\\vari{v}$\n.", 
+   "answer": {
+    "type": "content", 
+    "value": "<p>\n<table>\n<tr>\n<td>$\\displaystyle  p = \\rho l v  $</td>\n</tr>\n</table>\n</p>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "hints": [
+    {
+     "type": "content", 
+     "value": "<p>\nConsider a small element, and integrate \n</p>\n<p>\nto find the total horizontal momentum of the chain.\n</p>", 
+     "encoding": "html"
+    }, 
+    {
+     "type": "content", 
+     "value": "The rate of change of horizontal momentum in the tube is equal to the sum of the two horizontal forces acting on the chain plus the momentum flux into the tube.", 
+     "encoding": "html"
+    }
+   ]
+  }, 
+  {
+   "type": "content", 
+   "value": "<p>\nShow further that the horizontal component of the force on the chain is: \n</p>\n<p>\n<table>\n<tr>\n<td>$\\displaystyle  \\frac{2g \\rho }{l(8 + \\pi )} \\left( 9l^{2} - 6lx - 2x^{2} \\right)  $</td>\n</tr>\n</table>\n</p>", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_numeric", 
+ "id": "chain_through_tube"
 }

@@ -1,18 +1,64 @@
 {
-  "src": "hammer_nail.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Hammer and Nail", 
-  "relatedContent": [
-    "energy", 
-    "momentum", 
-    "eq_of_motion_diff", 
-    "impulse", 
-    "newtonii", 
-    "resolving_vectors"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_numeric", 
-  "id": "hammer_nail"
+ "attribution": "Adapted with permission from UCLES, A Level Applied Mathematics, June1964, Paper1, Question3.", 
+ "title": "Hammer and Nail", 
+ "relatedContent": [
+  "energy", 
+  "momentum", 
+  "eq_of_motion_diff", 
+  "impulse", 
+  "newtonii", 
+  "resolving_vectors"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "answer": {
+    "type": "content", 
+    "value": "The impulse from a constant force is the product of the magnitude of the force with the time for which the force acts. Here it is important to realise that this is the change in momentum of a body due to an applied force. The law of conservation of linear momentum states that through a collision, the total momentum of all bodies is conserved.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Define impulse and state the law of conservation of linear momentum.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "A nail of mass \n$\\quantity{7}{g}$\n is held horizontally and is hit by a hammer of mass \n$\\quantity{0.25}{kg}$\n moving at \n$\\quantity{10}{m\\,  s\\sup {-1}}$\n. The hammer remains in contact with the nail during and after the blow. ", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\valuedef{v_{n+h}}{9.73}{m\\,  s\\sup {-1}}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Find the velocity of the nail and hammer immediately after the blow.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\valuedef{I}{0.0681}{kg\\,  m\\,  s\\sup {-1}}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Calculate the impulse between the hammer and nail, clearly stating the units in which it is measured.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "The block exerts a resistive force of magnitude \n$\\quantity{29.0}{N}$\n against the nail.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "The nail goes on to penetrate \n$\\quantity{1}{cm}$\n into a stationary wooden block. Find the resistive force the block exerts as the nail is pushed into it, assuming the force to be constant.", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_numeric", 
+ "id": "hammer_nail"
 }

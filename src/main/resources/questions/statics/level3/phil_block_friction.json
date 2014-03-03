@@ -1,15 +1,26 @@
 {
-  "src": "phil_block_friction.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Block on a rough table", 
-  "relatedContent": [
-    "forces", 
-    "friction", 
-    "newtoni"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_ numerical", 
-  "id": "phil_block_friction"
+ "attribution": "Created for the Rutherford School Physics Project by PS.", 
+ "title": "Block on a rough table", 
+ "relatedContent": [
+  "forces", 
+  "friction", 
+  "newtoni"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "answer": {
+    "type": "content", 
+    "value": "F\n9.8\nN", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "A block is being pulled along a rough table at constant speed by a horizontal force \n$\\vari{F}$\n. It has mass \n$\\valuedef{m}{2}{kg}$\n and the coefficient of friction between the block and the table \n$\\valuedef{\\mu }{0.5}{}$\n. Use \n$\\valuedef{g}{9.8}{m s\\sup ^{-2}}$\n. Find \n$\\vari{F}$\n.", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_ numerical", 
+ "id": "phil_block_friction"
 }

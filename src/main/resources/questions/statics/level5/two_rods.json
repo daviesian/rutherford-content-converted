@@ -1,16 +1,27 @@
 {
-  "src": "two_rods.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Two rods and a hinge", 
-  "relatedContent": [
-    "forces", 
-    "moments", 
-    "newtoniii", 
-    "friction"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_ numerical", 
-  "id": "two_rods"
+ "attribution": "Used with permission from UCLES, A Level Further Maths, Syllabus A, June 1986, Paper II, Question 3", 
+ "title": "Two rods and a hinge", 
+ "relatedContent": [
+  "forces", 
+  "moments", 
+  "newtoniii", 
+  "friction"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "answer": {
+    "type": "content", 
+    "value": "$\\mu \\ge \\frac{10}{9}\\sqrt 3$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "<p>\nTwo uniform rods AB and CD, each of length \n$\\vari{6a}$\n and mass \n$\\vari{m}$\n are freely hinged together at H where AH=CH=\n$\\vari{2a}$\n. The rods rest in equilibrium with A and C on a rough horizontal table and at a distance \n$\\vari{2a}$\n apart. Particles of mass \n$\\vari{5m}$\n and \n$\\vari{4m}$\n are suspended from B and D respectively. The setup is shown in Figure \n1\n below. \n</p>\n<p>\n<p>\n<p>\n<img src=\"figures/Statics_picnic_table_question.png\"/>\n</p>\n<p>\n<figcaption>The two rods with the masses suspended from them</figcaption>\n</p>\n</p>\n</p>\n<p>\nThe coefficient of friction between each rod and the table is \n$\\vari{\\mu }$\n. Find the least possible value of \n$\\vari{\\mu }$\n.\n</p>", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_ numerical", 
+ "id": "two_rods"
 }

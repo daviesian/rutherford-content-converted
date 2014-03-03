@@ -1,15 +1,21 @@
 {
-  "src": "braking_a_car.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Braking a Car", 
-  "relatedContent": [
-    "energy", 
-    "eq_of_motion_diff", 
-    "resolving_vectors"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_numeric", 
-  "id": "braking_a_car"
+ "attribution": "Adapted with permission from UCLES, A Level Applied Mathematics, June1961, Paper1, Question2. ", 
+ "title": "Braking a Car", 
+ "relatedContent": [
+  "energy", 
+  "eq_of_motion_diff", 
+  "resolving_vectors"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "<p>\n<ol>\n<li><p>\n[a]\nFind the total resistance due to friction, which may be taken to be constant.\n</p></li>\n<li><p>\n[b]\nThe engine is suddenly disconnected and the brakes applied, and the car comes to rest in \n$\\quantity{50}{m}$\n. Find the force, assumed constant, exerted by the brakes.\n</p></li>\n<li><p>\n[c]\nFind also the distance in which the car would come to rest if the engine were disconnected and the brakes applied on an upward incline of angle \n$\\vari{\\theta }$\n, where \n$\\valuedef{\\sin (\\theta )}{\\frac{1}{20}}{}$\n. \n</p></li>\n<li><p>\n[d]\nBy how much does this change if the car is travelling down the same hill?\n</p></li>\n</ol>\n</p>", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_numeric", 
+ "id": "braking_a_car"
 }

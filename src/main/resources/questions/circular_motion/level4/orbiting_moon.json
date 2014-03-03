@@ -1,15 +1,48 @@
 {
-  "src": "orbiting_moon.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Orbiting the Moon", 
-  "relatedContent": [
-    "angular_circular", 
-    "energy", 
-    "IntA1988PIIQ3l_video"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_numeric", 
-  "id": "orbiting_moon"
+ "attribution": "Used with permission from UCLES, A Level Physics, November 1988, Paper 2, Question 3.", 
+ "title": "Orbiting the Moon", 
+ "relatedContent": [
+  "angular_circular", 
+  "energy", 
+  "IntA1988PIIQ3l_video"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "answer": {
+    "type": "content", 
+    "value": "The speed is \n$\\vari{v}$\n = \n$\\valuedef{\\sqrt {GM/R}}{1.68}{km\\,  s\\sup {-1}}$", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Find the speed of a satellite in a circular orbit around the Moon, very near the Moon&apos;s surface. Give your answer to two decimal places.", 
+   "encoding": "html"
+  }, 
+  {
+   "encoding": "html", 
+   "value": " What is the kinetic energy per unit mass of the satellite?", 
+   "answer": {
+    "type": "content", 
+    "value": "The kinetic energy per unit mass is \n<table>\n<tr>\n<td>$\\displaystyle  \\frac{1}{2}v^2=GM/2R=1.41\\times 10^6\\textrm{ J kg}^{-1} $</td>\n</tr>\n</table>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "hints": [
+    {
+     "type": "content", 
+     "value": "The radius of the Moon is \n$\\quantity{1.74\\times 10^6}{m}$\n, the mass of the Moon is \n$\\quantity{7.35\\times 10^{22}}{kg}$\n and Newton&apos;s Gravitational Constant, \n$\\valuedef{G}{6.67 \\times 10^{-11}}{N\\,  m\\sup {2}\\,  kg\\sup {-2}}$\n.", 
+     "encoding": "html"
+    }
+   ]
+  }, 
+  {
+   "type": "content", 
+   "value": "<p>\nThe gravitational force \n$\\vari{F_{A}}$\n between the satellite and the Moon is in the inward radial direction and its magnitude is given by the equation \n</p>\n<p>\n<table>\n<tr>\n<td>$\\displaystyle  F_ A=GMm/R^2  $</td>\n</tr>\n</table>\n</p>\n<p>\nwhere \n$\\vari{G}$\n is the gravitational constant; \n$\\vari{M}$\n and \n$\\vari{m}$\n are the masses of the Moon and the satellite respectively; and \n$\\vari{R}$\n is the radius of the orbit.\n</p>", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_numeric", 
+ "id": "orbiting_moon"
 }

@@ -1,17 +1,83 @@
 {
-  "src": "pulleys_on_table.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Pulleys on a Table", 
-  "relatedContent": [
-    "energy", 
-    "momentum", 
-    "eq_of_motion_diff", 
-    "newtonii", 
-    "impulse"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_symbolic", 
-  "id": "pulleys_on_table"
+ "attribution": "Adapted with permission from UCLES, A Level Applied Mathematics, June1969, Paper2, Question2.", 
+ "title": "Pulleys on a Table", 
+ "relatedContent": [
+  "energy", 
+  "momentum", 
+  "eq_of_motion_diff", 
+  "newtonii", 
+  "impulse"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "<p>\n<p>\n<p>\n<img src=\"figures/Dynamics_table_pulley_masses.png\"/>\n</p>\n<p>\n<figcaption></figcaption>\n</p>\n</p>\n</p>\n<p>\nFigure \n0\n shows the cross section of a smooth table ABCD, standing on the floor AD, with smooth pulleys attached at B and C. Particles of masses \n$\\vari{m_1}$\n$<$\n$\\vari{m_2}$\n$<$\n$\\vari{m_3}$\n are attached to a light, inelastic, inextensible string which passes over the pulleys as shown. The system is released from rest with the string taut when \n$\\vari{m_2}$\n is a height \n$\\vari{h_{0}}$\n from the floor.\n</p>", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "<p>\n<table>\n<tr>\n<td>$\\displaystyle  a = \\frac{(m_{2} - m_{1})g}{m_{1} + m_{2} + m_{3}} = a_{0}  $</td>\n</tr>\n</table>\n</p>\n<p>\nis the initial acceleration.\n</p>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "Find the initial acceleration of the system.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "This step can be simplified by a realisation based on energy principles. When \n$\\vari{m_{2}}$\n hits the floor there is no longer any tension in the string, but the other two masses have momenta that will carry them onwards and make the string slack. But \n$\\vari{m_{1}}$\n now has a net force of \n$\\vari{-m_{1}g}$\n acting on it, which will slow both masses and reverse their motion. When they get back to the point they were at as \n$\\vari{m_{2}}$\n hit the ground, the string will go taut again. Since the surface is smooth the kinetic energy of \n$\\vari{m_{1}}$\n and \n$\\vari{m_{3}}$\n must be the same as it was initially; there are no losses to friction and the gravitational potential energy is unchanged. Thus the speed of \n$\\vari{m_{1}}$\n and \n$\\vari{m_{3}}$\n the instant the string goes taut must be the speed the masses were moving at as \n$\\vari{m_{2}}$\n hit the ground.", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "The mass \n$\\vari{m_{2}}$\n hits the floor. Describe the subsequent motion of the system until the string again becomes taut.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Find the following quantities, given that \n$\\valuedef{m_{1}}{1}{kg,}$\n$\\valuedef{m_{2}}{3}{kg,}$\n$\\valuedef{m_{3}}{5}{kg}$\n and \n$\\valuedef{h_{0}}{0.45}{m}$\n:", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "<p>\n<table>\n<tr>\n<td>$\\displaystyle  v = \\mbox{\\quantity{1.4}{m\\,  s\\sup {-1}}}  $</td>\n</tr>\n</table>\n</p>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "the velocity with which the system will move just after the string again becomes taut,", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "<table>\n<tr>\n<td>$\\displaystyle  I = \\mbox{\\quantity{2.8}{kg\\,  m\\,  s\\sup {-1}}}  $</td>\n</tr>\n</table>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "the impulse on \n$\\vari{m_{2}}$\n at this instant,", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "<table>\n<tr>\n<td>$\\displaystyle  \\text {KE Loss} = \\mbox{\\quantity{1.96}{J}}  $</td>\n</tr>\n</table>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "the resulting loss of kinetic energy.", 
+   "encoding": "html"
+  }, 
+  {
+   "type": "content", 
+   "value": "Show that, when the system next comes instantaneously to rest, \n$\\vari{m_{2}}$\n will be \n$\\vari{\\frac{4}{9}h_{0}}$\n above the floor.", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_symbolic", 
+ "id": "pulleys_on_table"
 }

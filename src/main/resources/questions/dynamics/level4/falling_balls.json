@@ -1,16 +1,32 @@
 {
-  "src": "falling_balls.tex", 
-  "attribution": null, 
-  "encoding": "latex", 
-  "title": "Falling Balls", 
-  "relatedContent": [
-    "energy", 
-    "momentum", 
-    "momentumii", 
-    "eq_of_motion_diff"
-  ], 
-  "author": null, 
-  "layout": "1-col", 
-  "type": "legacy_latex_question_symbolic", 
-  "id": "falling_balls"
+ "attribution": "Adapted with permission from UCLES, Higher School Certificate Physics, June1946, Paper1. ", 
+ "title": "Falling Balls", 
+ "relatedContent": [
+  "energy", 
+  "momentum", 
+  "momentumii", 
+  "eq_of_motion_diff"
+ ], 
+ "author": null, 
+ "children": [
+  {
+   "type": "content", 
+   "value": "Steel balls of mass \n$\\valuedef{m}{0.1}{kg}$\n are dropped from a height of \n$\\valuedef{h}{5}{m}$\n onto a smooth steel plate inclined at \n$\\valuedef{\\theta }{45^{\\circ }}{}$\n to the vertical.", 
+   "encoding": "html"
+  }, 
+  {
+   "answer": {
+    "type": "content", 
+    "value": "<p>\n<table>\n<tr>\n<td>$\\displaystyle  \\text {Force} = 2\\sqrt {(9.8)(5)}(100)(0.1)= \\mbox{\\quantity{140}{N}}  $</td>\n</tr>\n</table>\n</p>", 
+    "encoding": "html"
+   }, 
+   "type": "question", 
+   "value": "If the balls are dropped at the rate of \n$\\valuedef{n}{100}{s\\sup {-1}}$\n, what is the average force on the plate? You may assume that the collisions between the ball and the plate are elastic and that each ball hits the plate only once.", 
+   "encoding": "html"
+  }
+ ], 
+ "encoding": "html", 
+ "layout": "1-col", 
+ "type": "legacy_latex_question_symbolic", 
+ "id": "falling_balls"
 }
