@@ -357,6 +357,15 @@ def extractStructure(jsonMetaData, latexSourceToConvert):
                 hint['value'] = extractLatex(node.getAttribute("hintText"))
                 question['hints'].append(hint)
 
+        # horrible thing added to try and extract the attribution
+        elif 'question' in jsonMetaData['type'] and eq("#document"):
+            bgroupCount = 0
+            for n in node.childNodes:
+                if(n.nodeName == "bgroup"):
+                    if bgroupCount == 1:
+                        jsonMetaData['attribution'] = n.textContent
+                    bgroupCount+=1
+
         elif jsonMetaData['type'] == 'concept':
             # we need to do a bit more work to extract structure
             # for each section we will create a new content object with a list of content (probably just one) but this is to cope with quick questions
