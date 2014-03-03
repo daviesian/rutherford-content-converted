@@ -1,0 +1,59 @@
+%% ID: rolling_objects
+%% TITLE: Rolling objects
+%% TYPE: question
+%% QUESTIONTYPE: numeric
+%% CONCEPTS: energy, eq_of_motion_diff, moi, ang_vel
+%% VIDEOS: 
+%% LEVEL: 5
+%% TOPIC: mechanics/dynamics
+%% ORDER: 10
+
+\begin{hint}[IntA1984PIQ3a]
+{\exposition{A sphere and a cylinder, each having the same mass and radius, are released together at the top of an inclined plane and roll without slipping but also with negligible rolling friction.}
+\begin{enumerate}
+\item \question[a]{Explain why, despite the fact both must have the same total energy at all times, the sphere will always reach the ground first.}
+\item \question[b]{If they descend a height of \quantity{3}{m} over a horizontal distance of \quantity{4}{m}, calculate how much longer the cylinder takes to reach the ground than the sphere.}
+\end{enumerate}
+}
+{\hint{The moments of inertia of a uniform solid sphere and cylinder of mass \vari{m} and radius \vari{r} are \vari{\frac{2}{5}mr^2} and \vari{\frac{1}{2}mr^2}, respectively.}
+{\textit{Adapted with permission from UCLES, A Level Physics, November 1984, Paper 1, Question 3.}}
+{\answer[a]{}
+\answer[b]{\valuedef{t_{diff}}{0.054}{s}}
+\begin{enumerate}
+\item
+As they lose height, gravitational potential energy is converted into kinetic energy. This kinetic energy has components due to the rotation of the bodies and the motion of the centre of mass, so the conservation equation is:
+\begin{align*}
+mgh&=\frac{1}{2}mv^2+\frac{1}{2}I\omega^2 \\
+&=\frac{1}{2}mv^2+\frac{1}{2}Iv^2/r^2 \\
+&=\frac{1}{2}v^2\left(m+I/r^2\right)
+\end{align*}
+where the second line follows because there is no slipping so $v=r\omega$. The only difference between a cylinder and a sphere in this equation is the moment of inertia term; this is $\frac{1}{2}mr^2$ for a cylinder but $\frac{2}{5}mr^2$ for a sphere. Since the sphere has a slightly lower moment of inertia than the cylinder, its speed will always be slightly greater for a given energy, and therefore it will reach the bottom first.
+\item Continuing from above, and writing $I=\alpha mr^2$:
+\begin{align*}
+mgh&=\frac{1}{2}v^2\left(m+\alpha mr^2/r^2\right)=\frac{1}{2}mv^2\left(1+\alpha\right) \\
+\Rightarrow v^2&=\frac{2}{1+\alpha}gh
+\end{align*}
+To calculate the time taken to reach the bottom, draw a quick diagram to show the situation, as in Figure \ref{fig:AngularMotion_slope} below: 
+\begin{figure}[h] 
+\centering
+\includegraphics[width=5cm]{AngularMotion_slope}
+\caption{}
+\label{fig:AngularMotion_slope}
+\end{figure}
+\\
+Using pythagoras, the distance to the ground along the slope is $5\textrm{ m}$. Then using the SUVAT equation (acceleration is constant)
+\begin{align*}
+s=\frac{u+v}{2}t
+\end{align*}
+where $s$ is distance travelled, $u$ is initial speed (here zero), $v$ is final speed and $t$ is time taken. Therefore the time taken is given by
+\begin{align*}
+t=\frac{2s}{v}=2s\sqrt{\frac{1+\alpha}{2gh}}
+\end{align*}
+Using $\alpha=2/5$ for the sphere and $\alpha=1/2$ gives the time difference
+\begin{align*}
+t_\textrm{c}-t_\textrm{s}&=s\sqrt{\frac{2}{gh}}\left(\sqrt{1+1/2}-\sqrt{1+2/5}\right) \\
+&=0.054\textrm{ seconds}
+\end{align*}
+\end{enumerate}
+}
+\end{hint}

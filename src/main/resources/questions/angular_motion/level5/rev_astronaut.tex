@@ -1,0 +1,55 @@
+%% ID: rev_astronaut
+%% TITLE: Revolving astronauts
+%% TYPE: question
+%% QUESTIONTYPE: scq
+%% CONCEPTS: ang_vel, circ_mot, trig, forces
+%% VIDEOS: 
+%% LEVEL: 5
+%% TOPIC: mechanics/dynamics
+%% ORDER: 1
+
+\begin{problem}[Zephyr_revolving_astronauts]
+{\exposition{Four astronauts are fixing a satellite in deep space. They are attached by four light, inextensible ropes of length \vari{l}. On the way back to their ship they form a perfect square formation which is rotating at some angular speed.
+
+All the astronauts weigh the same with all of their tools. On the way back one of the astronauts drops all his equipment by mistake and the astronaut at the far corner of the square is laughing so hard that he does so to.} \question{Assuming both of these astronauts weights have been halved, how far from the centre of mass (ignoring the lost tools) will they be when the rotation has stabilised.}
+\begin{enumerate}
+	\item \choice[a]{\vari{l}}
+	\item \choice[b]{\vari{\dfrac{l}{\sqrt{2}}}}
+	\item \choice[c]{\vari{\sqrt{2}l}}
+	\item \choice[d]{\vari{l/2}}
+	\item \choice[e]{\vari{0}}\correct
+\end{enumerate}
+  }
+{\textit{Written by Zephyr Penoyre for the RSPP}}
+{\answer{The correct answer is (e).}
+
+\begin{figure}[h]
+\centering
+\includegraphics{AngularMotion_astronauts}
+\caption{}
+\label{fig:AngularMotion_astronauts}
+\end{figure}
+
+Using the Figure (\ref{fig:AngularMotion_astronauts}) showing the system when it has stabilised and is rotating at some new angular speed $\omega$. We can start by resolving forces on one of the $2m$ masses (remembering that for circular motion $F = mr\omega^2$)
+
+\begin{equation*}
+2T\cos{\theta} = 2mx\omega^2
+\end{equation*}
+
+and doing the same for an $m$ mass
+
+\begin{equation*}
+2T\sin{\theta} = my\omega^2
+\end{equation*}
+
+Dividing the second equation by the first gives
+
+\begin{equation*}
+\tan{\theta} = \dfrac{y}{2x}
+\end{equation*}
+
+however we know from trigonometry that $\tan{\theta} = \dfrac{y}{x}$, leading to $y = 2y$ and thus $y=0$ (and thus $x=l$)
+
+N.b. There is another solution here where $x=0$ and $y=l$ but this is unstable and the system will not naturally arrange itself in this configuration.
+}
+\end{problem}

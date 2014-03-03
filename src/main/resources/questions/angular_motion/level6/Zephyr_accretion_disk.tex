@@ -1,0 +1,36 @@
+\begin{hint}[Zephyr_accretion_disk] 
+{As matter falls towards a black hole it naturally forms a flat, rotating disk of interstellar materials. This is called an accretion disk. Matter at the inner edge of this disk falling into the black hole can be thought of as losing all of it's momentum. Given that all the matter in the disk can be thought of as moving in perfectly circular orbits, and that matter is constantly falling into the black hole, what will happen to matter at some large radius in the disk.
+
+\begin{enumerate}
+	\item It will speed up and stay at same radius
+	\item It will move to a larger radius and slow down
+	\item It will move to a larger radius and speed up
+	\item It will move to a smaller radius and slow down
+	\item It will be unaffected
+\end{enumerate}}
+{Assume on the time-scale we're looking at, negligible new mass is accumulated by the disk}
+{\textit{Written by Zephyr Penoyre for the RSPP}}
+{The correct answer is (c)
+
+\begin{figure}[h]
+\centering
+\includegraphics[width = 100mm]{AngularMotion_black_hole}
+\label{fig:AngularMotion_black_hole}
+\end{figure}
+
+A rough sketch of the form of an accretion disk is shown in Figure (\ref{fig:AngularMotion_black_hole}).
+
+Firstly we have the requirement that the motion remain circular. Therefore the force due to gravity $F\s{G} = \frac{GMm}{r^2} = mr^2 \omega^2$, where $m$ is the mass of the black hole, $m$ the mass of some test particle, $r$ it's distance from the black hole and $\omega$ it's angular speed.
+
+We can rearrange this to find
+\begin{equation*}
+\omega = \sqrt{\dfrac{GM}{r^3}}
+\end{equation*}
+
+Therefore all particles at the same radius must be moving at the same speed, ruling out the first two.
+
+To conserve angular momentum of the disk as a whole, while the mass near the centre falling into the black hole, mass further out must be gaining angular momentum to compensate. This can only be done by that mass speeding up, i.e. $\omega$ increasing.
+
+We can rearrange the previous equation to find $r \propto \omega^{\frac{2}{3}}$, thus if $\omega$ increases, the mass must move to a larger radius and speed up.
+}
+\end{hint}

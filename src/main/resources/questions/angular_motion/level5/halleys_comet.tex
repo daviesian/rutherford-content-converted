@@ -1,0 +1,31 @@
+%% ID: halleys_comet
+%% TITLE: Halleys comet
+%% TYPE: question
+%% QUESTIONTYPE: numeric
+%% CONCEPTS: com, moi, ang_mom, ang_vel
+%% VIDEOS: 
+%% LEVEL: 5
+%% TOPIC: mechanics/dynamics
+%% ORDER: 6
+
+\begin{problem}[IntA1987PIIQ2a] 
+{\exposition{Halley's comet moves in an elliptical orbit about the Sun; no external torque acts on the system. The orbit has its closest approach to the Sun at \quantity{8.8\times 10^{10}}{m}. The furthest point is a distance \quantity{5.3\times 10^{12}}{m} away from the Sun, and it's speed at that point is \quantity{913}{m\,s\sup{-1}};} \question{what is the highest speed the comet will attain in it's orbit?}
+}
+{\textit{Used with permission from UCLES, A Level Physics, November 1987, Paper 2, Question 2.}}
+{\answer{\valuedef{v_{max}}{55,000}{m\,s\sup{-1}}}
+Angular momentum is conserved since no external torque acts on the system. At the closest point the magnitude of the angular momentum is 
+\begin{equation*}
+J=I_c\omega_c=mr_c^2\cdot \frac{v_c}{r_c}=mr_cv_c
+\end{equation*}
+where $r_c$ is the distance of the comet from the Sun at the point of closest approach, and $v_c$ is the speed at that point. The magnitude of the angular momentum must have the same value when the comet is at the furthest point so 
+\begin{align*}
+J=mr_fv_f \\
+\end{align*}
+where $r_f$ is the distance of the comet from the Sun at the furthest point away, and $v_f$ is its speed there. 
+\begin{align*}
+\Rightarrow r_fv_f=r_cv_c \\
+\Rightarrow v_c=\frac{r_f v_f}{r_c}
+\end{align*}
+The numerical answer is then $55,000\textrm{ ms}^{-1}$.
+}
+\end{problem}

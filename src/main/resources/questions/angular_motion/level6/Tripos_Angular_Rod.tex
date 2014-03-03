@@ -1,0 +1,98 @@
+\begin{hint}[Tripos_Angular_Rod]
+{
+A uniform rod of length $l$ and mass $2m$ rests on a smooth horizontal table. A point mass $m$ moving at right angles to the rod with an initial velocity $u$ collides with one end of the rod and sticks to it. Given $l=1$m, $m=2$kg and $u=3$ms\sup{-1}, find:
+\begin{enumerate}
+\item the angular speed of the system after the collision.
+\item the fraction of the length, from the left hand end, of the position of the point on the rod that remains stationary immediately after the collision.
+\item the total change in the kinetic energy of the system as a result of the collision. 
+\end{enumerate}
+}
+{
+\begin{enumerate}
+\item The rod will rotate about its centre of mass; think carefully about where this is and what the appropriate moment of inertia will be. (The moment of inertia of a rod mass $m$ length $l$ about its centre of mass was calculated in the first problem sheet).  
+\item Remember to consider both the linear and rotational motion of the rod.  
+\end{enumerate}
+}
+{%\textit{Used/Adapted with permission from UCLES, A/O Level Physics/Maths/Physical Science, June/November 198, Paper, Question.}
+}
+{
+\begin{enumerate}
+\item As always a diagram is helpful. Figure \ref{fig:AngularMotion_rodcoll} shows the situation before the collision:
+\begin{figure}[h] 
+\centering
+\includegraphics[width=9cm]{AngularMotion_rodcoll}
+\caption{}
+\label{fig:AngularMotion_rodcoll}
+\end{figure}
+\\
+and Figure \ref{fig:AngularMotion_rodcolltwo} shows what has happened after the mass sticks to the rod:
+\begin{figure}[h] 
+\centering
+\includegraphics[width=9cm]{AngularMotion_rodcolltwo}
+\caption{}
+\label{fig:AngularMotion_rodcolltwo}
+\end{figure}
+\\
+The centre of mass (CoM) moves with velocity $\vtr{v}$ and the composite body rotates about its CoM with angular velocity $\vtr{\omega}$. Notice how the CoM has moved. It will be necessary to know where the new CoM is:
+\begin{align*}
+CoM=\frac{\Sigma \textrm{ mass}\times \textrm{distance}}{\Sigma \textrm{ mass}}=\frac{2m\cdot l/2+m\cdot l}{2m+m}=\frac{2}{3}l
+\end{align*}
+relative to the left hand end of the rod, which corresponds to a distance $l/6$ from the old CoM, of the rod alone. 
+We now need to conserve both linear and angular motion. Linearly
+\begin{align*}
+mu=3mv \\
+\Rightarrow v=u/3
+\end{align*}
+and angularly, about the new CoM
+\begin{align*}
+mu\cdot l/3=I\omega \\
+\Rightarrow \omega=\frac{mul}{3I}
+\end{align*}
+So to determine the new angular speed we need to know the new moment of inertia (MoI). The MoI of a rod mass $m$ length $l$ about its CoM is $\frac{1}{12}ml^2$, as calculated in an earlier problem sheet. So the MoI a of a rod of mass $2m$ length $l$ with an additional mass $m$ on the end, call it $I'$, about the centre of the rod (not the CoM) is
+\begin{align*}
+I'=\frac{1}{12}(2m)l^2+m\left(\frac{l}{2}\right)^2=\frac{5}{12}ml^2
+\end{align*}
+We then need to find the MoI about the CoM of this body, which we established is a distance $l/6$ away from the centre of the rod. Using the parallel axis theorem, and with $I$ denoting the MoI about the CoM:
+\begin{align*}
+I'&=I+3m\left(\frac{l}{6}\right)^2 \\
+\Rightarrow I&=\frac{5}{12}ml^2-3m\frac{l^2}{36}=\frac{1}{3}ml^2
+\end{align*}
+We can now finally work out the new angular speed of the system:
+\begin{align*}
+\omega=\frac{mul}{3I}&=\frac{mul}{3}\cdot\frac{3}{ml^2} \\
+\Rightarrow \omega&=\frac{u}{l}
+\end{align*}
+Thus using $l=1$ and $u=3$ gives $\omega = 3$ rad s\sup{-1}
+
+\item We know that the CoM of the rod is moving upwards with speed $v=u/3$. Therefore we need to find the point on the rod where the linear speed due to the rotation about the CoM is $u/3$ in the opposite direction. Figure \ref{fig:AngularMotion_rodcollthree} shows how we will do this calculation. 
+\begin{figure}[h] 
+\centering
+\includegraphics[width=9cm]{AngularMotion_rodcollthree}
+\caption{}
+\label{fig:AngularMotion_rodcollthree}
+\end{figure}
+The point at a distance $x$ away from the CoM on the left hand side will have a speed $u/3$ due to the motion of the CoM and a speed of $\omega x$ in the opposite direction due to rotation. So equate the two to find the point where they cancel (using $\omega=u/l$):
+\begin{align*}
+\omega x&=\frac{u}{3} \\
+\Rightarrow x&=\frac{u}{3}\cdot\frac{l}{u} \\
+\Rightarrow x&=\frac{l}{3}
+\end{align*}
+So the point a one third of the length away from the CoM on the left (and therefore a  $\frac{1}{3}l$ from the left hand end of the rod) is stationary immediately after the collision. 
+\item Initially the kinetic energy, $E_0$, was given by
+\begin{align*}
+E_0=\frac{1}{2}mu^2
+\end{align*}
+and the final kinetic energy $E_1$ is 
+\begin{align*}
+E_1&=\frac{1}{2}3mv^2+\frac{1}{2}I\omega^2 \\
+&=\frac{1}{2}3m\left(\frac{u}{3}\right)^2+\frac{1}{2}\frac{ml^2}{3}\left(\frac{u}{l}\right)^2
+&=\frac{1}{3}mu^2
+\end{align*}
+so the change in kinetic energy $\Delta E$ is
+\begin{align*}
+\Delta E=E_1-E_0=-\frac{1}{6}mu^2
+\end{align*} 
+Thus with $m = 2$ and $l = 3$, $\Delta E = - 3$ J. The minus sign indicates that energy is lost overall. 
+\end{enumerate}
+}
+\end{hint}

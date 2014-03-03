@@ -1,0 +1,104 @@
+\begin{hint}[Tripos_Windmill]
+{
+\begin{enumerate}
+\item Define the impulse exerted when a force acts for a short time, and relate the impulse to the changes in linear and angular momenta during collisions. 
+\end{enumerate}
+A toy windmill consists of four thin uniform rods of mass $m$ and length $l$ arranged at right angles, in a vertical plane, around a horizontal axle about which they can rotate freely. 
+\begin{enumerate}
+\setcounter{enumi}{1}
+\item Show that the moment of inertia of the windmill about the axle is $\frac{4}{3}ml^2$.
+\end{enumerate}
+Initially the windmill is stationary. A small ball of mass $m$ is dropped from a height $h$ above the axle, and makes an elastic collision with the end of a horizontal rod. 
+\begin{enumerate}
+\setcounter{enumi}{2}
+\item Derive an expression for the angular speed of the windmill after the collision.
+\item To what height does the ball rebound?
+\end{enumerate}
+}
+{
+\begin{enumerate}
+\setcounter{enumi}{2}
+\item Think about the quantities that will be conserved, given that the collision is elastic. 
+\end{enumerate}
+}
+{%\textit{Used/Adapted with permission from UCLES, A/O Level Physics/Maths/Physical Science, June/November 198, Paper, Question.}
+}
+{
+\begin{enumerate}
+\item The impulse is, formally, the integral of the force over a short time interval. This means it is given by force multiplied by time if the force is constant. For an impulse of magnitude $\Delta P$ then the change in linear momentum is $\Delta P$ in the same direction as the impulse and the change in angular momentum has magnitude $r\Delta P$ and a direction perpendicular to the impulse and the direction of displacement from the axis of rotation. $r$ is the perpendicular distance from the point the impulse is applied to the axis of rotation. 
+\item It has already been shown using integration that the moment of inertia of one rod about its end is $\frac{1}{3}ml^2$, and so to find the total moment of inertia of the windmill you just add the contributions from each of the rods, giving $\frac{4}{3}ml^2$. 
+\item Figure \ref{fig:AngularMotion_windmill} shows the initial set up:
+\begin{figure}[h] 
+\centering
+\includegraphics[width=6cm]{AngularMotion_windmill}
+\caption{}
+\label{fig:AngularMotion_windmill}
+\end{figure}
+\\
+and Figure \ref{fig:AngularMotion_windmillcollone} shows what happens immediately before,  and Figure \ref{fig:AngularMotion_windmillcolltwo} immdiately after the collision:
+\begin{figure}[h]
+\centering
+\begin{subfigure}{0.5\textwidth}
+\centering
+\includegraphics[width=0.5\linewidth]{AngularMotion_windmillcollone}
+\caption{}
+\label{fig:AngularMotion_windmillcollone}
+\end{subfigure}%
+\begin{subfigure}{0.5\textwidth}
+\centering
+\includegraphics[width=0.5\linewidth]{AngularMotion_windmillcolltwo}
+\caption{}
+\label{fig:AngularMotion_windmillcolltwo}
+\end{subfigure}
+\caption{}
+\end{figure}
+\\
+First conserve angular momentum:
+\begin{align*}
+lmu&=I\omega-lmv \\
+\Rightarrow lm(u+v)&=\frac{4}{3}ml^2\omega \\
+\Rightarrow u+v&=\frac{4}{3}l\omega
+\end{align*}
+and then energy:
+\begin{align*}
+\frac{1}{2}mu^2&=\frac{1}{2}mv^2+\frac{1}{2}I\omega^2 \\
+\Rightarrow u^2&=v^2+\frac{4}{3}l^2\omega^2
+\end{align*}
+Now we just need to solve the two simultaneous equations. There are many ways to do this; I will substitute $\omega=\frac{3(u+v)}{4l}$ into the energy equation to obtain
+\begin{align*}
+u^2&=v^2+\frac{4}{3}l^2\cdot\left(\frac{3(u+v)}{4l}\right)^2 \\
+\Rightarrow u^2&=v^2+\frac{3}{4}(u+v)^2 \\
+\end{align*}
+which rearranges to
+\begin{align*} 7v^2+6uv-u^2&=0 \end{align*}
+solve this using the quadratic formula:
+\begin{align*}
+\frac{v}{u}&=\frac{-6\pm\sqrt{36+28}}{14} \\
+\Rightarrow \frac{v}{u}&=\frac{6}{14}\pm\frac{8}{14} \\
+\Rightarrow v&=-u \textrm{ or } v=u/7
+\end{align*}
+Since we initially defined $v$ as being upwards, in the opposite direction to $u$, the first solution corresponds to the particle continuing on at the same speed; this obviously conserves momentum and energy, but would mean that $\omega=0$ and the mass has passed straight through the windmill, so it is not the solution we are looking for. Using the other solution we can find what $\omega$ is:
+\begin{align*}
+u+v&=\frac{4}{3}\omega \\
+\Rightarrow u+u/7&=\frac{4}{3}\omega \\
+\Rightarrow \omega&=\frac{6}{7}u
+\end{align*} 
+we can also substitute a value in for $u$ since we know what height the mass started at (notice how leaving it as $u$ until this point makes the algebra much simpler)
+\begin{align*}
+mgh&=\frac{1}{2}mu^2 \\
+\Rightarrow u&=\sqrt{2gh}
+\end{align*}
+and so our final expression for $\omega$ is
+\begin{align*}
+\omega=\frac{6\sqrt{2gh}}{7}
+\end{align*} 
+\item It is very simple to calculate the height the ball rebounds to; we just conseve energy again
+\begin{align*}
+\frac{1}{2}mv^2&=mgy \\
+\Rightarrow y&=\frac{1}{2g}v^2 \\
+&=\frac{1}{2g}\cdot\left(\frac{\sqrt{2gh}}{7}\right)^2 \\
+\Rightarrow y&=\frac{h}{49}
+\end{align*}
+\end{enumerate}
+}
+\end{hint}

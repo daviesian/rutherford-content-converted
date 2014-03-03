@@ -1,0 +1,28 @@
+%% ID: 2part_moi
+%% TITLE: Moment of inertia of 2 particles
+%% TYPE: question
+%% QUESTIONTYPE: scq
+%% CONCEPTS: com, moi
+%% VIDEOS: 
+%% LEVEL: 5
+%% TOPIC: mechanics/dynamics
+%% ORDER: 3
+
+\begin{problem}[Zephyr_2_particle_MoI] 
+{\question{What is the moments of inertia of two point masses with mass vari{m_1} and \vari{m_2} separated by a distance \vari{l}, rotating around their common centre of mass?}
+\begin{enumerate}
+	\item \choice[a]{(m\s{1} + m\s{2})l^2}
+	\item \choice[b]{\frac{m\s{1} + m\s{2}}{4} l^2}
+	\item \choice[c]{\frac{m\s{1}~ m\s{2}}{(m\s{1} + m\s{2})} l^2}\correct
+	\item \choice[d]{\frac{m\s{1}^2~ m\s{2}^2}{(m\s{1} + m\s{2})^2} l^2}
+	\item \choice[e]{(\frac{m\s{1}^2}{m\s{2}} + \frac{m\s{2}^2}{m\s{1}}) l^2}
+\end{enumerate}}
+{\textit{Written by Ed Scott and Zephyr Penoyre for the RSPP}}
+{\answer{The correct answer is (c)}
+Use the formula that the centre of mass is given by 
+\begin{equation*} \frac{\Sigma (\textrm{ mass}\times \textrm{distance})}{\Sigma \textrm{ mass}} \end{equation*}
+to find that the distance of $m_1$ from the CoM is $\frac{m_2l}{m_1+m_2}$ and the mass $m_2$ is $\frac{m_1l}{m_1+m_2}$ from it. So using the formula $I=\Sigma mr^2$, we find 
+\begin{equation*} I=m_1\left(\frac{m_2l}{m_1+m_2}\right)^2+m_2\left(\frac{m_1l}{m_1+m_2}\right)^2 \end{equation*}
+which can be simplified to \begin{equation*}\frac{m\s{1}~ m\s{2}}{(m\s{1} + m\s{2})} l^2\end{equation*}
+}
+\end{problem}

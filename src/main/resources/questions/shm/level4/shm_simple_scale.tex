@@ -1,0 +1,66 @@
+%% ID: shm_simple_scale
+%% TITLE: SHM of a simple scale
+%% TYPE: question
+%% QUESTIONTYPE: numerical
+%% CONCEPTS: forces, hooke, shm
+%% VIDEOS: 
+%% LEVEL: 4
+%% TOPIC: mechanics/shm
+%% ORDER: 7
+
+%Physics: resolving forces, NII, SHM, omega, period, hooke's law, CoE
+%Maths:
+\begin{problem}[A1951PIQ3p]
+{\exposition{The upper end of a light vertical spring is fixed and its lower end is hanging freely. A scale pan of mass \quantity{20}{g} is then hung from the free end.}
+\begin{enumerate}
+
+	\item \question[a]{Prove that the resulting vertical motion is simple harmonic, and calculate the period and amplitude if the spring constant is \quantity{10}{g\,cm\sup{-1}}.}
+
+	\item \exposition{The oscillating pan is held at the equilibrium and then released so that it is at rest. A mass of \quantity{20}{g} is introduced into the scale pan so that it once again moves with simple harmonic motion.} \question[b]{Find the new period and amplitude.}
+	
+\end{enumerate}
+}
+{\textit{Used with permission from UCLES, A Level Physics, June 1951, Paper 1, Question 3.}}
+{\begin{enumerate}
+
+	\item Let the spring have a natural length \vari{l}. When the scale pan in equilibrium, let the spring have an extension \vari{x_0} as shown in Figure \ref{fig:SHM_scale_pan_empty}. As there is no resultant force acting at this point we can resolve forces vertically on the pan to give $0.02g = kx_0$.
+\begin{figure}
+	\centering
+	\includegraphics[width=0.2\textwidth]{SHM_scale_pan_empty}
+	\caption{}
+	\label{fig:SHM_scale_pan_empty}
+\end{figure}
+
+\nl At any point in the motion let spring have an extra extension \vari{x}, as shown in Figure \ref{fig:SHM_scale_pan_full}. Its acceleration acting downwards is given by \vari{\ddot{x}}. Applying $F = ma$ to the pan:
+\begin{figure}
+	\centering
+	\includegraphics[width=0.2\textwidth]{SHM_scale_pan_full}
+	\caption{}
+	\label{fig:SHM_scale_pan_full}
+\end{figure}
+\begin{equation*}
+0.02g - kx - kx_0 = 0.02\ddot{x}
+\end{equation*}
+Recalling that $kx_0 = 0.02g$:
+\begin{align*}
+- kx&= 0.02\ddot{x} \\
+\Rightarrow \ddot{x}&=-\frac{k}{0.02}x
+\end{align*}
+This gives us $\ddot{x}\propto -x$ as required for SHM.
+
+\nl Angular frequency $\omega = \sqrt{\frac{k}{m}}$, and period $T = \frac{2\pi}{\omega}$, so $T = 2\pi\sqrt{\frac{m}{k}}$. If \value{k}{10}{g\,cm\sup{-1}} $=$ \quantity{1}{kg\,m\sup{-1}}, then $T = 2\pi\sqrt{\frac{0.02}{1}} = 0.889$ s.
+
+\nl The pan starts at a height with the spring unstretched, and then oscillates about a point where the extension is \vari{x_0}. The amplitude of the motion is therefore equal to this equilibrium extension. $0.02g = kx_0$, so $x_0 = \frac{0.02g}{k} = 0.196$ m.
+
+\answer[a]{The period of the oscillation is \valuedef{T}{0.89}{s} and the amplitude of the oscillation is \valuedef{A}{0.20}{m}.}
+
+	\item The period can again be found using the expression $T = 2\pi\sqrt{\frac{m}{k}}$. \valuedef{m}{0.04}{kg}, so \valuedef{T}{1.26}{s}.
+	
+\nl To find the new amplitude, consider the equilibrium point of the new motion. Let the extension of the spring at this point be \vari{x_1}. Resolving forces vertically at this point gives $0.04g = kx_1$, so $x_1 = 0.392$ m. The pan starts from a point where the extension of the spring is \vari{x_0}, so the new amplitude is given by $x_1-x_0 = 0.196$ m - the same as the previous amplitude.
+
+\answer[b]{The period of the oscillation is \valuedef{T}{1.26}{s} and the amplitude of the oscillation is \valuedef{A}{0.20}{m}, the same as before.}
+
+
+\end{enumerate}
+}
+\end{problem}

@@ -1,0 +1,35 @@
+\begin{hint}[Zephyr_finger_balance] 
+{Which of the following shapes, in their current orientations, would be the easiest to balance on one finger?
+\begin{figure} [h]
+\centering
+\includegraphics[width = 100mm]{AngularMotion_finger_balance}
+\label{fig:AngularMotion_finger_balance}
+\end{figure}
+\begin{enumerate}
+	\item $A$
+	\item $B$
+	\item $C$
+	\item $A$ and $B$ equally
+	\item $A$, $B$, and $D$ equally
+\end{enumerate}}
+{You can assume each shape is a lamina and all with the same mass and density}
+{\textit{Written by Zephyr Penoyre for the RSPP}}
+{The correct answer is (a)
+It is relatively easy to see that $A$ must have the highest moment of inertia around it's base, the point which it will pivot around when supported by a finger. This is because it has the most mass at the largest perpendicular distance from it's base, and $I \propto m r^2$.
+
+From now on let's make the approximation that all the mass of each object can be considered to be a point mass at a particular perpendicular distance $r$, roughly the distance to the centre of mass. This assumption is far from true,  but as we are making a qualitative not quantitative argument it will be sufficiently true for this case. Thus it is clear $A$ has the largest $r$.
+
+Thus $I \approx mr^2$
+
+We know, by analogy with Newton's Second Law, that torque $G$ is equal to $I \ddot{\theta}$, where $ \ddot{\theta}$ is the angular acceleration. The torque the system experiences will be due to the object being displaced at some angle $\theta$ to the vertical. 
+
+Thus $G \approx mgr \sin{\theta}$ and as $\theta$ will be small here, $\sin{\theta} \approx {\theta}$ and thus $G \approx mgr\theta$.
+
+Giving
+\begin{equation*}
+\ddot{\theta} \approx \dfrac{mgr\theta}{mr^2} \propto \dfrac{\theta}{r}
+\end{equation*}
+
+This means that for some displacement $\theta$, the angular acceleration will be least for the shape with the greatest $r$, relating to the greatest moment of inertia. As the angular acceleration is lower, there is more time to react to small displacements and the shape will be easier to keep balanced.
+}
+\end{hint}

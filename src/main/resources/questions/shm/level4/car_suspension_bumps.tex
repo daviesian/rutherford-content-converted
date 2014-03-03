@@ -1,0 +1,34 @@
+%% ID: car_suspension_bumps
+%% TITLE: Car Suspension over Bumps
+%% TYPE: question
+%% QUESTIONTYPE: numerical
+%% CONCEPTS: forces, hooke, shm
+%% VIDEOS: 
+%% LEVEL: 4
+%% TOPIC: mechanics/shm
+%% ORDER: 9
+
+%Physics: Hooke's law, SHM, omega, period
+%Maths:
+\begin{hint}[IntA1987PIIIQ8p] %Removed numerical values: m_1 = 80kg, m_2 = 920kg, x = 2cm, v = 15 ms-1
+{\exposition{The suspension of a car may be considered to be a spring under compression combined with a shock absorber which damps the vertical oscillations of the car. When the driver, of mass \vari{m_1}, steps into the car, of mass \vari{m_2}, the vertical height of the car above the road decreases by \vari{x}. If the car is driven over a series of equally spaced bumps, the amplitude of vibration becomes much larger at one particular speed.} \question{Explain why this occurs and find an expression for the separation \vari{d} of the bumps if it occurs at a speed of \vari{v}.}
+}
+{The frequency of vibration of a loaded spring is $\frac{1}{2 \pi} \sqrt{\frac{k}{m}}$ where \vari{m} is the mass on the spring and \vari{k} is the spring constant, the force required to produce unit compression or extension of the spring.
+}
+{\textit{Adapted with permission from UCLES, A Level Physics, November 1987, Paper 3, Question 8.}}
+{\answer{The amplitude of vibration becomes much larger at a particular speed due to resonance. At this speed, the frequency of bumps as the car travels over to them is equal to the natural frequency of the springs in the car's suspension given by the formula $\frac{1}{2 \pi} \sqrt{\frac{k}{m}}$. This combined effect of the car's bumping and the spring's natural oscillation produces a much larger amplitude than at other frequencies of oscillation.
+
+\valuedef{d}{2\pi v\sqrt{\frac{x\left(m_1+m_2\right)}{m_1g}}}{}}
+
+\nl To find the springs' natural frequency we must first find the spring constant \vari{k}, which is equal to $\frac{F}{x}$ by Hooke's law. When the driver steps into the car the springs compress a distance \vari{x}, so $k = \frac{m_1g}{x}$. Using the equation for the frequency of a spring:
+\begin{equation*}
+f = \frac{1}{2\pi}\sqrt{\frac{m_1g}{x\left(m_1+m_2\right)}}
+\end{equation*}
+The frequency of bumps are the car drives along is given by $\frac{v}{d}$. This can be shown by relating time period to distance divided by speed, and frequency to the inverse of time period. Equating the two frequencies:
+\begin{align*}
+\frac{v}{d}&= \frac{1}{2\pi}\sqrt{\frac{m_1g}{x\left(m_1+m_2\right)}} \\
+\Rightarrow  d&= 2\pi v\sqrt{\frac{x\left(m_1+m_2\right)}{m_1g}}
+\end{align*}
+as required.
+}
+\end{hint}

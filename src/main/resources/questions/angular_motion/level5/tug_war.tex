@@ -1,0 +1,61 @@
+%% ID: tug_war
+%% TITLE: Tug of war
+%% TYPE: question
+%% QUESTIONTYPE: numeric
+%% CONCEPTS: eq_of_motion_diff, momentum, moi
+%% VIDEOS: 
+%% LEVEL: 5
+%% TOPIC: mechanics/dynamics
+%% ORDER: 7
+
+\begin{problem}[Ed_tug_of_war]
+{\exposition{
+\begin{figure}[h] 
+\centering
+\includegraphics[width=8cm]{AngularMotion_tug}
+\caption{}
+\label{fig:AngularMotion_tug}
+\end{figure}
+Two people are playing the game ``rotational tug of war". This involves two players at either end of a rod of mass \valuedef{m}{500}{kg} and length \valuedef{l}{5}{m} pivoted about its centre (which is fixed in the ground), both pulling as hard as they can, as shown in Figure \ref{fig:AngularMotion_tug} above. You win the game if you rotate the rod by an angle of \quantity{180}{^{\circ}}.}
+\begin{enumerate}
+\item \question[a]{Player 1 exerts a force of constant magnitude \valuedef{F_1}{300}{N}, whilst player 2 exerts a force of constant magnitude \valuedef{F_2}{350}{N}. Find how long it takes player 2 to win.} 
+\item \question[b]{For the next game player 3 joins in, and exerts a force of constant magnitude of \valuedef{F_3}{150}{N} whilst standing halfway between the centre of the rod and player 1. Find out whether players 1 and 3 win this time or player 2 wins again, and how long this game takes.}
+\end{enumerate}
+ }
+{\textit{Written by Ed Scott and Zephyr Penoyre for the RSPP}}
+{\answer[a]{\valuedef{t}{5.1}{s}}
+\answer[b]{\valuedef{t}{7.2}{s}}
+\begin{enumerate}
+\item The net moment on the rod, in the anti-clockwise direction, is given by 
+\begin{equation*}
+F_1l-F_2l=I\ddot\theta
+\end{equation*}
+The moment of inertia of a rod about its centre is $\frac{1}{12}ml^2$, as calculated earlier in the sheet. Therefore
+\begin{align*}
+F_1l-F_2l&=\frac{1}{12}ml^2\ddot\theta \\
+\Rightarrow \ddot\theta&=\frac{12(F_2-F_1)}{ml}
+\end{align*}
+Now by analogy with the linear suvat equation $s=ut+\frac{1}{2}at^2$, we can form an equation to give the total angle rotated through:
+\begin{equation*}
+\theta=\omega_0t+\frac{1}{2}\ddot\theta t^2
+\end{equation*}
+Since the initial angular speed $\omega_0$ is zero, we can calculate $t$ directly:
+\begin{align*}
+\theta&=\frac{1}{2}\cdot\frac{12(F_1-F_2)}{ml}t^2 \\
+\Rightarrow t^2&=\frac{ml\theta}{6(F_1-F_2)}
+\end{align*}
+Since $F_2>F_1$,  player 2 will win and we want the time it takes to reach $\theta=-\pi$ radians, so the final answer becomes
+\begin{equation*}
+t=\sqrt{\frac{-ml\pi}{6(F_1-F_2)}}=5.1\textrm{ s}
+\end{equation*}
+\item In this case the net torque on the rod in the clockwise direction is 
+\begin{equation*}
+F_1l+F_3l/2-F_2l=I\ddot\theta
+\end{equation*}
+Evaluating this gives a positive acceleration in the anti-clockwise direction, so this time players 1 and 3 will win. Using the exact same argument as in part a) but realising it will now reach an angle $+\pi$ radians, we find that the time taken is 
+\begin{align*}
+t=\sqrt{\frac{ml\pi}{6(F_1+F_3/2-F_2)}}=7.2\textrm{ s}
+\end{align*}
+\end{enumerate}
+}
+\end{problem}
