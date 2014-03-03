@@ -420,7 +420,7 @@ def extractStructure(jsonMetaData, latexSourceToConvert):
                 figureObject['encoding'] = "latex"
                 figureObject['type'] = "image"
                 latexFigurePath = changeExtension(node.getAttribute("file"),"svg")
-                figureObject['src'] = os.path.basename(latexFigurePath)
+                figureObject['src'] = latexFigurePath
                 label = findNode(node.parentNode, "label")
                 caption = findNode(node.parentNode, "caption")
                 if label != None:
